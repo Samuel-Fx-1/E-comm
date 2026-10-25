@@ -1,0 +1,6 @@
+{
+  "name": "Pantry Meal Planner",
+  "description": "Mobile-first pantry tracker with expiry dates, recipe matching, and smart shopping list.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
