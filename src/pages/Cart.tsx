@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Bookmark, ChevronRight, ShieldCheck, ShoppingCart, Trash2, Truck } from 'lucide-react';
-import { getProductById } from '../data/products';
+import { resolveLineProduct } from '../data/productLookup';
 import { imagesFor } from '../data/imageMap';
 import { site } from '../config/site';
 import { useStore } from '../context/StoreContext';
@@ -62,7 +62,7 @@ export default function CartPage() {
               </div>
               <ul className="divide-y divide-[var(--brand-line)]">
                 {cart.map((line) => {
-                  const product = getProductById(line.productId);
+                  const product = resolveLineProduct(line);
                   if (!product) return null;
                   return (
                     <li key={line.productId} className="flex gap-3 p-4 sm:gap-4">
@@ -130,7 +130,7 @@ export default function CartPage() {
                 </div>
                 <ul className="divide-y divide-[var(--brand-line)]">
                   {savedForLater.map((line) => {
-                    const product = getProductById(line.productId);
+                    const product = resolveLineProduct(line);
                     if (!product) return null;
                     return (
                       <li key={line.productId} className="flex gap-3 p-4">
