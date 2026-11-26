@@ -1,109 +1,156 @@
-export type Category = 
-  | 'Produce'
-  | 'Dairy & Eggs'
-  | 'Pantry & Grains'
-  | 'Proteins'
-  | 'Canned & Jars'
-  | 'Spices & Oils'
-  | 'Bakery'
-  | 'Other';
+export type CategorySlug =
+  | 'electronics'
+  | 'home-kitchen'
+  | 'fashion'
+  | 'beauty'
+  | 'sports'
+  | 'books'
+  | 'toys'
+  | 'groceries';
 
-export type Unit = 
-  | 'g'
-  | 'kg'
-  | 'ml'
-  | 'L'
-  | 'cups'
-  | 'tbsp'
-  | 'tsp'
-  | 'pcs'
-  | 'cans'
-  | 'cloves'
-  | 'slices'
-  | 'oz';
-
-export type ExpiryStatus = 'fresh' | 'expiring-soon' | 'expired' | 'unknown';
-
-export interface PantryItem {
-  id: string;
+export interface Category {
+  slug: CategorySlug;
   name: string;
-  quantity: number;
-  unit: Unit;
-  category: Category;
-  expiryDate?: string; // ISO string 'YYYY-MM-DD' or undefined for unknown
-  isExpiryUnknown?: boolean;
-  notes?: string;
-  storageLocation: 'Fridge' | 'Pantry' | 'Freezer';
+  icon: string;
+  blurb: string;
+  /** Tailwind gradient classes for placeholder art. */
+  gradient: string;
+  tint: string;
+}
+
+export interface Product {
+  id: string;
+  slug: string;
+  title: string;
+  brand: string;
+  category: CategorySlug;
+  /** Price in USD cents-free base currency (USD). */
+  price: number;
+  listPrice: number;
+  discount: number;
+  rating: number;
+  reviewCount: number;
+  stock: number;
+  images: string[];
+  bullets: string[];
+  specs: Record<string, string>;
+  seller: string;
+  deliveryDays: number;
+  isBestSeller: boolean;
+  isDeal: boolean;
   addedAt: string;
-  updatedAt: string;
 }
 
-export interface RecipeIngredient {
-  name: string;
-  quantity: number;
-  unit: Unit;
-  optional?: boolean;
-  notes?: string;
+export interface CartLine {
+  productId: string;
+  qty: number;
 }
 
-export interface Recipe {
+export interface Review {
   id: string;
+  productId: string;
+  author: string;
+  rating: number;
+  title: string;
+  body: string;
+  date: string;
+  verified: boolean;
+  helpful: number;
+}
+
+export interface Question {
+  id: string;
+  productId: string;
+  author: string;
+  question: string;
+  answer?: string;
+  answerAuthor?: string;
+  date: string;
+}
+
+export interface Address {
+  fullName: string;
+  phone: string;
+  country: string;
+  city: string;
+  line1: string;
+  line2?: string;
+  postalCode?: string;
+}
+
+export interface SavedAddress extends Address {
+  id: string;
+  label: string;
+}
+
+export interface SavedPaymentMethod {
+  id: string;
+  type: 'card' | 'mobile-money' | 'cash';
+  label: string;
+  detail: string;
+}
+
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  createdAt: string;
+}
+
+export interface StoredUser extends User {
+  salt: string;
+  passwordHash: string;
+}
+
+export type OrderStatus = 'Ordered' | 'Shipped' | 'Out for delivery' | 'Delivered';
+
+export interface OrderItem {
+  productId: string;
+  title: string;
+  slug: string;
+  image: string;
+  price: number;
+  qty: number;
+}
+
+export interface Order {
+  id: string;
+  createdAt: string;
+  items: OrderItem[];
+  subtotal: number;
+  shipping: number;
+  tax: number;
+  total: number;
+  address: Address;
+  deliveryMethod: 'standard' | 'express';
+  paymentLabel: string;
+  status: OrderStatus;
+  estimatedDelivery: string;
+  email?: string;
+  sample?: boolean;
+}
+
+export interface ProductFilters {
+  q: string;
+  category: CategorySlug | 'all';
+  min: number;
+  max: number;
+  rating: number;
+  brands: string[];
+  inStock: boolean;
+  dealsOnly: boolean;
+  sort: 'featured' | 'price-asc' | 'price-desc' | 'rating' | 'newest';
+  page: number;
+}
+
+export interface Promo {
+  id: string;
+  eyebrow: string;
   title: string;
   subtitle: string;
-  category: string;
-  prepTimeMinutes: number;
-  cookTimeMinutes: number;
-  servings: number;
-  difficulty: 'Easy' | 'Medium' | 'Advanced';
-  imageUrl: string;
-  caloriesPerServing: number;
-  ingredients: RecipeIngredient[];
-  instructions: string[];
-  tips?: string;
-  tags: string[];
-}
-
-export interface ShoppingItem {
-  id: string;
-  name: string;
-  quantity: number;
-  unit: Unit;
-  category: Category;
-  checked: boolean;
-  recipeSource?: string; // title of recipe that requested this item
-  addedAt: string;
-  estimatedPrice?: string;
-}
-
-export type ViewMode = 'pantry' | 'recipes' | 'shopping';
-
-export interface UnitCompatibilityResult {
-  isCompatible: boolean;
-  reason?: string;
-  pantryQuantity?: number;
-  pantryUnit?: Unit;
-  recipeQuantity?: number;
-  recipeUnit?: Unit;
-}
-
-export interface RecipeMatchIngredientStatus {
-  recipeIngredient: RecipeIngredient;
-  matchedPantryItem?: PantryItem;
-  status: 'sufficient' | 'partial' | 'incompatible-units' | 'unavailable';
-  availableQuantity?: number;
-  availableUnit?: Unit;
-  missingQuantity: number;
-  missingUnit: Unit;
-  warningNote?: string;
-}
-
-export interface RecipeMatchResult {
-  recipe: Recipe;
-  matchScore: number; // 0 to 100%
-  totalIngredients: number;
-  availableCount: number;
-  missingCount: number;
-  incompatibleCount: number;
-  hasExpiringIngredients: boolean;
-  ingredientStatuses: RecipeMatchIngredientStatus[];
+  cta: string;
+  href: string;
+  gradient: string;
+  icon: string;
+  tone: 'light' | 'dark';
 }

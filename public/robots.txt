@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://soko.example.com/sitemap.xml
