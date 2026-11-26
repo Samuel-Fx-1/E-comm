@@ -2,6 +2,46 @@
 
 All notable changes to this project are documented here. Each phase is verified with lint, build and available tests before the phase is reported.
 
+## Phase 7 — Gen Z / Gen Alpha catalogue replacement (2026-11-26)
+
+### Changed
+
+- Replaced the 16-product Phase 6 shelf with exactly 20 curated products across five new categories: Tech & Gaming (5), Streetwear & Footwear (4), Viral Skincare & Haircare (5), Lifestyle & Aesthetic Essentials (3) and Gen Alpha & Kids Corner (3). `src/data/products/curated.ts` remains the single product source.
+- Replaced the category slugs, category grid, product factory defaults, promos, review FAQs, sample orders, placeholder palettes, API validation/metadata, sitemap, README and storefront copy. All 20 IDs equal their URL-safe kebab-case slugs.
+- Replaced the local Pixabay WebP cache with 20 direct Pexels hotlinks cached in `data/product-images.json`. Added `https://images.pexels.com` to the client CSP and preconnected to that host. Regenerated 80 SVG fallbacks grouped by the new categories and removed the 64 superseded SVGs.
+- Ten products are flagged: three `isBestSeller`, three `isTrending`, five `isGenZPick` and two `isViral` (some carry two labels). The other ten are unflagged. Product cards and product-detail headers show all four labels.
+
+### Added
+
+- Migration `004_merchandising_flags.sql` and `Product`/`ProductSeed` fields for `isGenZPick` and `isViral`, with seeder and repository mapping.
+- API query filters `genZPick=1` and `viral=1`, plus collection endpoints `/api/collections/gen-z-picks` and `/api/collections/viral`. `featured` now prioritises all four labels before unflagged rows.
+- Client routes `/gen-z-picks` and `/viral`, collection pages, homepage Featured/Gen Z/Viral rails, and local fallbacks for each new rail.
+- `public/images/CREDITS.md` photographer table for all 20 Pexels photos and `/credits` copy describing the hotlink model.
+
+### Fixed
+
+- Seeder assertions now target 20 products, five categories, no duplicate slugs and no superseded-only slugs. `wireless-charging-desk-mat` and `collagen-hydrogel-under-eye-patches` are deliberately reused by new products with the same titles.
+- `GET /api/collections/featured` now uses the same flag-first ordering as the featured product sort, so no unflagged product appears in the first ten.
+- Image credits, README, catalog fallback comment and storefront description no longer describe the superseded 16-product catalog.
+
+### Verification
+
+- `npm run lint` — passed.
+- `npm run build` — passed.
+- `npm run db:seed` — run twice consecutively; both runs reported `20 curated products across 5 categories` with no duplicates, no superseded-only slugs and no leftover rows from the previous catalog.
+- Catalog assertions — 20 rows, 5 categories, 0 ID/slug mismatches, 0 non-kebab slugs, 0 duplicate slugs, descriptions 85–103 characters, stock 9–210 with 2 items under 15, ratings 4.3–4.8, review counts 860–10,420.
+- Image check — all 20 Pexels hotlinks returned HTTP 200 `image/jpeg` with `curl -sI -L` at the 640×640 template; photo `27256441` had one transient `000` response and re-verified 200 with both HEAD and GET. No Unsplash, `placehold.co` or raw/original download is used in the final catalog.
+- API smoke test — `/api/health` total 20; `/api/meta` category counts 5/4/5/3/3; each category endpoint returned its exact count; `?genZPick=1` returned 5 and `?viral=1` returned 2; collections returned best-sellers 3, trending 3, gen-z-picks 5, viral 2 and featured 20 with 0 unflagged items in the first 10; product detail returned the exact `Product` shape with flags and a Pexels image; the old `digital` category returned HTTP 400.
+- Browser smoke test — homepage showed 5 category tiles, Featured/Gen Z/Viral rails and merchandising badges; all 5 category routes rendered 5/4/5/3/3 products; `/gen-z-picks` rendered 5, `/viral` rendered 2; product detail showed `BEST SELLER` and `GEN Z PICK`; Pexels image requests returned 200 and no console errors were recorded.
+- `npm run sitemap` — wrote 36 URLs. `npm run images:placeholders` — generated 80 SVGs for 20 products across 5 categories.
+- `npm test` — unavailable (`Missing script: "test"`); there is no test suite in this repository.
+
+### Notes
+
+- Earlier Unsplash attempts for this catalog returned 404 under the exact hotlink template, and the supplied Unsplash token was rejected by the API. Pexels-only hotlinking was chosen because all selected Pexels photos matched their products and passed header verification.
+- No `.env`, API key, token, credential or raw/original image download was committed.
+- This phase was committed file by file; see the branch history for per-file reasons.
+
 ## Phase 6 — Curated catalogue replacement (2026-11-26)
 
 ### Changed
