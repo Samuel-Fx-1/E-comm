@@ -15,15 +15,15 @@ const MIGRATIONS_DIR = join(ROOT, 'server', 'migrations');
 const DEFAULT_DB_PATH = join(ROOT, 'data', 'soko.sqlite');
 
 const CATEGORY_NAMES = {
-  'tech-audio-accessories': 'Tech & Audio Accessories',
-  'apparel-footwear': 'Apparel & Footwear',
-  'skincare-personal-care': 'Skincare & Personal Care',
-  'home-kitchen': 'Home & Kitchen',
-  digital: 'Digital Products',
+  'tech-gaming': 'Tech & Gaming',
+  'streetwear-footwear': 'Streetwear & Footwear',
+  'viral-skincare-haircare': 'Viral Skincare & Haircare',
+  'lifestyle-aesthetic-essentials': 'Lifestyle & Aesthetic Essentials',
+  'gen-alpha-kids-corner': 'Gen Alpha & Kids Corner',
 };
 
 const SORT_SQL = {
-  featured: 'p.curated DESC, p.is_trending DESC, p.is_best_seller DESC, p.rating DESC, p.review_count DESC, p.seq ASC',
+  featured: 'p.curated DESC, p.is_gen_z_pick DESC, p.is_viral DESC, p.is_trending DESC, p.is_best_seller DESC, p.rating DESC, p.review_count DESC, p.seq ASC',
   'price-asc': 'p.price ASC, p.seq ASC',
   'price-desc': 'p.price DESC, p.seq ASC',
   rating: 'p.rating DESC, p.review_count DESC, p.seq ASC',
@@ -49,6 +49,14 @@ const COLLECTION_SQL = {
   },
   trending: {
     where: 'p.is_trending = 1',
+    order: 'p.curated DESC, p.rating DESC, p.review_count DESC, p.seq ASC',
+  },
+  'gen-z-picks': {
+    where: 'p.is_gen_z_pick = 1',
+    order: 'p.curated DESC, p.rating DESC, p.review_count DESC, p.seq ASC',
+  },
+  viral: {
+    where: 'p.is_viral = 1',
     order: 'p.curated DESC, p.rating DESC, p.review_count DESC, p.seq ASC',
   },
 };
@@ -187,6 +195,8 @@ function rowToProduct(row) {
     isBestSeller: Boolean(row.is_best_seller),
     isDeal: Boolean(row.is_deal),
     isTrending: Boolean(row.is_trending),
+    isGenZPick: Boolean(row.is_gen_z_pick),
+    isViral: Boolean(row.is_viral),
     addedAt: row.added_at,
   };
 }
@@ -271,6 +281,8 @@ function buildWhere(filters, ftsAvailable) {
   if (filters.deals === true || filters.deals === '1') {
     clauses.push('(p.is_deal = 1 OR p.discount > 0)');
   }
+  if (filters.genZPick === true || filters.genZPick === '1') clauses.push('p.is_gen_z_pick = 1');
+  if (filters.viral === true || filters.viral === '1') clauses.push('p.is_viral = 1');
 
   return {
     join,
