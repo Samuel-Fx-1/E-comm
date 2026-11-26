@@ -1,25 +1,8 @@
 import type { Product } from '../../types';
-import { electronics } from './electronics';
-import { homeKitchen } from './home-kitchen';
-import { fashion } from './fashion';
-import { beauty } from './beauty';
-import { sports } from './sports';
-import { books } from './books';
-import { toys } from './toys';
-import { groceries } from './groceries';
-import { trendingProducts } from './trending';
+import { curatedProducts } from './curated';
 
-export const products: Product[] = [
-  ...electronics,
-  ...homeKitchen,
-  ...fashion,
-  ...beauty,
-  ...sports,
-  ...books,
-  ...toys,
-  ...groceries,
-  ...trendingProducts,
-];
+/** The storefront now ships exactly the 16 curated products. */
+export const products: Product[] = curatedProducts;
 
 export const getProduct = (slug: string): Product | undefined =>
   products.find((product) => product.slug === slug);
@@ -39,4 +22,4 @@ export const brands = [...new Set(products.map((product) => product.brand))].sor
   a.localeCompare(b)
 );
 
-export { electronics, homeKitchen, fashion, beauty, sports, books, toys, groceries, trendingProducts };
+export { curatedProducts };
