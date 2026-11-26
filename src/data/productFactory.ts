@@ -19,6 +19,7 @@ export interface ProductSeed {
   deliveryDays?: number;
   isBestSeller?: boolean;
   isDeal?: boolean;
+  isTrending?: boolean;
   addedAt?: string;
 }
 
@@ -34,6 +35,7 @@ const subcategories: Record<CategorySlug, string> = {
   books: 'Books & learning',
   toys: 'Toys & games',
   groceries: 'Groceries & pantry',
+  digital: 'Digital products',
 };
 
 const defaultVariants: Record<CategorySlug, ProductVariant[]> = {
@@ -55,6 +57,7 @@ const defaultVariants: Record<CategorySlug, ProductVariant[]> = {
   books: [{ type: 'size', name: 'Format', value: 'Paperback' }],
   toys: [{ type: 'color', name: 'Colour', value: 'Multi' }],
   groceries: [{ type: 'size', name: 'Pack', value: 'Standard' }],
+  digital: [{ type: 'size', name: 'Format', value: 'Instant download' }],
 };
 
 const toRwf = (usd: number): number => Math.round((usd * RWF_RATE) / RWF_ROUNDING) * RWF_ROUNDING;
@@ -116,6 +119,7 @@ export function makeProduct(seed: ProductSeed): Product {
     deliveryDays: seed.deliveryDays ?? 2 + (seedHash % 5),
     isBestSeller: seed.isBestSeller ?? false,
     isDeal: seed.isDeal ?? false,
+    isTrending: seed.isTrending ?? false,
     addedAt,
   };
 }
