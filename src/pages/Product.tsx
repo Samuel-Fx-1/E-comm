@@ -5,6 +5,7 @@ import {
   TrendingUp, Truck,
 } from 'lucide-react';
 import type { Product } from '../types';
+import { site } from '../config/site';
 import { getProduct, products } from '../data/products';
 import { apiAvailable, fetchProductBySlug, fetchRelated } from '../data/api';
 import { useApiData } from '../hooks/useApiData';
@@ -60,7 +61,7 @@ function BuyBox({ product }: BuyBoxProps) {
       </button>
 
       <p className="mt-3 text-lg font-bold text-[var(--brand-success)]">
-        {product.price >= 35 ? 'FREE delivery' : 'Delivery from ' + money(4.99)}
+        {product.price >= site.freeDeliveryThresholdRwf ? 'FREE delivery' : 'Delivery from ' + money(site.standardShippingRwf)}
       </p>
       <p className="text-sm text-[var(--brand-ink)]">
         Arrives <strong>{deliveryDateRange(product.deliveryDays, countryCode, false, language)}</strong>
