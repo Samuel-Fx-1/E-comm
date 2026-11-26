@@ -11,3 +11,8 @@ tmp/
 .tmp/
 *.tmp
 public/products/*/originals/
+
+# Phase 4: local SQLite catalogue and server logs
+data/*.sqlite
+data/*.sqlite-*
+server/*.log
