@@ -22,7 +22,7 @@ interface SiteContextValue {
   setCountryModalOpen: (open: boolean) => void;
   dismissShipBanner: () => void;
   resetShipBanner: () => void;
-  money: (usd: number) => string;
+  money: (rwf: number) => string;
   t: (key: TranslationKey) => string;
 }
 
@@ -94,7 +94,7 @@ export function SiteProvider({ children }: { children: ReactNode }) {
     writeString(storageKeys.shipBanner, 'open');
   }, []);
 
-  const money = useCallback((usd: number) => formatMoneyMeta(usd, currencyMeta(currency)), [currency]);
+  const money = useCallback((rwf: number) => formatMoneyMeta(rwf, currencyMeta(currency)), [currency]);
   const t = useCallback((key: TranslationKey) => translate(language, key), [language]);
 
   const value = useMemo<SiteContextValue>(
