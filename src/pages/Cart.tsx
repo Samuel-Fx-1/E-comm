@@ -17,11 +17,11 @@ export default function CartPage() {
   } = useStore();
   const { money, t } = useSite();
 
-  const shipping = cartSubtotal >= site.freeShippingThresholdUsd || cartSubtotal === 0 ? 0 : site.standardShippingUsd;
+  const shipping = cartSubtotal >= site.freeDeliveryThresholdRwf || cartSubtotal === 0 ? 0 : site.standardShippingRwf;
   const tax = cartSubtotal * site.taxRate;
   const total = cartSubtotal + shipping + tax;
-  const remaining = Math.max(0, site.freeShippingThresholdUsd - cartSubtotal);
-  const progress = Math.min(100, (cartSubtotal / site.freeShippingThresholdUsd) * 100);
+  const remaining = Math.max(0, site.freeDeliveryThresholdRwf - cartSubtotal);
+  const progress = Math.min(100, (cartSubtotal / site.freeDeliveryThresholdRwf) * 100);
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
@@ -114,7 +114,7 @@ export default function CartPage() {
                           </button>
                         </div>
                         <p className="mt-2 text-xs text-[var(--brand-muted)]">
-                          {product.price >= 35 ? 'This item qualifies for free delivery.' : 'Delivery calculated at checkout.'}
+                          {product.price >= site.freeDeliveryThresholdRwf ? 'This item qualifies for free delivery.' : 'Delivery calculated at checkout.'}
                         </p>
                       </div>
                     </li>
@@ -220,7 +220,7 @@ export default function CartPage() {
 
             <div className="mt-4 rounded-2xl border border-[var(--brand-line)] bg-white p-4 text-xs text-[var(--brand-muted)]">
               <p className="font-bold text-[var(--brand-ink)]">Delivery options</p>
-              <p className="mt-1">Standard delivery is free over {money(site.freeShippingThresholdUsd)}. Express delivery is available at checkout.</p>
+              <p className="mt-1">Standard delivery is free over {money(site.freeDeliveryThresholdRwf)}. Express delivery is available at checkout.</p>
               <p className="mt-2">
                 Need help?{' '}
                 <Link to="/customer-service" className="font-semibold text-[var(--brand-navy)] underline underline-offset-2">
