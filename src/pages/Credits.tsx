@@ -19,31 +19,22 @@ export default function CreditsPage() {
 
       <h1 className="mt-4 font-serif text-3xl font-bold text-[var(--brand-ink)]">Image credits</h1>
       <p className="mt-2 max-w-3xl text-sm leading-6 text-[var(--brand-muted)]">
-        Product photos are resolved once by a local seed script and cached in{' '}
-        <code className="rounded bg-[var(--brand-cream)] px-1">data/product-images.json</code>. Unsplash photos are
-        hotlinked from <code className="rounded bg-[var(--brand-cream)] px-1">images.unsplash.com</code> and are never
-        downloaded or rehosted. Pixabay and Pexels photos, and your own overrides, are downloaded once and stored locally
-        as optimised WebP files. Every photo keeps its photographer and licence link below.
+        Product photos are resolved once and cached in{' '}
+        <code className="rounded bg-[var(--brand-cream)] px-1">data/product-images.json</code>. This catalog uses Pexels
+        photos hotlinked from <code className="rounded bg-[var(--brand-cream)] px-1">images.pexels.com</code>; they are
+        never downloaded or rehosted. Unsplash and Pixabay stay available for future catalogs, and your own overrides can
+        be stored locally. Every photo keeps its photographer and licence link below.
       </p>
 
       <div className="mt-4 flex flex-wrap gap-4 text-xs">
-        <a href="https://unsplash.com/developers" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
-          Unsplash API
-        </a>
-        <a href="https://help.unsplash.com/en/articles/2511245-unsplash-api-guidelines" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
-          Unsplash API guidelines
-        </a>
-        <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
-          Unsplash License
-        </a>
         <a href="https://www.pexels.com/api/documentation/" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
           Pexels API
         </a>
         <a href="https://www.pexels.com/license/" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
           Pexels License
         </a>
-        <a href="https://pixabay.com/api/docs/" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
-          Pixabay API
+        <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
+          Unsplash License
         </a>
         <a href="https://pixabay.com/service/license/" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
           Pixabay Content License
@@ -54,7 +45,7 @@ export default function CreditsPage() {
         <div className="mt-8">
           <EmptyState
             title="No stock photos resolved yet"
-            description="All listings currently show bundled demo artwork. Once an image API key is available, run the seed script and photographer credits will appear here."
+            description="All listings currently show bundled demo artwork. Run the image seed script and photographer credits will appear here."
             action={
               <Link to="/search" className="inline-flex rounded-lg bg-[var(--brand-orange)] px-4 py-2.5 text-sm font-semibold text-white">
                 Browse products
