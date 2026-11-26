@@ -6,6 +6,7 @@ export interface ProductSeed {
   brand: string;
   category: CategorySlug;
   subcategory?: string;
+  /** All prices are whole RWF amounts, e.g. 12500. */
   price: number;
   listPrice?: number;
   rating: number;
@@ -25,8 +26,12 @@ export interface ProductSeed {
   addedAt?: string;
 }
 
-const RWF_RATE = 1300;
-const RWF_ROUNDING = 100;
+function requireWholeRwf(value: number, field: string): number {
+  if (!Number.isInteger(value) || value <= 0) {
+    throw new Error(`${field} must be a positive whole RWF amount`);
+  }
+  return value;
+}
 
 const subcategories: Record<CategorySlug, string> = {
   'tech-gaming': 'Tech & gaming',
@@ -49,8 +54,6 @@ const defaultVariants: Record<CategorySlug, ProductVariant[]> = {
   'lifestyle-aesthetic-essentials': [{ type: 'color', name: 'Colour', value: 'Black' }],
   'gen-alpha-kids-corner': [{ type: 'size', name: 'Age', value: 'Ages 8+' }],
 };
-
-const toRwf = (usd: number): number => Math.round((usd * RWF_RATE) / RWF_ROUNDING) * RWF_ROUNDING;
 
 export function slugify(text: string): string {
   return text
@@ -75,7 +78,11 @@ const BASE_DATE = new Date('2026-10-30T00:00:00Z').getTime();
 export function makeProduct(seed: ProductSeed): Product {
   const slug = slugify(seed.title);
   const seedHash = hash(slug);
-  const listPrice = seed.listPrice ?? seed.price;
+  const price = requireWholeRwf(seed.price, 'price');
+  const listPrice = seed.listPrice === undefined
+    ? price
+    : requireWholeRwf(seed.listPrice, 'listPrice');
+  if (listPrice < price) throw new Error('listPrice cannot be lower than price');
   const daysAgo = seedHash % 210;
   const addedAt = seed.addedAt ?? new Date(BASE_DATE - daysAgo * 86_400_000).toISOString().slice(0, 10);
 
@@ -92,11 +99,11 @@ export function makeProduct(seed: ProductSeed): Product {
     brand: seed.brand,
     category: seed.category,
     subcategory: seed.subcategory ?? subcategories[seed.category],
-    priceRwf: toRwf(seed.price),
-    oldPriceRwf: toRwf(listPrice),
-    price: seed.price,
+    priceRwf: price,
+    oldPriceRwf: listPrice,
+    price,
     listPrice,
-    discount: discountPercent(seed.price, listPrice),
+    discount: discountPercent(price, listPrice),
     rating: seed.rating,
     reviewCount: seed.reviewCount,
     stock: seed.stock,
