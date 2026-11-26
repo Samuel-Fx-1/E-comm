@@ -196,6 +196,14 @@ export default function App() {
             }
           />
           <Route
+            path="trending"
+            element={
+              <Suspense fallback={<RouteFallback />}>
+                <CollectionPage kind="trending" />
+              </Suspense>
+            }
+          />
+          <Route
             path="customer-service"
             element={
               <Suspense fallback={<RouteFallback />}>
