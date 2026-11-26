@@ -1,1421 +1,593 @@
 {
-  "version": 1,
+  "version": 2,
   "terms": {
-    "unsplash": {
-      "source": "https://unsplash.com/developers",
-      "guidelines": "https://help.unsplash.com/en/articles/2511245-unsplash-api-guidelines",
-      "license": "https://unsplash.com/license",
-      "hotlinkOnly": true,
-      "attribution": "Photographer + Unsplash links with UTM parameters are shown on product pages and /credits."
-    },
     "pexels": {
       "source": "https://www.pexels.com/api/documentation/",
       "license": "https://www.pexels.com/license/",
-      "hotlinkOnly": false,
-      "attribution": "Photographer/source links are stored in data/product-images.json."
-    },
-    "pixabay": {
-      "source": "https://pixabay.com/api/docs/",
-      "license": "https://pixabay.com/service/license/",
-      "hotlinkOnly": false,
-      "attribution": "Pixabay asks that the source be shown; contributor + photo links appear on product pages and /credits.",
-      "cacheHours": 24,
-      "rateLimit": "100 requests per 60 seconds"
+      "hotlinkOnly": true,
+      "attribution": "Photographer and Pexels photo links are stored in data/product-images.json."
     }
   },
   "products": {
-    "wireless-noise-canceling-headphones": {
-      "title": "Wireless Noise-Canceling Headphones",
-      "category": "tech-audio-accessories",
-      "query": "Wireless Noise-Canceling Headphones electronics",
+    "wireless-noise-canceling-over-ear-headphones": {
+      "title": "Wireless Noise-Canceling Over-Ear Headphones",
+      "category": "tech-gaming",
+      "query": "Wireless Noise-Canceling Over-Ear Headphones tech gaming",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "4649625",
+          "source": "pexels",
+          "photoId": "210927",
           "paths": [
-            "/products/wireless-noise-canceling-headphones/pixabay-4649625-photo1-320.webp",
-            "/products/wireless-noise-canceling-headphones/pixabay-4649625-photo1-640.webp",
-            "/products/wireless-noise-canceling-headphones/pixabay-4649625-photo1-1200.webp"
+            "https://images.pexels.com/photos/210927/pexels-photo-210927.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/210927/pexels-photo-210927.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/210927/pexels-photo-210927.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Wireless Noise-Canceling Headphones — view 1",
+          "alt": "Minimalist black over-ear headphones on a white background",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "Asotac",
-            "photographerUrl": "https://pixabay.com/users/Asotac-13617520/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/evil-noice-cancelling-nc-700-4649625/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "7276511",
-          "paths": [
-            "/products/wireless-noise-canceling-headphones/pixabay-7276511-photo2-320.webp",
-            "/products/wireless-noise-canceling-headphones/pixabay-7276511-photo2-640.webp",
-            "/products/wireless-noise-canceling-headphones/pixabay-7276511-photo2-1200.webp"
-          ],
-          "alt": "Wireless Noise-Canceling Headphones — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "terydanphiri",
-            "photographerUrl": "https://pixabay.com/users/terydanphiri-364063/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/audio-music-sound-headphones-7276511/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "3683983",
-          "paths": [
-            "/products/wireless-noise-canceling-headphones/pixabay-3683983-photo3-320.webp",
-            "/products/wireless-noise-canceling-headphones/pixabay-3683983-photo3-640.webp",
-            "/products/wireless-noise-canceling-headphones/pixabay-3683983-photo3-1200.webp"
-          ],
-          "alt": "Wireless Noise-Canceling Headphones — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "HOerwin56",
-            "photographerUrl": "https://pixabay.com/users/HOerwin56-2108907/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/headphones-music-audio-3683983/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "1483974",
-          "paths": [
-            "/products/wireless-noise-canceling-headphones/pixabay-1483974-photo4-320.webp",
-            "/products/wireless-noise-canceling-headphones/pixabay-1483974-photo4-640.webp",
-            "/products/wireless-noise-canceling-headphones/pixabay-1483974-photo4-1200.webp"
-          ],
-          "alt": "Wireless Noise-Canceling Headphones — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "Monoar_CGI_Artist",
-            "photographerUrl": "https://pixabay.com/users/Monoar_CGI_Artist-2240009/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/laptop-workstation-browsing-tablet-1483974/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "Aleksandar Spasojevic",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/210927/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:05:32.226Z"
+      ]
     },
-    "bluetooth-neckband-earphones": {
-      "title": "Bluetooth Neckband Earphones",
-      "category": "tech-audio-accessories",
-      "query": "Bluetooth Neckband Earphones electronics",
+    "low-latency-gaming-wireless-earbuds": {
+      "title": "Low-Latency Gaming Wireless Earbuds",
+      "category": "tech-gaming",
+      "query": "Low-Latency Gaming Wireless Earbuds tech gaming",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "7276511",
+          "source": "pexels",
+          "photoId": "10997624",
           "paths": [
-            "/products/bluetooth-neckband-earphones/pixabay-7276511-photo1-320.webp",
-            "/products/bluetooth-neckband-earphones/pixabay-7276511-photo1-640.webp",
-            "/products/bluetooth-neckband-earphones/pixabay-7276511-photo1-1200.webp"
+            "https://images.pexels.com/photos/10997624/pexels-photo-10997624.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/10997624/pexels-photo-10997624.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/10997624/pexels-photo-10997624.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Bluetooth Neckband Earphones — view 1",
+          "alt": "White wireless earbuds beside a gaming controller",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "terydanphiri",
-            "photographerUrl": "https://pixabay.com/users/terydanphiri-364063/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/audio-music-sound-headphones-7276511/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "3683983",
-          "paths": [
-            "/products/bluetooth-neckband-earphones/pixabay-3683983-photo2-320.webp",
-            "/products/bluetooth-neckband-earphones/pixabay-3683983-photo2-640.webp",
-            "/products/bluetooth-neckband-earphones/pixabay-3683983-photo2-1200.webp"
-          ],
-          "alt": "Bluetooth Neckband Earphones — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "HOerwin56",
-            "photographerUrl": "https://pixabay.com/users/HOerwin56-2108907/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/headphones-music-audio-3683983/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "5598952",
-          "paths": [
-            "/products/bluetooth-neckband-earphones/pixabay-5598952-photo3-320.webp",
-            "/products/bluetooth-neckband-earphones/pixabay-5598952-photo3-640.webp",
-            "/products/bluetooth-neckband-earphones/pixabay-5598952-photo3-1200.webp"
-          ],
-          "alt": "Bluetooth Neckband Earphones — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "20twenty",
-            "photographerUrl": "https://pixabay.com/users/20twenty-16047685/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/earphones-earbuds-music-sound-5598952/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "3789632",
-          "paths": [
-            "/products/bluetooth-neckband-earphones/pixabay-3789632-photo4-320.webp",
-            "/products/bluetooth-neckband-earphones/pixabay-3789632-photo4-640.webp",
-            "/products/bluetooth-neckband-earphones/pixabay-3789632-photo4-1200.webp"
-          ],
-          "alt": "Bluetooth Neckband Earphones — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "vinny1987",
-            "photographerUrl": "https://pixabay.com/users/vinny1987-10570783/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/earphone-soundpeats-bluetooth-3789632/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "Nathan J Hilton",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/10997624/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:05:37.274Z"
+      ]
     },
-    "foldable-wireless-keyboard": {
-      "title": "Foldable Wireless Keyboard",
-      "category": "tech-audio-accessories",
-      "query": "Foldable Wireless Keyboard electronics",
+    "compact-mechanical-hall-effect-keyboard": {
+      "title": "Compact Mechanical Hall-Effect Keyboard",
+      "category": "tech-gaming",
+      "query": "Compact Mechanical Hall-Effect Keyboard tech gaming",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "1846056",
+          "source": "pexels",
+          "photoId": "9020272",
           "paths": [
-            "/products/foldable-wireless-keyboard/pixabay-1846056-photo1-320.webp",
-            "/products/foldable-wireless-keyboard/pixabay-1846056-photo1-640.webp",
-            "/products/foldable-wireless-keyboard/pixabay-1846056-photo1-1200.webp"
+            "https://images.pexels.com/photos/9020272/pexels-photo-9020272.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/9020272/pexels-photo-9020272.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/9020272/pexels-photo-9020272.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Foldable Wireless Keyboard — view 1",
+          "alt": "Close-up of a mechanical keyboard with exposed switches",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "Pexels",
-            "photographerUrl": "https://pixabay.com/users/Pexels-2286921/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/computer-laptop-connection-desk-1846056/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "6801334",
-          "paths": [
-            "/products/foldable-wireless-keyboard/pixabay-6801334-photo2-320.webp",
-            "/products/foldable-wireless-keyboard/pixabay-6801334-photo2-640.webp",
-            "/products/foldable-wireless-keyboard/pixabay-6801334-photo2-1200.webp"
-          ],
-          "alt": "Foldable Wireless Keyboard — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "Mariakray",
-            "photographerUrl": "https://pixabay.com/users/Mariakray-23567841/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/technology-devices-electronics-6801334/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "7276511",
-          "paths": [
-            "/products/foldable-wireless-keyboard/pixabay-7276511-photo3-320.webp",
-            "/products/foldable-wireless-keyboard/pixabay-7276511-photo3-640.webp",
-            "/products/foldable-wireless-keyboard/pixabay-7276511-photo3-1200.webp"
-          ],
-          "alt": "Foldable Wireless Keyboard — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "terydanphiri",
-            "photographerUrl": "https://pixabay.com/users/terydanphiri-364063/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/audio-music-sound-headphones-7276511/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "8300238",
-          "paths": [
-            "/products/foldable-wireless-keyboard/pixabay-8300238-photo4-320.webp",
-            "/products/foldable-wireless-keyboard/pixabay-8300238-photo4-640.webp",
-            "/products/foldable-wireless-keyboard/pixabay-8300238-photo4-1200.webp"
-          ],
-          "alt": "Foldable Wireless Keyboard — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "indraprojects",
-            "photographerUrl": "https://pixabay.com/users/indraprojects-10104504/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/smartwatch-technology-watch-time-8300238/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "Castorly Stock",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/9020272/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:05:42.356Z"
+      ]
+    },
+    "rgb-smart-led-room-strip-lights": {
+      "title": "RGB Smart LED Room Strip Lights",
+      "category": "tech-gaming",
+      "query": "RGB Smart LED Room Strip Lights tech gaming",
+      "status": "resolved",
+      "source": "pexels",
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "10482375",
+          "paths": [
+            "https://images.pexels.com/photos/10482375/pexels-photo-10482375.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/10482375/pexels-photo-10482375.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/10482375/pexels-photo-10482375.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Red LED strip lights illuminating a dark room",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Ducky",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/10482375/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
     },
     "wireless-charging-desk-mat": {
       "title": "Wireless Charging Desk Mat",
-      "category": "tech-audio-accessories",
-      "query": "Wireless Charging Desk Mat electronics",
+      "category": "tech-gaming",
+      "query": "Wireless Charging Desk Mat tech gaming",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "1846056",
+          "source": "pexels",
+          "photoId": "7742585",
           "paths": [
-            "/products/wireless-charging-desk-mat/pixabay-1846056-photo1-320.webp",
-            "/products/wireless-charging-desk-mat/pixabay-1846056-photo1-640.webp",
-            "/products/wireless-charging-desk-mat/pixabay-1846056-photo1-1200.webp"
+            "https://images.pexels.com/photos/7742585/pexels-photo-7742585.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7742585/pexels-photo-7742585.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7742585/pexels-photo-7742585.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Wireless Charging Desk Mat — view 1",
+          "alt": "Phone charging wirelessly on a desk beside a laptop",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "Pexels",
-            "photographerUrl": "https://pixabay.com/users/Pexels-2286921/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/computer-laptop-connection-desk-1846056/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "6801334",
-          "paths": [
-            "/products/wireless-charging-desk-mat/pixabay-6801334-photo2-320.webp",
-            "/products/wireless-charging-desk-mat/pixabay-6801334-photo2-640.webp",
-            "/products/wireless-charging-desk-mat/pixabay-6801334-photo2-1200.webp"
-          ],
-          "alt": "Wireless Charging Desk Mat — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "Mariakray",
-            "photographerUrl": "https://pixabay.com/users/Mariakray-23567841/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/technology-devices-electronics-6801334/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "7276511",
-          "paths": [
-            "/products/wireless-charging-desk-mat/pixabay-7276511-photo3-320.webp",
-            "/products/wireless-charging-desk-mat/pixabay-7276511-photo3-640.webp",
-            "/products/wireless-charging-desk-mat/pixabay-7276511-photo3-1200.webp"
-          ],
-          "alt": "Wireless Charging Desk Mat — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "terydanphiri",
-            "photographerUrl": "https://pixabay.com/users/terydanphiri-364063/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/audio-music-sound-headphones-7276511/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "8300238",
-          "paths": [
-            "/products/wireless-charging-desk-mat/pixabay-8300238-photo4-320.webp",
-            "/products/wireless-charging-desk-mat/pixabay-8300238-photo4-640.webp",
-            "/products/wireless-charging-desk-mat/pixabay-8300238-photo4-1200.webp"
-          ],
-          "alt": "Wireless Charging Desk Mat — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "indraprojects",
-            "photographerUrl": "https://pixabay.com/users/indraprojects-10104504/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/smartwatch-technology-watch-time-8300238/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "Rann Vijay",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/7742585/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:05:47.271Z"
+      ]
     },
-    "mini-rechargeable-precision-screwdriver-set": {
-      "title": "Mini Rechargeable Precision Screwdriver Set",
-      "category": "tech-audio-accessories",
-      "query": "Mini Rechargeable Precision Screwdriver Set electronics",
+    "heavyweight-oversized-graphic-t-shirt": {
+      "title": "Heavyweight Oversized Graphic T-Shirt",
+      "category": "streetwear-footwear",
+      "query": "Heavyweight Oversized Graphic T-Shirt streetwear footwear",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "628592",
+          "source": "pexels",
+          "photoId": "36942017",
           "paths": [
-            "/products/mini-rechargeable-precision-screwdriver-set/pixabay-628592-photo1-320.webp",
-            "/products/mini-rechargeable-precision-screwdriver-set/pixabay-628592-photo1-640.webp",
-            "/products/mini-rechargeable-precision-screwdriver-set/pixabay-628592-photo1-1200.webp"
+            "https://images.pexels.com/photos/36942017/pexels-photo-36942017.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/36942017/pexels-photo-36942017.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/36942017/pexels-photo-36942017.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Mini Rechargeable Precision Screwdriver Set — view 1",
+          "alt": "Trendy oversized graphic t-shirt",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "blickpixel",
-            "photographerUrl": "https://pixabay.com/users/blickpixel-52945/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/bit-drilling-machine-628592/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "798948",
-          "paths": [
-            "/products/mini-rechargeable-precision-screwdriver-set/pixabay-798948-photo2-320.webp",
-            "/products/mini-rechargeable-precision-screwdriver-set/pixabay-798948-photo2-640.webp",
-            "/products/mini-rechargeable-precision-screwdriver-set/pixabay-798948-photo2-1200.webp"
-          ],
-          "alt": "Mini Rechargeable Precision Screwdriver Set — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "Pixies",
-            "photographerUrl": "https://pixabay.com/users/Pixies-1021586/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/screwdriver-set-of-tips-798948/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "628596",
-          "paths": [
-            "/products/mini-rechargeable-precision-screwdriver-set/pixabay-628596-photo3-320.webp",
-            "/products/mini-rechargeable-precision-screwdriver-set/pixabay-628596-photo3-640.webp",
-            "/products/mini-rechargeable-precision-screwdriver-set/pixabay-628596-photo3-1200.webp"
-          ],
-          "alt": "Mini Rechargeable Precision Screwdriver Set — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "blickpixel",
-            "photographerUrl": "https://pixabay.com/users/blickpixel-52945/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/bit-drilling-machine-628596/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "608329",
-          "paths": [
-            "/products/mini-rechargeable-precision-screwdriver-set/pixabay-608329-photo4-320.webp",
-            "/products/mini-rechargeable-precision-screwdriver-set/pixabay-608329-photo4-640.webp",
-            "/products/mini-rechargeable-precision-screwdriver-set/pixabay-608329-photo4-1200.webp"
-          ],
-          "alt": "Mini Rechargeable Precision Screwdriver Set — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "blickpixel",
-            "photographerUrl": "https://pixabay.com/users/blickpixel-52945/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/screwdriver-tool-craft-red-608329/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "BANDAR BAANT",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/36942017/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:05:52.952Z"
+      ]
     },
-    "classic-heavyweight-cotton-t-shirt": {
-      "title": "Classic Heavyweight Cotton T-Shirt",
-      "category": "apparel-footwear",
-      "query": "Classic Heavyweight Cotton T-Shirt fashion",
+    "baggy-barrel-fit-cargo-jeans": {
+      "title": "Baggy Barrel-Fit Cargo Jeans",
+      "category": "streetwear-footwear",
+      "query": "Baggy Barrel-Fit Cargo Jeans streetwear footwear",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "524022",
+          "source": "pexels",
+          "photoId": "25484767",
           "paths": [
-            "/products/classic-heavyweight-cotton-t-shirt/pixabay-524022-photo1-320.webp",
-            "/products/classic-heavyweight-cotton-t-shirt/pixabay-524022-photo1-640.webp",
-            "/products/classic-heavyweight-cotton-t-shirt/pixabay-524022-photo1-1200.webp"
+            "https://images.pexels.com/photos/25484767/pexels-photo-25484767.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/25484767/pexels-photo-25484767.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/25484767/pexels-photo-25484767.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Classic Heavyweight Cotton T-Shirt — view 1",
+          "alt": "Young woman wearing baggy jeans and a crop top",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "stevepb",
-            "photographerUrl": "https://pixabay.com/users/stevepb-282134/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/mens-shirt-shirt-attire-clothing-524022/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "9611374",
-          "paths": [
-            "/products/classic-heavyweight-cotton-t-shirt/pixabay-9611374-photo2-320.webp",
-            "/products/classic-heavyweight-cotton-t-shirt/pixabay-9611374-photo2-640.webp",
-            "/products/classic-heavyweight-cotton-t-shirt/pixabay-9611374-photo2-1200.webp"
-          ],
-          "alt": "Classic Heavyweight Cotton T-Shirt — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "T-Shirtbedrucken",
-            "photographerUrl": "https://pixabay.com/users/T-Shirtbedrucken-50395966/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/t-shirt-white-t-shirt-t-shirt-mockup-9611374/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "1161035",
-          "paths": [
-            "/products/classic-heavyweight-cotton-t-shirt/pixabay-1161035-photo3-320.webp",
-            "/products/classic-heavyweight-cotton-t-shirt/pixabay-1161035-photo3-640.webp",
-            "/products/classic-heavyweight-cotton-t-shirt/pixabay-1161035-photo3-1200.webp"
-          ],
-          "alt": "Classic Heavyweight Cotton T-Shirt — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "stux",
-            "photographerUrl": "https://pixabay.com/users/stux-12364/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/jeans-fabric-denim-structure-blue-1161035/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "1866725",
-          "paths": [
-            "/products/classic-heavyweight-cotton-t-shirt/pixabay-1866725-photo4-320.webp",
-            "/products/classic-heavyweight-cotton-t-shirt/pixabay-1866725-photo4-640.webp",
-            "/products/classic-heavyweight-cotton-t-shirt/pixabay-1866725-photo4-1200.webp"
-          ],
-          "alt": "Classic Heavyweight Cotton T-Shirt — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "Pexels",
-            "photographerUrl": "https://pixabay.com/users/Pexels-2286921/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/denim-fabric-jeans-blue-jeans-1866725/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "Noland Live",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/25484767/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:05:59.909Z"
+      ]
     },
-    "lightweight-everyday-windbreaker-jacket": {
-      "title": "Lightweight Everyday Windbreaker Jacket",
-      "category": "apparel-footwear",
-      "query": "Lightweight Everyday Windbreaker Jacket fashion",
+    "high-waisted-fold-over-athleisure-leggings": {
+      "title": "High-Waisted Fold-Over Athleisure Leggings",
+      "category": "streetwear-footwear",
+      "query": "High-Waisted Fold-Over Athleisure Leggings streetwear footwear",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "2978976",
+          "source": "pexels",
+          "photoId": "7593007",
           "paths": [
-            "/products/lightweight-everyday-windbreaker-jacket/pixabay-2978976-photo1-320.webp",
-            "/products/lightweight-everyday-windbreaker-jacket/pixabay-2978976-photo1-640.webp",
-            "/products/lightweight-everyday-windbreaker-jacket/pixabay-2978976-photo1-1200.webp"
+            "https://images.pexels.com/photos/7593007/pexels-photo-7593007.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7593007/pexels-photo-7593007.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7593007/pexels-photo-7593007.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Lightweight Everyday Windbreaker Jacket — view 1",
+          "alt": "Woman practicing yoga in athletic leggings",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "ewa69",
-            "photographerUrl": "https://pixabay.com/users/ewa69-6792449/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/feather-soft-blue-bird-feather-2978976/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "5488401",
-          "paths": [
-            "/products/lightweight-everyday-windbreaker-jacket/pixabay-5488401-photo2-320.webp",
-            "/products/lightweight-everyday-windbreaker-jacket/pixabay-5488401-photo2-640.webp",
-            "/products/lightweight-everyday-windbreaker-jacket/pixabay-5488401-photo2-1200.webp"
-          ],
-          "alt": "Lightweight Everyday Windbreaker Jacket — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "fietzfotos",
-            "photographerUrl": "https://pixabay.com/users/fietzfotos-6795508/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/feather-bird-feather-filigree-5488401/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "1850082",
-          "paths": [
-            "/products/lightweight-everyday-windbreaker-jacket/pixabay-1850082-photo3-320.webp",
-            "/products/lightweight-everyday-windbreaker-jacket/pixabay-1850082-photo3-640.webp",
-            "/products/lightweight-everyday-windbreaker-jacket/pixabay-1850082-photo3-1200.webp"
-          ],
-          "alt": "Lightweight Everyday Windbreaker Jacket — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "Pexels",
-            "photographerUrl": "https://pixabay.com/users/Pexels-2286921/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/hangers-clothing-shopping-market-1850082/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "6914731",
-          "paths": [
-            "/products/lightweight-everyday-windbreaker-jacket/pixabay-6914731-photo4-320.webp",
-            "/products/lightweight-everyday-windbreaker-jacket/pixabay-6914731-photo4-640.webp",
-            "/products/lightweight-everyday-windbreaker-jacket/pixabay-6914731-photo4-1200.webp"
-          ],
-          "alt": "Lightweight Everyday Windbreaker Jacket — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "Surprising_Media",
-            "photographerUrl": "https://pixabay.com/users/Surprising_Media-11873433/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/girls-friends-outdoors-urban-city-6914731/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "Miriam Alonso",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/7593007/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:06:06.037Z"
+      ]
     },
-    "casual-low-top-sneakers": {
-      "title": "Casual Low-Top Sneakers",
-      "category": "apparel-footwear",
-      "query": "Casual Low-Top Sneakers fashion",
+    "retro-low-top-chunky-sneakers": {
+      "title": "Retro Low-Top Chunky Sneakers",
+      "category": "streetwear-footwear",
+      "query": "Retro Low-Top Chunky Sneakers streetwear footwear",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "2743420",
+          "source": "pexels",
+          "photoId": "27256441",
           "paths": [
-            "/products/casual-low-top-sneakers/pixabay-2743420-photo1-320.webp",
-            "/products/casual-low-top-sneakers/pixabay-2743420-photo1-640.webp",
-            "/products/casual-low-top-sneakers/pixabay-2743420-photo1-1200.webp"
+            "https://images.pexels.com/photos/27256441/pexels-photo-27256441.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/27256441/pexels-photo-27256441.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/27256441/pexels-photo-27256441.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Casual Low-Top Sneakers — view 1",
+          "alt": "Black and white sneakers with chunky soles",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "Ralphs_Fotos",
-            "photographerUrl": "https://pixabay.com/users/Ralphs_Fotos-1767157/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/shoes-cloth-shoes-linen-shoes-2743420/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "3075082",
-          "paths": [
-            "/products/casual-low-top-sneakers/pixabay-3075082-photo2-320.webp",
-            "/products/casual-low-top-sneakers/pixabay-3075082-photo2-640.webp",
-            "/products/casual-low-top-sneakers/pixabay-3075082-photo2-1200.webp"
-          ],
-          "alt": "Casual Low-Top Sneakers — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "Alexas_Fotos",
-            "photographerUrl": "https://pixabay.com/users/Alexas_Fotos-686414/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/childrens-shoes-cute-sports-shoes-3075082/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "1592165",
-          "paths": [
-            "/products/casual-low-top-sneakers/pixabay-1592165-photo3-320.webp",
-            "/products/casual-low-top-sneakers/pixabay-1592165-photo3-640.webp",
-            "/products/casual-low-top-sneakers/pixabay-1592165-photo3-1200.webp"
-          ],
-          "alt": "Casual Low-Top Sneakers — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "mrwrightxx10",
-            "photographerUrl": "https://pixabay.com/users/mrwrightxx10-3097123/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/shoes-white-footwear-gray-shoes-1592165/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "2732693",
-          "paths": [
-            "/products/casual-low-top-sneakers/pixabay-2732693-photo4-320.webp",
-            "/products/casual-low-top-sneakers/pixabay-2732693-photo4-640.webp",
-            "/products/casual-low-top-sneakers/pixabay-2732693-photo4-1200.webp"
-          ],
-          "alt": "Casual Low-Top Sneakers — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "Ralphs_Fotos",
-            "photographerUrl": "https://pixabay.com/users/Ralphs_Fotos-1767157/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/shoes-cloth-shoes-linen-shoes-2732693/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "José Martin Segura Benites",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/27256441/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:06:16.020Z"
+      ]
     },
-    "niacinamide-hydrating-body-lotion": {
-      "title": "Niacinamide Hydrating Body Lotion",
-      "category": "skincare-personal-care",
-      "query": "Niacinamide Hydrating Body Lotion beauty",
+    "hydrocolloid-star-pimple-patches-36-count": {
+      "title": "Hydrocolloid Star Pimple Patches (36 Count)",
+      "category": "viral-skincare-haircare",
+      "query": "Hydrocolloid Star Pimple Patches (36 Count) viral skincare haircare",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "6886590",
+          "source": "pexels",
+          "photoId": "6475989",
           "paths": [
-            "/products/niacinamide-hydrating-body-lotion/pixabay-6886590-photo1-320.webp",
-            "/products/niacinamide-hydrating-body-lotion/pixabay-6886590-photo1-640.webp",
-            "/products/niacinamide-hydrating-body-lotion/pixabay-6886590-photo1-1200.webp"
+            "https://images.pexels.com/photos/6475989/pexels-photo-6475989.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/6475989/pexels-photo-6475989.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/6475989/pexels-photo-6475989.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Niacinamide Hydrating Body Lotion — view 1",
+          "alt": "Woman holding a skincare product for blemish care",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "IqbalStock",
-            "photographerUrl": "https://pixabay.com/users/IqbalStock-12845379/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/self-care-morning-routine-activity-6886590/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "180845",
-          "paths": [
-            "/products/niacinamide-hydrating-body-lotion/pixabay-180845-photo2-320.webp",
-            "/products/niacinamide-hydrating-body-lotion/pixabay-180845-photo2-640.webp",
-            "/products/niacinamide-hydrating-body-lotion/pixabay-180845-photo2-1200.webp"
-          ],
-          "alt": "Niacinamide Hydrating Body Lotion — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "leomar",
-            "photographerUrl": "https://pixabay.com/users/leomar-52640/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/rose-perfume-fragrance-180845/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "1461397",
-          "paths": [
-            "/products/niacinamide-hydrating-body-lotion/pixabay-1461397-photo3-320.webp",
-            "/products/niacinamide-hydrating-body-lotion/pixabay-1461397-photo3-640.webp",
-            "/products/niacinamide-hydrating-body-lotion/pixabay-1461397-photo3-1200.webp"
-          ],
-          "alt": "Niacinamide Hydrating Body Lotion — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "chezbeate",
-            "photographerUrl": "https://pixabay.com/users/chezbeate-1519166/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/sunblock-skincare-healthy-skin-1461397/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "8329349",
-          "paths": [
-            "/products/niacinamide-hydrating-body-lotion/pixabay-8329349-photo4-320.webp",
-            "/products/niacinamide-hydrating-body-lotion/pixabay-8329349-photo4-640.webp",
-            "/products/niacinamide-hydrating-body-lotion/pixabay-8329349-photo4-1200.webp"
-          ],
-          "alt": "Niacinamide Hydrating Body Lotion — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "AestheticJourney",
-            "photographerUrl": "https://pixabay.com/users/AestheticJourney-39677918/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/ai-generated-bottle-cosmetics-cream-8329349/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "Hanna Pad",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/6475989/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:06:21.916Z"
+      ]
+    },
+    "niacinamide-brightening-hydrating-body-lotion": {
+      "title": "Niacinamide Brightening & Hydrating Body Lotion",
+      "category": "viral-skincare-haircare",
+      "query": "Niacinamide Brightening & Hydrating Body Lotion viral skincare haircare",
+      "status": "resolved",
+      "source": "pexels",
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "5798000",
+          "paths": [
+            "https://images.pexels.com/photos/5798000/pexels-photo-5798000.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/5798000/pexels-photo-5798000.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/5798000/pexels-photo-5798000.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Moisturising lotion bottle on a white table",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Ann poan",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/5798000/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
     },
     "collagen-hydrogel-under-eye-patches": {
       "title": "Collagen Hydrogel Under-Eye Patches",
-      "category": "skincare-personal-care",
-      "query": "Collagen Hydrogel Under-Eye Patches beauty",
+      "category": "viral-skincare-haircare",
+      "query": "Collagen Hydrogel Under-Eye Patches viral skincare haircare",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "4967555",
+          "source": "pexels",
+          "photoId": "6476074",
           "paths": [
-            "/products/collagen-hydrogel-under-eye-patches/pixabay-4967555-photo1-320.webp",
-            "/products/collagen-hydrogel-under-eye-patches/pixabay-4967555-photo1-640.webp",
-            "/products/collagen-hydrogel-under-eye-patches/pixabay-4967555-photo1-1200.webp"
+            "https://images.pexels.com/photos/6476074/pexels-photo-6476074.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/6476074/pexels-photo-6476074.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/6476074/pexels-photo-6476074.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Collagen Hydrogel Under-Eye Patches — view 1",
+          "alt": "Woman wearing a hydrating under-eye patch",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "JillWellington",
-            "photographerUrl": "https://pixabay.com/users/JillWellington-334088/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/orbs-orbeez-glow-colorful-spheres-4967555/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "3081015",
-          "paths": [
-            "/products/collagen-hydrogel-under-eye-patches/pixabay-3081015-photo2-320.webp",
-            "/products/collagen-hydrogel-under-eye-patches/pixabay-3081015-photo2-640.webp",
-            "/products/collagen-hydrogel-under-eye-patches/pixabay-3081015-photo2-1200.webp"
-          ],
-          "alt": "Collagen Hydrogel Under-Eye Patches — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "fotostrobi",
-            "photographerUrl": "https://pixabay.com/users/fotostrobi-5310373/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/makeup-cosmetics-glass-lipstick-3081015/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "4967555",
-          "paths": [
-            "/products/collagen-hydrogel-under-eye-patches/pixabay-4967555-crop3-320.webp",
-            "/products/collagen-hydrogel-under-eye-patches/pixabay-4967555-crop3-640.webp",
-            "/products/collagen-hydrogel-under-eye-patches/pixabay-4967555-crop3-1200.webp"
-          ],
-          "alt": "Collagen Hydrogel Under-Eye Patches — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "JillWellington",
-            "photographerUrl": "https://pixabay.com/users/JillWellington-334088/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/orbs-orbeez-glow-colorful-spheres-4967555/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "3081015",
-          "paths": [
-            "/products/collagen-hydrogel-under-eye-patches/pixabay-3081015-crop4-320.webp",
-            "/products/collagen-hydrogel-under-eye-patches/pixabay-3081015-crop4-640.webp",
-            "/products/collagen-hydrogel-under-eye-patches/pixabay-3081015-crop4-1200.webp"
-          ],
-          "alt": "Collagen Hydrogel Under-Eye Patches — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "fotostrobi",
-            "photographerUrl": "https://pixabay.com/users/fotostrobi-5310373/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/makeup-cosmetics-glass-lipstick-3081015/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "Hanna Pad",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/6476074/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:06:26.011Z"
+      ]
     },
-    "natural-coconut-hair-growth-repair-oil": {
-      "title": "Natural Coconut Hair Growth & Repair Oil",
-      "category": "skincare-personal-care",
-      "query": "Natural Coconut Hair Growth & Repair Oil beauty",
+    "silicone-scalp-massager-hair-growth-brush": {
+      "title": "Silicone Scalp Massager & Hair Growth Brush",
+      "category": "viral-skincare-haircare",
+      "query": "Silicone Scalp Massager & Hair Growth Brush viral skincare haircare",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "3081015",
+          "source": "pexels",
+          "photoId": "5468620",
           "paths": [
-            "/products/natural-coconut-hair-growth-repair-oil/pixabay-3081015-photo1-320.webp",
-            "/products/natural-coconut-hair-growth-repair-oil/pixabay-3081015-photo1-640.webp",
-            "/products/natural-coconut-hair-growth-repair-oil/pixabay-3081015-photo1-1200.webp"
+            "https://images.pexels.com/photos/5468620/pexels-photo-5468620.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/5468620/pexels-photo-5468620.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/5468620/pexels-photo-5468620.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Natural Coconut Hair Growth & Repair Oil — view 1",
+          "alt": "Woman brushing her hair with a wooden brush",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "fotostrobi",
-            "photographerUrl": "https://pixabay.com/users/fotostrobi-5310373/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/makeup-cosmetics-glass-lipstick-3081015/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "3081015",
-          "paths": [
-            "/products/natural-coconut-hair-growth-repair-oil/pixabay-3081015-crop2-320.webp",
-            "/products/natural-coconut-hair-growth-repair-oil/pixabay-3081015-crop2-640.webp",
-            "/products/natural-coconut-hair-growth-repair-oil/pixabay-3081015-crop2-1200.webp"
-          ],
-          "alt": "Natural Coconut Hair Growth & Repair Oil — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "fotostrobi",
-            "photographerUrl": "https://pixabay.com/users/fotostrobi-5310373/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/makeup-cosmetics-glass-lipstick-3081015/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "3081015",
-          "paths": [
-            "/products/natural-coconut-hair-growth-repair-oil/pixabay-3081015-crop3-320.webp",
-            "/products/natural-coconut-hair-growth-repair-oil/pixabay-3081015-crop3-640.webp",
-            "/products/natural-coconut-hair-growth-repair-oil/pixabay-3081015-crop3-1200.webp"
-          ],
-          "alt": "Natural Coconut Hair Growth & Repair Oil — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "fotostrobi",
-            "photographerUrl": "https://pixabay.com/users/fotostrobi-5310373/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/makeup-cosmetics-glass-lipstick-3081015/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "3081015",
-          "paths": [
-            "/products/natural-coconut-hair-growth-repair-oil/pixabay-3081015-crop4-320.webp",
-            "/products/natural-coconut-hair-growth-repair-oil/pixabay-3081015-crop4-640.webp",
-            "/products/natural-coconut-hair-growth-repair-oil/pixabay-3081015-crop4-1200.webp"
-          ],
-          "alt": "Natural Coconut Hair Growth & Repair Oil — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "fotostrobi",
-            "photographerUrl": "https://pixabay.com/users/fotostrobi-5310373/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/makeup-cosmetics-glass-lipstick-3081015/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "Polina Tankilevitch",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/5468620/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:06:28.304Z"
+      ]
     },
-    "nonstick-cookware-set": {
-      "title": "Nonstick Cookware Set",
-      "category": "home-kitchen",
-      "query": "Nonstick Cookware Set home kitchen",
+    "satin-sleep-bonnet-scrunchie-set": {
+      "title": "Satin Sleep Bonnet & Scrunchie Set",
+      "category": "viral-skincare-haircare",
+      "query": "Satin Sleep Bonnet & Scrunchie Set viral skincare haircare",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "544073",
+          "source": "pexels",
+          "photoId": "7897135",
           "paths": [
-            "/products/nonstick-cookware-set/pixabay-544073-photo1-320.webp",
-            "/products/nonstick-cookware-set/pixabay-544073-photo1-640.webp",
-            "/products/nonstick-cookware-set/pixabay-544073-photo1-1200.webp"
+            "https://images.pexels.com/photos/7897135/pexels-photo-7897135.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7897135/pexels-photo-7897135.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7897135/pexels-photo-7897135.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Nonstick Cookware Set — view 1",
+          "alt": "Satin scrunchies and bonnet flat lay",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "congerdesign",
-            "photographerUrl": "https://pixabay.com/users/congerdesign-509903/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/potatoes-cook-pot-eat-food-544073/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "554072",
-          "paths": [
-            "/products/nonstick-cookware-set/pixabay-554072-photo2-320.webp",
-            "/products/nonstick-cookware-set/pixabay-554072-photo2-640.webp",
-            "/products/nonstick-cookware-set/pixabay-554072-photo2-1200.webp"
-          ],
-          "alt": "Nonstick Cookware Set — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "Silberfuchs",
-            "photographerUrl": "https://pixabay.com/users/Silberfuchs-721/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/pan-cook-fry-frying-pan-554072/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "5352379",
-          "paths": [
-            "/products/nonstick-cookware-set/pixabay-5352379-photo3-320.webp",
-            "/products/nonstick-cookware-set/pixabay-5352379-photo3-640.webp",
-            "/products/nonstick-cookware-set/pixabay-5352379-photo3-1200.webp"
-          ],
-          "alt": "Nonstick Cookware Set — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "Mahmoud-Ahmed",
-            "photographerUrl": "https://pixabay.com/users/Mahmoud-Ahmed-16261757/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/render-rendering-house-ware-pot-5352379/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "1858601",
-          "paths": [
-            "/products/nonstick-cookware-set/pixabay-1858601-photo4-320.webp",
-            "/products/nonstick-cookware-set/pixabay-1858601-photo4-640.webp",
-            "/products/nonstick-cookware-set/pixabay-1858601-photo4-1200.webp"
-          ],
-          "alt": "Nonstick Cookware Set — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "12019",
-            "photographerUrl": "https://pixabay.com/users/12019-12019/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/teapots-pots-stove-flame-burning-1858601/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "Irene Gaitho",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/7897135/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:06:33.655Z"
+      ]
     },
-    "portable-handheld-garment-steamer": {
-      "title": "Portable Handheld Garment Steamer",
-      "category": "home-kitchen",
-      "query": "Portable Handheld Garment Steamer home kitchen",
+    "insulated-stainless-steel-flip-straw-water-bottle-32oz": {
+      "title": "Insulated Stainless Steel Flip-Straw Water Bottle (32oz)",
+      "category": "lifestyle-aesthetic-essentials",
+      "query": "Insulated Stainless Steel Flip-Straw Water Bottle (32oz) lifestyle aesthetic essentials",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "1853504",
+          "source": "pexels",
+          "photoId": "3737800",
           "paths": [
-            "/products/portable-handheld-garment-steamer/pixabay-1853504-photo1-320.webp",
-            "/products/portable-handheld-garment-steamer/pixabay-1853504-photo1-640.webp",
-            "/products/portable-handheld-garment-steamer/pixabay-1853504-photo1-1200.webp"
+            "https://images.pexels.com/photos/3737800/pexels-photo-3737800.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/3737800/pexels-photo-3737800.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/3737800/pexels-photo-3737800.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Portable Handheld Garment Steamer — view 1",
+          "alt": "Hands holding black and white insulated water bottles",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "Pexels",
-            "photographerUrl": "https://pixabay.com/users/Pexels-2286921/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/cabinet-clothes-garments-wardrobe-1853504/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "2165756",
-          "paths": [
-            "/products/portable-handheld-garment-steamer/pixabay-2165756-photo2-320.webp",
-            "/products/portable-handheld-garment-steamer/pixabay-2165756-photo2-640.webp",
-            "/products/portable-handheld-garment-steamer/pixabay-2165756-photo2-1200.webp"
-          ],
-          "alt": "Portable Handheld Garment Steamer — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "ClickerHappy",
-            "photographerUrl": "https://pixabay.com/users/ClickerHappy-324082/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/kitchen-home-interior-modern-room-2165756/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "5115559",
-          "paths": [
-            "/products/portable-handheld-garment-steamer/pixabay-5115559-photo3-320.webp",
-            "/products/portable-handheld-garment-steamer/pixabay-5115559-photo3-640.webp",
-            "/products/portable-handheld-garment-steamer/pixabay-5115559-photo3-1200.webp"
-          ],
-          "alt": "Portable Handheld Garment Steamer — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "minhthai0105",
-            "photographerUrl": "https://pixabay.com/users/minhthai0105-15470079/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/speaker-marshall-chair-home-sound-5115559/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "5961193",
-          "paths": [
-            "/products/portable-handheld-garment-steamer/pixabay-5961193-photo4-320.webp",
-            "/products/portable-handheld-garment-steamer/pixabay-5961193-photo4-640.webp",
-            "/products/portable-handheld-garment-steamer/pixabay-5961193-photo4-1200.webp"
-          ],
-          "alt": "Portable Handheld Garment Steamer — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "congerdesign",
-            "photographerUrl": "https://pixabay.com/users/congerdesign-509903/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/wardrobe-coat-hanger-dressing-room-5961193/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "cottonbro studio",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/3737800/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:06:40.619Z"
+      ]
     },
-    "high-pressure-filtered-shower-head": {
-      "title": "High-Pressure Filtered Shower Head",
-      "category": "home-kitchen",
-      "query": "High-Pressure Filtered Shower Head home kitchen",
+    "quilted-puffer-makeup-tech-organizer-bag": {
+      "title": "Quilted Puffer Makeup & Tech Organizer Bag",
+      "category": "lifestyle-aesthetic-essentials",
+      "query": "Quilted Puffer Makeup & Tech Organizer Bag lifestyle aesthetic essentials",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "5252373",
+          "source": "pexels",
+          "photoId": "6624063",
           "paths": [
-            "/products/high-pressure-filtered-shower-head/pixabay-5252373-photo1-320.webp",
-            "/products/high-pressure-filtered-shower-head/pixabay-5252373-photo1-640.webp",
-            "/products/high-pressure-filtered-shower-head/pixabay-5252373-photo1-1200.webp"
+            "https://images.pexels.com/photos/6624063/pexels-photo-6624063.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/6624063/pexels-photo-6624063.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/6624063/pexels-photo-6624063.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "High-Pressure Filtered Shower Head — view 1",
+          "alt": "Makeup pouch with brushes on a marble background",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "DiDeeChen",
-            "photographerUrl": "https://pixabay.com/users/DiDeeChen-16856550/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/coffee-drip-coffee-drink-caffeine-5252373/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "2165756",
-          "paths": [
-            "/products/high-pressure-filtered-shower-head/pixabay-2165756-photo2-320.webp",
-            "/products/high-pressure-filtered-shower-head/pixabay-2165756-photo2-640.webp",
-            "/products/high-pressure-filtered-shower-head/pixabay-2165756-photo2-1200.webp"
-          ],
-          "alt": "High-Pressure Filtered Shower Head — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "ClickerHappy",
-            "photographerUrl": "https://pixabay.com/users/ClickerHappy-324082/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/kitchen-home-interior-modern-room-2165756/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "1974841",
-          "paths": [
-            "/products/high-pressure-filtered-shower-head/pixabay-1974841-photo3-320.webp",
-            "/products/high-pressure-filtered-shower-head/pixabay-1974841-photo3-640.webp",
-            "/products/high-pressure-filtered-shower-head/pixabay-1974841-photo3-1200.webp"
-          ],
-          "alt": "High-Pressure Filtered Shower Head — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "JillWellington",
-            "photographerUrl": "https://pixabay.com/users/JillWellington-334088/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/christmas-background-mug-coffee-1974841/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "532651",
-          "paths": [
-            "/products/high-pressure-filtered-shower-head/pixabay-532651-photo4-320.webp",
-            "/products/high-pressure-filtered-shower-head/pixabay-532651-photo4-640.webp",
-            "/products/high-pressure-filtered-shower-head/pixabay-532651-photo4-1200.webp"
-          ],
-          "alt": "High-Pressure Filtered Shower Head — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "stevepb",
-            "photographerUrl": "https://pixabay.com/users/stevepb-282134/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/kitchen-scale-weighing-baking-532651/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "Nadia Dolce",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/6624063/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:06:45.903Z"
+      ]
     },
-    "all-in-one-productivity-digital-planner": {
-      "title": "All-in-One Productivity Digital Planner",
-      "category": "digital",
-      "query": "All-in-One Productivity Digital Planner digital",
+    "portable-usb-c-mini-smoothie-blender": {
+      "title": "Portable USB-C Mini Smoothie Blender",
+      "category": "lifestyle-aesthetic-essentials",
+      "query": "Portable USB-C Mini Smoothie Blender lifestyle aesthetic essentials",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "4906312",
+          "source": "pexels",
+          "photoId": "7936983",
           "paths": [
-            "/products/all-in-one-productivity-digital-planner/pixabay-4906312-photo1-320.webp",
-            "/products/all-in-one-productivity-digital-planner/pixabay-4906312-photo1-640.webp",
-            "/products/all-in-one-productivity-digital-planner/pixabay-4906312-photo1-1200.webp"
+            "https://images.pexels.com/photos/7936983/pexels-photo-7936983.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7936983/pexels-photo-7936983.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7936983/pexels-photo-7936983.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "All-in-One Productivity Digital Planner — view 1",
+          "alt": "Hands using a blender with bananas and greens",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "Deeezy",
-            "photographerUrl": "https://pixabay.com/users/Deeezy-15467098/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/laptop-workstaion-office-work-4906312/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "1836990",
-          "paths": [
-            "/products/all-in-one-productivity-digital-planner/pixabay-1836990-photo2-320.webp",
-            "/products/all-in-one-productivity-digital-planner/pixabay-1836990-photo2-640.webp",
-            "/products/all-in-one-productivity-digital-planner/pixabay-1836990-photo2-1200.webp"
-          ],
-          "alt": "All-in-One Productivity Digital Planner — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "Pexels",
-            "photographerUrl": "https://pixabay.com/users/Pexels-2286921/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/laptop-notebook-business-charts-1836990/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "820281",
-          "paths": [
-            "/products/all-in-one-productivity-digital-planner/pixabay-820281-photo3-320.webp",
-            "/products/all-in-one-productivity-digital-planner/pixabay-820281-photo3-640.webp",
-            "/products/all-in-one-productivity-digital-planner/pixabay-820281-photo3-1200.webp"
-          ],
-          "alt": "All-in-One Productivity Digital Planner — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "fancycrave1",
-            "photographerUrl": "https://pixabay.com/users/fancycrave1-1115284/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/computer-notebook-coffee-workspace-820281/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "2838921",
-          "paths": [
-            "/products/all-in-one-productivity-digital-planner/pixabay-2838921-photo4-320.webp",
-            "/products/all-in-one-productivity-digital-planner/pixabay-2838921-photo4-640.webp",
-            "/products/all-in-one-productivity-digital-planner/pixabay-2838921-photo4-1200.webp"
-          ],
-          "alt": "All-in-One Productivity Digital Planner — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "lukasbieri",
-            "photographerUrl": "https://pixabay.com/users/lukasbieri-4664461/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/laptop-mockup-graphics-tablet-2838921/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "Nicola Barts",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/7936983/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:06:51.641Z"
+      ]
     },
-    "professional-photo-editing-presets-bundle": {
-      "title": "Professional Photo Editing Presets Bundle",
-      "category": "digital",
-      "query": "Professional Photo Editing Presets Bundle digital",
+    "interactive-stem-robotics-building-kit": {
+      "title": "Interactive STEM Robotics Building Kit",
+      "category": "gen-alpha-kids-corner",
+      "query": "Interactive STEM Robotics Building Kit gen alpha kids corner",
       "status": "resolved",
-      "source": "pixabay",
-      "reason": "Not resolved yet",
+      "source": "pexels",
       "images": [
         {
-          "source": "pixabay",
-          "photoId": "767781",
+          "source": "pexels",
+          "photoId": "40049041",
           "paths": [
-            "/products/professional-photo-editing-presets-bundle/pixabay-767781-photo1-320.webp",
-            "/products/professional-photo-editing-presets-bundle/pixabay-767781-photo1-640.webp",
-            "/products/professional-photo-editing-presets-bundle/pixabay-767781-photo1-1200.webp"
+            "https://images.pexels.com/photos/40049041/pexels-photo-40049041.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/40049041/pexels-photo-40049041.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/40049041/pexels-photo-40049041.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
           ],
-          "alt": "Professional Photo Editing Presets Bundle — view 1",
+          "alt": "Humanoid robots displayed at a technology exhibition",
           "width": 1200,
           "height": 1200,
+          "color": "#0C1E36",
           "credit": {
-            "photographer": "Lalmch",
-            "photographerUrl": "https://pixabay.com/users/Lalmch-1026205/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/computer-macbook-tablet-editing-767781/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "2707653",
-          "paths": [
-            "/products/professional-photo-editing-presets-bundle/pixabay-2707653-photo2-320.webp",
-            "/products/professional-photo-editing-presets-bundle/pixabay-2707653-photo2-640.webp",
-            "/products/professional-photo-editing-presets-bundle/pixabay-2707653-photo2-1200.webp"
-          ],
-          "alt": "Professional Photo Editing Presets Bundle — view 2",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "alexx-ego",
-            "photographerUrl": "https://pixabay.com/users/alexx-ego-811517/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/image-editing-photoshop-2707653/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "338505",
-          "paths": [
-            "/products/professional-photo-editing-presets-bundle/pixabay-338505-photo3-320.webp",
-            "/products/professional-photo-editing-presets-bundle/pixabay-338505-photo3-640.webp",
-            "/products/professional-photo-editing-presets-bundle/pixabay-338505-photo3-1200.webp"
-          ],
-          "alt": "Professional Photo Editing Presets Bundle — view 3",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "TheAngryTeddy",
-            "photographerUrl": "https://pixabay.com/users/TheAngryTeddy-123386/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/keyboard-keys-hardware-pc-computer-338505/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
-          }
-        },
-        {
-          "source": "pixabay",
-          "photoId": "2387394",
-          "paths": [
-            "/products/professional-photo-editing-presets-bundle/pixabay-2387394-photo4-320.webp",
-            "/products/professional-photo-editing-presets-bundle/pixabay-2387394-photo4-640.webp",
-            "/products/professional-photo-editing-presets-bundle/pixabay-2387394-photo4-1200.webp"
-          ],
-          "alt": "Professional Photo Editing Presets Bundle — view 4",
-          "width": 1200,
-          "height": 1200,
-          "credit": {
-            "photographer": "congerdesign",
-            "photographerUrl": "https://pixabay.com/users/congerdesign-509903/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "photoUrl": "https://pixabay.com/photos/carrots-vegetables-harvest-healthy-2387394/?utm_source=soko-demo&utm_medium=referral&utm_campaign=product-credits",
-            "license": "Pixabay Content License",
-            "licenseUrl": "https://pixabay.com/service/license/"
+            "photographer": "Tori D",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/40049041/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
           }
         }
-      ],
-      "resolvedAt": "2026-11-26T15:06:57.474Z"
+      ]
+    },
+    "ergonomic-aesthetic-school-backpack-with-pins": {
+      "title": "Ergonomic Aesthetic School Backpack with Pins",
+      "category": "gen-alpha-kids-corner",
+      "query": "Ergonomic Aesthetic School Backpack with Pins gen alpha kids corner",
+      "status": "resolved",
+      "source": "pexels",
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "37580640",
+          "paths": [
+            "https://images.pexels.com/photos/37580640/pexels-photo-37580640.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/37580640/pexels-photo-37580640.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/37580640/pexels-photo-37580640.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Colourful backpacks for back to school",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Solé Gomez",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/37580640/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "kids-digital-instant-print-camera": {
+      "title": "Kids Digital Instant Print Camera",
+      "category": "gen-alpha-kids-corner",
+      "query": "Kids Digital Instant Print Camera gen alpha kids corner",
+      "status": "resolved",
+      "source": "pexels",
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "10676011",
+          "paths": [
+            "https://images.pexels.com/photos/10676011/pexels-photo-10676011.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/10676011/pexels-photo-10676011.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/10676011/pexels-photo-10676011.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Young boy holding a yellow instant camera outdoors",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Caleb Oquendo",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/10676011/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
     }
-  },
-  "generatedAt": "2026-11-26T15:06:57.474Z"
+  }
 }
