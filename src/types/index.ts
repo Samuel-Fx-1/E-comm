@@ -6,7 +6,8 @@ export type CategorySlug =
   | 'sports'
   | 'books'
   | 'toys'
-  | 'groceries';
+  | 'groceries'
+  | 'digital';
 
 export interface Category {
   slug: CategorySlug;
@@ -71,12 +72,16 @@ export interface Product {
   deliveryDays: number;
   isBestSeller: boolean;
   isDeal: boolean;
+  /** Curated trending items; drives the homepage "Trending now" rail. */
+  isTrending: boolean;
   addedAt: string;
 }
 
 export interface CartLine {
   productId: string;
   qty: number;
+  /** Full product captured when added, so API-only products survive reloads. */
+  snapshot?: Product;
 }
 
 export interface Review {
@@ -144,6 +149,8 @@ export interface OrderItem {
   image: string;
   price: number;
   qty: number;
+  /** Lets "buy it again" restore products that are not in the local bundle. */
+  snapshot?: Product;
 }
 
 export interface Order {
