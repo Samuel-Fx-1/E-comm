@@ -1,0 +1,302 @@
+{
+  "category": "viral-skincare-haircare",
+  "name": "Viral Skincare & Haircare",
+  "products": [
+    {
+      "slug": "hydrocolloid-star-pimple-patches-36-count",
+      "name": "Hydrocolloid Star Pimple Patches (36 Count)",
+      "brand": "Sana",
+      "category": "viral-skincare-haircare",
+      "subcategory": "Viral Skincare & Haircare",
+      "price": 11500,
+      "listPrice": 15500,
+      "rating": 4.7,
+      "reviewCount": 7820,
+      "stock": 210,
+      "shortDescription": "Hydrocolloid star patches in a 36-count pack that cushion and cover blemishes overnight.",
+      "bullets": [
+        "Thirty-six star-shaped patches in two playful sizes",
+        "Hydrocolloid material cushions skin while you sleep",
+        "A slim, peel-and-stick sheet fits easily in a bag"
+      ],
+      "specs": {
+        "Count": "36 patches",
+        "Material": "Hydrocolloid",
+        "Sizes": "2 sizes",
+        "Use": "Overnight"
+      },
+      "variants": [],
+      "seller": "Sana Official",
+      "deliveryDays": 4,
+      "addedAt": "2026-11-25",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": true
+      },
+      "imageQueries": [
+        "hydrocolloid pimple patches",
+        "star acne patches product photo",
+        "skincare patch sheet",
+        "blemish patches close up"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "6475989",
+          "url": "https://images.pexels.com/photos/6475989/pexels-photo-6475989.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman holding a skincare product for blemish care",
+          "photographer": "Hanna Pad",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/6475989/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "niacinamide-brightening-hydrating-body-lotion",
+      "name": "Niacinamide Brightening & Hydrating Body Lotion",
+      "brand": "Sana",
+      "category": "viral-skincare-haircare",
+      "subcategory": "Viral Skincare & Haircare",
+      "price": 21900,
+      "listPrice": 29900,
+      "rating": 4.6,
+      "reviewCount": 5430,
+      "stock": 158,
+      "shortDescription": "A fast-absorbing niacinamide lotion that leaves skin soft, hydrated and comfortably bright-looking.",
+      "bullets": [
+        "Niacinamide supports a more even-looking skin tone",
+        "A lightweight, non-greasy texture absorbs in seconds",
+        "Fragrance-free and made for daily use"
+      ],
+      "specs": {
+        "Volume": "400 ml",
+        "Key ingredient": "Niacinamide",
+        "Skin type": "All skin types",
+        "pH": "5.5"
+      },
+      "variants": [],
+      "seller": "Sana Official",
+      "deliveryDays": 2,
+      "addedAt": "2026-11-22",
+      "flags": {
+        "isBestSeller": true,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "niacinamide body lotion",
+        "body lotion bottle product photo",
+        "hydrating skincare lotion",
+        "skincare bottle minimal"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "5798000",
+          "url": "https://images.pexels.com/photos/5798000/pexels-photo-5798000.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Moisturising lotion bottle on a white table",
+          "photographer": "Ann poan",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/5798000/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "collagen-hydrogel-under-eye-patches",
+      "name": "Collagen Hydrogel Under-Eye Patches",
+      "brand": "Sana",
+      "category": "viral-skincare-haircare",
+      "subcategory": "Viral Skincare & Haircare",
+      "price": 17900,
+      "listPrice": 22900,
+      "rating": 4.5,
+      "reviewCount": 4260,
+      "stock": 104,
+      "shortDescription": "Cooling hydrogel patches that hydrate the under-eye area and help you look rested after a late night.",
+      "bullets": [
+        "Hydrogel patches stay in place while you move",
+        "A cooling, hydrating boost for tired-looking eyes",
+        "Thirty pairs in a resealable, travel-friendly jar"
+      ],
+      "specs": {
+        "Count": "30 pairs",
+        "Material": "Hydrogel",
+        "Use": "20 minutes",
+        "Skin type": "All skin types"
+      },
+      "variants": [],
+      "seller": "Sana Official",
+      "deliveryDays": 5,
+      "addedAt": "2026-11-15",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": true,
+        "isGenZPick": false,
+        "isViral": true
+      },
+      "imageQueries": [
+        "under eye hydrogel patches",
+        "eye patches skincare product",
+        "collagen eye mask jar",
+        "under eye patches close up"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "6476074",
+          "url": "https://images.pexels.com/photos/6476074/pexels-photo-6476074.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman wearing a hydrating under-eye patch",
+          "photographer": "Hanna Pad",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/6476074/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "silicone-scalp-massager-hair-growth-brush",
+      "name": "Silicone Scalp Massager & Hair Growth Brush",
+      "brand": "Mirembe",
+      "category": "viral-skincare-haircare",
+      "subcategory": "Viral Skincare & Haircare",
+      "price": 10900,
+      "listPrice": 15500,
+      "rating": 4.4,
+      "reviewCount": 1980,
+      "stock": 12,
+      "shortDescription": "A soft silicone scalp brush with flexible nodes that turn shampoo time into a relaxing ritual.",
+      "bullets": [
+        "Flexible silicone nodes massage as you shampoo",
+        "A comfortable grip works on wet or dry hair",
+        "Compact enough for a shower caddy or travel bag"
+      ],
+      "specs": {
+        "Material": "Food-grade silicone",
+        "Use": "Wet or dry hair",
+        "Care": "Rinse and air dry",
+        "Colour": "Blush"
+      },
+      "variants": [],
+      "seller": "Mirembe Official",
+      "deliveryDays": 2,
+      "addedAt": "2026-11-13",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "silicone scalp massager",
+        "hair scalp brush product photo",
+        "shampoo massage brush",
+        "hair care tool minimal"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "5468620",
+          "url": "https://images.pexels.com/photos/5468620/pexels-photo-5468620.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman brushing her hair with a wooden brush",
+          "photographer": "Polina Tankilevitch",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/5468620/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "satin-sleep-bonnet-scrunchie-set",
+      "name": "Satin Sleep Bonnet & Scrunchie Set",
+      "brand": "Mirembe",
+      "category": "viral-skincare-haircare",
+      "subcategory": "Viral Skincare & Haircare",
+      "price": 15500,
+      "listPrice": 20500,
+      "rating": 4.6,
+      "reviewCount": 3110,
+      "stock": 9,
+      "shortDescription": "A satin sleep bonnet and matching scrunchies that help reduce friction and keep hairstyles intact.",
+      "bullets": [
+        "A smooth satin lining helps reduce friction overnight",
+        "An adjustable band stays comfortable while you sleep",
+        "Two matching scrunchies complete the set"
+      ],
+      "specs": {
+        "Material": "Satin",
+        "Set": "Bonnet + 2 scrunchies",
+        "Fit": "Adjustable",
+        "Care": "Hand wash cold"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Blush"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Black"
+        }
+      ],
+      "seller": "Mirembe Official",
+      "deliveryDays": 2,
+      "addedAt": "2026-11-12",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": true,
+        "isViral": false
+      },
+      "imageQueries": [
+        "satin sleep bonnet",
+        "silk hair bonnet product photo",
+        "scrunchie set hair accessories",
+        "satin bonnet lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7897135",
+          "url": "https://images.pexels.com/photos/7897135/pexels-photo-7897135.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Satin scrunchies and bonnet flat lay",
+          "photographer": "Irene Gaitho",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/7897135/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    }
+  ]
+}
