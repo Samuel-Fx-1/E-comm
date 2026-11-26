@@ -22,6 +22,7 @@ const palette = {
   books: ['#1E3A8A', '#6366F1'],
   toys: ['#9A3412', '#F59E0B'],
   groceries: ['#365314', '#65A30D'],
+  digital: ['#1E1B4B', '#6366F1'],
 };
 
 const escapeXml = (text) =>
