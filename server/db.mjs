@@ -45,7 +45,7 @@ const COLLECTION_SQL = {
   },
   featured: {
     where: '1 = 1',
-    order: 'p.curated DESC, p.is_best_seller DESC, p.rating DESC, p.seq ASC',
+    order: 'p.curated DESC, p.is_gen_z_pick DESC, p.is_viral DESC, p.is_trending DESC, p.is_best_seller DESC, p.rating DESC, p.review_count DESC, p.seq ASC',
   },
   trending: {
     where: 'p.is_trending = 1',
