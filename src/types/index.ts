@@ -1,9 +1,9 @@
 export type CategorySlug =
-  | 'tech-audio-accessories'
-  | 'apparel-footwear'
-  | 'skincare-personal-care'
-  | 'home-kitchen'
-  | 'digital';
+  | 'tech-gaming'
+  | 'streetwear-footwear'
+  | 'viral-skincare-haircare'
+  | 'lifestyle-aesthetic-essentials'
+  | 'gen-alpha-kids-corner';
 
 export interface Category {
   slug: CategorySlug;
@@ -70,6 +70,8 @@ export interface Product {
   isDeal: boolean;
   /** Curated trending items; drives the homepage "Trending now" rail. */
   isTrending: boolean;
+  isGenZPick: boolean;
+  isViral: boolean;
   addedAt: string;
 }
 
