@@ -23,7 +23,7 @@ function Attribution({ credit }: { credit: ImageCredit }) {
       </a>{' '}
       on{' '}
       <a href={credit.photoUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--brand-ink)]">
-        {credit.photoUrl.includes('unsplash') ? 'Unsplash' : 'Pexels'}
+        {credit.photoUrl.includes('pixabay') ? 'Pixabay' : credit.photoUrl.includes('unsplash') ? 'Unsplash' : 'Pexels'}
       </a>
       {' · '}
       <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--brand-ink)]">
