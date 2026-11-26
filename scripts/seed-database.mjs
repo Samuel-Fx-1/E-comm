@@ -18,17 +18,18 @@ const ROOT = fileURLToPath(new URL('..', import.meta.url));
 dotenv.config({ path: join(ROOT, '.env.local'), quiet: true });
 
 const TARGET = 20;
+// Slugs from the superseded catalog that are not reused by the new catalog.
+// `wireless-charging-desk-mat` and `collagen-hydrogel-under-eye-patches` are
+// intentionally shared with new products, so they are not legacy-only.
 const LEGACY_SLUGS = [
   'wireless-noise-canceling-headphones',
   'bluetooth-neckband-earphones',
   'foldable-wireless-keyboard',
-  'wireless-charging-desk-mat',
   'mini-rechargeable-precision-screwdriver-set',
   'classic-heavyweight-cotton-t-shirt',
   'lightweight-everyday-windbreaker-jacket',
   'casual-low-top-sneakers',
   'niacinamide-hydrating-body-lotion',
-  'collagen-hydrogel-under-eye-patches',
   'natural-coconut-hair-growth-repair-oil',
   'nonstick-cookware-set',
   'portable-handheld-garment-steamer',
