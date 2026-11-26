@@ -2,11 +2,14 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Flame, Sparkles, TrendingUp } from 'lucide-react';
 import type { Product } from '../types';
 import { products } from '../data/products';
+import { apiAvailable, fetchCollection } from '../data/api';
+import { useApiData } from '../hooks/useApiData';
 import { ProductCard } from '../components/product/ProductCard';
 import { Countdown } from '../components/ui/Countdown';
+import { ProductGridSkeleton } from '../components/ui/Skeleton';
 import { Seo } from '../components/ui/Seo';
 
-export type CollectionKind = 'deals' | 'best-sellers' | 'new-arrivals';
+export type CollectionKind = 'deals' | 'best-sellers' | 'new-arrivals' | 'trending';
 
 const config = {
   deals: {
@@ -36,6 +39,15 @@ const config = {
     gradient: 'from-[#4C1D95] via-[var(--brand-navy)] to-[var(--brand-navy-deep)]',
     cta: { label: 'Browse all products', to: '/search' },
   },
+  trending: {
+    eyebrow: 'Picking up pace',
+    title: 'Trending Now',
+    description: 'The products gaining momentum this week across tech, style, beauty and home.',
+    path: '/trending',
+    icon: TrendingUp,
+    gradient: 'from-[#9A3412] via-[var(--brand-navy)] to-[var(--brand-navy-deep)]',
+    cta: { label: 'Shop best sellers', to: '/best-sellers' },
+  },
 } satisfies Record<CollectionKind, {
   eyebrow: string;
   title: string;
@@ -46,7 +58,8 @@ const config = {
   cta: { label: string; to: string };
 }>;
 
-function collectionProducts(kind: CollectionKind): Product[] {
+/** Bounded local fallback — scans only the 85 bundled products. */
+function localCollectionProducts(kind: CollectionKind): Product[] {
   if (kind === 'deals') {
     return products
       .filter((product) => product.isDeal || product.discount > 0)
@@ -57,14 +70,27 @@ function collectionProducts(kind: CollectionKind): Product[] {
       .filter((product) => product.isBestSeller)
       .sort((a, b) => b.reviewCount - a.reviewCount);
   }
+  if (kind === 'trending') {
+    return products
+      .filter((product) => product.isTrending)
+      .sort((a, b) => b.rating - a.rating || b.reviewCount - a.reviewCount);
+  }
   return [...products].sort((a, b) => b.addedAt.localeCompare(a.addedAt));
 }
 
 export default function CollectionPage({ kind }: { kind: CollectionKind }) {
   const meta = config[kind];
   const Icon = meta.icon;
-  const list = collectionProducts(kind);
-  const maxDiscount = Math.max(...products.map((product) => product.discount), 0);
+  const state = useApiData(
+    async (signal) => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      return fetchCollection(kind, 48, signal);
+    },
+    [kind],
+    () => localCollectionProducts(kind)
+  );
+  const list = state.data;
+  const maxDiscount = Math.max(...list.map((product) => product.discount), 0);
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
@@ -94,11 +120,17 @@ export default function CollectionPage({ kind }: { kind: CollectionKind }) {
         </div>
       </header>
 
-      <div className="mt-6 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-4">
-        {list.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
+      {state.loading ? (
+        <div className="mt-6">
+          <ProductGridSkeleton count={12} />
+        </div>
+      ) : (
+        <div className="mt-6 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-4">
+          {list.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      )}
 
       <div className="mt-8 rounded-2xl border border-[var(--brand-line)] bg-white p-5 text-center">
         <h2 className="font-serif text-xl font-bold text-[var(--brand-ink)]">Looking for something else?</h2>
