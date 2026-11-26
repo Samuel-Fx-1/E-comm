@@ -24,6 +24,7 @@ const ComparePage = lazy(() => import('./pages/Compare'));
 const CollectionPage = lazy(() => import('./pages/Collection'));
 const CustomerServicePage = lazy(() => import('./pages/CustomerService'));
 const SellPage = lazy(() => import('./pages/Sell'));
+const CreditsPage = lazy(() => import('./pages/Credits'));
 const NotFoundPage = lazy(() => import('./pages/NotFound'));
 
 function RouteFallback() {
@@ -207,6 +208,14 @@ export default function App() {
             element={
               <Suspense fallback={<RouteFallback />}>
                 <SellPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="credits"
+            element={
+              <Suspense fallback={<RouteFallback />}>
+                <CreditsPage />
               </Suspense>
             }
           />

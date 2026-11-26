@@ -6,3 +6,8 @@ coverage/
 *.log
 .env*
 !.env.example
+!.env.local.example
+tmp/
+.tmp/
+*.tmp
+public/products/*/originals/

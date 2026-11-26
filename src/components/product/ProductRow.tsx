@@ -63,9 +63,9 @@ export function ProductRow({ title, subtitle, products, href, linkLabel = 'See a
         </div>
       </div>
       <div ref={trackRef} className="no-scrollbar -mx-1 flex snap-x gap-4 overflow-x-auto px-1 pb-2">
-        {products.map((product) => (
+        {products.map((product, index) => (
           <div key={product.id} className="w-[190px] shrink-0 snap-start sm:w-[220px]">
-            <ProductCard product={product} />
+            <ProductCard product={product} priority={index < 5} />
           </div>
         ))}
       </div>

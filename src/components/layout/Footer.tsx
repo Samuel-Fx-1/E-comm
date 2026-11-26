@@ -30,6 +30,7 @@ const columns = [
       { label: 'Shipping & delivery', to: '/customer-service' },
       { label: 'Returns & refunds', to: '/customer-service' },
       { label: 'Help centre', to: '/customer-service' },
+      { label: 'Image credits', to: '/credits' },
     ],
   },
   {

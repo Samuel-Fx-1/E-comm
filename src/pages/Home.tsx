@@ -100,6 +100,7 @@ export default function HomePage() {
               <ImageWithFallback
                 src={imagesFor(dealOfDay)[0]}
                 alt={dealOfDay.title}
+                priority
                 className="h-56 w-full object-cover transition-transform duration-300 hover:scale-105 sm:h-64 sm:w-64"
               />
             </Link>

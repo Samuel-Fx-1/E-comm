@@ -12,7 +12,11 @@ interface SeoProps {
 export function Seo({ title, description = site.description, path = '/', image, noIndex = false }: SeoProps) {
   const fullTitle = title ? `${title} | ${site.name}` : `${site.name} — ${site.tagline}`;
   const url = `${site.url}${path}`;
-  const imageUrl = image ? `${site.url}${image}` : `${site.url}/images/og-cover.svg`;
+  const imageUrl = image
+    ? /^https?:\/\//.test(image)
+      ? image
+      : `${site.url}${image}`
+    : `${site.url}/images/og-cover.svg`;
 
   return (
     <Helmet>

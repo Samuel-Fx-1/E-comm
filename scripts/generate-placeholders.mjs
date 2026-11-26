@@ -2,6 +2,8 @@
  * Generates deterministic, dependency-free SVG artwork for every product in
  * src/data/products/*.ts. This is the bundled fallback: no API key or network
  * access is required. Run `npm run images:placeholders` after adding products.
+ *
+ * Output: public/images/products/<category>/<slug>-{1..4}.svg
  */
 import { readdirSync, readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -9,7 +11,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const productsDir = join(root, 'src', 'data', 'products');
-const outputDir = join(root, 'public', 'images', 'products');
+const outputRoot = join(root, 'public', 'images', 'products');
 
 const palette = {
   electronics: ['#0C1E36', '#2563EB'],
@@ -51,15 +53,18 @@ function artwork({ title, category, variant }) {
   const name = escapeXml(title);
   const mark = escapeXml(initials(title));
   const id = `g${variant}`;
-  const offset = variant === 1 ? 0 : 130;
+  const offsets = [0, 130, 60, 190];
 
-  const shapes = variant === 1
-    ? `<circle cx="640" cy="180" r="230" fill="${light}" opacity="0.16" />
-       <rect x="70" y="520" width="300" height="300" rx="60" fill="${light}" opacity="0.12" transform="rotate(-18 220 670)" />
-       <circle cx="250" cy="230" r="72" fill="none" stroke="${light}" stroke-width="3" opacity="0.35" />`
-    : `<rect x="430" y="90" width="340" height="340" rx="90" fill="${light}" opacity="0.14" transform="rotate(14 600 260)" />
-       <circle cx="160" cy="620" r="240" fill="${light}" opacity="0.13" />
-       <path d="M80 200 L520 120" stroke="${light}" stroke-width="3" opacity="0.3" fill="none" />`;
+  const shapeSets = [
+    `<circle cx="640" cy="180" r="230" fill="${light}" opacity="0.16" />
+     <rect x="70" y="520" width="300" height="300" rx="60" fill="${light}" opacity="0.12" transform="rotate(-18 220 670)" />`,
+    `<rect x="430" y="90" width="340" height="340" rx="90" fill="${light}" opacity="0.14" transform="rotate(14 600 260)" />
+     <circle cx="160" cy="620" r="240" fill="${light}" opacity="0.13" />`,
+    `<circle cx="200" cy="200" r="180" fill="${light}" opacity="0.14" />
+     <rect x="480" y="500" width="260" height="260" rx="70" fill="${light}" opacity="0.12" transform="rotate(-12 610 630)" />`,
+    `<rect x="90" y="420" width="360" height="240" rx="80" fill="${light}" opacity="0.13" transform="rotate(10 270 540)" />
+     <circle cx="620" cy="180" r="200" fill="${light}" opacity="0.15" />`,
+  ];
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="${name}">
   <defs>
@@ -69,8 +74,8 @@ function artwork({ title, category, variant }) {
     </linearGradient>
   </defs>
   <rect width="800" height="800" fill="url(#${id})" />
-  ${shapes}
-  <g transform="translate(${offset} 0)">
+  ${shapeSets[(variant - 1) % shapeSets.length]}
+  <g transform="translate(${offsets[(variant - 1) % offsets.length]} 0)">
     <circle cx="400" cy="392" r="172" fill="#FFFFFF" opacity="0.92" />
     <text x="400" y="452" text-anchor="middle" font-family="Georgia, serif" font-size="168" font-weight="700" fill="${dark}">${mark}</text>
   </g>
@@ -86,21 +91,11 @@ for (const file of readdirSync(productsDir).filter((name) => name.endsWith('.ts'
   const source = readFileSync(join(productsDir, file), 'utf8');
   for (const match of source.matchAll(/makeProduct\(\{([\s\S]*?)\}\)/g)) {
     const block = match[1];
-    const title = block.match(/title:\s*'((?:[^'\\]|\\.)*)'/)?.[1];
+    const titleMatch = block.match(/title:\s*(['"])((?:\\.|(?!\1).)*)\1/);
     const category = block.match(/category:\s*'([a-z-]+)'/)?.[1];
-    if (!title || !category) continue;
-    products.push({ slug: slugify(title.replace(/\\'/g, "'")), title, category });
-  }
-}
-
-mkdirSync(outputDir, { recursive: true });
-for (const product of products) {
-  for (const variant of [1, 2]) {
-    writeFileSync(
-      join(outputDir, `${product.slug}-${variant}.svg`),
-      artwork({ ...product, variant }),
-      'utf8'
-    );
+    if (!titleMatch || !category) continue;
+    const title = titleMatch[2].replace(/\\(['"])/g, '$1');
+    products.push({ slug: slugify(title), title, category });
   }
 }
 
@@ -108,4 +103,19 @@ const unique = new Set(products.map((product) => product.slug));
 if (unique.size !== products.length) {
   console.warn(`Warning: ${products.length - unique.size} duplicate slug(s) found.`);
 }
-console.log(`Generated ${products.length * 2} local SVG images for ${products.length} products.`);
+
+for (const category of Object.keys(palette)) {
+  mkdirSync(join(outputRoot, category), { recursive: true });
+}
+let written = 0;
+for (const product of products) {
+  for (const variant of [1, 2, 3, 4]) {
+    writeFileSync(
+      join(outputRoot, product.category, `${product.slug}-${variant}.svg`),
+      artwork({ ...product, variant }),
+      'utf8'
+    );
+    written += 1;
+  }
+}
+console.log(`Generated ${written} local SVG images for ${products.length} products across ${Object.keys(palette).length} categories.`);

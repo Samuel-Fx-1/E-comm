@@ -1,0 +1,786 @@
+{
+  "version": 1,
+  "terms": {
+    "unsplash": {
+      "source": "https://unsplash.com/developers",
+      "guidelines": "https://help.unsplash.com/en/articles/2511245-unsplash-api-guidelines",
+      "license": "https://unsplash.com/license",
+      "hotlinkOnly": true,
+      "attribution": "Photographer + Unsplash links with UTM parameters are shown on product pages and /credits."
+    },
+    "pexels": {
+      "source": "https://www.pexels.com/api/documentation/",
+      "license": "https://www.pexels.com/license/",
+      "hotlinkOnly": false,
+      "attribution": "Photographer/source links are stored in data/product-images.json."
+    }
+  },
+  "products": {
+    "sana-vitamin-c-serum": {
+      "title": "Sana Vitamin C Serum",
+      "category": "beauty",
+      "query": "Vitamin C Serum beauty",
+      "status": "pending",
+      "source": "generated",
+      "reason": "API key rejected",
+      "images": []
+    },
+    "sana-hydrating-face-cream": {
+      "title": "Sana Hydrating Face Cream",
+      "category": "beauty",
+      "query": "Hydrating Face Cream beauty",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "mirembe-shea-butter-body-set": {
+      "title": "Mirembe Shea Butter Body Set",
+      "category": "beauty",
+      "query": "Shea Butter Body Set beauty",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "sana-charcoal-clay-mask": {
+      "title": "Sana Charcoal Clay Mask",
+      "category": "beauty",
+      "query": "Charcoal Clay Mask beauty",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "lumio-ionic-hair-dryer": {
+      "title": "Lumio Ionic Hair Dryer",
+      "category": "beauty",
+      "query": "Ionic Hair Dryer beauty",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "sana-matte-lipstick-trio": {
+      "title": "Sana Matte Lipstick Trio",
+      "category": "beauty",
+      "query": "Matte Lipstick Trio beauty",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "mirembe-essential-oil-gift-set": {
+      "title": "Mirembe Essential Oil Gift Set",
+      "category": "beauty",
+      "query": "Essential Oil Gift Set beauty",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "sana-spf-50-sunscreen": {
+      "title": "Sana SPF 50 Sunscreen",
+      "category": "beauty",
+      "query": "SPF 50 Sunscreen beauty",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "mirembe-beard-grooming-kit": {
+      "title": "Mirembe Beard Grooming Kit",
+      "category": "beauty",
+      "query": "Beard Grooming Kit beauty",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "sana-makeup-brush-set-12-piece": {
+      "title": "Sana Makeup Brush Set 12-piece",
+      "category": "beauty",
+      "query": "Makeup Brush Set 12-piece beauty",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "the-quiet-algorithm": {
+      "title": "The Quiet Algorithm",
+      "category": "books",
+      "query": "The Quiet Algorithm books",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "small-steps-big-seasons": {
+      "title": "Small Steps, Big Seasons",
+      "category": "books",
+      "query": "Small Steps, Big Seasons books",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "the-kigali-kitchen-100-recipes": {
+      "title": "The Kigali Kitchen: 100 Recipes",
+      "category": "books",
+      "query": "The Kigali Kitchen: 100 Recipes books",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "design-for-everyone": {
+      "title": "Design for Everyone",
+      "category": "books",
+      "query": "Design for Everyone books",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "a-field-guide-to-east-african-birds": {
+      "title": "A Field Guide to East African Birds",
+      "category": "books",
+      "query": "A Field Guide to East African Birds books",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "the-founder-s-notebook": {
+      "title": "The Founder's Notebook",
+      "category": "books",
+      "query": "The Founder's Notebook books",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "python-in-practice": {
+      "title": "Python in Practice",
+      "category": "books",
+      "query": "Python in Practice books",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "the-long-road-home": {
+      "title": "The Long Road Home",
+      "category": "books",
+      "query": "The Long Road Home books",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "money-simply": {
+      "title": "Money, Simply",
+      "category": "books",
+      "query": "Money, Simply books",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "the-art-of-quiet-leadership": {
+      "title": "The Art of Quiet Leadership",
+      "category": "books",
+      "query": "The Art of Quiet Leadership books",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "children-of-the-hills": {
+      "title": "Children of the Hills",
+      "category": "books",
+      "query": "Children of the Hills books",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "auralis-pulse-5-wireless-earbuds": {
+      "title": "Auralis Pulse 5 Wireless Earbuds",
+      "category": "electronics",
+      "query": "Pulse 5 Wireless Earbuds electronics",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "voltix-65w-gan-charger": {
+      "title": "Voltix 65W GaN Charger",
+      "category": "electronics",
+      "query": "65W GaN Charger electronics",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "lumo-27-inch-qhd-monitor": {
+      "title": "Lumo 27-inch QHD Monitor",
+      "category": "electronics",
+      "query": "27-inch QHD Monitor electronics",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "nordika-mechanical-keyboard-k87": {
+      "title": "Nordika Mechanical Keyboard K87",
+      "category": "electronics",
+      "query": "Mechanical Keyboard K87 electronics",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "auralis-studio-over-ear-headphones": {
+      "title": "Auralis Studio Over-Ear Headphones",
+      "category": "electronics",
+      "query": "Studio Over-Ear Headphones electronics",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "voltix-20-000mah-power-bank": {
+      "title": "Voltix 20,000mAh Power Bank",
+      "category": "electronics",
+      "query": "20,000mAh Power Bank electronics",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kanso-smart-watch-s2": {
+      "title": "Kanso Smart Watch S2",
+      "category": "electronics",
+      "query": "Smart Watch S2 electronics",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "lumio-1080p-webcam": {
+      "title": "Lumio 1080p Webcam",
+      "category": "electronics",
+      "query": "1080p Webcam electronics",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-bluetooth-speaker-mini": {
+      "title": "Rift Bluetooth Speaker Mini",
+      "category": "electronics",
+      "query": "Bluetooth Speaker Mini electronics",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "voltix-usb-c-hub-8-in-1": {
+      "title": "Voltix USB-C Hub 8-in-1",
+      "category": "electronics",
+      "query": "USB-C Hub 8-in-1 electronics",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "auralis-soundbar-2-1": {
+      "title": "Auralis Soundbar 2.1",
+      "category": "electronics",
+      "query": "Soundbar 2.1 electronics",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-everyday-sneakers": {
+      "title": "Rift Everyday Sneakers",
+      "category": "fashion",
+      "query": "Everyday Sneakers fashion",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kanso-linen-shirt": {
+      "title": "Kanso Linen Shirt",
+      "category": "fashion",
+      "query": "Linen Shirt fashion",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "mirembe-ankara-print-wrap-dress": {
+      "title": "Mirembe Ankara Print Wrap Dress",
+      "category": "fashion",
+      "query": "Ankara Print Wrap Dress fashion",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-slim-chino-pants": {
+      "title": "Rift Slim Chino Pants",
+      "category": "fashion",
+      "query": "Slim Chino Pants fashion",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kanso-wool-blend-overcoat": {
+      "title": "Kanso Wool Blend Overcoat",
+      "category": "fashion",
+      "query": "Wool Blend Overcoat fashion",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "mirembe-beaded-bracelet-set": {
+      "title": "Mirembe Beaded Bracelet Set",
+      "category": "fashion",
+      "query": "Beaded Bracelet Set fashion",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-canvas-backpack-22l": {
+      "title": "Rift Canvas Backpack 22L",
+      "category": "fashion",
+      "query": "Canvas Backpack 22L fashion",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kanso-leather-belt": {
+      "title": "Kanso Leather Belt",
+      "category": "fashion",
+      "query": "Leather Belt fashion",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "mirembe-silk-scarf": {
+      "title": "Mirembe Silk Scarf",
+      "category": "fashion",
+      "query": "Silk Scarf fashion",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-performance-running-jacket": {
+      "title": "Rift Performance Running Jacket",
+      "category": "fashion",
+      "query": "Performance Running Jacket fashion",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kanso-classic-denim-jacket": {
+      "title": "Kanso Classic Denim Jacket",
+      "category": "fashion",
+      "query": "Classic Denim Jacket fashion",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kigali-roasters-single-origin-coffee-500g": {
+      "title": "Kigali Roasters Single-Origin Coffee 500g",
+      "category": "groceries",
+      "query": "Single-Origin Coffee 500g groceries",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "mirembe-raw-wildflower-honey-500g": {
+      "title": "Mirembe Raw Wildflower Honey 500g",
+      "category": "groceries",
+      "query": "Raw Wildflower Honey 500g groceries",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kigali-roasters-green-tea-40-bags": {
+      "title": "Kigali Roasters Green Tea 40 bags",
+      "category": "groceries",
+      "query": "Green Tea 40 bags groceries",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "sana-extra-virgin-olive-oil-1l": {
+      "title": "Sana Extra Virgin Olive Oil 1L",
+      "category": "groceries",
+      "query": "Extra Virgin Olive Oil 1L groceries",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "mirembe-roasted-cashews-400g": {
+      "title": "Mirembe Roasted Cashews 400g",
+      "category": "groceries",
+      "query": "Roasted Cashews 400g groceries",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kigali-roasters-ground-coffee-1kg": {
+      "title": "Kigali Roasters Ground Coffee 1kg",
+      "category": "groceries",
+      "query": "Ground Coffee 1kg groceries",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "mirembe-dark-chocolate-70-6-pack": {
+      "title": "Mirembe Dark Chocolate 70% 6-pack",
+      "category": "groceries",
+      "query": "Dark Chocolate 70% 6-pack groceries",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "sana-basmati-rice-5kg": {
+      "title": "Sana Basmati Rice 5kg",
+      "category": "groceries",
+      "query": "Basmati Rice 5kg groceries",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "mirembe-dried-mango-slices-300g": {
+      "title": "Mirembe Dried Mango Slices 300g",
+      "category": "groceries",
+      "query": "Dried Mango Slices 300g groceries",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "sana-organic-peanut-butter-1kg": {
+      "title": "Sana Organic Peanut Butter 1kg",
+      "category": "groceries",
+      "query": "Organic Peanut Butter 1kg groceries",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kigali-roasters-chai-spice-blend": {
+      "title": "Kigali Roasters Chai Spice Blend",
+      "category": "groceries",
+      "query": "Chai Spice Blend groceries",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kanso-ceramic-pour-over-set": {
+      "title": "Kanso Ceramic Pour-Over Set",
+      "category": "home-kitchen",
+      "query": "Ceramic Pour-Over Set home kitchen",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "nordika-cast-iron-skillet-12-inch": {
+      "title": "Nordika Cast Iron Skillet 12-inch",
+      "category": "home-kitchen",
+      "query": "Cast Iron Skillet 12-inch home kitchen",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "verdant-bamboo-cutting-board-set": {
+      "title": "Verdant Bamboo Cutting Board Set",
+      "category": "home-kitchen",
+      "query": "Bamboo Cutting Board Set home kitchen",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "lumio-smart-led-desk-lamp": {
+      "title": "Lumio Smart LED Desk Lamp",
+      "category": "home-kitchen",
+      "query": "Smart LED Desk Lamp home kitchen",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kanso-stoneware-dinner-set-16-piece": {
+      "title": "Kanso Stoneware Dinner Set 16-piece",
+      "category": "home-kitchen",
+      "query": "Stoneware Dinner Set 16-piece home kitchen",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "nordika-air-fryer-5-5l": {
+      "title": "Nordika Air Fryer 5.5L",
+      "category": "home-kitchen",
+      "query": "Air Fryer 5.5L home kitchen",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "verdant-cotton-bath-towel-set": {
+      "title": "Verdant Cotton Bath Towel Set",
+      "category": "home-kitchen",
+      "query": "Cotton Bath Towel Set home kitchen",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kanso-french-press-1l": {
+      "title": "Kanso French Press 1L",
+      "category": "home-kitchen",
+      "query": "French Press 1L home kitchen",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "lumio-cordless-vacuum-v8": {
+      "title": "Lumio Cordless Vacuum V8",
+      "category": "home-kitchen",
+      "query": "Cordless Vacuum V8 home kitchen",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "nordika-nonstick-cookware-10-piece": {
+      "title": "Nordika Nonstick Cookware 10-piece",
+      "category": "home-kitchen",
+      "query": "Nonstick Cookware 10-piece home kitchen",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "verdant-linen-throw-blanket": {
+      "title": "Verdant Linen Throw Blanket",
+      "category": "home-kitchen",
+      "query": "Linen Throw Blanket home kitchen",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-yoga-mat-6mm": {
+      "title": "Rift Yoga Mat 6mm",
+      "category": "sports",
+      "query": "Yoga Mat 6mm sports",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-adjustable-dumbbell-24kg": {
+      "title": "Rift Adjustable Dumbbell 24kg",
+      "category": "sports",
+      "query": "Adjustable Dumbbell 24kg sports",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "atlas-trail-running-shoes": {
+      "title": "Atlas Trail Running Shoes",
+      "category": "sports",
+      "query": "Trail Running Shoes sports",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-resistance-band-set": {
+      "title": "Rift Resistance Band Set",
+      "category": "sports",
+      "query": "Resistance Band Set sports",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "atlas-2-person-camping-tent": {
+      "title": "Atlas 2-Person Camping Tent",
+      "category": "sports",
+      "query": "2-Person Camping Tent sports",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-insulated-water-bottle-1l": {
+      "title": "Rift Insulated Water Bottle 1L",
+      "category": "sports",
+      "query": "Insulated Water Bottle 1L sports",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "atlas-cycling-helmet": {
+      "title": "Atlas Cycling Helmet",
+      "category": "sports",
+      "query": "Cycling Helmet sports",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-foam-roller": {
+      "title": "Rift Foam Roller",
+      "category": "sports",
+      "query": "Foam Roller sports",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "atlas-hiking-backpack-40l": {
+      "title": "Atlas Hiking Backpack 40L",
+      "category": "sports",
+      "query": "Hiking Backpack 40L sports",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-jump-rope-pro": {
+      "title": "Rift Jump Rope Pro",
+      "category": "sports",
+      "query": "Jump Rope Pro sports",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-build-it-blocks-500-piece": {
+      "title": "Rift Build-It Blocks 500-piece",
+      "category": "toys",
+      "query": "Build-It Blocks 500-piece toys",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kanso-wooden-puzzle-map": {
+      "title": "Kanso Wooden Puzzle Map",
+      "category": "toys",
+      "query": "Wooden Puzzle Map toys",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-remote-control-rover": {
+      "title": "Rift Remote Control Rover",
+      "category": "toys",
+      "query": "Remote Control Rover toys",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "lumio-glow-star-projector": {
+      "title": "Lumio Glow Star Projector",
+      "category": "toys",
+      "query": "Glow Star Projector toys",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kanso-plush-elephant": {
+      "title": "Kanso Plush Elephant",
+      "category": "toys",
+      "query": "Plush Elephant toys",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-magnetic-tile-set-64-piece": {
+      "title": "Rift Magnetic Tile Set 64-piece",
+      "category": "toys",
+      "query": "Magnetic Tile Set 64-piece toys",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kanso-kids-art-easel": {
+      "title": "Kanso Kids Art Easel",
+      "category": "toys",
+      "query": "Kids Art Easel toys",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-stem-robot-kit": {
+      "title": "Rift STEM Robot Kit",
+      "category": "toys",
+      "query": "STEM Robot Kit toys",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "kanso-wooden-train-set": {
+      "title": "Kanso Wooden Train Set",
+      "category": "toys",
+      "query": "Wooden Train Set toys",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    },
+    "rift-outdoor-bubble-machine": {
+      "title": "Rift Outdoor Bubble Machine",
+      "category": "toys",
+      "query": "Outdoor Bubble Machine toys",
+      "status": "pending",
+      "source": "generated",
+      "reason": "Not resolved yet",
+      "images": []
+    }
+  },
+  "generatedAt": "2026-11-26T13:46:09.650Z"
+}

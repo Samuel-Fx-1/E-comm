@@ -5,7 +5,7 @@ import {
 } from 'lucide-react';
 import { getProduct, products } from '../data/products';
 import { getCategory } from '../data/categories';
-import { imagesFor } from '../data/imageMap';
+import { creditFor, resolveImages } from '../data/imageMap';
 import { relatedProducts } from '../lib/search';
 import { deliveryDateRange, classNames } from '../lib/format';
 import { useStore } from '../context/StoreContext';
@@ -176,7 +176,7 @@ export default function ProductPage() {
   const category = getCategory(product.category);
   const related = relatedProducts(products, product, 8);
   const alsoViewed = related.filter((entry) => !recent.includes(entry.id)).slice(0, 8);
-  const images = imagesFor(product);
+  const images = resolveImages(product);
   const delivery = deliveryDateRange(product.deliveryDays, countryCode, false, language);
 
   return (
@@ -185,7 +185,7 @@ export default function ProductPage() {
         title={product.title}
         description={`${product.bullets[0]} — ${product.brand}. ${product.rating} out of 5 from ${product.reviewCount} reviews.`}
         path={`/product/${product.slug}`}
-        image={images[0]}
+        image={images[0].src}
       />
 
       <Breadcrumbs
@@ -199,7 +199,12 @@ export default function ProductPage() {
       <div className="mt-4 grid gap-6 lg:grid-cols-[minmax(0,1fr)_340px]">
         <div className="min-w-0 space-y-6">
           <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:grid-cols-1 xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-            <ProductGallery images={images} title={product.title} discount={product.discount} />
+            <ProductGallery
+              images={images}
+              title={product.name}
+              discount={product.discount}
+              credit={creditFor(product)}
+            />
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--brand-muted)]">
                 <Link to={`/search?q=${encodeURIComponent(product.brand)}`} className="hover:text-[var(--brand-orange)] hover:underline">
@@ -209,6 +214,7 @@ export default function ProductPage() {
               <h1 className="mt-1 font-serif text-2xl font-bold leading-tight text-[var(--brand-ink)] sm:text-3xl">
                 {product.title}
               </h1>
+              <p className="mt-2 text-sm leading-6 text-[var(--brand-muted)]">{product.shortDescription}</p>
               <div className="mt-2 flex flex-wrap items-center gap-2">
                 <Rating rating={product.rating} size="md" showNumber />
                 <a

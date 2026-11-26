@@ -18,22 +18,55 @@ export interface Category {
   tint: string;
 }
 
+/** Where a gallery image came from. Unsplash images are hotlinked, never rehosted. */
+export type ImageSource = 'unsplash' | 'pexels' | 'override' | 'generated' | 'illustrative';
+
+/** A gallery-ready image with accessible text and responsive metadata. */
+export interface ResolvedImage {
+  src: string;
+  srcSet?: string;
+  sizes?: string;
+  alt: string;
+  source: ImageSource;
+  width: number;
+  height: number;
+  /** Tiny blurred image used as a low-cost placeholder while the photo loads. */
+  blurSrc?: string;
+  color?: string;
+  creditId?: string;
+  illustrative?: boolean;
+}
+
+export interface ProductVariant {
+  type: 'color' | 'size';
+  name: string;
+  value: string;
+}
+
 export interface Product {
   id: string;
   slug: string;
+  /** Preferred display name. `title` is kept as a compatibility alias. */
+  name: string;
   title: string;
   brand: string;
   category: CategorySlug;
-  /** Price in USD cents-free base currency (USD). */
+  subcategory: string;
+  /** RWF is the native price unit. USD aliases remain for the legacy formatter. */
+  priceRwf: number;
+  oldPriceRwf: number;
   price: number;
   listPrice: number;
   discount: number;
   rating: number;
   reviewCount: number;
   stock: number;
+  shortDescription: string;
+  /** Gallery entries (main plus 3–5 views) are resolved from data/product-images.json. */
   images: string[];
   bullets: string[];
   specs: Record<string, string>;
+  variants: ProductVariant[];
   seller: string;
   deliveryDays: number;
   isBestSeller: boolean;
