@@ -1,0 +1,205 @@
+{
+  "category": "gen-alpha-kids-corner",
+  "name": "Gen Alpha & Kids Corner",
+  "products": [
+    {
+      "slug": "interactive-stem-robotics-building-kit",
+      "name": "Interactive STEM Robotics Building Kit",
+      "brand": "Soko Studio",
+      "category": "gen-alpha-kids-corner",
+      "subcategory": "Gen Alpha & Kids Corner",
+      "price": 64900,
+      "listPrice": 84500,
+      "rating": 4.7,
+      "reviewCount": 1890,
+      "stock": 46,
+      "shortDescription": "A hands-on robotics kit with snap-together parts and simple coding cards for young builders.",
+      "bullets": [
+        "Snap-together parts make building approachable",
+        "Simple coding cards introduce sequences and logic",
+        "Ages 8+ with adult supervision for the first build"
+      ],
+      "specs": {
+        "Pieces": "240",
+        "Age range": "Ages 8+",
+        "Power": "AA batteries",
+        "Build time": "60-90 min"
+      },
+      "variants": [
+        {
+          "type": "size",
+          "name": "Age",
+          "value": "Ages 8+"
+        }
+      ],
+      "seller": "Soko Studio Official",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-20",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": true,
+        "isViral": false
+      },
+      "imageQueries": [
+        "STEM robotics building kit",
+        "kids robotics kit product photo",
+        "building toys for ages 8",
+        "educational robot kit"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "40049041",
+          "url": "https://images.pexels.com/photos/40049041/pexels-photo-40049041.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Humanoid robots displayed at a technology exhibition",
+          "photographer": "Tori D",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/40049041/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "ergonomic-aesthetic-school-backpack-with-pins",
+      "name": "Ergonomic Aesthetic School Backpack with Pins",
+      "brand": "Atlas",
+      "category": "gen-alpha-kids-corner",
+      "subcategory": "Gen Alpha & Kids Corner",
+      "price": 51900,
+      "listPrice": 51900,
+      "rating": 4.6,
+      "reviewCount": 2280,
+      "stock": 88,
+      "shortDescription": "An ergonomic school backpack with padded straps, plenty of pockets and pins for personalising your fit.",
+      "bullets": [
+        "Padded straps and a breathable back panel spread the load",
+        "A laptop sleeve and three pockets keep school gear sorted",
+        "Three cheery pins let kids customise the look"
+      ],
+      "specs": {
+        "Capacity": "22 L",
+        "Laptop": "Up to 15 in",
+        "Material": "Recycled polyester",
+        "Age range": "Ages 8+"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Navy"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Rose"
+        }
+      ],
+      "seller": "Atlas Official",
+      "deliveryDays": 4,
+      "addedAt": "2026-11-18",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "ergonomic school backpack",
+        "kids backpack product photo",
+        "backpack with pins",
+        "school bag lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "37580640",
+          "url": "https://images.pexels.com/photos/37580640/pexels-photo-37580640.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Colourful backpacks for back to school",
+          "photographer": "Solé Gomez",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/37580640/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "kids-digital-instant-print-camera",
+      "name": "Kids Digital Instant Print Camera",
+      "brand": "Soko Studio",
+      "category": "gen-alpha-kids-corner",
+      "subcategory": "Gen Alpha & Kids Corner",
+      "price": 64900,
+      "listPrice": 64900,
+      "rating": 4.4,
+      "reviewCount": 1560,
+      "stock": 33,
+      "shortDescription": "A pocket-friendly instant print camera with a 2-inch screen, fun frames and USB-C recharging.",
+      "bullets": [
+        "Prints a photo seconds after you press the shutter",
+        "A 2-inch screen makes framing and replay easy",
+        "Fun frames and stickers encourage creative play"
+      ],
+      "specs": {
+        "Display": "2 in",
+        "Prints": "Thermal paper",
+        "Charging": "USB-C",
+        "Age range": "Ages 8+"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Yellow"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "White"
+        }
+      ],
+      "seller": "Soko Studio Official",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-10",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "kids instant print camera",
+        "digital camera for children",
+        "instant camera product photo",
+        "kids camera creative play"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "10676011",
+          "url": "https://images.pexels.com/photos/10676011/pexels-photo-10676011.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Young boy holding a yellow instant camera outdoors",
+          "photographer": "Caleb Oquendo",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/10676011/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    }
+  ]
+}
