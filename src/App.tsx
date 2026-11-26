@@ -204,6 +204,22 @@ export default function App() {
             }
           />
           <Route
+            path="gen-z-picks"
+            element={
+              <Suspense fallback={<RouteFallback />}>
+                <CollectionPage kind="gen-z-picks" />
+              </Suspense>
+            }
+          />
+          <Route
+            path="viral"
+            element={
+              <Suspense fallback={<RouteFallback />}>
+                <CollectionPage kind="viral" />
+              </Suspense>
+            }
+          />
+          <Route
             path="customer-service"
             element={
               <Suspense fallback={<RouteFallback />}>
