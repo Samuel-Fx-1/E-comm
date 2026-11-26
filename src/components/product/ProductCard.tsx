@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { GitCompareArrows, Heart, ShoppingCart, Truck } from 'lucide-react';
 import type { Product } from '../../types';
-import { imagesFor } from '../../data/imageMap';
+import { resolveImages } from '../../data/imageMap';
 import { useStore } from '../../context/StoreContext';
 import { useSite } from '../../context/SiteContext';
 import { deliveryDateRange } from '../../lib/format';
@@ -13,15 +13,17 @@ import { classNames } from '../../lib/format';
 interface ProductCardProps {
   product: Product;
   layout?: 'grid' | 'list';
+  /** Set for the first visible row so above-the-fold photos load immediately. */
+  priority?: boolean;
 }
 
-export function ProductCard({ product, layout = 'grid' }: ProductCardProps) {
+export function ProductCard({ product, layout = 'grid', priority = false }: ProductCardProps) {
   const { addToCart, toggleWishlist, wishlist, toggleCompare, compare } = useStore();
   const { countryCode, language, t } = useSite();
   const saved = wishlist.includes(product.id);
   const comparing = compare.includes(product.id);
   const outOfStock = product.stock <= 0;
-  const images = imagesFor(product);
+  const images = resolveImages(product);
   const delivery = deliveryDateRange(product.deliveryDays, countryCode, false, language);
 
   const media = (
@@ -31,8 +33,13 @@ export function ProductCard({ product, layout = 'grid' }: ProductCardProps) {
       aria-label={product.title}
     >
       <ImageWithFallback
-        src={images[0]}
-        alt={product.title}
+        src={images[0].src}
+        srcSet={images[0].srcSet}
+        sizes={images[0].sizes}
+        width={images[0].width}
+        height={images[0].height}
+        alt={images[0].alt}
+        priority={priority}
         className={classNames(
           'w-full object-cover transition-transform duration-300 hover:scale-105',
           layout === 'grid' ? 'aspect-square' : 'h-44 w-44'
@@ -109,7 +116,7 @@ export function ProductCard({ product, layout = 'grid' }: ProductCardProps) {
           </div>
           <Rating rating={product.rating} count={product.reviewCount} showNumber />
           <Price price={product.price} listPrice={product.listPrice} />
-          <p className="line-clamp-2 text-sm text-[var(--brand-muted)]">{product.bullets[0]}</p>
+          <p className="line-clamp-2 text-sm text-[var(--brand-muted)]">{product.shortDescription}</p>
           <p className="flex items-center gap-1.5 text-xs font-medium text-[var(--brand-success)]">
             <Truck className="h-4 w-4" aria-hidden="true" /> Delivery {delivery}
           </p>
