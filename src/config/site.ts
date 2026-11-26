@@ -10,7 +10,7 @@ export const site = {
   logoMark: 'S',
   tagline: 'Everyday finds, delivered.',
   description:
-    'Soko is a demo online marketplace for tech accessories, apparel, skincare, home essentials and digital products with delivery across East Africa and beyond.',
+    'Soko is a demo marketplace for Gen Z and Gen Alpha picks across tech, streetwear, skincare, lifestyle and kids essentials.',
   url: 'https://soko.example.com',
   supportEmail: 'help@soko.example.com',
   supportPhone: '+250 788 000 000',
