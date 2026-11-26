@@ -18,8 +18,8 @@ export function CartDrawer() {
     .map((line) => ({ line, product: resolveLineProduct(line) }))
     .filter((entry): entry is { line: typeof cart[number]; product: Product } => Boolean(entry.product));
 
-  const remaining = Math.max(0, site.freeShippingThresholdUsd - cartSubtotal);
-  const progress = Math.min(100, (cartSubtotal / site.freeShippingThresholdUsd) * 100);
+  const remaining = Math.max(0, site.freeDeliveryThresholdRwf - cartSubtotal);
+  const progress = Math.min(100, (cartSubtotal / site.freeDeliveryThresholdRwf) * 100);
 
   return (
     <Drawer
