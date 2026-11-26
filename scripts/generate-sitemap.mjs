@@ -26,9 +26,10 @@ for (const file of readdirSync(productsDir).filter((name) => name.endsWith('.ts'
 }
 
 const staticPaths = [
-  '/', '/search', '/deals', '/best-sellers', '/new-arrivals', '/trending', '/customer-service', '/sell',
-  '/category/tech-audio-accessories', '/category/apparel-footwear', '/category/skincare-personal-care',
-  '/category/home-kitchen', '/category/digital', '/credits',
+  '/', '/search', '/deals', '/best-sellers', '/new-arrivals', '/trending',
+  '/gen-z-picks', '/viral', '/customer-service', '/sell',
+  '/category/tech-gaming', '/category/streetwear-footwear', '/category/viral-skincare-haircare',
+  '/category/lifestyle-aesthetic-essentials', '/category/gen-alpha-kids-corner', '/credits',
 ];
 const paths = [...staticPaths, ...slugs.map((slug) => `/product/${slug}`)];
 const today = new Date().toISOString().slice(0, 10);
