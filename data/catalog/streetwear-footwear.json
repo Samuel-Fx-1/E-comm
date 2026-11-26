@@ -1,0 +1,353 @@
+{
+  "category": "streetwear-footwear",
+  "name": "Streetwear & Footwear",
+  "products": [
+    {
+      "slug": "heavyweight-oversized-graphic-t-shirt",
+      "name": "Heavyweight Oversized Graphic T-Shirt",
+      "brand": "Kanso",
+      "category": "streetwear-footwear",
+      "subcategory": "Streetwear & Footwear",
+      "price": 38900,
+      "listPrice": 51900,
+      "rating": 4.7,
+      "reviewCount": 6740,
+      "stock": 180,
+      "shortDescription": "A heavyweight oversized tee with a boxy cut and soft-washed graphic that keeps its shape.",
+      "bullets": [
+        "240gsm cotton feels substantial without feeling stiff",
+        "Drop shoulders and a boxy cut layer easily over fits",
+        "The washed graphic stays soft after every wash"
+      ],
+      "specs": {
+        "Fabric": "100% combed cotton",
+        "Weight": "240 gsm",
+        "Fit": "Oversized unisex",
+        "Care": "Machine wash cold"
+      },
+      "variants": [
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "S"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "M"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "L"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "XL"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Ink Black"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Ivory"
+        }
+      ],
+      "seller": "Kanso Official",
+      "deliveryDays": 6,
+      "addedAt": "2026-11-23",
+      "flags": {
+        "isBestSeller": true,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "oversized graphic t shirt",
+        "streetwear t shirt flat lay",
+        "boxy cotton tee product photo",
+        "oversized tee lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "36942017",
+          "url": "https://images.pexels.com/photos/36942017/pexels-photo-36942017.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Trendy oversized graphic t-shirt",
+          "photographer": "BANDAR BAANT",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/36942017/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "baggy-barrel-fit-cargo-jeans",
+      "name": "Baggy Barrel-Fit Cargo Jeans",
+      "brand": "Rift",
+      "category": "streetwear-footwear",
+      "subcategory": "Streetwear & Footwear",
+      "price": 64900,
+      "listPrice": 64900,
+      "rating": 4.5,
+      "reviewCount": 2140,
+      "stock": 96,
+      "shortDescription": "Baggy barrel-fit cargo jeans with roomy pockets and a relaxed waistband for everyday street fits.",
+      "bullets": [
+        "A curved barrel leg gives classic denim a modern silhouette",
+        "Six roomy pockets carry the essentials without a bag",
+        "Washed denim breaks in naturally with wear"
+      ],
+      "specs": {
+        "Fabric": "100% cotton denim",
+        "Fit": "Baggy barrel",
+        "Rise": "Mid rise",
+        "Care": "Machine wash cold"
+      },
+      "variants": [
+        {
+          "type": "size",
+          "name": "Waist",
+          "value": "28"
+        },
+        {
+          "type": "size",
+          "name": "Waist",
+          "value": "30"
+        },
+        {
+          "type": "size",
+          "name": "Waist",
+          "value": "32"
+        },
+        {
+          "type": "size",
+          "name": "Waist",
+          "value": "34"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Washed Blue"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Black"
+        }
+      ],
+      "seller": "Rift Official",
+      "deliveryDays": 5,
+      "addedAt": "2026-11-20",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "baggy cargo jeans",
+        "barrel fit denim pants",
+        "streetwear cargo pants product photo",
+        "washed denim jeans lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "25484767",
+          "url": "https://images.pexels.com/photos/25484767/pexels-photo-25484767.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Young woman wearing baggy jeans and a crop top",
+          "photographer": "Noland Live",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/25484767/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "high-waisted-fold-over-athleisure-leggings",
+      "name": "High-Waisted Fold-Over Athleisure Leggings",
+      "brand": "Kanso",
+      "category": "streetwear-footwear",
+      "subcategory": "Streetwear & Footwear",
+      "price": 38900,
+      "listPrice": 51900,
+      "rating": 4.6,
+      "reviewCount": 3890,
+      "stock": 132,
+      "shortDescription": "High-waisted fold-over leggings with squat-friendly stretch and a soft brushed finish.",
+      "bullets": [
+        "The fold-over waistband stays put through workouts and errands",
+        "Four-way stretch moves with you and recovers its shape",
+        "A brushed finish feels soft against the skin"
+      ],
+      "specs": {
+        "Fabric": "Nylon / elastane",
+        "Rise": "High rise",
+        "Length": "Full length",
+        "Care": "Machine wash cold"
+      },
+      "variants": [
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "S"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "M"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "L"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Black"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Mauve"
+        }
+      ],
+      "seller": "Kanso Official",
+      "deliveryDays": 2,
+      "addedAt": "2026-11-18",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "high waisted leggings",
+        "athleisure leggings product photo",
+        "fold over yoga leggings",
+        "activewear leggings studio"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7593007",
+          "url": "https://images.pexels.com/photos/7593007/pexels-photo-7593007.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman practicing yoga in athletic leggings",
+          "photographer": "Miriam Alonso",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/7593007/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "retro-low-top-chunky-sneakers",
+      "name": "Retro Low-Top Chunky Sneakers",
+      "brand": "Atlas",
+      "category": "streetwear-footwear",
+      "subcategory": "Streetwear & Footwear",
+      "price": 90900,
+      "listPrice": 116900,
+      "rating": 4.8,
+      "reviewCount": 9120,
+      "stock": 58,
+      "shortDescription": "Retro low-top chunky sneakers with a cushioned sole and contrast panels that lift everyday fits.",
+      "bullets": [
+        "A chunky foam sole adds height without extra weight",
+        "Contrast panels bring a retro sporty look to any outfit",
+        "A grippy rubber outsole holds up to daily city miles"
+      ],
+      "specs": {
+        "Upper": "Synthetic leather / mesh",
+        "Sole": "Rubber",
+        "Fit": "True to size",
+        "Care": "Spot clean"
+      },
+      "variants": [
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "38"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "40"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "42"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "44"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Cream"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Black"
+        }
+      ],
+      "seller": "Atlas Official",
+      "deliveryDays": 6,
+      "addedAt": "2026-11-16",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": true,
+        "isGenZPick": true,
+        "isViral": false
+      },
+      "imageQueries": [
+        "retro chunky sneakers",
+        "low top sneakers product photo",
+        "white chunky shoes studio",
+        "sneakers street style"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "27256441",
+          "url": "https://images.pexels.com/photos/27256441/pexels-photo-27256441.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black and white sneakers with chunky soles",
+          "photographer": "José Martin Segura Benites",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/27256441/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    }
+  ]
+}
