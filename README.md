@@ -24,7 +24,8 @@ npm run build                    # production bundle in dist/
 npm run preview                  # serve the production bundle
 npm run images:placeholders      # regenerate bundled SVG artwork
 npm run images:fetch:dry         # list image search queries without API calls
-npm run images:fetch             # resolve photos once into data/product-images.json
+npm run images:fetch             # resolve Unsplash photos once into data/product-images.json
+npm run images:fetch:pixabay     # resolve Pixabay photos once (stored locally as WebP)
 ```
 
 Node 20.19+ / 22.12+ is recommended for Vite 8.
@@ -66,11 +67,11 @@ npm run images:placeholders   # regenerate local SVG artwork after catalogue cha
 
 Real photos are resolved **once**, never at page load:
 
-1. Copy `.env.local.example` → `.env.local` and set `UNSPLASH_ACCESS_KEY` (preferred) or `PEXELS_API_KEY`.
-2. Run `npm run images:fetch -- --limit 25`. Re-run until every product is cached; finished products are skipped.
+1. Copy `.env.local.example` → `.env.local` and set `PIXABAY_API_KEY`, `PEXELS_API_KEY` and/or `UNSPLASH_ACCESS_KEY`.
+2. Run `npm run images:fetch:pixabay` (or `npm run images:fetch` for Unsplash, `-- --provider pexels` for Pexels). Re-run until every product is cached; finished products are skipped.
 3. Optional: put your own photos under `public/products/<slug>/` and list them in `data/image-overrides.json`.
 
-The script is resumable, rate-limit aware, retries throttled requests, records photographer/source/licence/alt text/`download_location` in `data/product-images.json`, and reports products with no match. Unsplash images are **hotlinked** from `images.unsplash.com` (never downloaded or rehosted), with UTM-attributed links on product pages and `/credits`. Pexels images and overrides are resized to 320/640/1200 px WebP with metadata stripped via sharp; originals are gitignored. See `public/images/CREDITS.md` for licence details. **`.env.local` is gitignored; secret keys must never be committed.** The first seed attempt with the supplied key was rejected by Unsplash, so all 85 products currently fall back to generated artwork.
+The script is resumable, rate-limit aware, retries throttled requests, records photographer/source/licence/alt text (and Unsplash `download_location`) in `data/product-images.json`, and reports products with no match. Unsplash images are **hotlinked** from `images.unsplash.com` (never downloaded or rehosted). Pixabay and Pexels photos are downloaded once, cropped to 320/640/1200 px WebP with metadata stripped via sharp, and stored under `public/products/<slug>/`; Pixabay forbids permanent hotlinking, so this is required. Downloaded originals are never committed. Pixabay results with recognizable people or brands are filtered out, and every photo is credited with UTM-tagged links on product pages and `/credits`. See `public/images/CREDITS.md` for licence details. **`.env.local` is gitignored; API keys must never be committed.** The supplied Unsplash key was rejected by the API, so Pixabay is the active provider and all 85 products now have cached real photos.
 
 Run `npm run sitemap` after changing routes or products to refresh `public/sitemap.xml`.
 
