@@ -14,43 +14,63 @@ fails to load.
 
 ## Stock photos
 
-Photos are resolved **once** by `scripts/fetch-product-images.mjs` and cached in
-`data/product-images.json`. No API is called at page load.
+The Phase 7 catalog uses **Pexels hotlinks only**. URLs are cached once in
+`data/product-images.json`; no image API is called at page load and no photo is
+downloaded, rehosted or committed. Each product uses the same square template:
 
-- **Unsplash (preferred, hotlinked):** images load directly from
-  `images.unsplash.com` with `w`, `h`, `q` and `fm=webp` parameters. They are not
-  downloaded or rehosted. Under the
-  [Unsplash API guidelines](https://help.unsplash.com/en/articles/2511245-unsplash-api-guidelines),
-  the `download_location` endpoint is fired for each selected main photo, and
-  photographer + Unsplash links with UTM parameters are shown on product pages
-  and at `/credits`. Licence: [Unsplash License](https://unsplash.com/license).
-- **Pexels (optional):** with `PEXELS_API_KEY`, photos are downloaded once,
-  resized with sharp to 320/640/1200 px WebP with metadata stripped, and stored
-  under `public/products/<slug>/`. Originals are never committed. Credit:
-  [Pexels License](https://www.pexels.com/license/). See
-  [Pexels API docs](https://www.pexels.com/api/documentation/) for their
-  attribution and "do not resell unmodified photos" rules.
-- **Pixabay (active provider):** with `PIXABAY_API_KEY`, photos are downloaded
-  once and stored locally — permanent hotlinking of Pixabay URLs is forbidden by
-  the [API docs](https://pixabay.com/api/docs/). sharp crops each photo to
-  320/640/1200 px WebP with metadata stripped under `public/products/<slug>/`.
-  Requests are cached in `data/product-images.json` (well beyond the API's
-  24-hour minimum), limited to 100 requests per 60 seconds, and results with
-  recognizable people or brands are skipped. Credit:
-  [Pixabay Content License](https://pixabay.com/service/license/), which permits
-  free use, modification and redistribution as part of a larger work but forbids
-  selling unmodified content on a standalone basis.
-- **Your own photos:** list them in `data/image-overrides.json`; they take
-  priority over all APIs. Generated images flagged `illustrative` are shown as
-  illustrative artwork rather than photographs.
+```text
+https://images.pexels.com/photos/<id>/pexels-photo-<id>.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop
+```
 
-Each cached entry stores the source, remote URL or local paths, photographer
-name and profile link, source photo link with UTM parameters, licence, alt text
-and the `download_location` response. See `/credits` in the running app for the
-rendered list and the current fallback products.
+The 320, 640 and 1200 variants return the same crop at different widths. All 20
+final URLs were checked with `curl -sI -L` for HTTP 200 and `image/jpeg`. The
+client CSP and server security headers allow `https://images.pexels.com`.
+Licence: [Pexels License](https://www.pexels.com/license/). API reference:
+[Pexels API documentation](https://www.pexels.com/api/documentation/).
 
-The supplied `UNSPLASH_ACCESS_KEY` was rejected by the API, so Pixabay was used
-instead and all 16 curated products now have cached real photos. The cache is resumable:
-`npm run images:fetch:pixabay` skips finished products, and
-`npm run images:fetch -- --limit 25` can be re-run after replacing the Unsplash
-key. Generated artwork remains as the fallback for any photo that fails to load.
+| Product | Pexels photo | Photographer |
+| --- | --- | --- |
+| Wireless Noise-Canceling Over-Ear Headphones | [210927](https://www.pexels.com/photo/210927/) | Aleksandar Spasojevic |
+| Low-Latency Gaming Wireless Earbuds | [10997624](https://www.pexels.com/photo/10997624/) | Nathan J Hilton |
+| Compact Mechanical Hall-Effect Keyboard | [9020272](https://www.pexels.com/photo/9020272/) | Castorly Stock |
+| RGB Smart LED Room Strip Lights | [10482375](https://www.pexels.com/photo/10482375/) | Ducky |
+| Wireless Charging Desk Mat | [7742585](https://www.pexels.com/photo/7742585/) | Rann Vijay |
+| Heavyweight Oversized Graphic T-Shirt | [36942017](https://www.pexels.com/photo/36942017/) | BANDAR BAANT |
+| Baggy Barrel-Fit Cargo Jeans | [25484767](https://www.pexels.com/photo/25484767/) | Noland Live |
+| High-Waisted Fold-Over Athleisure Leggings | [7593007](https://www.pexels.com/photo/7593007/) | Miriam Alonso |
+| Retro Low-Top Chunky Sneakers | [27256441](https://www.pexels.com/photo/27256441/) | José Martin Segura Benites |
+| Hydrocolloid Star Pimple Patches (36 Count) | [6475989](https://www.pexels.com/photo/6475989/) | Hanna Pad |
+| Niacinamide Brightening & Hydrating Body Lotion | [5798000](https://www.pexels.com/photo/5798000/) | Ann poan |
+| Collagen Hydrogel Under-Eye Patches | [6476074](https://www.pexels.com/photo/6476074/) | Hanna Pad |
+| Silicone Scalp Massager & Hair Growth Brush | [5468620](https://www.pexels.com/photo/5468620/) | Polina Tankilevitch |
+| Satin Sleep Bonnet & Scrunchie Set | [7897135](https://www.pexels.com/photo/7897135/) | Irene Gaitho |
+| Insulated Stainless Steel Flip-Straw Water Bottle (32oz) | [3737800](https://www.pexels.com/photo/3737800/) | cottonbro studio |
+| Quilted Puffer Makeup & Tech Organizer Bag | [6624063](https://www.pexels.com/photo/6624063/) | Nadia Dolce |
+| Portable USB-C Mini Smoothie Blender | [7936983](https://www.pexels.com/photo/7936983/) | Nicola Barts |
+| Interactive STEM Robotics Building Kit | [40049041](https://www.pexels.com/photo/40049041/) | Tori D |
+| Ergonomic Aesthetic School Backpack with Pins | [37580640](https://www.pexels.com/photo/37580640/) | Solé Gomez |
+| Kids Digital Instant Print Camera | [10676011](https://www.pexels.com/photo/10676011/) | Caleb Oquendo |
+
+Each cached entry stores the source, URL, alt text, photographer, photo link and
+licence. The running `/credits` page renders the same list and reports any
+product still using bundled demo artwork.
+
+## Other providers
+
+The resolver still supports Unsplash hotlinks, Pixabay WebP downloads and local
+overrides for future catalog changes. Those providers are not used by the
+current 20-product catalog:
+
+- **Unsplash** — hotlinked, never downloaded or rehosted. Licence:
+  [Unsplash License](https://unsplash.com/license). Earlier Unsplash attempts
+  for this catalog returned 404 under the exact URL template, and the supplied
+  access token was rejected by the API.
+- **Pixabay** — downloaded once and stored locally because permanent hotlinking
+  is forbidden by the [Pixabay API docs](https://pixabay.com/api/docs/).
+  Licence: [Pixabay Content License](https://pixabay.com/service/license/).
+  The previous local WebP cache belonged to the superseded catalog and was not
+  reused.
+- **Your own photos** — list them in `data/image-overrides.json`; they take
+  priority over the cache. That file is currently empty.
+
+No `placehold.co` URLs or raw/original downloads are committed.
