@@ -2,7 +2,7 @@
  * Idempotent curated-catalogue seeder.
  *
  * Run with `npm run db:seed`. Every run clears the products table and inserts
- * the 16 products from src/data/products/curated.ts, so a full database is
+ * the 20 products from src/data/products/curated.ts, so a full database is
  * safely replaced with the current curated shelf. Photographs are resolved
  * through the same image resolver the client uses; no API key or network call
  * is made here.
@@ -17,15 +17,33 @@ import { resolveImages } from '../src/data/imageMap.ts';
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 dotenv.config({ path: join(ROOT, '.env.local'), quiet: true });
 
-const TARGET = 16;
+const TARGET = 20;
+const LEGACY_SLUGS = [
+  'wireless-noise-canceling-headphones',
+  'bluetooth-neckband-earphones',
+  'foldable-wireless-keyboard',
+  'wireless-charging-desk-mat',
+  'mini-rechargeable-precision-screwdriver-set',
+  'classic-heavyweight-cotton-t-shirt',
+  'lightweight-everyday-windbreaker-jacket',
+  'casual-low-top-sneakers',
+  'niacinamide-hydrating-body-lotion',
+  'collagen-hydrogel-under-eye-patches',
+  'natural-coconut-hair-growth-repair-oil',
+  'nonstick-cookware-set',
+  'portable-handheld-garment-steamer',
+  'high-pressure-filtered-shower-head',
+  'all-in-one-productivity-digital-planner',
+  'professional-photo-editing-presets-bundle',
+];
 const INSERT_SQL = `
   INSERT INTO products (
     id, slug, name, title, brand, category, subcategory,
     price, list_price, price_rwf, old_price_rwf, discount,
     rating, review_count, stock, short_description,
     images, bullets, specs, variants, seller, delivery_days,
-    is_best_seller, is_deal, is_trending, added_at, curated
-  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    is_best_seller, is_deal, is_trending, is_gen_z_pick, is_viral, added_at, curated
+  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `;
 
 const jsonParam = (value) => (typeof value === 'string' ? value : JSON.stringify(value));
@@ -58,6 +76,8 @@ function toParams(product) {
     product.isBestSeller ? 1 : 0,
     product.isDeal ? 1 : 0,
     product.isTrending ? 1 : 0,
+    product.isGenZPick ? 1 : 0,
+    product.isViral ? 1 : 0,
     product.addedAt,
     1,
   ];
@@ -107,8 +127,26 @@ function main() {
     if (finalCount !== TARGET) {
       throw new Error(`Expected ${TARGET} rows after seeding, found ${finalCount}`);
     }
+
+    const duplicateSlugs = db
+      .prepare('SELECT slug, COUNT(*) AS count FROM products GROUP BY slug HAVING COUNT(*) > 1')
+      .all();
+    if (duplicateSlugs.length > 0) {
+      throw new Error(`Duplicate product slugs: ${duplicateSlugs.map((row) => row.slug).join(', ')}`);
+    }
+
+    const legacyCount = db
+      .prepare(`SELECT COUNT(*) AS count FROM products WHERE slug IN (${LEGACY_SLUGS.map(() => '?').join(', ')})`)
+      .get(...LEGACY_SLUGS).count;
+    if (legacyCount > 0) throw new Error(`Found ${legacyCount} legacy product(s) after seeding`);
+
+    const categoryCount = db.prepare('SELECT COUNT(DISTINCT category) AS count FROM products').get().count;
+    if (categoryCount !== 5) {
+      throw new Error(`Expected 5 categories after seeding, found ${categoryCount}`);
+    }
+
     console.log(
-      `[seed] done: ${finalCount} curated products in ${((Date.now() - started) / 1000).toFixed(1)}s`
+      `[seed] done: ${finalCount} curated products across ${categoryCount} categories in ${((Date.now() - started) / 1000).toFixed(1)}s`
     );
   } finally {
     db.close();
