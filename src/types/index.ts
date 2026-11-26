@@ -18,8 +18,8 @@ export interface Category {
   tint: string;
 }
 
-/** Where a gallery image came from. Unsplash images are hotlinked, never rehosted. */
-export type ImageSource = 'unsplash' | 'pexels' | 'override' | 'generated' | 'illustrative';
+/** Where a gallery image came from. Unsplash images are hotlinked; others are stored locally. */
+export type ImageSource = 'unsplash' | 'pexels' | 'pixabay' | 'override' | 'generated' | 'illustrative';
 
 /** A gallery-ready image with accessible text and responsive metadata. */
 export interface ResolvedImage {
