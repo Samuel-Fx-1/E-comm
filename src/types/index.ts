@@ -30,6 +30,8 @@ export interface ResolvedImage {
   source: ImageSource;
   width: number;
   height: number;
+  /** Tiny blurred image used as a low-cost placeholder while the photo loads. */
+  blurSrc?: string;
   color?: string;
   creditId?: string;
   illustrative?: boolean;
