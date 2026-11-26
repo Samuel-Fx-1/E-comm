@@ -10,7 +10,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Wireless Noise-Canceling Over-Ear Headphones', brand: 'Auralis', category: 'tech-gaming',
     subcategory: 'Tech & Gaming',
-    price: 89.99, listPrice: 119.99, rating: 4.8, reviewCount: 8420, stock: 64,
+    price: 116900, listPrice: 155900, rating: 4.8, reviewCount: 8420, stock: 64,
     shortDescription: 'Immersive over-ear sound with adaptive noise cancellation, plush ear cups and a 40-hour battery.',
     bullets: [
       'Adaptive noise cancellation quietens commutes and busy shared spaces',
@@ -27,7 +27,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Low-Latency Gaming Wireless Earbuds', brand: 'Voltix', category: 'tech-gaming',
     subcategory: 'Tech & Gaming',
-    price: 39.99, listPrice: 49.99, rating: 4.6, reviewCount: 3180, stock: 112,
+    price: 51900, listPrice: 64900, rating: 4.6, reviewCount: 3180, stock: 112,
     shortDescription: 'Low-latency earbuds with a snug sport fit, punchy bass and a pocketable charging case.',
     bullets: [
       'Game mode keeps audio and on-screen action in sync',
@@ -44,7 +44,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Compact Mechanical Hall-Effect Keyboard', brand: 'Nordika', category: 'tech-gaming',
     subcategory: 'Tech & Gaming',
-    price: 89.99, listPrice: 109.99, rating: 4.7, reviewCount: 1260, stock: 38,
+    price: 116900, listPrice: 142900, rating: 4.7, reviewCount: 1260, stock: 38,
     shortDescription: 'A compact hall-effect keyboard with adjustable actuation, hot-swap switches and a clean low profile.',
     bullets: [
       'Hall-effect switches let you tune how far each key travels',
@@ -61,7 +61,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'RGB Smart LED Room Strip Lights', brand: 'Lumo', category: 'tech-gaming',
     subcategory: 'Tech & Gaming',
-    price: 24.99, listPrice: 34.99, rating: 4.5, reviewCount: 5210, stock: 145,
+    price: 32500, listPrice: 45500, rating: 4.5, reviewCount: 5210, stock: 145,
     shortDescription: 'Smart RGB strip lights with app control, music sync and peel-and-stick backing for any room.',
     bullets: [
       'Sixteen million colours and scene presets set the mood instantly',
@@ -78,7 +78,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Wireless Charging Desk Mat', brand: 'Lumo', category: 'tech-gaming',
     subcategory: 'Tech & Gaming',
-    price: 36.99, listPrice: 44.99, rating: 4.4, reviewCount: 860, stock: 72,
+    price: 47900, listPrice: 58500, rating: 4.4, reviewCount: 860, stock: 72,
     shortDescription: 'A stitched desk mat with a built-in 15W wireless charging pad and a smooth, tidy work surface.',
     bullets: [
       'A stitched, water-resistant surface protects a full desk setup',
@@ -97,7 +97,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Heavyweight Oversized Graphic T-Shirt', brand: 'Kanso', category: 'streetwear-footwear',
     subcategory: 'Streetwear & Footwear',
-    price: 29.99, listPrice: 39.99, rating: 4.7, reviewCount: 6740, stock: 180,
+    price: 38900, listPrice: 51900, rating: 4.7, reviewCount: 6740, stock: 180,
     shortDescription: 'A heavyweight oversized tee with a boxy cut and soft-washed graphic that keeps its shape.',
     bullets: [
       '240gsm cotton feels substantial without feeling stiff',
@@ -118,7 +118,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Baggy Barrel-Fit Cargo Jeans', brand: 'Rift', category: 'streetwear-footwear',
     subcategory: 'Streetwear & Footwear',
-    price: 49.99, rating: 4.5, reviewCount: 2140, stock: 96,
+    price: 64900, rating: 4.5, reviewCount: 2140, stock: 96,
     shortDescription: 'Baggy barrel-fit cargo jeans with roomy pockets and a relaxed waistband for everyday street fits.',
     bullets: [
       'A curved barrel leg gives classic denim a modern silhouette',
@@ -139,7 +139,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'High-Waisted Fold-Over Athleisure Leggings', brand: 'Kanso', category: 'streetwear-footwear',
     subcategory: 'Streetwear & Footwear',
-    price: 29.99, listPrice: 39.99, rating: 4.6, reviewCount: 3890, stock: 132,
+    price: 38900, listPrice: 51900, rating: 4.6, reviewCount: 3890, stock: 132,
     shortDescription: 'High-waisted fold-over leggings with squat-friendly stretch and a soft brushed finish.',
     bullets: [
       'The fold-over waistband stays put through workouts and errands',
@@ -159,7 +159,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Retro Low-Top Chunky Sneakers', brand: 'Atlas', category: 'streetwear-footwear',
     subcategory: 'Streetwear & Footwear',
-    price: 69.99, listPrice: 89.99, rating: 4.8, reviewCount: 9120, stock: 58,
+    price: 90900, listPrice: 116900, rating: 4.8, reviewCount: 9120, stock: 58,
     shortDescription: 'Retro low-top chunky sneakers with a cushioned sole and contrast panels that lift everyday fits.',
     bullets: [
       'A chunky foam sole adds height without extra weight',
@@ -182,7 +182,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Hydrocolloid Star Pimple Patches (36 Count)', brand: 'Sana', category: 'viral-skincare-haircare',
     subcategory: 'Viral Skincare & Haircare',
-    price: 8.99, listPrice: 11.99, rating: 4.7, reviewCount: 7820, stock: 210,
+    price: 11500, listPrice: 15500, rating: 4.7, reviewCount: 7820, stock: 210,
     shortDescription: 'Hydrocolloid star patches in a 36-count pack that cushion and cover blemishes overnight.',
     bullets: [
       'Thirty-six star-shaped patches in two playful sizes',
@@ -195,7 +195,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Niacinamide Brightening & Hydrating Body Lotion', brand: 'Sana', category: 'viral-skincare-haircare',
     subcategory: 'Viral Skincare & Haircare',
-    price: 16.99, listPrice: 22.99, rating: 4.6, reviewCount: 5430, stock: 158,
+    price: 21900, listPrice: 29900, rating: 4.6, reviewCount: 5430, stock: 158,
     shortDescription: 'A fast-absorbing niacinamide lotion that leaves skin soft, hydrated and comfortably bright-looking.',
     bullets: [
       'Niacinamide supports a more even-looking skin tone',
@@ -208,7 +208,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Collagen Hydrogel Under-Eye Patches', brand: 'Sana', category: 'viral-skincare-haircare',
     subcategory: 'Viral Skincare & Haircare',
-    price: 13.99, listPrice: 17.99, rating: 4.5, reviewCount: 4260, stock: 104,
+    price: 17900, listPrice: 22900, rating: 4.5, reviewCount: 4260, stock: 104,
     shortDescription: 'Cooling hydrogel patches that hydrate the under-eye area and help you look rested after a late night.',
     bullets: [
       'Hydrogel patches stay in place while you move',
@@ -221,7 +221,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Silicone Scalp Massager & Hair Growth Brush', brand: 'Mirembe', category: 'viral-skincare-haircare',
     subcategory: 'Viral Skincare & Haircare',
-    price: 8.49, listPrice: 11.99, rating: 4.4, reviewCount: 1980, stock: 12,
+    price: 10900, listPrice: 15500, rating: 4.4, reviewCount: 1980, stock: 12,
     shortDescription: 'A soft silicone scalp brush with flexible nodes that turn shampoo time into a relaxing ritual.',
     bullets: [
       'Flexible silicone nodes massage as you shampoo',
@@ -234,7 +234,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Satin Sleep Bonnet & Scrunchie Set', brand: 'Mirembe', category: 'viral-skincare-haircare',
     subcategory: 'Viral Skincare & Haircare',
-    price: 11.99, listPrice: 15.99, rating: 4.6, reviewCount: 3110, stock: 9,
+    price: 15500, listPrice: 20500, rating: 4.6, reviewCount: 3110, stock: 9,
     shortDescription: 'A satin sleep bonnet and matching scrunchies that help reduce friction and keep hairstyles intact.',
     bullets: [
       'A smooth satin lining helps reduce friction overnight',
@@ -253,7 +253,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Insulated Stainless Steel Flip-Straw Water Bottle (32oz)', brand: 'Lumo', category: 'lifestyle-aesthetic-essentials',
     subcategory: 'Lifestyle & Aesthetic Essentials',
-    price: 29.99, listPrice: 38.99, rating: 4.8, reviewCount: 10420, stock: 84,
+    price: 38900, listPrice: 50500, rating: 4.8, reviewCount: 10420, stock: 84,
     shortDescription: 'An insulated flip-straw bottle that keeps drinks cold for hours and fits most cup holders.',
     bullets: [
       'Double-wall insulation keeps drinks cold for up to 24 hours',
@@ -270,7 +270,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Quilted Puffer Makeup & Tech Organizer Bag', brand: 'Nordika', category: 'lifestyle-aesthetic-essentials',
     subcategory: 'Lifestyle & Aesthetic Essentials',
-    price: 22.99, rating: 4.5, reviewCount: 2740, stock: 67,
+    price: 29900, rating: 4.5, reviewCount: 2740, stock: 67,
     shortDescription: 'A quilted puffer organizer with padded sections for makeup, tech and everyday essentials.',
     bullets: [
       'Padded compartments keep bottles and cables separated',
@@ -287,7 +287,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Portable USB-C Mini Smoothie Blender', brand: 'Lumo', category: 'lifestyle-aesthetic-essentials',
     subcategory: 'Lifestyle & Aesthetic Essentials',
-    price: 27.99, listPrice: 34.99, rating: 4.3, reviewCount: 3670, stock: 74,
+    price: 35900, listPrice: 45500, rating: 4.3, reviewCount: 3670, stock: 74,
     shortDescription: 'A portable USB-C mini blender that whips up smoothies in a travel-friendly 400ml cup.',
     bullets: [
       'A 400ml cup blends and travels in one piece',
@@ -306,7 +306,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Interactive STEM Robotics Building Kit', brand: 'Soko Studio', category: 'gen-alpha-kids-corner',
     subcategory: 'Gen Alpha & Kids Corner',
-    price: 49.99, listPrice: 64.99, rating: 4.7, reviewCount: 1890, stock: 46,
+    price: 64900, listPrice: 84500, rating: 4.7, reviewCount: 1890, stock: 46,
     shortDescription: 'A hands-on robotics kit with snap-together parts and simple coding cards for young builders.',
     bullets: [
       'Snap-together parts make building approachable',
@@ -319,7 +319,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Ergonomic Aesthetic School Backpack with Pins', brand: 'Atlas', category: 'gen-alpha-kids-corner',
     subcategory: 'Gen Alpha & Kids Corner',
-    price: 39.99, rating: 4.6, reviewCount: 2280, stock: 88,
+    price: 51900, rating: 4.6, reviewCount: 2280, stock: 88,
     shortDescription: 'An ergonomic school backpack with padded straps, plenty of pockets and pins for personalising your fit.',
     bullets: [
       'Padded straps and a breathable back panel spread the load',
@@ -336,7 +336,7 @@ export const curatedProducts = [
   makeProduct({
     title: 'Kids Digital Instant Print Camera', brand: 'Soko Studio', category: 'gen-alpha-kids-corner',
     subcategory: 'Gen Alpha & Kids Corner',
-    price: 49.99, rating: 4.4, reviewCount: 1560, stock: 33,
+    price: 64900, rating: 4.4, reviewCount: 1560, stock: 33,
     shortDescription: 'A pocket-friendly instant print camera with a 2-inch screen, fun frames and USB-C recharging.',
     bullets: [
       'Prints a photo seconds after you press the shutter',
