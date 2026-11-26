@@ -1,8 +1,6 @@
-# Soko — full-stack marketplace demo
 
-Soko is a marketplace demonstration: a familiar big-box shopping flow with an original brand, built on React 19, Vite 8, TypeScript and Tailwind CSS 4. Phase 4 added a small Express + SQLite catalogue API; Phase 6 replaces that catalogue with a focused, curated shelf of 16 best-selling and trending products. Cart, account, orders, reviews and preferences still live in `localStorage`.
 
-> **Demo only.** All products, sellers, brands, reviews, prices, exchange rates, addresses and payment methods are fictional. No payment is taken, no email is sent, and no data leaves the browser.
+> All products, sellers, brands, reviews, prices, exchange rates, addresses and payment methods are fictional. No payment is taken, no email is sent, and no data leaves the browser.
 
 ## Highlights
 
@@ -56,9 +54,7 @@ npm run server      # API + client at http://localhost:3001 (PORT overrides)
 npm run dev:full    # Vite 3000 + API 3001 together, cross-platform
 ```
 
-- **Database path** — set `SOKO_DB_PATH` in `.env.local` (copy `.env.local.example`). It defaults to `data/soko.sqlite`, resolved from the repository root. The file and its WAL sidecars are gitignored. `db:seed` is idempotent: every run clears `products`, inserts all 16 curated rows, and rebuilds the FTS index once.
-- **Deployment** — run `npm run server` on a host with a **persistent disk** for the SQLite file; ephemeral/static-only hosting keeps the original client-side demo behaviour but not the shared catalogue. Serve the build from one origin and keep the DB volume across restarts.
-- **Images** — all 16 curated products have real Pixabay photos cached under `public/products/<slug>/`; bundled category SVG artwork lives under `public/images/products/<category>/` as a fallback. Slugs are the URL-safe titles, so IDs and URLs match.
+
 - **Storage swap** — SQL lives only in `server/db.mjs` behind a repository (`findBySlug`, `findById`, `query`, `meta`, `collections`, `related`, `suggest`). Replacing that layer with MongoDB does not require route changes. Migrations are versioned in `server/migrations/`; FTS5 search falls back to indexed `LIKE` where FTS5 is unavailable.
 - **Security skeleton** — `/api` is rate-limited per IP (300 requests/minute), `GET /api/csrf` issues an httpOnly/SameSite=Lax cookie and token for `X-CSRF-Token` on future writes. No authentication or payment processing is implemented.
 
@@ -112,7 +108,7 @@ The script is resumable, rate-limit aware, retries throttled requests, records p
 
 Run `npm run sitemap` after changing routes or products to refresh `public/sitemap.xml`.
 
-## Demo data and stored state
+##  data and stored state
 
 | Key (prefix) | Stored in localStorage |
 | --- | --- |
@@ -137,4 +133,4 @@ Phase 6 deploys a **single Express service** serving both `dist/` and `/api` fro
 
 ---
 
-Built as a demonstration of a complete marketplace UX; no Amazon assets, names, logos, slogans or code were used.
+Built as a demonstration of a complete marketplace UX; no Isoko assets, names, logos, slogans or code were used.
