@@ -39,7 +39,9 @@ export default function OrderDetailPage() {
   const country = getCountry(order.address.country);
 
   const buyAgain = () => {
-    order.items.forEach((item) => addToCart(item.productId, item.qty, { silent: true, openDrawer: false }));
+    order.items.forEach((item) =>
+      addToCart(item.productId, item.qty, { snapshot: item.snapshot, silent: true, openDrawer: false })
+    );
     toast('Items added to your cart.');
     setDrawerOpen(true);
   };
@@ -107,7 +109,7 @@ export default function OrderDetailPage() {
                     <button
                       type="button"
                       onClick={() => {
-                        addToCart(item.productId, item.qty);
+                        addToCart(item.productId, item.qty, { snapshot: item.snapshot });
                       }}
                       className="mt-1 text-xs font-semibold text-[var(--brand-navy)] underline underline-offset-2"
                     >
