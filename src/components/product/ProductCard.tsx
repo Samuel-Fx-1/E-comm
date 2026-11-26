@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { GitCompareArrows, Heart, ShoppingCart, TrendingUp, Truck } from 'lucide-react';
+import { GitCompareArrows, Heart, ShoppingCart, Sparkles, TrendingUp, Truck } from 'lucide-react';
 import type { Product } from '../../types';
 import { resolveImages } from '../../data/imageMap';
 import { useStore } from '../../context/StoreContext';
@@ -48,6 +48,20 @@ export function ProductCard({ product, layout = 'grid', priority = false }: Prod
       {product.discount > 0 && (
         <span className="absolute left-2 top-2 rounded bg-[var(--brand-danger)] px-2 py-0.5 text-xs font-bold text-white shadow">
           -{product.discount}%
+        </span>
+      )}
+      {(product.isGenZPick || product.isViral) && (
+        <span className="absolute right-2 top-2 flex flex-col items-end gap-1">
+          {product.isGenZPick && (
+            <span className="rounded bg-[var(--brand-navy-deep)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow">
+              Gen Z Pick
+            </span>
+          )}
+          {product.isViral && (
+            <span className="inline-flex items-center gap-1 rounded bg-fuchsia-600 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow">
+              <Sparkles className="h-3 w-3" aria-hidden="true" /> Viral
+            </span>
+          )}
         </span>
       )}
       {product.isBestSeller && (
