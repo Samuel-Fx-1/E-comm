@@ -14,7 +14,7 @@ test('category page renders products in RWF', async ({ page }) => {
   await page.goto('/category/tech-gaming');
   await expect(page.getByRole('heading', { name: 'Tech & Gaming' })).toBeVisible();
   await expect(page.getByRole('link', { name: productName }).first()).toBeVisible();
-  await expect(page.getByText('116,900')).toBeVisible();
+  await expect(page.getByText(/RWF\s*116,900/).first()).toBeVisible();
 });
 
 test('product page renders the photo gallery', async ({ page }) => {
