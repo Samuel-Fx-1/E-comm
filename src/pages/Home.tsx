@@ -1,8 +1,11 @@
+import { useCallback, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Clock3, Flame, Sparkles } from 'lucide-react';
 import { categories } from '../data/categories';
-import { products, bestSellers, deals } from '../data/products';
-import { getProductById } from '../data/products';
+import { products, bestSellers, deals, newArrivals, trending } from '../data/products';
+import { apiAvailable, fetchCollection, fetchProducts } from '../data/api';
+import { resolveProduct } from '../data/productLookup';
+import { useApiData } from '../hooks/useApiData';
 import { imagesFor } from '../data/imageMap';
 import { useSite } from '../context/SiteContext';
 import { useStore } from '../context/StoreContext';
@@ -15,28 +18,78 @@ import { Price } from '../components/ui/Price';
 import { Countdown } from '../components/ui/Countdown';
 import { CategoryIcon } from '../components/ui/CategoryIcon';
 
+/** All local fallbacks are bounded to the 85 bundled products. */
 export default function HomePage() {
   const { t, money } = useSite();
   const { wishlist, recent } = useStore();
 
-  const dealOfDay =
-    deals.filter((product) => product.isDeal).sort((a, b) => b.discount - a.discount)[0] ?? products[0];
-  const moreDeals = deals.filter((product) => product.id !== dealOfDay.id).slice(0, 4);
-
-  const affinity = new Set(
-    [...wishlist, ...recent]
-      .map((id) => getProductById(id)?.category)
-      .filter((value): value is NonNullable<typeof value> => Boolean(value))
+  const dealState = useApiData(
+    async (signal) => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      return fetchCollection('deals', 12, signal);
+    },
+    [],
+    () => [...deals].sort((a, b) => b.discount - a.discount).slice(0, 12)
   );
-  const recommended = (
-    affinity.size > 0
-      ? products.filter((product) => affinity.has(product.category) && !wishlist.includes(product.id))
-      : [...products].sort((a, b) => b.rating - a.rating)
-  ).slice(0, 8);
+  const bestSellerState = useApiData(
+    async (signal) => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      return fetchCollection('best-sellers', 8, signal);
+    },
+    [],
+    () => [...bestSellers].sort((a, b) => b.reviewCount - a.reviewCount).slice(0, 8)
+  );
+  const newArrivalState = useApiData(
+    async (signal) => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      return fetchCollection('new-arrivals', 8, signal);
+    },
+    [],
+    () => newArrivals.slice(0, 8)
+  );
+  const trendingState = useApiData(
+    async (signal) => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      return fetchCollection('trending', 8, signal);
+    },
+    [],
+    () => trending.slice(0, 8)
+  );
 
+  const wishlistKey = wishlist.join(',');
+  const affinityCategory = useMemo(() => {
+    const ids = wishlistKey ? wishlistKey.split(',') : [];
+    return [...ids, ...recent].map((id) => resolveProduct(id)?.category).find(Boolean);
+  }, [wishlistKey, recent]);
+
+  const recommendLoader = useCallback(
+    async (signal: AbortSignal) => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      const page = await fetchProducts(
+        { category: affinityCategory, sort: 'rating', pageSize: 8 },
+        signal
+      );
+      return page.items.filter((product) => !wishlist.includes(product.id)).slice(0, 8);
+    },
+    // `wishlist` is represented by `wishlistKey` for stable dependencies.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [affinityCategory, wishlistKey]
+  );
+  const recommendedState = useApiData(recommendLoader, [affinityCategory, wishlistKey], () => {
+    const source =
+      affinityCategory
+        ? products.filter((product) => product.category === affinityCategory)
+        : [...products].sort((a, b) => b.rating - a.rating);
+    return source.filter((product) => !wishlist.includes(product.id)).slice(0, 8);
+  });
+
+  const dealProducts = dealState.data;
+  const dealOfDay = dealProducts.find((product) => product.isDeal) ?? dealProducts[0] ?? products[0];
+  const moreDeals = dealProducts.filter((product) => product.id !== dealOfDay.id).slice(0, 4);
+  const recommended = recommendedState.data;
   const recentlyViewed = recent
-    .map((id) => getProductById(id))
-    .filter((product): product is NonNullable<ReturnType<typeof getProductById>> => Boolean(product))
+    .map((id) => resolveProduct(id))
+    .filter((product): product is NonNullable<typeof product> => Boolean(product))
     .slice(0, 8);
 
   return (
@@ -156,17 +209,31 @@ export default function HomePage() {
       </section>
 
       <ProductRow
+        title="Trending now"
+        subtitle="The picks picking up pace this week"
+        products={trendingState.data}
+        href="/trending"
+      />
+
+      <ProductRow
         title="Best sellers"
         subtitle="What everyone in your area is buying"
-        products={bestSellers.slice(0, 8)}
+        products={bestSellerState.data}
         href="/best-sellers"
       />
 
       <ProductRow
         title="Recommended for you"
-        subtitle={affinity.size > 0 ? 'Based on your wishlist and browsing' : 'Top-rated picks across the store'}
+        subtitle={affinityCategory ? 'Based on your wishlist and browsing' : 'Top-rated picks across the store'}
         products={recommended}
         href="/search?sort=rating"
+      />
+
+      <ProductRow
+        title="New arrivals"
+        subtitle="The latest picks, fresh off the shelf"
+        products={newArrivalState.data}
+        href="/new-arrivals"
       />
 
       <section

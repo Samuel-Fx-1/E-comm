@@ -3,6 +3,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Search, TrendingUp } from 'lucide-react';
 import { categories } from '../../data/categories';
 import { products } from '../../data/products';
+import { apiAvailable, fetchSuggestions } from '../../data/api';
+import { useApiData } from '../../hooks/useApiData';
 import { productMatchesQuery } from '../../lib/search';
 import { useDebouncedValue, useOnClickOutside } from '../../lib/hooks';
 import { useSite } from '../../context/SiteContext';
@@ -33,10 +35,16 @@ export function SearchBox() {
 
   useOnClickOutside(wrapperRef, () => setOpen(false), open);
 
-  const matches = useMemo(() => {
-    if (!debounced.trim()) return [];
-    return products.filter((product) => productMatchesQuery(product, debounced)).slice(0, 6);
-  }, [debounced]);
+  const term = debounced.trim();
+  const suggestionState = useApiData(
+    async (signal) => {
+      if (!term || !(await apiAvailable())) throw new Error('API unavailable');
+      return fetchSuggestions(term, 6, signal);
+    },
+    [term],
+    () => (term ? products.filter((product) => productMatchesQuery(product, term)).slice(0, 6) : [])
+  );
+  const matches = suggestionState.data;
 
   const categoryMatches = useMemo(() => {
     if (!debounced.trim()) return [];
@@ -180,7 +188,7 @@ export function SearchBox() {
                   aria-selected={active === index}
                   onMouseEnter={() => setActive(index)}
                   onClick={() => {
-                    addRecent(product.id);
+                    addRecent(product.id, product);
                     go(`/product/${product.slug}`);
                   }}
                   className={`flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left transition-colors ${

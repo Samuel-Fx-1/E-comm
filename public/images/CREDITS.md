@@ -30,8 +30,18 @@ Photos are resolved **once** by `scripts/fetch-product-images.mjs` and cached in
   [Pexels License](https://www.pexels.com/license/). See
   [Pexels API docs](https://www.pexels.com/api/documentation/) for their
   attribution and "do not resell unmodified photos" rules.
+- **Pixabay (active provider):** with `PIXABAY_API_KEY`, photos are downloaded
+  once and stored locally — permanent hotlinking of Pixabay URLs is forbidden by
+  the [API docs](https://pixabay.com/api/docs/). sharp crops each photo to
+  320/640/1200 px WebP with metadata stripped under `public/products/<slug>/`.
+  Requests are cached in `data/product-images.json` (well beyond the API's
+  24-hour minimum), limited to 100 requests per 60 seconds, and results with
+  recognizable people or brands are skipped. Credit:
+  [Pixabay Content License](https://pixabay.com/service/license/), which permits
+  free use, modification and redistribution as part of a larger work but forbids
+  selling unmodified content on a standalone basis.
 - **Your own photos:** list them in `data/image-overrides.json`; they take
-  priority over both APIs. Generated images flagged `illustrative` are shown as
+  priority over all APIs. Generated images flagged `illustrative` are shown as
   illustrative artwork rather than photographs.
 
 Each cached entry stores the source, remote URL or local paths, photographer
@@ -39,7 +49,8 @@ name and profile link, source photo link with UTM parameters, licence, alt text
 and the `download_location` response. See `/credits` in the running app for the
 rendered list and the current fallback products.
 
-At the time of the first seed attempt the supplied `UNSPLASH_ACCESS_KEY` was
-rejected by the API, so all 85 products still use bundled artwork. The cache is
-resumable: after updating `.env.local`, re-run `npm run images:fetch` (optionally
-with `-- --limit 25` to stay inside a rate-limit window).
+The supplied `UNSPLASH_ACCESS_KEY` was rejected by the API, so Pixabay was used
+instead and all 101 curated products now have cached real photos. The cache is resumable:
+`npm run images:fetch:pixabay` skips finished products, and
+`npm run images:fetch -- --limit 25` can be re-run after replacing the Unsplash
+key. Generated artwork remains as the fallback for any photo that fails to load.

@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Plus, ShoppingCart } from 'lucide-react';
 import type { Product } from '../../types';
 import { products as allProducts } from '../../data/products';
+import { apiAvailable, fetchFrequentlyBought } from '../../data/api';
+import { useApiData } from '../../hooks/useApiData';
 import { frequentlyBoughtTogether } from '../../lib/search';
 import { imagesFor } from '../../data/imageMap';
 import { useStore } from '../../context/StoreContext';
@@ -11,10 +13,22 @@ import { ImageWithFallback } from '../ui/ImageWithFallback';
 import { Button } from '../ui/Button';
 
 export function FrequentlyBoughtTogether({ product }: { product: Product }) {
-  const companions = frequentlyBoughtTogether(allProducts, product);
+  const state = useApiData(
+    async (signal) => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      return fetchFrequentlyBought(product.slug, signal);
+    },
+    [product.slug],
+    () => frequentlyBoughtTogether(allProducts, product)
+  );
+  const companions = state.data;
   const { addToCart } = useStore();
   const { money } = useSite();
-  const [selected, setSelected] = useState<string[]>(companions.map((entry) => entry.id));
+  const [selected, setSelected] = useState<string[]>(() => companions.map((entry) => entry.id));
+
+  useEffect(() => {
+    setSelected(companions.map((entry) => entry.id));
+  }, [companions]);
 
   if (companions.length === 0) return null;
 
@@ -63,8 +77,8 @@ export function FrequentlyBoughtTogether({ product }: { product: Product }) {
             variant="accent"
             className="mt-2"
             onClick={() => {
-              addToCart(product.id, 1, { silent: true });
-              chosen.forEach((entry) => addToCart(entry.id, 1, { silent: true, openDrawer: false }));
+              addToCart(product.id, 1, { snapshot: product, silent: true });
+              chosen.forEach((entry) => addToCart(entry.id, 1, { snapshot: entry, silent: true, openDrawer: false }));
             }}
             disabled={chosen.length === 0}
           >

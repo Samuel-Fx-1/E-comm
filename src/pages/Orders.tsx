@@ -35,7 +35,9 @@ export default function OrdersPage() {
   const buyAgain = (orderId: string) => {
     const order = orders.find((entry) => entry.id === orderId);
     if (!order) return;
-    order.items.forEach((item) => addToCart(item.productId, item.qty, { silent: true, openDrawer: false }));
+    order.items.forEach((item) =>
+      addToCart(item.productId, item.qty, { snapshot: item.snapshot, silent: true, openDrawer: false })
+    );
     toast('Items added to your cart.');
     setDrawerOpen(true);
   };

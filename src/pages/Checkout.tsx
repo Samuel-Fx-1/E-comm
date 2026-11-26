@@ -1,9 +1,9 @@
 import { useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Check, ChevronLeft, CreditCard, Lock, MapPin, Smartphone, Truck, Wallet } from 'lucide-react';
-import type { Address } from '../types';
+import type { Address, Product } from '../types';
 import { countries, getCountry, site } from '../config/site';
-import { getProductById } from '../data/products';
+import { resolveLineProduct } from '../data/productLookup';
 import { imagesFor } from '../data/imageMap';
 import { deliveryDateRange, estimatedDeliveryIso, formatDate, classNames } from '../lib/format';
 import { useStore } from '../context/StoreContext';
@@ -55,8 +55,8 @@ export default function CheckoutPage() {
   const [errors, setErrors] = useState<string[]>([]);
 
   const lines = cart
-    .map((line) => ({ line, product: getProductById(line.productId) }))
-    .filter((entry): entry is { line: typeof cart[number]; product: NonNullable<ReturnType<typeof getProductById>> } => Boolean(entry.product));
+    .map((line) => ({ line, product: resolveLineProduct(line) }))
+    .filter((entry): entry is { line: typeof cart[number]; product: Product } => Boolean(entry.product));
 
   if (lines.length === 0 && !placingRef.current) {
     return (
@@ -161,6 +161,7 @@ export default function CheckoutPage() {
         image: imagesFor(product)[0],
         price: product.price,
         qty: line.qty,
+        snapshot: product,
       })),
       subtotal: cartSubtotal,
       shipping,

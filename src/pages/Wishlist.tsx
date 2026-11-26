@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Heart, ShoppingCart } from 'lucide-react';
-import { getProductById } from '../data/products';
+import type { Product } from '../types';
+import { resolveProduct } from '../data/productLookup';
 import { useStore } from '../context/StoreContext';
 import { ProductCard } from '../components/product/ProductCard';
 import { EmptyState } from '../components/ui/EmptyState';
@@ -9,8 +10,8 @@ import { Seo } from '../components/ui/Seo';
 export default function WishlistPage() {
   const { wishlist, addToCart } = useStore();
   const products = wishlist
-    .map((id) => getProductById(id))
-    .filter((product): product is NonNullable<ReturnType<typeof getProductById>> => Boolean(product));
+    .map((id) => resolveProduct(id))
+    .filter((product): product is Product => Boolean(product));
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
@@ -27,7 +28,7 @@ export default function WishlistPage() {
         {products.length > 0 && (
           <button
             type="button"
-            onClick={() => products.forEach((product) => addToCart(product.id, 1, { silent: true, openDrawer: false }))}
+            onClick={() => products.forEach((product) => addToCart(product.id, 1, { snapshot: product, silent: true, openDrawer: false }))}
             className="inline-flex items-center gap-2 rounded-lg bg-[var(--brand-yellow)] px-4 py-2.5 text-sm font-bold text-[var(--brand-navy-deep)] hover:bg-[var(--brand-yellow-dark)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-orange)]"
           >
             <ShoppingCart className="h-4 w-4" aria-hidden="true" /> Add all to cart

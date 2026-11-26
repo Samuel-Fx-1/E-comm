@@ -21,7 +21,7 @@ export interface ImageCredit {
 }
 
 interface CachedImage {
-  source: 'unsplash' | 'pexels';
+  source: 'unsplash' | 'pexels' | 'pixabay';
   photoId?: string;
   baseUrl?: string;
   paths?: string[];
@@ -93,7 +93,7 @@ function cachedToImage(image: CachedImage, product: Product, index: number): Res
       creditId: image.photoId,
     };
   }
-  if (image.source === 'pexels') {
+  if (image.source === 'pexels' || image.source === 'pixabay') {
     const paths = image.paths ?? [];
     if (paths.length === 0) return undefined;
     const byWidth = new Map(IMAGE_SIZES.map((width, position) => [width, paths[position] ?? paths[paths.length - 1]]));
@@ -102,7 +102,7 @@ function cachedToImage(image: CachedImage, product: Product, index: number): Res
       srcSet: srcSetFromUrls((width) => byWidth.get(width)!),
       sizes: CARD_SIZES,
       alt,
-      source: 'pexels',
+      source: image.source,
       width: 1200,
       height: 1200,
       color: image.color,
@@ -197,9 +197,27 @@ for (const product of products) {
   });
 }
 
+/** Curated API products use /products/<slug>/pixabay-<id>-<view>-<size>.webp. */
+const PIXABAY_PATH = /^\/products\/([^/]+)\/pixabay-[^/]+-[^/]+-\d+\.webp$/;
+
+function pixabayInfo(src: string): ImageInfo | undefined {
+  const match = PIXABAY_PATH.exec(src);
+  if (!match) return undefined;
+  const base = src.replace(/-\d+\.webp$/, '');
+  return {
+    src,
+    srcSet: IMAGE_SIZES.map((width) => `${base}-${width}.webp ${width}w`).join(', '),
+    sizes: CARD_SIZES,
+    alt: match[1].replace(/-/g, ' '),
+    source: 'pixabay',
+    width: 1200,
+    height: 1200,
+  };
+}
+
 /** Lets ImageWithFallback add responsive metadata from a plain src string. */
 export function imageInfo(src: string): ImageInfo | undefined {
-  return infoBySrc.get(src);
+  return infoBySrc.get(src) ?? pixabayInfo(src);
 }
 
 export { CARD_SIZES as cardSizes, LARGE_SIZES as largeSizes };

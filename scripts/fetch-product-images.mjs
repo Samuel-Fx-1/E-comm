@@ -8,14 +8,18 @@
  *             fired for the main photo, as Unsplash's API guidelines require.
  *   pexels    API photos downloaded once, resized with sharp to 320/640/1200px
  *             WebP under public/products/<slug>/. Originals are never committed.
+ *   pixabay   Same one-shot download + sharp WebP pipeline as Pexels. Pixabay's
+ *             API terms forbid permanent hotlinking, so photos are stored locally
+ *             and credited on product pages and /credits.
  *
  * Manual photos can be placed under public/products/<slug>/ and listed in
- * data/image-overrides.json; they take priority over both APIs at runtime.
+ * data/image-overrides.json; they take priority over all APIs at runtime.
  *
  * Usage:
  *   npm run images:fetch                       # Unsplash, resumable
  *   npm run images:fetch -- --limit 25         # stay inside a rate-limit window
  *   npm run images:fetch -- --provider pexels
+ *   npm run images:fetch -- --provider pixabay
  *   npm run images:fetch -- --dry-run          # show queries, no network calls
  *
  * Keys are read from .env.local (or .env) on the server side only.
@@ -34,8 +38,11 @@ mkdirSync(dirname(outputPath), { recursive: true });
 
 const args = process.argv.slice(2);
 const getValue = (name, fallback) => {
-  const flag = args.find((arg) => arg.startsWith(`--${name}=`));
-  return flag ? flag.slice(name.length + 3) : fallback;
+  const withEquals = args.find((arg) => arg.startsWith(`--${name}=`));
+  if (withEquals) return withEquals.slice(name.length + 3);
+  const index = args.indexOf(`--${name}`);
+  const next = args[index + 1];
+  return index >= 0 && next && !next.startsWith('--') ? next : fallback;
 };
 const hasFlag = (name) => args.includes(`--${name}`);
 const providerArg = getValue('provider', 'unsplash').toLowerCase();
@@ -128,9 +135,19 @@ function saveCache(cache) {
   renameSync(`${outputPath}.tmp`, outputPath);
 }
 
+/** Pixabay reports a 60-second window; stay well inside it. */
+const rateGate = { remaining: Infinity, reset: 0 };
+
 async function apiFetch(url, options, attempts = 3) {
   let lastError;
   for (let attempt = 0; attempt < attempts; attempt += 1) {
+    if (rateGate.remaining <= 2 && rateGate.reset > 0) {
+      const waitMs = Math.min(rateGate.reset * 1000, 120_000);
+      console.warn(`  rate window almost exhausted; waiting ${Math.round(waitMs / 1000)}s`);
+      await sleep(waitMs);
+      rateGate.remaining = Infinity;
+      rateGate.reset = 0;
+    }
     let response;
     try {
       response = await fetch(url, options);
@@ -158,12 +175,18 @@ async function apiFetch(url, options, attempts = 3) {
       throw error;
     }
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const remainingHeader = response.headers.get('x-ratelimit-remaining');
+    const resetHeader = response.headers.get('x-ratelimit-reset');
+    if (remainingHeader !== null && Number.isFinite(Number(remainingHeader))) rateGate.remaining = Number(remainingHeader);
+    if (resetHeader !== null && Number.isFinite(Number(resetHeader))) rateGate.reset = Number(resetHeader);
     return { response, data: await response.json(), headers: response.headers };
   }
   throw lastError ?? new Error('Request failed');
 }
 
-const peopleWords = /\b(person|people|man|woman|male|female|face|portrait|model|child|kid|baby|selfie|crowd)\b/i;
+const peopleWords = /\b(person|people|man|woman|male|female|face|portrait|model|child|kid|baby|selfie|crowd|boy|girl|human|teenager|hands?)\b/i;
+/** Pixabay forbids commercial use of recognisable brands, so drop branded tags. */
+const brandWords = /\b(airpod|iphone|ipad|ipod|samsung|nike|adidas|puma|sony|huawei|xiaomi|google|microsoft|nintendo|playstation|xbox|disney|coca-?cola|pepsi|logo|brand|trademark|starbucks|tesla|rolex|gucci|chanel)\b/i;
 
 function unsplashImage(photo, alt) {
   return {
@@ -236,10 +259,10 @@ async function resolveUnsplash(product, key, cache) {
   };
 }
 
-async function saveWebp(buffer, destination, size) {
+async function saveWebp(buffer, destination, size, position = 'attention') {
   await sharp(buffer)
     .rotate()
-    .resize(size, size, { fit: 'cover', position: 'attention' })
+    .resize(size, size, { fit: 'cover', position })
     .webp({ quality: 82, effort: 4 })
     .toFile(destination);
 }
@@ -288,6 +311,85 @@ async function resolvePexels(product, key) {
   return { status: 'resolved', source: 'pexels', images };
 }
 
+const CROP_POSITIONS = ['top', 'right', 'bottom', 'left'];
+
+/** Pixabay: download once, store optimised WebP locally, credit the contributor. */
+async function resolvePixabay(product, key) {
+  const seenIds = new Set();
+  const seenQueries = new Set();
+  const hits = [];
+
+  for (const query of [product.query, product.fallbackQuery]) {
+    if (hits.length >= 4 || seenQueries.has(query)) continue;
+    seenQueries.add(query);
+    const url = new URL('https://pixabay.com/api/');
+    url.searchParams.set('key', key);
+    url.searchParams.set('q', query);
+    url.searchParams.set('image_type', 'photo');
+    url.searchParams.set('safesearch', 'true');
+    url.searchParams.set('lang', 'en');
+    url.searchParams.set('order', 'popular');
+    url.searchParams.set('per_page', '20');
+    const { data } = await apiFetch(url.toString());
+    for (const hit of data.hits ?? []) {
+      if (hits.length >= 4) break;
+      if (!hit.pageURL || !hit.largeImageURL || seenIds.has(hit.id)) continue;
+      if (Number(hit.imageWidth) < 600 || Number(hit.imageHeight) < 600) continue;
+      const text = `${hit.tags ?? ''} ${hit.pageURL}`;
+      if (peopleWords.test(text) || brandWords.test(text)) continue;
+      seenIds.add(hit.id);
+      hits.push(hit);
+    }
+  }
+  if (hits.length === 0) return { status: 'unmatched', reason: 'No suitable Pixabay photo without people or brands', images: [] };
+
+  const directory = join(localImageRoot, product.slug);
+  mkdirSync(directory, { recursive: true });
+  const buffers = new Map();
+  const images = [];
+
+  for (let index = 0; index < 4; index += 1) {
+    const hit = hits[index % hits.length];
+    const reusing = index >= hits.length;
+    const position = reusing ? CROP_POSITIONS[(index - hits.length) % CROP_POSITIONS.length] : 'attention';
+    const view = reusing ? `crop${index + 1}` : `photo${index + 1}`;
+
+    let buffer = buffers.get(hit.id);
+    if (!buffer) {
+      const response = await fetch(hit.largeImageURL);
+      if (!response.ok) continue;
+      buffer = Buffer.from(await response.arrayBuffer());
+      buffers.set(hit.id, buffer);
+    }
+
+    const paths = [];
+    for (const size of [320, 640, 1200]) {
+      const filename = `pixabay-${hit.id}-${view}-${size}.webp`;
+      await saveWebp(buffer, join(directory, filename), size, position);
+      paths.push(`/products/${product.slug}/${filename}`);
+    }
+
+    images.push({
+      source: 'pixabay',
+      photoId: String(hit.id),
+      paths,
+      alt: `${product.title} — view ${index + 1}`,
+      width: 1200,
+      height: 1200,
+      credit: {
+        photographer: hit.user || 'Pixabay contributor',
+        photographerUrl: withUtm(`https://pixabay.com/users/${encodeURIComponent(hit.user || 'pixabay')}-${hit.user_id || ''}/`),
+        photoUrl: withUtm(hit.pageURL),
+        license: 'Pixabay Content License',
+        licenseUrl: 'https://pixabay.com/service/license/',
+      },
+    });
+  }
+
+  if (images.length === 0) return { status: 'unmatched', reason: 'Pixabay photo downloads failed', images: [] };
+  return { status: 'resolved', source: 'pixabay', images };
+}
+
 async function main() {
   const products = readProducts();
   ageCheck(products);
@@ -309,6 +411,14 @@ async function main() {
       hotlinkOnly: false,
       attribution: 'Photographer/source links are stored in data/product-images.json.',
     },
+    pixabay: {
+      source: 'https://pixabay.com/api/docs/',
+      license: 'https://pixabay.com/service/license/',
+      hotlinkOnly: false,
+      attribution: 'Pixabay asks that the source be shown; contributor + photo links appear on product pages and /credits.',
+      cacheHours: 24,
+      rateLimit: '100 requests per 60 seconds',
+    },
   };
   ensureEntries(cache, products);
 
@@ -319,7 +429,13 @@ async function main() {
     return;
   }
 
-  const keyName = providerArg === 'pexels' ? 'PEXELS_API_KEY' : 'UNSPLASH_ACCESS_KEY';
+  const keyNames = { unsplash: 'UNSPLASH_ACCESS_KEY', pexels: 'PEXELS_API_KEY', pixabay: 'PIXABAY_API_KEY' };
+  const keyName = keyNames[providerArg];
+  if (!keyName) {
+    console.error(`Unknown provider "${providerArg}". Use unsplash, pexels or pixabay.`);
+    process.exitCode = 1;
+    return;
+  }
   const key = env[keyName]?.trim();
   if (!key) {
     saveCache(cache);
@@ -342,7 +458,9 @@ async function main() {
     try {
       const result = providerArg === 'pexels'
         ? await resolvePexels(product, key)
-        : await resolveUnsplash(product, key, cache);
+        : providerArg === 'pixabay'
+          ? await resolvePixabay(product, key)
+          : await resolveUnsplash(product, key, cache);
       cache.products[product.slug] = {
         ...cache.products[product.slug],
         title: product.title,

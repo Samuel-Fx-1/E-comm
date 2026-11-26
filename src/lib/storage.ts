@@ -50,6 +50,7 @@ export const storageKeys = {
   wishlist: 'soko_wishlist_v1',
   compare: 'soko_compare_v1',
   recent: 'soko_recent_v1',
+  productSnapshots: 'soko_product_snapshots_v1',
   reviews: 'soko_reviews_v1',
   questions: 'soko_questions_v1',
   orders: 'soko_orders_v1',

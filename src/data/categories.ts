@@ -65,6 +65,14 @@ export const categories: Category[] = [
     gradient: 'from-lime-900 via-stone-900 to-stone-800',
     tint: '#65A30D',
   },
+  {
+    slug: 'digital',
+    name: 'Digital Products',
+    icon: 'Download',
+    blurb: 'Planners, presets and instant downloads',
+    gradient: 'from-sky-900 via-indigo-900 to-slate-800',
+    tint: '#6366F1',
+  },
 ];
 
 export const getCategory = (slug: string): Category | undefined =>

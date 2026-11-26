@@ -6,7 +6,8 @@ export type CategorySlug =
   | 'sports'
   | 'books'
   | 'toys'
-  | 'groceries';
+  | 'groceries'
+  | 'digital';
 
 export interface Category {
   slug: CategorySlug;
@@ -18,8 +19,8 @@ export interface Category {
   tint: string;
 }
 
-/** Where a gallery image came from. Unsplash images are hotlinked, never rehosted. */
-export type ImageSource = 'unsplash' | 'pexels' | 'override' | 'generated' | 'illustrative';
+/** Where a gallery image came from. Unsplash images are hotlinked; others are stored locally. */
+export type ImageSource = 'unsplash' | 'pexels' | 'pixabay' | 'override' | 'generated' | 'illustrative';
 
 /** A gallery-ready image with accessible text and responsive metadata. */
 export interface ResolvedImage {
@@ -71,12 +72,16 @@ export interface Product {
   deliveryDays: number;
   isBestSeller: boolean;
   isDeal: boolean;
+  /** Curated trending items; drives the homepage "Trending now" rail. */
+  isTrending: boolean;
   addedAt: string;
 }
 
 export interface CartLine {
   productId: string;
   qty: number;
+  /** Full product captured when added, so API-only products survive reloads. */
+  snapshot?: Product;
 }
 
 export interface Review {
@@ -144,6 +149,8 @@ export interface OrderItem {
   image: string;
   price: number;
   qty: number;
+  /** Lets "buy it again" restore products that are not in the local bundle. */
+  snapshot?: Product;
 }
 
 export interface Order {

@@ -31,6 +31,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://soko.example.com/trending</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://soko.example.com/customer-service</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>daily</changefreq>
@@ -86,6 +92,18 @@
   </url>
   <url>
     <loc>https://soko.example.com/category/groceries</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/category/digital</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/credits</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -590,6 +608,102 @@
   </url>
   <url>
     <loc>https://soko.example.com/product/rift-outdoor-bubble-machine</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/wireless-noise-canceling-headphones</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/bluetooth-neckband-earphones</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/foldable-wireless-keyboard</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/wireless-charging-desk-mat</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/mini-rechargeable-precision-screwdriver-set</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/classic-heavyweight-cotton-t-shirt</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/lightweight-everyday-windbreaker-jacket</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/casual-low-top-sneakers</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/niacinamide-hydrating-body-lotion</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/collagen-hydrogel-under-eye-patches</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/natural-coconut-hair-growth-repair-oil</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/nonstick-cookware-set</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/portable-handheld-garment-steamer</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/high-pressure-filtered-shower-head</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/all-in-one-productivity-digital-planner</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soko.example.com/product/professional-photo-editing-presets-bundle</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
