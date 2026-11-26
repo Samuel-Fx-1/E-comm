@@ -22,8 +22,8 @@ export default function CreditsPage() {
         Product photos are resolved once by a local seed script and cached in{' '}
         <code className="rounded bg-[var(--brand-cream)] px-1">data/product-images.json</code>. Unsplash photos are
         hotlinked from <code className="rounded bg-[var(--brand-cream)] px-1">images.unsplash.com</code> and are never
-        downloaded or rehosted. Pexels photos and your own overrides are stored locally as optimised WebP files. Every
-        photo keeps its photographer and licence link below.
+        downloaded or rehosted. Pixabay and Pexels photos, and your own overrides, are downloaded once and stored locally
+        as optimised WebP files. Every photo keeps its photographer and licence link below.
       </p>
 
       <div className="mt-4 flex flex-wrap gap-4 text-xs">
@@ -41,6 +41,12 @@ export default function CreditsPage() {
         </a>
         <a href="https://www.pexels.com/license/" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
           Pexels License
+        </a>
+        <a href="https://pixabay.com/api/docs/" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
+          Pixabay API
+        </a>
+        <a href="https://pixabay.com/service/license/" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
+          Pixabay Content License
         </a>
       </div>
 
@@ -71,7 +77,7 @@ export default function CreditsPage() {
                 </a>{' '}
                 via{' '}
                 <a href={credit.photoUrl} target="_blank" rel="noopener noreferrer" className="underline">
-                  {image.source === 'unsplash' ? 'Unsplash' : 'Pexels'}
+                  {image.source === 'unsplash' ? 'Unsplash' : image.source === 'pixabay' ? 'Pixabay' : 'Pexels'}
                 </a>
               </p>
               <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[11px] text-[var(--brand-muted)] underline">
