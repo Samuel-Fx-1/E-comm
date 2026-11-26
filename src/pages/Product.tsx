@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import {
-  BadgeCheck, Check, ChevronRight, GitCompareArrows, Heart, MapPin, RotateCcw, ShieldCheck, ShoppingCart, Truck,
+  BadgeCheck, Check, ChevronRight, GitCompareArrows, Heart, MapPin, RotateCcw, ShieldCheck, ShoppingCart, Sparkles,
+  TrendingUp, Truck,
 } from 'lucide-react';
 import type { Product } from '../types';
 import { getProduct, products } from '../data/products';
@@ -244,6 +245,28 @@ export default function ProductPage() {
               <h1 className="mt-1 font-serif text-2xl font-bold leading-tight text-[var(--brand-ink)] sm:text-3xl">
                 {product.title}
               </h1>
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {product.isBestSeller && (
+                  <span className="inline-flex items-center gap-1 rounded bg-[var(--brand-yellow)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[var(--brand-navy-deep)]">
+                    <BadgeCheck className="h-3 w-3" aria-hidden="true" /> Best seller
+                  </span>
+                )}
+                {product.isTrending && (
+                  <span className="inline-flex items-center gap-1 rounded bg-[var(--brand-orange)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
+                    <TrendingUp className="h-3 w-3" aria-hidden="true" /> Trending
+                  </span>
+                )}
+                {product.isGenZPick && (
+                  <span className="inline-flex items-center gap-1 rounded bg-[var(--brand-navy-deep)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
+                    <Sparkles className="h-3 w-3" aria-hidden="true" /> Gen Z Pick
+                  </span>
+                )}
+                {product.isViral && (
+                  <span className="inline-flex items-center gap-1 rounded bg-fuchsia-600 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
+                    <Sparkles className="h-3 w-3" aria-hidden="true" /> Viral
+                  </span>
+                )}
+              </div>
               <p className="mt-2 text-sm leading-6 text-[var(--brand-muted)]">{product.shortDescription}</p>
               <div className="mt-2 flex flex-wrap items-center gap-2">
                 <Rating rating={product.rating} size="md" showNumber />
