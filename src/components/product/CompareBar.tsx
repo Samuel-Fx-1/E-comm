@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { GitCompareArrows, X } from 'lucide-react';
-import { getProductById } from '../../data/products';
+import { resolveProduct } from '../../data/productLookup';
 import { imagesFor } from '../../data/imageMap';
 import { useStore } from '../../context/StoreContext';
 import { ImageWithFallback } from '../ui/ImageWithFallback';
@@ -8,7 +8,7 @@ import { ImageWithFallback } from '../ui/ImageWithFallback';
 export function CompareBar() {
   const { compare, toggleCompare, clearCompare } = useStore();
   if (compare.length === 0) return null;
-  const products = compare.map((id) => getProductById(id)).filter(Boolean);
+  const products = compare.map((id) => resolveProduct(id)).filter(Boolean);
 
   return (
     <div className="fixed inset-x-0 bottom-16 z-40 border-t border-white/10 bg-[var(--brand-navy)] text-white shadow-2xl sm:bottom-0">
@@ -24,7 +24,7 @@ export function CompareBar() {
                 <span className="hidden max-w-[130px] truncate text-xs font-medium sm:block">{product.title}</span>
                 <button
                   type="button"
-                  onClick={() => toggleCompare(product.id)}
+                  onClick={() => toggleCompare(product.id, product)}
                   className="rounded p-0.5 text-white/60 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   aria-label={`Remove ${product.title} from compare`}
                 >
