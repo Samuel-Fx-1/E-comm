@@ -1,0 +1,346 @@
+{
+  "category": "tech-gaming",
+  "name": "Tech & Gaming",
+  "products": [
+    {
+      "slug": "wireless-noise-canceling-over-ear-headphones",
+      "name": "Wireless Noise-Canceling Over-Ear Headphones",
+      "brand": "Auralis",
+      "category": "tech-gaming",
+      "subcategory": "Tech & Gaming",
+      "price": 116900,
+      "listPrice": 155900,
+      "rating": 4.8,
+      "reviewCount": 8420,
+      "stock": 64,
+      "shortDescription": "Immersive over-ear sound with adaptive noise cancellation, plush ear cups and a 40-hour battery.",
+      "bullets": [
+        "Adaptive noise cancellation quietens commutes and busy shared spaces",
+        "40 hours of playback with a quick charge that adds 5 hours in 10 minutes",
+        "Memory-foam cushions and a foldable frame make travel easy"
+      ],
+      "specs": {
+        "Driver": "40 mm dynamic",
+        "Battery": "40 h",
+        "Connectivity": "Bluetooth 5.4",
+        "Weight": "248 g"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Midnight Black"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Warm Sand"
+        }
+      ],
+      "seller": "Auralis Official",
+      "deliveryDays": 6,
+      "addedAt": "2026-11-24",
+      "flags": {
+        "isBestSeller": true,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": true,
+        "isViral": false
+      },
+      "imageQueries": [
+        "noise cancelling over ear headphones",
+        "black wireless headphones studio",
+        "headphones product photography white background",
+        "minimal over ear headphones lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "210927",
+          "url": "https://images.pexels.com/photos/210927/pexels-photo-210927.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Minimalist black over-ear headphones on a white background",
+          "photographer": "Aleksandar Spasojevic",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/210927/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "low-latency-gaming-wireless-earbuds",
+      "name": "Low-Latency Gaming Wireless Earbuds",
+      "brand": "Voltix",
+      "category": "tech-gaming",
+      "subcategory": "Tech & Gaming",
+      "price": 51900,
+      "listPrice": 64900,
+      "rating": 4.6,
+      "reviewCount": 3180,
+      "stock": 112,
+      "shortDescription": "Low-latency earbuds with a snug sport fit, punchy bass and a pocketable charging case.",
+      "bullets": [
+        "Game mode keeps audio and on-screen action in sync",
+        "Three tip sizes help you find a secure, comfortable seal",
+        "The compact case adds up to 24 hours of total listening time"
+      ],
+      "specs": {
+        "Driver": "10 mm dynamic",
+        "Battery": "6 h + 18 h case",
+        "Latency": "45 ms",
+        "Connectivity": "Bluetooth 5.4"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Black"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "White"
+        }
+      ],
+      "seller": "Voltix Official",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-22",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "wireless gaming earbuds",
+        "black sport earbuds charging case",
+        "earbuds product photography",
+        "gaming earbuds desk setup"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "10997624",
+          "url": "https://images.pexels.com/photos/10997624/pexels-photo-10997624.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "White wireless earbuds beside a gaming controller",
+          "photographer": "Nathan J Hilton",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/10997624/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "compact-mechanical-hall-effect-keyboard",
+      "name": "Compact Mechanical Hall-Effect Keyboard",
+      "brand": "Nordika",
+      "category": "tech-gaming",
+      "subcategory": "Tech & Gaming",
+      "price": 116900,
+      "listPrice": 142900,
+      "rating": 4.7,
+      "reviewCount": 1260,
+      "stock": 38,
+      "shortDescription": "A compact hall-effect keyboard with adjustable actuation, hot-swap switches and a clean low profile.",
+      "bullets": [
+        "Hall-effect switches let you tune how far each key travels",
+        "Hot-swappable keycaps make it easy to refresh the look",
+        "A 75% layout leaves room for your mouse without losing the number row"
+      ],
+      "specs": {
+        "Layout": "75% / 82 keys",
+        "Switches": "Hall-effect",
+        "Actuation": "Adjustable",
+        "Connectivity": "USB-C"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Graphite"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Ivory"
+        }
+      ],
+      "seller": "Nordika Official",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-21",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": true,
+        "isViral": false
+      },
+      "imageQueries": [
+        "compact mechanical keyboard",
+        "75 percent keyboard desk setup",
+        "mechanical keyboard close up",
+        "keyboard product photography"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "9020272",
+          "url": "https://images.pexels.com/photos/9020272/pexels-photo-9020272.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close-up of a mechanical keyboard with exposed switches",
+          "photographer": "Castorly Stock",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/9020272/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "rgb-smart-led-room-strip-lights",
+      "name": "RGB Smart LED Room Strip Lights",
+      "brand": "Lumo",
+      "category": "tech-gaming",
+      "subcategory": "Tech & Gaming",
+      "price": 32500,
+      "listPrice": 45500,
+      "rating": 4.5,
+      "reviewCount": 5210,
+      "stock": 145,
+      "shortDescription": "Smart RGB strip lights with app control, music sync and peel-and-stick backing for any room.",
+      "bullets": [
+        "Sixteen million colours and scene presets set the mood instantly",
+        "Music mode makes the lights react to your playlist",
+        "Peel-and-stick backing installs in minutes without tools"
+      ],
+      "specs": {
+        "Length": "5 m",
+        "Colours": "16 million",
+        "Control": "App + remote",
+        "Power": "USB 5 V"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Length",
+          "value": "5 m"
+        },
+        {
+          "type": "color",
+          "name": "Length",
+          "value": "10 m"
+        }
+      ],
+      "seller": "Lumo Official",
+      "deliveryDays": 6,
+      "addedAt": "2026-11-19",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "RGB LED strip lights",
+        "smart room lighting strip",
+        "LED lights bedroom setup",
+        "LED strip product photography"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "10482375",
+          "url": "https://images.pexels.com/photos/10482375/pexels-photo-10482375.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Red LED strip lights illuminating a dark room",
+          "photographer": "Ducky",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/10482375/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "wireless-charging-desk-mat",
+      "name": "Wireless Charging Desk Mat",
+      "brand": "Lumo",
+      "category": "tech-gaming",
+      "subcategory": "Tech & Gaming",
+      "price": 47900,
+      "listPrice": 58500,
+      "rating": 4.4,
+      "reviewCount": 860,
+      "stock": 72,
+      "shortDescription": "A stitched desk mat with a built-in 15W wireless charging pad and a smooth, tidy work surface.",
+      "bullets": [
+        "A stitched, water-resistant surface protects a full desk setup",
+        "The built-in 15W pad charges a phone while you work",
+        "A non-slip rubber base keeps everything in place"
+      ],
+      "specs": {
+        "Size": "900 × 400 mm",
+        "Charging": "15 W Qi",
+        "Material": "PU leather",
+        "Base": "Non-slip rubber"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Slate"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Beige"
+        }
+      ],
+      "seller": "Lumo Official",
+      "deliveryDays": 2,
+      "addedAt": "2026-11-17",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "wireless charging desk mat",
+        "large desk pad setup",
+        "desk mat product photography",
+        "minimal desk accessories mat"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7742585",
+          "url": "https://images.pexels.com/photos/7742585/pexels-photo-7742585.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Phone charging wirelessly on a desk beside a laptop",
+          "photographer": "Rann Vijay",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/7742585/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    }
+  ]
+}
