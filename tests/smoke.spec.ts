@@ -13,7 +13,7 @@ test('home page renders the storefront shelves', async ({ page }) => {
 test('category page renders products in RWF', async ({ page }) => {
   await page.goto('/category/tech-gaming');
   await expect(page.getByRole('heading', { name: 'Tech & Gaming' })).toBeVisible();
-  await expect(page.getByRole('link', { name: productName })).toBeVisible();
+  await expect(page.getByRole('link', { name: productName }).first()).toBeVisible();
   await expect(page.getByText('116,900')).toBeVisible();
 });
 
@@ -25,7 +25,8 @@ test('product page renders the photo gallery', async ({ page }) => {
 
 test('add to cart opens the drawer with the selected product', async ({ page }) => {
   await page.goto(productPath);
-  await page.getByRole('button', { name: 'Add to Cart' }).click();
-  await expect(page.getByRole('dialog', { name: /Cart \(1\)/ })).toBeVisible();
-  await expect(page.getByText(productName)).toBeVisible();
+  await page.locator('#main-content').getByRole('button', { name: 'Add to Cart' }).first().click();
+  const drawer = page.getByRole('dialog', { name: /Cart \(1\)/ });
+  await expect(drawer).toBeVisible();
+  await expect(drawer.getByText(productName)).toBeVisible();
 });
