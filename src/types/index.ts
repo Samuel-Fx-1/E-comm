@@ -49,7 +49,7 @@ export interface Product {
   brand: string;
   category: CategorySlug;
   subcategory: string;
-  /** RWF is the native price unit. USD aliases remain for the legacy formatter. */
+  /** All price fields are whole RWF amounts. The legacy field names remain for compatibility. */
   priceRwf: number;
   oldPriceRwf: number;
   price: number;
