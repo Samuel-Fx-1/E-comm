@@ -21,7 +21,7 @@ export default function AccountPage() {
   const { user, addresses, paymentMethods, updateProfile, addAddress, removeAddress, addPaymentMethod, removePaymentMethod, signOut } = useAuth();
   const { orders } = useOrders();
   const { wishlist, reviews } = useStore();
-  const { country, city, countryCode, language, setLanguage, currency, setCurrency, setCountryModalOpen, resetShipBanner, t } = useSite();
+  const { country, city, countryCode, language, setLanguage, currency, setCurrency, setCountryModalOpen, resetShipBanner, money, t } = useSite();
   const { toast } = useToast();
 
   const [name, setName] = useState(user?.name ?? '');
@@ -415,8 +415,8 @@ export default function AccountPage() {
           </section>
 
           <p className="rounded-xl bg-[var(--brand-cream)] p-3 text-[11px] leading-4 text-[var(--brand-muted)]">
-            Free delivery applies over {site.freeShippingThresholdUsd} USD. All prices are demo values converted at fixed
-            rates.
+            Free delivery applies over {money(site.freeDeliveryThresholdRwf)}. All prices are stored in RWF and converted
+            at fixed demonstration rates.
           </p>
         </div>
       </div>
