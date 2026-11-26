@@ -11,6 +11,7 @@
     "lint": "tsc --noEmit",
     "images:placeholders": "node scripts/generate-placeholders.mjs",
     "images:fetch": "node scripts/fetch-product-images.mjs",
+    "images:fetch:pixabay": "node scripts/fetch-product-images.mjs --provider pixabay",
     "images:fetch:dry": "node scripts/fetch-product-images.mjs --dry-run",
     "sitemap": "node scripts/generate-sitemap.mjs"
   },
