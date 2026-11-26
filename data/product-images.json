@@ -1,513 +1,25 @@
 {
-  "version": 2,
+  "version": 3,
   "terms": {
     "pexels": {
       "source": "https://www.pexels.com/api/documentation/",
       "license": "https://www.pexels.com/license/",
       "hotlinkOnly": true,
-      "attribution": "Photographer and Pexels photo links are stored in data/product-images.json."
+      "attribution": "Photographer and Pexels photo links are stored here and in data/catalog/*.json."
     }
   },
   "products": {
-    "wireless-noise-canceling-over-ear-headphones": {
-      "title": "Wireless Noise-Canceling Over-Ear Headphones",
-      "category": "tech-gaming",
-      "query": "Wireless Noise-Canceling Over-Ear Headphones tech gaming",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "210927",
-          "paths": [
-            "https://images.pexels.com/photos/210927/pexels-photo-210927.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/210927/pexels-photo-210927.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/210927/pexels-photo-210927.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Minimalist black over-ear headphones on a white background",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Aleksandar Spasojevic",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/210927/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "low-latency-gaming-wireless-earbuds": {
-      "title": "Low-Latency Gaming Wireless Earbuds",
-      "category": "tech-gaming",
-      "query": "Low-Latency Gaming Wireless Earbuds tech gaming",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "10997624",
-          "paths": [
-            "https://images.pexels.com/photos/10997624/pexels-photo-10997624.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/10997624/pexels-photo-10997624.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/10997624/pexels-photo-10997624.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "White wireless earbuds beside a gaming controller",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Nathan J Hilton",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/10997624/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "compact-mechanical-hall-effect-keyboard": {
-      "title": "Compact Mechanical Hall-Effect Keyboard",
-      "category": "tech-gaming",
-      "query": "Compact Mechanical Hall-Effect Keyboard tech gaming",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "9020272",
-          "paths": [
-            "https://images.pexels.com/photos/9020272/pexels-photo-9020272.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/9020272/pexels-photo-9020272.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/9020272/pexels-photo-9020272.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Close-up of a mechanical keyboard with exposed switches",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Castorly Stock",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/9020272/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "rgb-smart-led-room-strip-lights": {
-      "title": "RGB Smart LED Room Strip Lights",
-      "category": "tech-gaming",
-      "query": "RGB Smart LED Room Strip Lights tech gaming",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "10482375",
-          "paths": [
-            "https://images.pexels.com/photos/10482375/pexels-photo-10482375.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/10482375/pexels-photo-10482375.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/10482375/pexels-photo-10482375.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Red LED strip lights illuminating a dark room",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Ducky",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/10482375/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "wireless-charging-desk-mat": {
-      "title": "Wireless Charging Desk Mat",
-      "category": "tech-gaming",
-      "query": "Wireless Charging Desk Mat tech gaming",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "7742585",
-          "paths": [
-            "https://images.pexels.com/photos/7742585/pexels-photo-7742585.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/7742585/pexels-photo-7742585.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/7742585/pexels-photo-7742585.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Phone charging wirelessly on a desk beside a laptop",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Rann Vijay",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/7742585/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "heavyweight-oversized-graphic-t-shirt": {
-      "title": "Heavyweight Oversized Graphic T-Shirt",
-      "category": "streetwear-footwear",
-      "query": "Heavyweight Oversized Graphic T-Shirt streetwear footwear",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "36942017",
-          "paths": [
-            "https://images.pexels.com/photos/36942017/pexels-photo-36942017.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/36942017/pexels-photo-36942017.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/36942017/pexels-photo-36942017.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Trendy oversized graphic t-shirt",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "BANDAR BAANT",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/36942017/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "baggy-barrel-fit-cargo-jeans": {
-      "title": "Baggy Barrel-Fit Cargo Jeans",
-      "category": "streetwear-footwear",
-      "query": "Baggy Barrel-Fit Cargo Jeans streetwear footwear",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "25484767",
-          "paths": [
-            "https://images.pexels.com/photos/25484767/pexels-photo-25484767.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/25484767/pexels-photo-25484767.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/25484767/pexels-photo-25484767.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Young woman wearing baggy jeans and a crop top",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Noland Live",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/25484767/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "high-waisted-fold-over-athleisure-leggings": {
-      "title": "High-Waisted Fold-Over Athleisure Leggings",
-      "category": "streetwear-footwear",
-      "query": "High-Waisted Fold-Over Athleisure Leggings streetwear footwear",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "7593007",
-          "paths": [
-            "https://images.pexels.com/photos/7593007/pexels-photo-7593007.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/7593007/pexels-photo-7593007.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/7593007/pexels-photo-7593007.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Woman practicing yoga in athletic leggings",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Miriam Alonso",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/7593007/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "retro-low-top-chunky-sneakers": {
-      "title": "Retro Low-Top Chunky Sneakers",
-      "category": "streetwear-footwear",
-      "query": "Retro Low-Top Chunky Sneakers streetwear footwear",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "27256441",
-          "paths": [
-            "https://images.pexels.com/photos/27256441/pexels-photo-27256441.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/27256441/pexels-photo-27256441.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/27256441/pexels-photo-27256441.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Black and white sneakers with chunky soles",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "José Martin Segura Benites",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/27256441/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "hydrocolloid-star-pimple-patches-36-count": {
-      "title": "Hydrocolloid Star Pimple Patches (36 Count)",
-      "category": "viral-skincare-haircare",
-      "query": "Hydrocolloid Star Pimple Patches (36 Count) viral skincare haircare",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "6475989",
-          "paths": [
-            "https://images.pexels.com/photos/6475989/pexels-photo-6475989.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/6475989/pexels-photo-6475989.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/6475989/pexels-photo-6475989.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Woman holding a skincare product for blemish care",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Hanna Pad",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/6475989/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "niacinamide-brightening-hydrating-body-lotion": {
-      "title": "Niacinamide Brightening & Hydrating Body Lotion",
-      "category": "viral-skincare-haircare",
-      "query": "Niacinamide Brightening & Hydrating Body Lotion viral skincare haircare",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "5798000",
-          "paths": [
-            "https://images.pexels.com/photos/5798000/pexels-photo-5798000.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/5798000/pexels-photo-5798000.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/5798000/pexels-photo-5798000.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Moisturising lotion bottle on a white table",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Ann poan",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/5798000/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "collagen-hydrogel-under-eye-patches": {
-      "title": "Collagen Hydrogel Under-Eye Patches",
-      "category": "viral-skincare-haircare",
-      "query": "Collagen Hydrogel Under-Eye Patches viral skincare haircare",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "6476074",
-          "paths": [
-            "https://images.pexels.com/photos/6476074/pexels-photo-6476074.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/6476074/pexels-photo-6476074.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/6476074/pexels-photo-6476074.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Woman wearing a hydrating under-eye patch",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Hanna Pad",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/6476074/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "silicone-scalp-massager-hair-growth-brush": {
-      "title": "Silicone Scalp Massager & Hair Growth Brush",
-      "category": "viral-skincare-haircare",
-      "query": "Silicone Scalp Massager & Hair Growth Brush viral skincare haircare",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "5468620",
-          "paths": [
-            "https://images.pexels.com/photos/5468620/pexels-photo-5468620.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/5468620/pexels-photo-5468620.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/5468620/pexels-photo-5468620.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Woman brushing her hair with a wooden brush",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Polina Tankilevitch",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/5468620/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "satin-sleep-bonnet-scrunchie-set": {
-      "title": "Satin Sleep Bonnet & Scrunchie Set",
-      "category": "viral-skincare-haircare",
-      "query": "Satin Sleep Bonnet & Scrunchie Set viral skincare haircare",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "7897135",
-          "paths": [
-            "https://images.pexels.com/photos/7897135/pexels-photo-7897135.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/7897135/pexels-photo-7897135.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/7897135/pexels-photo-7897135.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Satin scrunchies and bonnet flat lay",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Irene Gaitho",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/7897135/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "insulated-stainless-steel-flip-straw-water-bottle-32oz": {
-      "title": "Insulated Stainless Steel Flip-Straw Water Bottle (32oz)",
-      "category": "lifestyle-aesthetic-essentials",
-      "query": "Insulated Stainless Steel Flip-Straw Water Bottle (32oz) lifestyle aesthetic essentials",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "3737800",
-          "paths": [
-            "https://images.pexels.com/photos/3737800/pexels-photo-3737800.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/3737800/pexels-photo-3737800.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/3737800/pexels-photo-3737800.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Hands holding black and white insulated water bottles",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "cottonbro studio",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/3737800/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "quilted-puffer-makeup-tech-organizer-bag": {
-      "title": "Quilted Puffer Makeup & Tech Organizer Bag",
-      "category": "lifestyle-aesthetic-essentials",
-      "query": "Quilted Puffer Makeup & Tech Organizer Bag lifestyle aesthetic essentials",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "6624063",
-          "paths": [
-            "https://images.pexels.com/photos/6624063/pexels-photo-6624063.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/6624063/pexels-photo-6624063.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/6624063/pexels-photo-6624063.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Makeup pouch with brushes on a marble background",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Nadia Dolce",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/6624063/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
-    "portable-usb-c-mini-smoothie-blender": {
-      "title": "Portable USB-C Mini Smoothie Blender",
-      "category": "lifestyle-aesthetic-essentials",
-      "query": "Portable USB-C Mini Smoothie Blender lifestyle aesthetic essentials",
-      "status": "resolved",
-      "source": "pexels",
-      "images": [
-        {
-          "source": "pexels",
-          "photoId": "7936983",
-          "paths": [
-            "https://images.pexels.com/photos/7936983/pexels-photo-7936983.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
-            "https://images.pexels.com/photos/7936983/pexels-photo-7936983.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
-            "https://images.pexels.com/photos/7936983/pexels-photo-7936983.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
-          ],
-          "alt": "Hands using a blender with bananas and greens",
-          "width": 1200,
-          "height": 1200,
-          "color": "#0C1E36",
-          "credit": {
-            "photographer": "Nicola Barts",
-            "photographerUrl": "https://www.pexels.com/",
-            "photoUrl": "https://www.pexels.com/photo/7936983/",
-            "license": "Pexels License",
-            "licenseUrl": "https://www.pexels.com/license/"
-          }
-        }
-      ]
-    },
     "interactive-stem-robotics-building-kit": {
       "title": "Interactive STEM Robotics Building Kit",
       "category": "gen-alpha-kids-corner",
-      "query": "Interactive STEM Robotics Building Kit gen alpha kids corner",
-      "status": "resolved",
+      "status": "partial",
       "source": "pexels",
+      "queries": [
+        "STEM robotics building kit",
+        "kids robotics kit product photo",
+        "building toys for ages 8",
+        "educational robot kit"
+      ],
       "images": [
         {
           "source": "pexels",
@@ -534,9 +46,14 @@
     "ergonomic-aesthetic-school-backpack-with-pins": {
       "title": "Ergonomic Aesthetic School Backpack with Pins",
       "category": "gen-alpha-kids-corner",
-      "query": "Ergonomic Aesthetic School Backpack with Pins gen alpha kids corner",
-      "status": "resolved",
+      "status": "partial",
       "source": "pexels",
+      "queries": [
+        "ergonomic school backpack",
+        "kids backpack product photo",
+        "backpack with pins",
+        "school bag lifestyle"
+      ],
       "images": [
         {
           "source": "pexels",
@@ -563,9 +80,14 @@
     "kids-digital-instant-print-camera": {
       "title": "Kids Digital Instant Print Camera",
       "category": "gen-alpha-kids-corner",
-      "query": "Kids Digital Instant Print Camera gen alpha kids corner",
-      "status": "resolved",
+      "status": "partial",
       "source": "pexels",
+      "queries": [
+        "kids instant print camera",
+        "digital camera for children",
+        "instant camera product photo",
+        "kids camera creative play"
+      ],
       "images": [
         {
           "source": "pexels",
@@ -583,6 +105,584 @@
             "photographer": "Caleb Oquendo",
             "photographerUrl": "https://www.pexels.com/",
             "photoUrl": "https://www.pexels.com/photo/10676011/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "insulated-stainless-steel-flip-straw-water-bottle-32oz": {
+      "title": "Insulated Stainless Steel Flip-Straw Water Bottle (32oz)",
+      "category": "lifestyle-aesthetic-essentials",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "insulated stainless steel water bottle",
+        "flip straw tumbler product photo",
+        "travel water bottle minimal",
+        "steel bottle lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "3737800",
+          "paths": [
+            "https://images.pexels.com/photos/3737800/pexels-photo-3737800.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/3737800/pexels-photo-3737800.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/3737800/pexels-photo-3737800.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Hands holding black and white insulated water bottles",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "cottonbro studio",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/3737800/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "quilted-puffer-makeup-tech-organizer-bag": {
+      "title": "Quilted Puffer Makeup & Tech Organizer Bag",
+      "category": "lifestyle-aesthetic-essentials",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "quilted puffer organizer bag",
+        "makeup bag product photo",
+        "tech organizer pouch",
+        "padded travel bag"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "6624063",
+          "paths": [
+            "https://images.pexels.com/photos/6624063/pexels-photo-6624063.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/6624063/pexels-photo-6624063.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/6624063/pexels-photo-6624063.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Makeup pouch with brushes on a marble background",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Nadia Dolce",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/6624063/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "portable-usb-c-mini-smoothie-blender": {
+      "title": "Portable USB-C Mini Smoothie Blender",
+      "category": "lifestyle-aesthetic-essentials",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "portable mini blender",
+        "USB-C smoothie blender",
+        "travel blender product photo",
+        "smoothie blender lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7936983",
+          "paths": [
+            "https://images.pexels.com/photos/7936983/pexels-photo-7936983.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7936983/pexels-photo-7936983.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7936983/pexels-photo-7936983.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Hands using a blender with bananas and greens",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Nicola Barts",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/7936983/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "heavyweight-oversized-graphic-t-shirt": {
+      "title": "Heavyweight Oversized Graphic T-Shirt",
+      "category": "streetwear-footwear",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "oversized graphic t shirt",
+        "streetwear t shirt flat lay",
+        "boxy cotton tee product photo",
+        "oversized tee lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "36942017",
+          "paths": [
+            "https://images.pexels.com/photos/36942017/pexels-photo-36942017.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/36942017/pexels-photo-36942017.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/36942017/pexels-photo-36942017.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Trendy oversized graphic t-shirt",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "BANDAR BAANT",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/36942017/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "baggy-barrel-fit-cargo-jeans": {
+      "title": "Baggy Barrel-Fit Cargo Jeans",
+      "category": "streetwear-footwear",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "baggy cargo jeans",
+        "barrel fit denim pants",
+        "streetwear cargo pants product photo",
+        "washed denim jeans lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "25484767",
+          "paths": [
+            "https://images.pexels.com/photos/25484767/pexels-photo-25484767.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/25484767/pexels-photo-25484767.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/25484767/pexels-photo-25484767.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Young woman wearing baggy jeans and a crop top",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Noland Live",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/25484767/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "high-waisted-fold-over-athleisure-leggings": {
+      "title": "High-Waisted Fold-Over Athleisure Leggings",
+      "category": "streetwear-footwear",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "high waisted leggings",
+        "athleisure leggings product photo",
+        "fold over yoga leggings",
+        "activewear leggings studio"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7593007",
+          "paths": [
+            "https://images.pexels.com/photos/7593007/pexels-photo-7593007.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7593007/pexels-photo-7593007.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7593007/pexels-photo-7593007.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Woman practicing yoga in athletic leggings",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Miriam Alonso",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/7593007/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "retro-low-top-chunky-sneakers": {
+      "title": "Retro Low-Top Chunky Sneakers",
+      "category": "streetwear-footwear",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "retro chunky sneakers",
+        "low top sneakers product photo",
+        "white chunky shoes studio",
+        "sneakers street style"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "27256441",
+          "paths": [
+            "https://images.pexels.com/photos/27256441/pexels-photo-27256441.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/27256441/pexels-photo-27256441.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/27256441/pexels-photo-27256441.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Black and white sneakers with chunky soles",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "José Martin Segura Benites",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/27256441/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "wireless-noise-canceling-over-ear-headphones": {
+      "title": "Wireless Noise-Canceling Over-Ear Headphones",
+      "category": "tech-gaming",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "noise cancelling over ear headphones",
+        "black wireless headphones studio",
+        "headphones product photography white background",
+        "minimal over ear headphones lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "210927",
+          "paths": [
+            "https://images.pexels.com/photos/210927/pexels-photo-210927.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/210927/pexels-photo-210927.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/210927/pexels-photo-210927.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Minimalist black over-ear headphones on a white background",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Aleksandar Spasojevic",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/210927/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "low-latency-gaming-wireless-earbuds": {
+      "title": "Low-Latency Gaming Wireless Earbuds",
+      "category": "tech-gaming",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "wireless gaming earbuds",
+        "black sport earbuds charging case",
+        "earbuds product photography",
+        "gaming earbuds desk setup"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "10997624",
+          "paths": [
+            "https://images.pexels.com/photos/10997624/pexels-photo-10997624.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/10997624/pexels-photo-10997624.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/10997624/pexels-photo-10997624.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "White wireless earbuds beside a gaming controller",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Nathan J Hilton",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/10997624/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "compact-mechanical-hall-effect-keyboard": {
+      "title": "Compact Mechanical Hall-Effect Keyboard",
+      "category": "tech-gaming",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "compact mechanical keyboard",
+        "75 percent keyboard desk setup",
+        "mechanical keyboard close up",
+        "keyboard product photography"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "9020272",
+          "paths": [
+            "https://images.pexels.com/photos/9020272/pexels-photo-9020272.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/9020272/pexels-photo-9020272.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/9020272/pexels-photo-9020272.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Close-up of a mechanical keyboard with exposed switches",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Castorly Stock",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/9020272/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "rgb-smart-led-room-strip-lights": {
+      "title": "RGB Smart LED Room Strip Lights",
+      "category": "tech-gaming",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "RGB LED strip lights",
+        "smart room lighting strip",
+        "LED lights bedroom setup",
+        "LED strip product photography"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "10482375",
+          "paths": [
+            "https://images.pexels.com/photos/10482375/pexels-photo-10482375.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/10482375/pexels-photo-10482375.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/10482375/pexels-photo-10482375.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Red LED strip lights illuminating a dark room",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Ducky",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/10482375/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "wireless-charging-desk-mat": {
+      "title": "Wireless Charging Desk Mat",
+      "category": "tech-gaming",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "wireless charging desk mat",
+        "large desk pad setup",
+        "desk mat product photography",
+        "minimal desk accessories mat"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7742585",
+          "paths": [
+            "https://images.pexels.com/photos/7742585/pexels-photo-7742585.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7742585/pexels-photo-7742585.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7742585/pexels-photo-7742585.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Phone charging wirelessly on a desk beside a laptop",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Rann Vijay",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/7742585/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "hydrocolloid-star-pimple-patches-36-count": {
+      "title": "Hydrocolloid Star Pimple Patches (36 Count)",
+      "category": "viral-skincare-haircare",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "hydrocolloid pimple patches",
+        "star acne patches product photo",
+        "skincare patch sheet",
+        "blemish patches close up"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "6475989",
+          "paths": [
+            "https://images.pexels.com/photos/6475989/pexels-photo-6475989.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/6475989/pexels-photo-6475989.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/6475989/pexels-photo-6475989.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Woman holding a skincare product for blemish care",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Hanna Pad",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/6475989/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "niacinamide-brightening-hydrating-body-lotion": {
+      "title": "Niacinamide Brightening & Hydrating Body Lotion",
+      "category": "viral-skincare-haircare",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "niacinamide body lotion",
+        "body lotion bottle product photo",
+        "hydrating skincare lotion",
+        "skincare bottle minimal"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "5798000",
+          "paths": [
+            "https://images.pexels.com/photos/5798000/pexels-photo-5798000.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/5798000/pexels-photo-5798000.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/5798000/pexels-photo-5798000.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Moisturising lotion bottle on a white table",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Ann poan",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/5798000/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "collagen-hydrogel-under-eye-patches": {
+      "title": "Collagen Hydrogel Under-Eye Patches",
+      "category": "viral-skincare-haircare",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "under eye hydrogel patches",
+        "eye patches skincare product",
+        "collagen eye mask jar",
+        "under eye patches close up"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "6476074",
+          "paths": [
+            "https://images.pexels.com/photos/6476074/pexels-photo-6476074.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/6476074/pexels-photo-6476074.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/6476074/pexels-photo-6476074.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Woman wearing a hydrating under-eye patch",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Hanna Pad",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/6476074/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "silicone-scalp-massager-hair-growth-brush": {
+      "title": "Silicone Scalp Massager & Hair Growth Brush",
+      "category": "viral-skincare-haircare",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "silicone scalp massager",
+        "hair scalp brush product photo",
+        "shampoo massage brush",
+        "hair care tool minimal"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "5468620",
+          "paths": [
+            "https://images.pexels.com/photos/5468620/pexels-photo-5468620.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/5468620/pexels-photo-5468620.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/5468620/pexels-photo-5468620.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Woman brushing her hair with a wooden brush",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Polina Tankilevitch",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/5468620/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        }
+      ]
+    },
+    "satin-sleep-bonnet-scrunchie-set": {
+      "title": "Satin Sleep Bonnet & Scrunchie Set",
+      "category": "viral-skincare-haircare",
+      "status": "partial",
+      "source": "pexels",
+      "queries": [
+        "satin sleep bonnet",
+        "silk hair bonnet product photo",
+        "scrunchie set hair accessories",
+        "satin bonnet lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7897135",
+          "paths": [
+            "https://images.pexels.com/photos/7897135/pexels-photo-7897135.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7897135/pexels-photo-7897135.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7897135/pexels-photo-7897135.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Satin scrunchies and bonnet flat lay",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36",
+          "credit": {
+            "photographer": "Irene Gaitho",
+            "photographerUrl": "https://www.pexels.com/",
+            "photoUrl": "https://www.pexels.com/photo/7897135/",
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
