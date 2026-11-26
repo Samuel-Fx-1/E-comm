@@ -50,7 +50,7 @@ and the `download_location` response. See `/credits` in the running app for the
 rendered list and the current fallback products.
 
 The supplied `UNSPLASH_ACCESS_KEY` was rejected by the API, so Pixabay was used
-instead and all 101 curated products now have cached real photos. The cache is resumable:
+instead and all 16 curated products now have cached real photos. The cache is resumable:
 `npm run images:fetch:pixabay` skips finished products, and
 `npm run images:fetch -- --limit 25` can be re-run after replacing the Unsplash
 key. Generated artwork remains as the fallback for any photo that fails to load.
