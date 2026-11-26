@@ -10,7 +10,7 @@ import { getProduct, products } from '../data/products';
 import { apiAvailable, fetchProductBySlug, fetchRelated } from '../data/api';
 import { useApiData } from '../hooks/useApiData';
 import { getCategory } from '../data/categories';
-import { creditFor, resolveImages } from '../data/imageMap';
+import { creditsFor, resolveImages } from '../data/imageMap';
 import { relatedProducts } from '../lib/search';
 import { deliveryDateRange, classNames } from '../lib/format';
 import { useStore } from '../context/StoreContext';
@@ -209,6 +209,7 @@ export default function ProductPage() {
   const category = getCategory(product.category);
   const alsoViewed = relatedState.data.filter((entry) => !recent.includes(entry.id)).slice(0, 8);
   const images = resolveImages(product);
+  const credits = creditsFor(product);
   const delivery = deliveryDateRange(product.deliveryDays, countryCode, false, language);
 
   return (
@@ -217,7 +218,7 @@ export default function ProductPage() {
         title={product.title}
         description={`${product.bullets[0]} — ${product.brand}. ${product.rating} out of 5 from ${product.reviewCount} reviews.`}
         path={`/product/${product.slug}`}
-        image={images[0].src}
+        image={images[0]?.src}
       />
 
       <Breadcrumbs
@@ -235,7 +236,7 @@ export default function ProductPage() {
               images={images}
               title={product.name}
               discount={product.discount}
-              credit={creditFor(product)}
+              credits={credits}
             />
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--brand-muted)]">
