@@ -13,7 +13,10 @@
     "images:fetch": "node scripts/fetch-product-images.mjs",
     "images:fetch:pixabay": "node scripts/fetch-product-images.mjs --provider pixabay",
     "images:fetch:dry": "node scripts/fetch-product-images.mjs --dry-run",
-    "sitemap": "node scripts/generate-sitemap.mjs"
+    "sitemap": "node scripts/generate-sitemap.mjs",
+    "server": "node server/index.mjs",
+    "dev:full": "node scripts/dev-full.mjs",
+    "db:seed": "tsx scripts/seed-database.mjs"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
