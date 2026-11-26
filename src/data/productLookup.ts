@@ -1,5 +1,5 @@
 /**
- * Small in-memory snapshot cache for products that are not in the local 85-item
+ * Small in-memory snapshot cache for products that are not in the local curated
  * bundle. API responses register their products here so cart, wishlist, compare
  * and order data can still be resolved after navigation (or from an order placed
  * earlier in the same session).
