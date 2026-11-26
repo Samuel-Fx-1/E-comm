@@ -1,4 +1,4 @@
-# Soko — Amazon-style marketplace demo
+# Soko —style marketplace 
 
 Soko is a front-end marketplace demonstration: a familiar big-box shopping flow with an original brand, built on React 19, Vite 8, TypeScript and Tailwind CSS 4. There is **no backend**: the catalogue is typed mock data, and cart, account, orders, reviews and preferences live in `localStorage`.
 
