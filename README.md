@@ -17,7 +17,7 @@ Soko is a marketplace demonstration: a familiar Isoko-style shopping flow with a
 
 ## Curated catalogue
 
-`src/data/products/curated.ts` is the single product source. All 20 entries use the standard `makeProduct()` schema (USD source prices with RWF-native fields, gallery, variants, specs, ratings, stock and flags) and are grouped by these category slugs:
+`src/data/products/curated.ts` is the single product source. All 20 entries use the standard `makeProduct()` schema (whole RWF prices, gallery, variants, specs, ratings, stock and flags) and are grouped by these category slugs:
 
 | Category | Category slug | Products |
 | --- | --- | --- |
@@ -102,7 +102,7 @@ npm run dev:full    # Vite 3000 + API 3001 together, cross-platform
 
 ## Branding and markets
 
-Change `site.name`, `logoText`, `logoAccent`, `colors`, `defaultCountry` and `countries` in `src/config/site.ts`. CSS custom properties in `src/index.css` mirror the palette for Tailwind utilities. Every product carries RWF-native `priceRwf`/`oldPriceRwf` alongside legacy USD aliases for the demo currency switcher.
+Change `site.name`, `logoText`, `logoAccent`, `colors`, `defaultCountry`, `rwfPerUsd`, `freeDeliveryThresholdRwf` and `countries` in `src/config/site.ts`. CSS custom properties in `src/index.css` mirror the palette for Tailwind utilities. Every product stores whole RWF amounts in `price`/`listPrice` and the equivalent `priceRwf`/`oldPriceRwf` aliases; the demo currency switcher converts from RWF using the single configured rate.
 
 ## Product images
 
