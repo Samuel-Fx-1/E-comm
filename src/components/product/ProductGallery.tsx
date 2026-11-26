@@ -12,6 +12,7 @@ interface ProductGalleryProps {
   title: string;
   discount: number;
   credit?: ImageCredit;
+  credits?: ImageCredit[];
 }
 
 function Attribution({ credit }: { credit: ImageCredit }) {
@@ -25,15 +26,19 @@ function Attribution({ credit }: { credit: ImageCredit }) {
       <a href={credit.photoUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--brand-ink)]">
         {credit.photoUrl.includes('pixabay') ? 'Pixabay' : credit.photoUrl.includes('unsplash') ? 'Unsplash' : 'Pexels'}
       </a>
-      {' · '}
-      <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--brand-ink)]">
-        {credit.license}
-      </a>
+      {credit.licenseUrl && (
+        <>
+          {' · '}
+          <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--brand-ink)]">
+            {credit.license}
+          </a>
+        </>
+      )}
     </p>
   );
 }
 
-export function ProductGallery({ images, title, discount, credit }: ProductGalleryProps) {
+export function ProductGallery({ images, title, discount, credit, credits }: ProductGalleryProps) {
   const [active, setActive] = useState(0);
   const [zoomed, setZoomed] = useState(false);
   const [lightbox, setLightbox] = useState(false);
@@ -41,6 +46,7 @@ export function ProductGallery({ images, title, discount, credit }: ProductGalle
   const frameRef = useRef<HTMLDivElement>(null);
 
   const current = images[active] ?? images[0];
+  const activeCredit = credits?.[active] ?? credits?.[0] ?? credit;
 
   useEffect(() => {
     if (!lightbox) return;
@@ -51,6 +57,14 @@ export function ProductGallery({ images, title, discount, credit }: ProductGalle
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [lightbox, images.length]);
+
+  if (images.length === 0) {
+    return (
+      <div className="flex aspect-square items-center justify-center rounded-2xl border border-dashed border-[var(--brand-line)] bg-[var(--brand-cream)] px-6 text-center text-sm text-[var(--brand-muted)]">
+        Product photos are being prepared for {title}.
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col-reverse gap-3 sm:flex-row">
@@ -127,7 +141,7 @@ export function ProductGallery({ images, title, discount, credit }: ProductGalle
         <p className="mt-2 text-center text-[11px] text-[var(--brand-muted)]">
           Image {active + 1} of {images.length} · {current.illustrative ? 'Illustrative artwork' : current.source === 'generated' ? 'Bundled demo artwork' : 'Product photo'}
         </p>
-        {credit && <Attribution credit={credit} />}
+        {activeCredit && <Attribution credit={activeCredit} />}
       </div>
 
       <Modal open={lightbox} onClose={() => setLightbox(false)} title={`${title} — image viewer`} size="lg">
@@ -161,7 +175,7 @@ export function ProductGallery({ images, title, discount, credit }: ProductGalle
           </button>
         </div>
         <p className="mt-3 text-center text-xs text-[var(--brand-muted)]">Use ← and → to browse, Escape to close.</p>
-        {credit && <Attribution credit={credit} />}
+        {activeCredit && <Attribution credit={activeCredit} />}
       </Modal>
     </div>
   );
