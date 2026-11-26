@@ -77,7 +77,8 @@ export function filterProducts(all: Product[], filters: ProductFilters): FacetRe
       break;
     default:
       items = [...items].sort((a, b) => {
-        const score = (p: Product) => (p.isBestSeller ? 2 : 0) + (p.isDeal ? 1 : 0) + p.rating / 5;
+        const score = (p: Product) =>
+          (p.isBestSeller ? 2 : 0) + (p.isTrending ? 1 : 0) + (p.isDeal ? 1 : 0) + p.rating / 5;
         return score(b) - score(a);
       });
   }
