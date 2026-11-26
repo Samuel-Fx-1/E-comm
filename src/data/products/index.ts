@@ -7,6 +7,7 @@ import { sports } from './sports';
 import { books } from './books';
 import { toys } from './toys';
 import { groceries } from './groceries';
+import { trendingProducts } from './trending';
 
 export const products: Product[] = [
   ...electronics,
@@ -17,6 +18,7 @@ export const products: Product[] = [
   ...books,
   ...toys,
   ...groceries,
+  ...trendingProducts,
 ];
 
 export const getProduct = (slug: string): Product | undefined =>
@@ -31,8 +33,10 @@ export const deals = products.filter((product) => product.isDeal || product.disc
 
 export const newArrivals = [...products].sort((a, b) => b.addedAt.localeCompare(a.addedAt));
 
+export const trending = products.filter((product) => product.isTrending);
+
 export const brands = [...new Set(products.map((product) => product.brand))].sort((a, b) =>
   a.localeCompare(b)
 );
 
-export { electronics, homeKitchen, fashion, beauty, sports, books, toys, groceries };
+export { electronics, homeKitchen, fashion, beauty, sports, books, toys, groceries, trendingProducts };
