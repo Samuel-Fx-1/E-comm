@@ -1,6 +1,6 @@
 # Soko — full-stack marketplace demo
 
-Soko is a marketplace demonstration: a familiar shopping flow with an original brand, built on React 19, Vite 8, TypeScript and Tailwind CSS 4. Phase 4 added a small Express + SQLite catalogue API; Phase 7 replaces the curated shelf with 20 Gen Z / Gen Alpha products across five new categories. Cart, account, orders, reviews and preferences still live in `localStorage`.
+Soko is a marketplace demonstration: a familiar Isoko-style shopping flow with an original brand, built on React 19, Vite 8, TypeScript and Tailwind CSS 4. Phase 4 added a small Express + SQLite catalogue API; Phase 7 replaces the curated shelf with 20 Gen Z / Gen Alpha products across five new categories. Cart, account, orders, reviews and preferences still live in `localStorage`.
 
 > **Demo only.** All products, sellers, brands, reviews, prices, exchange rates, addresses and payment methods are fictional. No payment is taken, no email is sent, and no data leaves the browser.
 
@@ -122,7 +122,7 @@ Every cached URL was checked for HTTP 200 and `image/jpeg`. The same 320/640/120
 
 Run `npm run sitemap` after changing routes or products to refresh `public/sitemap.xml`.
 
-## Demo data and stored state
+##  data and stored state
 
 | Key (prefix) | Stored in localStorage |
 | --- | --- |
@@ -147,4 +147,4 @@ Phase 7 deploys a **single Express service** serving both `dist/` and `/api` fro
 
 ---
 
-Built as a demonstration of a complete marketplace UX; no Amazon assets, names, logos, slogans or code were used.
+Built as a demonstration of a complete marketplace UX; no Isoko assets, names, logos, slogans or code were used.
