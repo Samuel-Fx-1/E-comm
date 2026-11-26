@@ -20,6 +20,8 @@ export interface ProductSeed {
   isBestSeller?: boolean;
   isDeal?: boolean;
   isTrending?: boolean;
+  isGenZPick?: boolean;
+  isViral?: boolean;
   addedAt?: string;
 }
 
@@ -27,25 +29,25 @@ const RWF_RATE = 1300;
 const RWF_ROUNDING = 100;
 
 const subcategories: Record<CategorySlug, string> = {
-  'tech-audio-accessories': 'Tech & audio accessories',
-  'apparel-footwear': 'Apparel & footwear',
-  'skincare-personal-care': 'Skincare & personal care',
-  'home-kitchen': 'Home & kitchen essentials',
-  digital: 'Digital products',
+  'tech-gaming': 'Tech & gaming',
+  'streetwear-footwear': 'Streetwear & footwear',
+  'viral-skincare-haircare': 'Viral skincare & haircare',
+  'lifestyle-aesthetic-essentials': 'Lifestyle & aesthetic essentials',
+  'gen-alpha-kids-corner': 'Gen Alpha & kids corner',
 };
 
 const defaultVariants: Record<CategorySlug, ProductVariant[]> = {
-  'tech-audio-accessories': [
+  'tech-gaming': [
     { type: 'color', name: 'Colour', value: 'Black' },
     { type: 'color', name: 'Colour', value: 'White' },
   ],
-  'apparel-footwear': [
+  'streetwear-footwear': [
     { type: 'size', name: 'Size', value: 'M' },
     { type: 'size', name: 'Size', value: 'L' },
   ],
-  'skincare-personal-care': [],
-  'home-kitchen': [{ type: 'color', name: 'Finish', value: 'Natural' }],
-  digital: [{ type: 'size', name: 'Format', value: 'Instant download' }],
+  'viral-skincare-haircare': [],
+  'lifestyle-aesthetic-essentials': [{ type: 'color', name: 'Colour', value: 'Black' }],
+  'gen-alpha-kids-corner': [{ type: 'size', name: 'Age', value: 'Ages 8+' }],
 };
 
 const toRwf = (usd: number): number => Math.round((usd * RWF_RATE) / RWF_ROUNDING) * RWF_ROUNDING;
@@ -108,6 +110,8 @@ export function makeProduct(seed: ProductSeed): Product {
     isBestSeller: seed.isBestSeller ?? false,
     isDeal: seed.isDeal ?? false,
     isTrending: seed.isTrending ?? false,
+    isGenZPick: seed.isGenZPick ?? false,
+    isViral: seed.isViral ?? false,
     addedAt,
   };
 }
