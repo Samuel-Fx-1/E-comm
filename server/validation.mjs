@@ -19,7 +19,10 @@ const optionalInteger = (schema) => z.preprocess(toInteger, schema.optional());
 const limitParam = (fallback) => z.preprocess(toInteger, z.number().int().min(1).max(48).default(fallback));
 
 const SORTS = ['featured', 'price-asc', 'price-desc', 'rating', 'newest'];
-const CATEGORIES = ['all', 'tech-audio-accessories', 'apparel-footwear', 'skincare-personal-care', 'home-kitchen', 'digital'];
+const CATEGORIES = [
+  'all', 'tech-gaming', 'streetwear-footwear', 'viral-skincare-haircare',
+  'lifestyle-aesthetic-essentials', 'gen-alpha-kids-corner',
+];
 
 export const schemas = {
   healthQuery: z.object({}),
@@ -33,12 +36,16 @@ export const schemas = {
     rating: optionalNumber(z.number().min(0).max(5)),
     inStock: optionalString(z.enum(['0', '1'])),
     deals: optionalString(z.enum(['0', '1'])),
+    genZPick: optionalString(z.enum(['0', '1'])),
+    viral: optionalString(z.enum(['0', '1'])),
     sort: optionalString(z.enum(SORTS)),
     page: optionalInteger(z.number().int().min(1).max(1_000_000)),
     pageSize: optionalInteger(z.number().int().min(1).max(48)),
   }),
   collectionParams: z.object({
-    collection: z.enum(['deals', 'best-sellers', 'new-arrivals', 'featured', 'trending']),
+    collection: z.enum([
+      'deals', 'best-sellers', 'new-arrivals', 'featured', 'trending', 'gen-z-picks', 'viral',
+    ]),
   }),
   collectionQuery: z.object({ limit: limitParam(12) }),
   slugParams: z.object({ slug: z.string().trim().min(1).max(200) }),
