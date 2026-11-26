@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import type { ReactNode } from 'react';
 import { GitCompareArrows, ShoppingCart, Trash2, X } from 'lucide-react';
-import { getProductById } from '../data/products';
+import type { Product } from '../types';
+import { resolveProduct } from '../data/productLookup';
 import { getCategory } from '../data/categories';
 import { imagesFor } from '../data/imageMap';
 import { deliveryDateRange, classNames } from '../lib/format';
@@ -18,8 +19,8 @@ export default function ComparePage() {
   const { countryCode, language, money } = useSite();
 
   const products = compare
-    .map((id) => getProductById(id))
-    .filter((product): product is NonNullable<ReturnType<typeof getProductById>> => Boolean(product));
+    .map((id) => resolveProduct(id))
+    .filter((product): product is Product => Boolean(product));
 
   if (products.length === 0) {
     return (
@@ -40,7 +41,7 @@ export default function ComparePage() {
   }
 
   const specKeys = [...new Set(products.flatMap((product) => Object.keys(product.specs)))];
-  const rows: Array<{ label: string; render: (product: NonNullable<ReturnType<typeof getProductById>>) => ReactNode }> = [
+  const rows: Array<{ label: string; render: (product: Product) => ReactNode }> = [
     { label: 'Price', render: (product) => <Price price={product.price} listPrice={product.listPrice} size="sm" /> },
     { label: 'Rating', render: (product) => <Rating rating={product.rating} count={product.reviewCount} showNumber /> },
     { label: 'Brand', render: (product) => <span className="text-sm text-[var(--brand-ink)]">{product.brand}</span> },
@@ -62,7 +63,7 @@ export default function ComparePage() {
     },
     ...specKeys.map((key) => ({
       label: key,
-      render: (product: NonNullable<ReturnType<typeof getProductById>>) => (
+      render: (product: Product) => (
         <span className="text-sm text-[var(--brand-ink)]">{product.specs[key] ?? '—'}</span>
       ),
     })),
@@ -102,7 +103,7 @@ export default function ComparePage() {
                   <div className="relative">
                     <button
                       type="button"
-                      onClick={() => toggleCompare(product.id)}
+                      onClick={() => toggleCompare(product.id, product)}
                       aria-label={`Remove ${product.title} from compare`}
                       className="absolute right-0 top-0 rounded-full bg-white p-1 text-[var(--brand-muted)] shadow-sm hover:text-[var(--brand-danger)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-orange)]"
                     >
@@ -116,7 +117,7 @@ export default function ComparePage() {
                     </Link>
                     <button
                       type="button"
-                      onClick={() => addToCart(product.id)}
+                      onClick={() => addToCart(product.id, 1, { snapshot: product })}
                       disabled={product.stock <= 0}
                       className="mt-2 inline-flex w-full items-center justify-center gap-1.5 rounded-full bg-[var(--brand-yellow)] px-3 py-1.5 text-xs font-bold text-[var(--brand-navy-deep)] hover:bg-[var(--brand-yellow-dark)] disabled:cursor-not-allowed disabled:bg-[var(--brand-line)] disabled:text-[var(--brand-muted)]"
                     >
