@@ -373,8 +373,8 @@ export default function CatalogPage() {
                     : 'space-y-4'
                 }
               >
-                {result.items.map((product) => (
-                  <ProductCard key={product.id} product={product} layout={view} />
+                {result.items.map((product, index) => (
+                  <ProductCard key={product.id} product={product} layout={view} priority={index < 8} />
                 ))}
               </div>
             )}
