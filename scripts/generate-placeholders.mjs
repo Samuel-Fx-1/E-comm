@@ -14,11 +14,11 @@ const productsDir = join(root, 'src', 'data', 'products');
 const outputRoot = join(root, 'public', 'images', 'products');
 
 const palette = {
-  'tech-audio-accessories': ['#0C1E36', '#2563EB'],
-  'apparel-footwear': ['#4C1D95', '#DB2777'],
-  'skincare-personal-care': ['#831843', '#F472B6'],
-  'home-kitchen': ['#7C2D12', '#EA580C'],
-  digital: ['#1E1B4B', '#6366F1'],
+  'tech-gaming': ['#0C1E36', '#2563EB'],
+  'streetwear-footwear': ['#4C1D95', '#DB2777'],
+  'viral-skincare-haircare': ['#831843', '#F472B6'],
+  'lifestyle-aesthetic-essentials': ['#7C2D12', '#EA580C'],
+  'gen-alpha-kids-corner': ['#1E1B4B', '#6366F1'],
 };
 
 const escapeXml = (text) =>
