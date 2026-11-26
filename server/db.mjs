@@ -15,14 +15,10 @@ const MIGRATIONS_DIR = join(ROOT, 'server', 'migrations');
 const DEFAULT_DB_PATH = join(ROOT, 'data', 'soko.sqlite');
 
 const CATEGORY_NAMES = {
-  electronics: 'Electronics',
+  'tech-audio-accessories': 'Tech & Audio Accessories',
+  'apparel-footwear': 'Apparel & Footwear',
+  'skincare-personal-care': 'Skincare & Personal Care',
   'home-kitchen': 'Home & Kitchen',
-  fashion: 'Fashion',
-  beauty: 'Beauty',
-  sports: 'Sports & Outdoors',
-  books: 'Books',
-  toys: 'Toys & Games',
-  groceries: 'Groceries',
   digital: 'Digital Products',
 };
 
