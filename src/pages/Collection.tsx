@@ -9,7 +9,13 @@ import { Countdown } from '../components/ui/Countdown';
 import { ProductGridSkeleton } from '../components/ui/Skeleton';
 import { Seo } from '../components/ui/Seo';
 
-export type CollectionKind = 'deals' | 'best-sellers' | 'new-arrivals' | 'trending';
+export type CollectionKind =
+  | 'deals'
+  | 'best-sellers'
+  | 'new-arrivals'
+  | 'trending'
+  | 'gen-z-picks'
+  | 'viral';
 
 const config = {
   deals: {
@@ -48,6 +54,24 @@ const config = {
     gradient: 'from-[#9A3412] via-[var(--brand-navy)] to-[var(--brand-navy-deep)]',
     cta: { label: 'Shop best sellers', to: '/best-sellers' },
   },
+  'gen-z-picks': {
+    eyebrow: 'Curated for you',
+    title: 'Gen Z Picks',
+    description: 'The gadgets, fits and accessories on our Gen Z shortlist this season.',
+    path: '/gen-z-picks',
+    icon: Sparkles,
+    gradient: 'from-[#1D4ED8] via-[var(--brand-navy)] to-[var(--brand-navy-deep)]',
+    cta: { label: 'See what is viral', to: '/viral' },
+  },
+  viral: {
+    eyebrow: 'Scroll-stopping finds',
+    title: 'Viral Now',
+    description: 'The shared, saved and talked-about picks making the rounds right now.',
+    path: '/viral',
+    icon: Flame,
+    gradient: 'from-[#86198F] via-[var(--brand-navy)] to-[var(--brand-navy-deep)]',
+    cta: { label: 'Shop Gen Z picks', to: '/gen-z-picks' },
+  },
 } satisfies Record<CollectionKind, {
   eyebrow: string;
   title: string;
@@ -58,7 +82,7 @@ const config = {
   cta: { label: string; to: string };
 }>;
 
-/** Bounded local fallback — scans only the 85 bundled products. */
+/** Bounded local fallback — scans only the 20 bundled products. */
 function localCollectionProducts(kind: CollectionKind): Product[] {
   if (kind === 'deals') {
     return products
@@ -73,6 +97,16 @@ function localCollectionProducts(kind: CollectionKind): Product[] {
   if (kind === 'trending') {
     return products
       .filter((product) => product.isTrending)
+      .sort((a, b) => b.rating - a.rating || b.reviewCount - a.reviewCount);
+  }
+  if (kind === 'gen-z-picks') {
+    return products
+      .filter((product) => product.isGenZPick)
+      .sort((a, b) => b.rating - a.rating || b.reviewCount - a.reviewCount);
+  }
+  if (kind === 'viral') {
+    return products
+      .filter((product) => product.isViral)
       .sort((a, b) => b.rating - a.rating || b.reviewCount - a.reviewCount);
   }
   return [...products].sort((a, b) => b.addedAt.localeCompare(a.addedAt));
