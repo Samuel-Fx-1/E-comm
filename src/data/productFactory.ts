@@ -27,36 +27,24 @@ const RWF_RATE = 1300;
 const RWF_ROUNDING = 100;
 
 const subcategories: Record<CategorySlug, string> = {
-  electronics: 'Audio, video & accessories',
+  'tech-audio-accessories': 'Tech & audio accessories',
+  'apparel-footwear': 'Apparel & footwear',
+  'skincare-personal-care': 'Skincare & personal care',
   'home-kitchen': 'Home & kitchen essentials',
-  fashion: 'Clothing & accessories',
-  beauty: 'Beauty & personal care',
-  sports: 'Sports & outdoors',
-  books: 'Books & learning',
-  toys: 'Toys & games',
-  groceries: 'Groceries & pantry',
   digital: 'Digital products',
 };
 
 const defaultVariants: Record<CategorySlug, ProductVariant[]> = {
-  electronics: [
+  'tech-audio-accessories': [
     { type: 'color', name: 'Colour', value: 'Black' },
     { type: 'color', name: 'Colour', value: 'White' },
   ],
+  'apparel-footwear': [
+    { type: 'size', name: 'Size', value: 'M' },
+    { type: 'size', name: 'Size', value: 'L' },
+  ],
+  'skincare-personal-care': [],
   'home-kitchen': [{ type: 'color', name: 'Finish', value: 'Natural' }],
-  fashion: [
-    { type: 'size', name: 'Size', value: 'M' },
-    { type: 'size', name: 'Size', value: 'L' },
-    { type: 'color', name: 'Colour', value: 'Black' },
-  ],
-  beauty: [],
-  sports: [
-    { type: 'size', name: 'Size', value: 'M' },
-    { type: 'size', name: 'Size', value: 'L' },
-  ],
-  books: [{ type: 'size', name: 'Format', value: 'Paperback' }],
-  toys: [{ type: 'color', name: 'Colour', value: 'Multi' }],
-  groceries: [{ type: 'size', name: 'Pack', value: 'Standard' }],
   digital: [{ type: 'size', name: 'Format', value: 'Instant download' }],
 };
 

@@ -28,12 +28,12 @@ function daysAhead(days: number): string {
 }
 
 const deliveredItems = [
-  item('auralis-pulse-5-wireless-earbuds', 1),
-  item('kanso-ceramic-pour-over-set', 1),
+  item('wireless-noise-canceling-headphones', 1),
+  item('classic-heavyweight-cotton-t-shirt', 2),
 ];
 const inTransitItems = [
-  item('nordika-air-fryer-5-5l', 1),
-  item('kigali-roasters-single-origin-coffee-500g', 2),
+  item('nonstick-cookware-set', 1),
+  item('all-in-one-productivity-digital-planner', 1),
 ];
 
 const subtotal = (items: OrderItem[]) => items.reduce((sum, line) => sum + line.price * line.qty, 0);

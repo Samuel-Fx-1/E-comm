@@ -27,9 +27,8 @@ for (const file of readdirSync(productsDir).filter((name) => name.endsWith('.ts'
 
 const staticPaths = [
   '/', '/search', '/deals', '/best-sellers', '/new-arrivals', '/trending', '/customer-service', '/sell',
-  '/category/electronics', '/category/home-kitchen', '/category/fashion', '/category/beauty',
-  '/category/sports', '/category/books', '/category/toys', '/category/groceries', '/category/digital',
-  '/credits',
+  '/category/tech-audio-accessories', '/category/apparel-footwear', '/category/skincare-personal-care',
+  '/category/home-kitchen', '/category/digital', '/credits',
 ];
 const paths = [...staticPaths, ...slugs.map((slug) => `/product/${slug}`)];
 const today = new Date().toISOString().slice(0, 10);

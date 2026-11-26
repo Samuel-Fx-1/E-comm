@@ -1,12 +1,8 @@
 export type CategorySlug =
-  | 'electronics'
+  | 'tech-audio-accessories'
+  | 'apparel-footwear'
+  | 'skincare-personal-care'
   | 'home-kitchen'
-  | 'fashion'
-  | 'beauty'
-  | 'sports'
-  | 'books'
-  | 'toys'
-  | 'groceries'
   | 'digital';
 
 export interface Category {

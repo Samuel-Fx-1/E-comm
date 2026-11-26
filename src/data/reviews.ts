@@ -124,37 +124,25 @@ const QUESTIONS: Array<{ q: string; a: string }> = [
 ];
 
 const CATEGORY_QUESTIONS: Record<string, { q: string; a: string }> = {
-  electronics: {
+  'tech-audio-accessories': {
     q: 'Does it work with 220-240V power and local plugs?',
     a: 'Yes. Chargers ship with a compatible plug or a USB-C cable; check the specs table for the exact input.',
+  },
+  'apparel-footwear': {
+    q: 'How does the sizing run?',
+    a: 'Most pieces run true to size. The specs table lists the available sizes and fit; check the size guide on the product page.',
+  },
+  'skincare-personal-care': {
+    q: 'Is it suitable for sensitive skin?',
+    a: 'Formulas are fragrance-free unless noted. Patch test first and check the ingredient list in the specs table.',
   },
   'home-kitchen': {
     q: 'Is it dishwasher safe?',
     a: 'Check the Care or Material row in the specs table. Items marked dishwasher safe can go on the top rack.',
   },
-  fashion: {
-    q: 'How does the sizing run?',
-    a: 'Most pieces run true to size. The specs table lists the available sizes and fit; check the size guide on the product page.',
-  },
-  beauty: {
-    q: 'Is it suitable for sensitive skin?',
-    a: 'Formulas are fragrance-free unless noted. Patch test first and check the ingredient list in the specs table.',
-  },
-  sports: {
-    q: 'Is it suitable for beginners?',
-    a: 'Yes. It is designed for everyday training and includes setup guidance for first-time use.',
-  },
-  books: {
-    q: 'Is this the complete and unabridged edition?',
-    a: 'Yes, this is the full edition from the publisher listed in the specs table.',
-  },
-  toys: {
-    q: 'What age is this recommended for?',
-    a: 'The recommended age is listed in the specs table. Small parts may not be suitable for children under 3.',
-  },
-  groceries: {
-    q: 'How should I store it after opening?',
-    a: 'Store in a cool, dry place and reseal the pouch or jar. Check the label for the best-before date.',
+  digital: {
+    q: 'How do I receive a digital product?',
+    a: 'Digital files are available immediately after checkout; no shipping address or delivery courier is needed.',
   },
 };
 

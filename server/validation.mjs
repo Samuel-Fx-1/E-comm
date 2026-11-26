@@ -19,7 +19,7 @@ const optionalInteger = (schema) => z.preprocess(toInteger, schema.optional());
 const limitParam = (fallback) => z.preprocess(toInteger, z.number().int().min(1).max(48).default(fallback));
 
 const SORTS = ['featured', 'price-asc', 'price-desc', 'rating', 'newest'];
-const CATEGORIES = ['all', 'electronics', 'home-kitchen', 'fashion', 'beauty', 'sports', 'books', 'toys', 'groceries', 'digital'];
+const CATEGORIES = ['all', 'tech-audio-accessories', 'apparel-footwear', 'skincare-personal-care', 'home-kitchen', 'digital'];
 
 export const schemas = {
   healthQuery: z.object({}),

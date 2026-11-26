@@ -18,7 +18,7 @@ import { Price } from '../components/ui/Price';
 import { Countdown } from '../components/ui/Countdown';
 import { CategoryIcon } from '../components/ui/CategoryIcon';
 
-/** All local fallbacks are bounded to the 85 bundled products. */
+/** All local fallbacks are bounded to the 16 curated products. */
 export default function HomePage() {
   const { t, money } = useSite();
   const { wishlist, recent } = useStore();
@@ -251,7 +251,7 @@ export default function HomePage() {
               Big savings. <span className="text-[var(--brand-orange)]">All week.</span>
             </h2>
             <p className="mt-2 max-w-lg text-sm text-white/75">
-              Up to 60% off electronics, home, fashion and more. New deals land every morning — grab them before the
+              Up to 60% off tech, apparel, skincare, home and more. New deals land every morning — grab them before the
               timer resets.
             </p>
           </div>
