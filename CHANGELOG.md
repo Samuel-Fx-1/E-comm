@@ -2,6 +2,29 @@
 
 All notable changes to this project are documented here. Each phase is verified with lint, build and available tests before the phase is reported.
 
+## Phase 6 — Curated catalogue replacement (2026-11-26)
+
+### Changed
+
+- Replaced the 1,000,000-product catalogue with exactly 16 curated best-selling/trending products. `src/data/products/curated.ts` is now the single product source; the eight legacy category modules, 85 legacy curated products and all generated filler were removed from the bundle, SQLite seed and sitemap.
+- Replaced the old category slugs with the five requested groups: `tech-audio-accessories`, `apparel-footwear`, `skincare-personal-care`, `home-kitchen` and `digital`. Updated `CategorySlug`, category grid/icons, product factory defaults, API validation, SQLite metadata, placeholder palettes, promos, reviews, sitemap and docs.
+- Eight items are featured: `isBestSeller` on the headphones, cotton tee, body lotion and cookware set; `isTrending` on the folding keyboard, sneakers, under-eye patches and digital planner. The homepage, `/trending` and `/best-sellers` surfaces read those flags from the API with bundled fallbacks.
+- `scripts/seed-database.mjs` now clears the products table, inserts all 16 curated rows and rebuilds FTS once on every run; it is idempotent and no longer generates filler. The two digital products use high stock and `deliveryDays: 0` for instant download.
+- Demo sample orders were repointed to curated slugs. No user, order, auth or localStorage data was deleted; previously stored snapshots for removed products can still render in old orders until site data is cleared.
+- Trimmed `data/product-images.json` to the 16 curated products, removed unused WebP folders, regenerated 64 SVG fallbacks, and refreshed README, image credits and sitemap.
+
+### Verification
+
+- `npm run lint` — passed.
+- `npm run build` — passed (existing chunk-size warning only).
+- `npm run sitemap` — wrote 30 URLs.
+- `npm run images:placeholders` — generated 64 SVG fallbacks for 16 products across 5 categories.
+- `npm run db:seed` — replaced 1,000,000 rows with 16 curated rows in 88.2s; a second run replaced 16 rows in 0.1s, confirming idempotency.
+- API smoke test — `/api/health` total 16; `/api/meta` lists 5 categories with counts 5/3/3/3/2; `/api/collections/best-sellers` returns 4; `/api/collections/trending` returns 4; `/api/products?category=digital` returns 2; old `electronics` category returns HTTP 400; search and product detail return the exact `Product` shape.
+- Image check — all 64 Pixabay WebP URLs and one SVG fallback per category returned HTTP 200.
+- Browser check — homepage has 5 category tiles, "Trending now" and "Best sellers" rails; `/trending` renders 4 cards and 4 trending badges; `/category/tech-audio-accessories` renders 5 cards; product page shows 4 gallery thumbnails, Pixabay credit and RWF 117,000; no console errors.
+- `npm test` — unavailable (`Missing script: "test"`); no test files exist in the repository.
+
 ## Phase 5 — Curated best sellers and trending catalogue (2026-11-26)
 
 ### Added
