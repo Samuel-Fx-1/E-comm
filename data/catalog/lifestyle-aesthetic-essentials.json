@@ -1,0 +1,210 @@
+{
+  "category": "lifestyle-aesthetic-essentials",
+  "name": "Lifestyle & Aesthetic Essentials",
+  "products": [
+    {
+      "slug": "insulated-stainless-steel-flip-straw-water-bottle-32oz",
+      "name": "Insulated Stainless Steel Flip-Straw Water Bottle (32oz)",
+      "brand": "Lumo",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Lifestyle & Aesthetic Essentials",
+      "price": 38900,
+      "listPrice": 50500,
+      "rating": 4.8,
+      "reviewCount": 10420,
+      "stock": 84,
+      "shortDescription": "An insulated flip-straw bottle that keeps drinks cold for hours and fits most cup holders.",
+      "bullets": [
+        "Double-wall insulation keeps drinks cold for up to 24 hours",
+        "A flip straw makes sipping quick and easy",
+        "The 32oz size fits most cup holders and day bags"
+      ],
+      "specs": {
+        "Capacity": "32 oz / 950 ml",
+        "Material": "Stainless steel",
+        "Insulation": "Double wall",
+        "Care": "Hand wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Cream"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Black"
+        }
+      ],
+      "seller": "Lumo Official",
+      "deliveryDays": 2,
+      "addedAt": "2026-11-21",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": true,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "insulated stainless steel water bottle",
+        "flip straw tumbler product photo",
+        "travel water bottle minimal",
+        "steel bottle lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "3737800",
+          "url": "https://images.pexels.com/photos/3737800/pexels-photo-3737800.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Hands holding black and white insulated water bottles",
+          "photographer": "cottonbro studio",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/3737800/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "quilted-puffer-makeup-tech-organizer-bag",
+      "name": "Quilted Puffer Makeup & Tech Organizer Bag",
+      "brand": "Nordika",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Lifestyle & Aesthetic Essentials",
+      "price": 29900,
+      "listPrice": 29900,
+      "rating": 4.5,
+      "reviewCount": 2740,
+      "stock": 67,
+      "shortDescription": "A quilted puffer organizer with padded sections for makeup, tech and everyday essentials.",
+      "bullets": [
+        "Padded compartments keep bottles and cables separated",
+        "The quilted shell wipes clean after daily use",
+        "A roomy interior still fits in most tote bags"
+      ],
+      "specs": {
+        "Material": "Quilted polyester",
+        "Closure": "Zip",
+        "Compartments": "3",
+        "Care": "Wipe clean"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Quilted Black"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Blush"
+        }
+      ],
+      "seller": "Nordika Official",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-14",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "quilted puffer organizer bag",
+        "makeup bag product photo",
+        "tech organizer pouch",
+        "padded travel bag"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "6624063",
+          "url": "https://images.pexels.com/photos/6624063/pexels-photo-6624063.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Makeup pouch with brushes on a marble background",
+          "photographer": "Nadia Dolce",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/6624063/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    },
+    {
+      "slug": "portable-usb-c-mini-smoothie-blender",
+      "name": "Portable USB-C Mini Smoothie Blender",
+      "brand": "Lumo",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Lifestyle & Aesthetic Essentials",
+      "price": 35900,
+      "listPrice": 45500,
+      "rating": 4.3,
+      "reviewCount": 3670,
+      "stock": 74,
+      "shortDescription": "A portable USB-C mini blender that whips up smoothies in a travel-friendly 400ml cup.",
+      "bullets": [
+        "A 400ml cup blends and travels in one piece",
+        "USB-C recharging keeps it ready for the gym or desk",
+        "A quick pulse handles fruit, greens and ice"
+      ],
+      "specs": {
+        "Capacity": "400 ml",
+        "Charging": "USB-C",
+        "Blades": "4 stainless blades",
+        "Battery": "2000 mAh"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Mint"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Black"
+        }
+      ],
+      "seller": "Lumo Official",
+      "deliveryDays": 2,
+      "addedAt": "2026-11-11",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "portable mini blender",
+        "USB-C smoothie blender",
+        "travel blender product photo",
+        "smoothie blender lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7936983",
+          "url": "https://images.pexels.com/photos/7936983/pexels-photo-7936983.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Hands using a blender with bananas and greens",
+          "photographer": "Nicola Barts",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/7936983/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        }
+      ]
+    }
+  ]
+}
