@@ -11,6 +11,7 @@
     "lint": "tsc --noEmit",
     "validate": "node scripts/validate-catalog.mjs",
     "test": "node scripts/validate-catalog.mjs",
+    "test:e2e": "playwright test",
     "images:placeholders": "node scripts/generate-placeholders.mjs",
     "images:fetch": "node scripts/fetch-product-images.mjs",
     "images:fetch:pixabay": "node scripts/fetch-product-images.mjs --provider pixabay",
@@ -38,6 +39,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.1",
     "@types/express": "^4.17.21",
     "@types/node": "^22.14.0",
     "@types/react": "^19.3.0",
