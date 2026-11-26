@@ -1,1 +1,114 @@
 @import "tailwindcss";
+
+/**
+ * Soko design system.
+ * Brand values are defined once in src/config/site.ts and mirrored here as
+ * CSS custom properties so Tailwind utilities and plain CSS stay in sync.
+ */
+:root {
+  --brand-navy: #0c1e36;
+  --brand-navy-deep: #071426;
+  --brand-navy-soft: #16304f;
+  --brand-orange: #f97316;
+  --brand-orange-dark: #ea580c;
+  --brand-yellow: #ffc94a;
+  --brand-yellow-dark: #f0b429;
+  --brand-cream: #f6f3ec;
+  --brand-ink: #0f172a;
+  --brand-muted: #64748b;
+  --brand-line: #e2e8f0;
+  --brand-success: #0f766e;
+  --brand-danger: #b91c1c;
+  --brand-white: #ffffff;
+
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--brand-cream);
+  color: var(--brand-ink);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+::selection {
+  background: var(--brand-yellow);
+  color: var(--brand-navy-deep);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand-orange);
+  outline-offset: 2px;
+}
+
+/* Thin, unobtrusive scrollbars for horizontal product rails and filter chips. */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeleton-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.skeleton-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  animation: shimmer 1.4s infinite;
+}
+
+@media print {
+  header, footer, nav, button {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
