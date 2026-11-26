@@ -62,7 +62,7 @@ const files = [
   viralSkincareHaircare,
   lifestyleEssentials,
   kidsCorner,
-] as CatalogFile[];
+] as unknown as CatalogFile[];
 
 /** Raw JSON entries, used by the validator, image pipeline and review page. */
 export const catalogEntries: CatalogProduct[] = files.flatMap((file) => file.products);
