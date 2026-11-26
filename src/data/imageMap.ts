@@ -197,9 +197,27 @@ for (const product of products) {
   });
 }
 
+/** Curated API products use /products/<slug>/pixabay-<id>-<view>-<size>.webp. */
+const PIXABAY_PATH = /^\/products\/([^/]+)\/pixabay-[^/]+-[^/]+-\d+\.webp$/;
+
+function pixabayInfo(src: string): ImageInfo | undefined {
+  const match = PIXABAY_PATH.exec(src);
+  if (!match) return undefined;
+  const base = src.replace(/-\d+\.webp$/, '');
+  return {
+    src,
+    srcSet: IMAGE_SIZES.map((width) => `${base}-${width}.webp ${width}w`).join(', '),
+    sizes: CARD_SIZES,
+    alt: match[1].replace(/-/g, ' '),
+    source: 'pixabay',
+    width: 1200,
+    height: 1200,
+  };
+}
+
 /** Lets ImageWithFallback add responsive metadata from a plain src string. */
 export function imageInfo(src: string): ImageInfo | undefined {
-  return infoBySrc.get(src);
+  return infoBySrc.get(src) ?? pixabayInfo(src);
 }
 
 export { CARD_SIZES as cardSizes, LARGE_SIZES as largeSizes };
