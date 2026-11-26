@@ -21,7 +21,7 @@ export interface ImageCredit {
 }
 
 interface CachedImage {
-  source: 'unsplash' | 'pexels';
+  source: 'unsplash' | 'pexels' | 'pixabay';
   photoId?: string;
   baseUrl?: string;
   paths?: string[];
@@ -93,7 +93,7 @@ function cachedToImage(image: CachedImage, product: Product, index: number): Res
       creditId: image.photoId,
     };
   }
-  if (image.source === 'pexels') {
+  if (image.source === 'pexels' || image.source === 'pixabay') {
     const paths = image.paths ?? [];
     if (paths.length === 0) return undefined;
     const byWidth = new Map(IMAGE_SIZES.map((width, position) => [width, paths[position] ?? paths[paths.length - 1]]));
@@ -102,7 +102,7 @@ function cachedToImage(image: CachedImage, product: Product, index: number): Res
       srcSet: srcSetFromUrls((width) => byWidth.get(width)!),
       sizes: CARD_SIZES,
       alt,
-      source: 'pexels',
+      source: image.source,
       width: 1200,
       height: 1200,
       color: image.color,
