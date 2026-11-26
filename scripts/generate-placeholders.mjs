@@ -14,14 +14,10 @@ const productsDir = join(root, 'src', 'data', 'products');
 const outputRoot = join(root, 'public', 'images', 'products');
 
 const palette = {
-  electronics: ['#0C1E36', '#2563EB'],
+  'tech-audio-accessories': ['#0C1E36', '#2563EB'],
+  'apparel-footwear': ['#4C1D95', '#DB2777'],
+  'skincare-personal-care': ['#831843', '#F472B6'],
   'home-kitchen': ['#7C2D12', '#EA580C'],
-  fashion: ['#4C1D95', '#DB2777'],
-  beauty: ['#831843', '#F472B6'],
-  sports: ['#064E3B', '#0D9488'],
-  books: ['#1E3A8A', '#6366F1'],
-  toys: ['#9A3412', '#F59E0B'],
-  groceries: ['#365314', '#65A30D'],
   digital: ['#1E1B4B', '#6366F1'],
 };
 
@@ -49,7 +45,7 @@ function initials(title) {
 }
 
 function artwork({ title, category, variant }) {
-  const [dark, light] = palette[category] ?? palette.electronics;
+  const [dark, light] = palette[category] ?? Object.values(palette)[0];
   const label = escapeXml(category.replace(/-/g, ' ').toUpperCase());
   const name = escapeXml(title);
   const mark = escapeXml(initials(title));
