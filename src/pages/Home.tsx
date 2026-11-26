@@ -1,6 +1,7 @@
 import { useCallback, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Clock3, Flame, Sparkles } from 'lucide-react';
+import { site } from '../config/site';
 import { categories } from '../data/categories';
 import { products, bestSellers, deals, newArrivals, trending, genZPicks, viral } from '../data/products';
 import { apiAvailable, fetchCollection, fetchProducts } from '../data/api';
@@ -334,7 +335,7 @@ export default function HomePage() {
       <section className="rounded-2xl border border-[var(--brand-line)] bg-white p-6 text-center">
         <h2 className="font-serif text-2xl font-bold text-[var(--brand-ink)]">New here? Start with the essentials.</h2>
         <p className="mx-auto mt-2 max-w-xl text-sm text-[var(--brand-muted)]">
-          {t('freeDelivery')} on orders over {money(35)}. Standard delivery is available across Rwanda and 13 more
+          {t('freeDelivery')} on orders over {money(site.freeDeliveryThresholdRwf)}. Standard delivery is available across Rwanda and 13 more
           countries.
         </p>
         <Link
