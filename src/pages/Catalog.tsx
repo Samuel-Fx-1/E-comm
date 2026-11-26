@@ -1,10 +1,14 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { ChevronRight, LayoutGrid, List, SlidersHorizontal, X } from 'lucide-react';
 import type { CategorySlug, ProductFilters } from '../types';
 import { categories, getCategory } from '../data/categories';
 import { products } from '../data/products';
 import { filterProducts } from '../lib/search';
+import { apiAvailable, fetchMeta, fetchProducts } from '../data/api';
+import type { ApiMeta } from '../data/api';
+import { useApiData } from '../hooks/useApiData';
+import { useDebouncedValue } from '../lib/hooks';
 import { site } from '../config/site';
 import { useSite } from '../context/SiteContext';
 import { ProductCard } from '../components/product/ProductCard';
@@ -27,16 +31,37 @@ const SORTS: Array<{ value: ProductFilters['sort']; label: string }> = [
   { value: 'newest', label: 'Newest arrivals' },
 ];
 
-const priceBounds = {
+/** Bounded local fallback — only the 85 bundled products are ever scanned. */
+const localBounds = {
   min: Math.floor(Math.min(...products.map((product) => product.price))),
   max: Math.ceil(Math.max(...products.map((product) => product.price))),
 };
+
+function localMeta(): ApiMeta {
+  const brandCounts = new Map<string, number>();
+  const categoryCounts = new Map<string, number>();
+  products.forEach((product) => {
+    brandCounts.set(product.brand, (brandCounts.get(product.brand) ?? 0) + 1);
+    categoryCounts.set(product.category, (categoryCounts.get(product.category) ?? 0) + 1);
+  });
+  return {
+    total: products.length,
+    categories: categories.map((category) => ({
+      slug: category.slug,
+      name: category.name,
+      count: categoryCounts.get(category.slug) ?? 0,
+    })),
+    brands: [...brandCounts].map(([name, count]) => ({ name, count })).sort((a, b) => a.name.localeCompare(b.name)),
+    priceBounds: localBounds,
+  };
+}
 
 export default function CatalogPage() {
   const params = useParams<{ slug?: string }>();
   const [searchParams, setSearchParams] = useSearchParams();
   const { t, language } = useSite();
-  const [loading, setLoading] = useState(true);
+  const [minimumSkeleton, setMinimumSkeleton] = useState(true);
+  const [firstRequestSettled, setFirstRequestSettled] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
 
   const lockedCategory = categories.some((category) => category.slug === params.slug)
@@ -44,48 +69,105 @@ export default function CatalogPage() {
     : undefined;
   const categoryMeta = lockedCategory ? getCategory(lockedCategory) : undefined;
 
+  const search = searchParams.toString();
   const query = searchParams.get('q') ?? '';
-  const categoryParam = searchParams.get('category');
-  const category: CategorySlug | 'all' =
-    lockedCategory ??
-    (categories.some((entry) => entry.slug === categoryParam) ? (categoryParam as CategorySlug) : 'all');
-
-  const sortParam = searchParams.get('sort');
-  const sort: ProductFilters['sort'] = SORTS.some((entry) => entry.value === sortParam)
-    ? (sortParam as ProductFilters['sort'])
-    : 'featured';
-
-  const readNumber = (key: string, fallback: number) => {
-    if (!searchParams.has(key)) return fallback;
-    const raw = Number(searchParams.get(key));
-    return Number.isFinite(raw) ? raw : fallback;
-  };
-
-  const filters: ProductFilters = {
-    q: query,
-    category,
-    min: Math.max(priceBounds.min, readNumber('min', priceBounds.min)),
-    max: Math.min(priceBounds.max, readNumber('max', priceBounds.max)),
-    rating: Math.min(5, Math.max(0, readNumber('rating', 0))),
-    brands: (searchParams.get('brands') ?? '').split(',').filter(Boolean),
-    inStock: searchParams.get('inStock') === '1',
-    dealsOnly: searchParams.get('deals') === '1',
-    sort,
-    page: Math.max(1, readNumber('page', 1)),
-  };
-
   const view = searchParams.get('view') === 'list' ? 'list' : 'grid';
-  const result = filterProducts(products, filters);
+
+  const metaState = useApiData(
+    async () => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      return fetchMeta();
+    },
+    [],
+    localMeta
+  );
+  const priceBounds = metaState.data.priceBounds;
+
+  const filters = useMemo<ProductFilters>(() => {
+    const sp = new URLSearchParams(search);
+    const readNumber = (key: string, fallback: number) => {
+      if (!sp.has(key)) return fallback;
+      const raw = Number(sp.get(key));
+      return Number.isFinite(raw) ? raw : fallback;
+    };
+    const categoryParam = sp.get('category');
+    const sortParam = sp.get('sort');
+    const sort: ProductFilters['sort'] = SORTS.some((entry) => entry.value === sortParam)
+      ? (sortParam as ProductFilters['sort'])
+      : 'featured';
+    return {
+      q: sp.get('q') ?? '',
+      category:
+        lockedCategory ??
+        (categories.some((entry) => entry.slug === categoryParam) ? (categoryParam as CategorySlug) : 'all'),
+      min: Math.max(priceBounds.min, readNumber('min', priceBounds.min)),
+      max: Math.min(priceBounds.max, readNumber('max', priceBounds.max)),
+      rating: Math.min(5, Math.max(0, readNumber('rating', 0))),
+      brands: (sp.get('brands') ?? '').split(',').filter(Boolean),
+      inStock: sp.get('inStock') === '1',
+      dealsOnly: sp.get('deals') === '1',
+      sort,
+      page: Math.max(1, readNumber('page', 1)),
+    };
+  }, [search, lockedCategory, priceBounds.min, priceBounds.max]);
+
+  const debouncedFilters = useDebouncedValue(filters, 250);
+
+  const localResult = useMemo(
+    () =>
+      filterProducts(products, {
+        ...debouncedFilters,
+        min: Math.min(debouncedFilters.min, localBounds.max),
+        max: Math.max(debouncedFilters.max, localBounds.min),
+      }),
+    [debouncedFilters]
+  );
+
+  const productLoader = useCallback(
+    async (signal: AbortSignal) => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      return fetchProducts(
+        {
+          q: debouncedFilters.q,
+          category: debouncedFilters.category,
+          brands: debouncedFilters.brands,
+          min: debouncedFilters.min,
+          max: debouncedFilters.max,
+          rating: debouncedFilters.rating,
+          inStock: debouncedFilters.inStock,
+          deals: debouncedFilters.dealsOnly,
+          sort: debouncedFilters.sort,
+          page: debouncedFilters.page,
+          pageSize: site.productsPerPage,
+        },
+        signal
+      );
+    },
+    [debouncedFilters]
+  );
+
+  const productState = useApiData(productLoader, [debouncedFilters], () => ({
+    items: localResult.items,
+    total: localResult.total,
+    page: debouncedFilters.page,
+    pageSize: site.productsPerPage,
+    pageCount: localResult.pageCount,
+  }));
+  const result = productState.data;
 
   useEffect(() => {
-    const timer = window.setTimeout(() => setLoading(false), 420);
+    const timer = window.setTimeout(() => setMinimumSkeleton(false), 420);
     return () => window.clearTimeout(timer);
   }, []);
 
   useEffect(() => {
+    if (!productState.loading) setFirstRequestSettled(true);
+  }, [productState.loading]);
+
+  useEffect(() => {
     if (filtersOpen) setFiltersOpen(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [searchParams.toString()]);
+  }, [search]);
 
   const update = (patch: Record<string, string | null>, resetPage = true) => {
     const next = new URLSearchParams(searchParams);
@@ -104,12 +186,17 @@ export default function CatalogPage() {
     setSearchParams(next, { replace: true });
   };
 
+  const currentPage = Math.min(filters.page, result.pageCount);
   const title = categoryMeta ? categoryMeta.name : query ? `Results for “${query}”` : 'All products';
-  const start = (result.items.length === 0 ? 0 : (Math.min(filters.page, result.pageCount) - 1) * site.productsPerPage + 1);
+  const start = result.items.length === 0 ? 0 : (currentPage - 1) * result.pageSize + 1;
   const end = Math.min(result.total, start + result.items.length - 1);
 
+  const brands = metaState.data.brands.map((entry) => entry.name);
+  const categoryCounts = Object.fromEntries(
+    metaState.data.categories.map((entry) => [entry.slug, entry.count])
+  );
   const activeFilterCount =
-    (category !== 'all' && !lockedCategory ? 1 : 0) +
+    (filters.category !== 'all' && !lockedCategory ? 1 : 0) +
     filters.brands.length +
     (filters.rating > 0 ? 1 : 0) +
     (filters.inStock ? 1 : 0) +
@@ -119,8 +206,8 @@ export default function CatalogPage() {
   const filterPanel = (
     <FilterPanel
       filters={filters}
-      brands={result.brands}
-      categoryCounts={result.categoryCounts}
+      brands={brands}
+      categoryCounts={categoryCounts}
       priceBounds={priceBounds}
       lockedCategory={lockedCategory}
       onCategory={(nextCategory) => update({ category: nextCategory === 'all' ? null : nextCategory })}
@@ -137,6 +224,8 @@ export default function CatalogPage() {
       onClear={clearFilters}
     />
   );
+
+  const loading = minimumSkeleton || !firstRequestSettled;
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6">
@@ -225,7 +314,7 @@ export default function CatalogPage() {
                 {result.total > 0 ? (
                   <>
                     Showing <span className="font-semibold text-[var(--brand-ink)]">{start}–{end}</span> of{' '}
-                    <span className="font-semibold text-[var(--brand-ink)]">{result.total}</span>
+                    <span className="font-semibold text-[var(--brand-ink)]">{result.total.toLocaleString()}</span>
                   </>
                 ) : (
                   'No products match these filters'
@@ -279,13 +368,13 @@ export default function CatalogPage() {
 
           {activeFilterCount > 0 && (
             <div className="mt-3 flex flex-wrap items-center gap-2">
-              {category !== 'all' && !lockedCategory && (
+              {filters.category !== 'all' && !lockedCategory && (
                 <button
                   type="button"
                   onClick={() => update({ category: null })}
                   className="inline-flex items-center gap-1 rounded-full border border-[var(--brand-line)] bg-white px-2.5 py-1 text-xs font-medium text-[var(--brand-ink)] hover:border-[var(--brand-navy)]"
                 >
-                  {getCategory(category)?.name} <X className="h-3 w-3" aria-hidden="true" />
+                  {getCategory(filters.category)?.name} <X className="h-3 w-3" aria-hidden="true" />
                 </button>
               )}
               {filters.brands.map((brand) => (
@@ -383,7 +472,7 @@ export default function CatalogPage() {
           {!loading && result.total > 0 && (
             <div className="mt-8">
               <Pagination
-                page={Math.min(filters.page, result.pageCount)}
+                page={currentPage}
                 pageCount={result.pageCount}
                 onChange={(page) => {
                   update({ page: String(page) }, false);
@@ -392,14 +481,14 @@ export default function CatalogPage() {
                 label="Product pages"
               />
               <p className="mt-3 text-center text-xs text-[var(--brand-muted)]">
-                Page {Math.min(filters.page, result.pageCount)} of {result.pageCount} · {language === 'fr' ? 'Prix en devise locale' : 'Prices in your local currency'}
+                Page {currentPage} of {result.pageCount} · {language === 'fr' ? 'Prix en devise locale' : 'Prices in your local currency'}
               </p>
             </div>
           )}
         </div>
       </div>
 
-      <Modal open={filtersOpen} onClose={() => setFiltersOpen(false)} title="Filter products" size="sm" footer={<Button fullWidth onClick={() => setFiltersOpen(false)}>Show {result.total} results</Button>}>
+      <Modal open={filtersOpen} onClose={() => setFiltersOpen(false)} title="Filter products" size="sm" footer={<Button fullWidth onClick={() => setFiltersOpen(false)}>Show {result.total.toLocaleString()} results</Button>}>
         {filterPanel}
       </Modal>
 
