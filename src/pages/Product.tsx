@@ -1,9 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import {
   BadgeCheck, Check, ChevronRight, GitCompareArrows, Heart, MapPin, RotateCcw, ShieldCheck, ShoppingCart, Truck,
 } from 'lucide-react';
+import type { Product } from '../types';
 import { getProduct, products } from '../data/products';
+import { apiAvailable, fetchProductBySlug, fetchRelated } from '../data/api';
+import { useApiData } from '../hooks/useApiData';
 import { getCategory } from '../data/categories';
 import { creditFor, resolveImages } from '../data/imageMap';
 import { relatedProducts } from '../lib/search';
@@ -19,21 +22,20 @@ import { Price } from '../components/ui/Price';
 import { Rating } from '../components/ui/Rating';
 import { QuantitySelect } from '../components/ui/QuantitySelect';
 import { EmptyState } from '../components/ui/EmptyState';
+import { ProductGridSkeleton } from '../components/ui/Skeleton';
 import { Seo } from '../components/ui/Seo';
 import { Button } from '../components/ui/Button';
 
 interface BuyBoxProps {
-  productId: string;
+  product: Product;
 }
 
-function BuyBox({ productId }: BuyBoxProps) {
-  const product = getProduct(productId);
+function BuyBox({ product }: BuyBoxProps) {
   const navigate = useNavigate();
   const { addToCart, toggleWishlist, wishlist, toggleCompare, compare } = useStore();
   const { country, city, countryCode, language, setCountryModalOpen, money, t } = useSite();
   const [qty, setQty] = useState(1);
 
-  if (!product) return null;
   const saved = wishlist.includes(product.id);
   const comparing = compare.includes(product.id);
   const outOfStock = product.stock <= 0;
@@ -79,7 +81,7 @@ function BuyBox({ productId }: BuyBoxProps) {
           variant="accent"
           fullWidth
           disabled={outOfStock}
-          onClick={() => addToCart(product.id, qty)}
+          onClick={() => addToCart(product.id, qty, { snapshot: product })}
         >
           <ShoppingCart className="h-4 w-4" aria-hidden="true" /> {t('addToCart')}
         </Button>
@@ -88,7 +90,7 @@ function BuyBox({ productId }: BuyBoxProps) {
           fullWidth
           disabled={outOfStock}
           onClick={() => {
-            addToCart(product.id, qty, { openDrawer: false, silent: true });
+            addToCart(product.id, qty, { snapshot: product, openDrawer: false, silent: true });
             navigate('/checkout');
           }}
         >
@@ -99,7 +101,7 @@ function BuyBox({ productId }: BuyBoxProps) {
       <div className="mt-3 flex flex-col gap-1.5 text-xs">
         <button
           type="button"
-          onClick={() => toggleWishlist(product.id)}
+          onClick={() => toggleWishlist(product.id, product)}
           aria-pressed={saved}
           className="flex items-center gap-1.5 text-left text-[var(--brand-navy)] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-orange)]"
         >
@@ -108,7 +110,7 @@ function BuyBox({ productId }: BuyBoxProps) {
         </button>
         <button
           type="button"
-          onClick={() => toggleCompare(product.id)}
+          onClick={() => toggleCompare(product.id, product)}
           aria-pressed={comparing}
           className="flex items-center gap-1.5 text-left text-[var(--brand-navy)] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-orange)]"
         >
@@ -146,15 +148,44 @@ function BuyBox({ productId }: BuyBoxProps) {
 
 export default function ProductPage() {
   const { slug = '' } = useParams<{ slug: string }>();
-  const product = getProduct(slug);
   const { addRecent, recent } = useStore();
   const { countryCode, language, t } = useSite();
 
+  const productState = useApiData(
+    async (signal) => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      return fetchProductBySlug(slug, signal);
+    },
+    [slug],
+    () => getProduct(slug)
+  );
+  const product = productState.data;
+
+  const relatedFallback = useCallback(
+    () => (product ? relatedProducts(products, product, 8) : []),
+    [product]
+  );
+  const relatedState = useApiData(
+    async (signal) => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      return fetchRelated(slug, 8, signal);
+    },
+    [slug],
+    relatedFallback
+  );
+
   useEffect(() => {
-    if (product) addRecent(product.id);
+    if (product) addRecent(product.id, product);
   }, [product, addRecent]);
 
   if (!product) {
+    if (productState.loading) {
+      return (
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+          <ProductGridSkeleton count={1} />
+        </div>
+      );
+    }
     return (
       <div className="mx-auto max-w-3xl px-4 py-16">
         <EmptyState
@@ -174,8 +205,7 @@ export default function ProductPage() {
   }
 
   const category = getCategory(product.category);
-  const related = relatedProducts(products, product, 8);
-  const alsoViewed = related.filter((entry) => !recent.includes(entry.id)).slice(0, 8);
+  const alsoViewed = relatedState.data.filter((entry) => !recent.includes(entry.id)).slice(0, 8);
   const images = resolveImages(product);
   const delivery = deliveryDateRange(product.deliveryDays, countryCode, false, language);
 
@@ -226,7 +256,7 @@ export default function ProductPage() {
               </div>
 
               <div className="mt-3 lg:hidden">
-                <BuyBox productId={product.id} />
+                <BuyBox product={product} />
               </div>
 
               <div className="mt-4 hidden lg:block">
@@ -289,7 +319,7 @@ export default function ProductPage() {
 
         <aside className="hidden lg:block">
           <div className="sticky top-36">
-            <BuyBox productId={product.id} />
+            <BuyBox product={product} />
           </div>
         </aside>
       </div>
