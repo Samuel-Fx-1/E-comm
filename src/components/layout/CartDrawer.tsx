@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Bookmark, ShoppingCart, Trash2, Truck } from 'lucide-react';
-import { getProductById } from '../../data/products';
+import type { Product } from '../../types';
+import { resolveLineProduct } from '../../data/productLookup';
 import { imagesFor } from '../../data/imageMap';
 import { site } from '../../config/site';
 import { useStore } from '../../context/StoreContext';
@@ -14,8 +15,8 @@ export function CartDrawer() {
   const { money, t } = useSite();
 
   const lines = cart
-    .map((line) => ({ line, product: getProductById(line.productId) }))
-    .filter((entry): entry is { line: typeof cart[number]; product: NonNullable<ReturnType<typeof getProductById>> } => Boolean(entry.product));
+    .map((line) => ({ line, product: resolveLineProduct(line) }))
+    .filter((entry): entry is { line: typeof cart[number]; product: Product } => Boolean(entry.product));
 
   const remaining = Math.max(0, site.freeShippingThresholdUsd - cartSubtotal);
   const progress = Math.min(100, (cartSubtotal / site.freeShippingThresholdUsd) * 100);
