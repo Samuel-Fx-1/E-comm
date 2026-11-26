@@ -138,6 +138,17 @@ export function creditedProducts(): Array<{ product: Product; image: ResolvedIma
   });
 }
 
+/** Every gallery photo with its matching credit, for the /credits page. */
+export function allCreditedPhotos(): Array<{ product: Product; image: ResolvedImage; credit: ImageCredit }> {
+  return products.flatMap((product) => {
+    const images = resolveImages(product);
+    const credits = creditsFor(product);
+    return images.flatMap((image, index) =>
+      credits[index] ? [{ product, image, credit: credits[index] }] : []
+    );
+  });
+}
+
 /** Products that need manual photo replacement because the gallery is empty. */
 export function fallbackProducts(): Product[] {
   return products.filter((product) => resolveImages(product).length === 0);
