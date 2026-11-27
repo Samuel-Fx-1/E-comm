@@ -39,7 +39,7 @@ export default function CartPage() {
           <EmptyState
             icon={<ShoppingCart className="h-7 w-7" aria-hidden="true" />}
             title="Your Soko cart is empty"
-            description="Browse today's deals or pick up something from your wishlist. Free delivery applies on orders over $35."
+            description="Browse today's deals or pick up something from your wishlist. Free delivery applies on orders over 45,500 RWF."
             action={
               <div className="flex flex-wrap justify-center gap-2">
                 <Link to="/" className="rounded-lg bg-[var(--brand-orange)] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[var(--brand-orange-dark)]">
@@ -214,7 +214,7 @@ export default function CartPage() {
                 Proceed to checkout <ChevronRight className="h-4 w-4" aria-hidden="true" />
               </Link>
               <p className="mt-2 flex items-center justify-center gap-1 text-[11px] text-[var(--brand-muted)]">
-                <ShieldCheck className="h-3.5 w-3.5" aria-hidden="true" /> Demo checkout — no real payment
+                <ShieldCheck className="h-3.5 w-3.5" aria-hidden="true" /> Local checkout — no payment is processed
               </p>
             </div>
 
