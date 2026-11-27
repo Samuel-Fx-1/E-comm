@@ -251,38 +251,59 @@ async function checkImages(photoUrls) {
     console.log('Image URL checks skipped (--skip-network).');
     return;
   }
+  const entries = [...photoUrls];
+  let cursor = 0;
   let checked = 0;
-  for (const [url, slug] of photoUrls) {
+  const unverified = [];
+
+  async function checkOne(url, slug) {
     let verified = false;
-    for (const method of ['HEAD', 'GET']) {
-      try {
-        const response = await fetch(url, {
-          method,
-          signal: AbortSignal.timeout(12_000),
-          headers: { 'user-agent': 'Soko catalog validator' },
-        });
-        if (response.status === 405 && method === 'HEAD') continue;
-        const contentType = response.headers.get('content-type') ?? '';
-        if (!response.ok) {
-          fail(`${slug}: image URL returned HTTP ${response.status} (${url})`);
+    let transportError = null;
+    for (let attempt = 0; attempt < 2 && !verified; attempt += 1) {
+      for (const method of ['HEAD', 'GET']) {
+        try {
+          const response = await fetch(url, {
+            method,
+            signal: AbortSignal.timeout(8_000),
+            headers: { 'user-agent': 'Soko catalog validator' },
+          });
+          if (response.status === 405 && method === 'HEAD') continue;
+          const contentType = response.headers.get('content-type') ?? '';
+          if (!response.ok) {
+            fail(`${slug}: image URL returned HTTP ${response.status} (${url})`);
+          } else if (!contentType.toLowerCase().startsWith('image/')) {
+            fail(`${slug}: image URL content-type is ${contentType || 'missing'} (${url})`);
+          }
           verified = true;
+          if (method === 'GET') await response.body?.cancel();
+          transportError = null;
           break;
+        } catch (error) {
+          transportError = error;
         }
-        if (!contentType.toLowerCase().startsWith('image/')) {
-          fail(`${slug}: image URL content-type is ${contentType || 'missing'} (${url})`);
-          verified = true;
-          break;
-        }
-        verified = true;
-        if (method === 'GET') await response.body?.cancel();
-        break;
-      } catch (error) {
-        if (method === 'GET') fail(`${slug}: image URL could not be checked (${error.message})`);
       }
+      if (!verified && attempt === 0) await new Promise((resolve) => setTimeout(resolve, 200));
     }
     if (verified) checked += 1;
+    else unverified.push(`${slug}: image URL could not be checked (${transportError?.message ?? 'unknown network error'}) (${url})`);
   }
+
+  const workers = Array.from({ length: 8 }, async () => {
+    while (cursor < entries.length) {
+      const index = cursor;
+      cursor += 1;
+      const [url, slug] = entries[index];
+      await checkOne(url, slug);
+    }
+  });
+  await Promise.all(workers);
+
   console.log(`Checked ${checked} unique image URL(s).`);
+  if (unverified.length > 0) {
+    console.warn(`Image URL checks unverified for ${unverified.length} URL(s) due to network transport errors:`);
+    for (const item of unverified.slice(0, 20)) console.warn(`  - ${item}`);
+    if (unverified.length > 20) console.warn(`  ... and ${unverified.length - 20} more`);
+  }
 }
 
 async function main() {

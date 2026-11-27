@@ -45,4 +45,4 @@ The 20 original Phase 7 products remain in the catalog with their original Pexel
 
 The earlier catalog's Unsplash and Pixabay cache belonged to the superseded catalog and is not used by the current shelves. Static SVG assets that are not product photos (for example `placeholder.svg`, `favicon.svg` and `og-cover.svg`) remain outside the product galleries.
 
-Licence: [Pexels License](https://www.pexels.com/license/). API reference: [Pexels API documentation](https://www.pexels.com/api/documentation/). **`.env.local` is gitignored; API keys must never be committed.**
+Licence: [Pexels License](https://www.pexels.com/license/). API reference: [Pexels API documentation](https://www.pexels.com/api/documentation/). The primary refresh path is the official key-based Pexels API (`npm run images:pexels`); the public search-page capture remains only as documented provenance. **`.env.local` is gitignored; API keys must never be committed.**
