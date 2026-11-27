@@ -13,7 +13,7 @@ export function writeJSON(key: string, value: unknown): void {
   try {
     window.localStorage.setItem(key, JSON.stringify(value));
   } catch {
-    /* storage may be unavailable or full — demo app keeps working in memory */
+    /* storage may be unavailable or full — the storefront keeps working in memory */
   }
 }
 
@@ -54,6 +54,7 @@ export const storageKeys = {
   reviews: 'soko_reviews_v1',
   questions: 'soko_questions_v1',
   orders: 'soko_orders_v1',
+  orderKeys: 'soko_order_keys_v1',
   users: 'soko_users_v1',
   session: 'soko_session_v1',
   country: 'soko_country_v1',

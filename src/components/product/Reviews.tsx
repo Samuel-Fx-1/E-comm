@@ -196,7 +196,7 @@ export function Reviews({ product }: { product: Product }) {
                   Submit review
                 </Button>
                 <p className="text-[11px] text-[var(--brand-muted)]">
-                  Reviews are stored only in this browser. This is a demo marketplace.
+                  Reviews are stored only in this browser.
                 </p>
               </form>
             )}

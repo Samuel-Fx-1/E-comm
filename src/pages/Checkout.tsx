@@ -28,6 +28,25 @@ const STEPS: Array<{ id: Step; label: string }> = [
 const inputClass =
   'w-full rounded-lg border border-[var(--brand-line)] bg-white px-3 py-2 text-sm text-[var(--brand-ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-orange)]';
 
+const RW_PROVINCES = ['Kigali City', 'Eastern Province', 'Northern Province', 'Southern Province', 'Western Province'];
+const RW_DISTRICTS: Record<string, string[]> = {
+  'Kigali City': ['Nyarugenge', 'Gasabo', 'Kicukiro'],
+  'Eastern Province': ['Nyagatare', 'Gatsibo', 'Kayonza', 'Rwamagana'],
+  'Northern Province': ['Musanze', 'Ruhengeri', 'Gakenke', 'Rulindo'],
+  'Southern Province': ['Huye', 'Nyamagabe', 'Muhanga', 'Kamonyi'],
+  'Western Province': ['Rubavu', 'Rusizi', 'Karongi', 'Ngororero'],
+};
+const RW_SECTORS: Record<string, string[]> = {
+  Nyarugenge: ['Nyarugenge', 'Mage', 'Kiyovu'],
+  Gasabo: ['Kimironko', 'Kacyiru', 'Remera'],
+  Kicukiro: ['Kicukiro', 'Kagarama', 'Gatenga'],
+};
+
+function newOrderKey(): string {
+  if (typeof crypto !== 'undefined' && 'randomUUID' in crypto) return crypto.randomUUID();
+  return `order-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+}
+
 export default function CheckoutPage() {
   const navigate = useNavigate();
   const { cart, cartSubtotal, clearCart } = useStore();
@@ -35,6 +54,7 @@ export default function CheckoutPage() {
   const { countryCode, city, language, money } = useSite();
   const { placeOrder } = useOrders();
   const placingRef = useRef(false);
+  const orderKeyRef = useRef(newOrderKey());
 
   const saved = addresses[0];
   const [step, setStep] = useState<Step>('address');
@@ -43,6 +63,9 @@ export default function CheckoutPage() {
     phone: saved?.phone ?? '',
     country: saved?.country ?? countryCode,
     city: saved?.city ?? city,
+    province: saved?.province ?? 'Kigali City',
+    district: saved?.district ?? 'Nyarugenge',
+    sector: saved?.sector ?? 'Nyarugenge',
     line1: saved?.line1 ?? '',
     line2: saved?.line2 ?? '',
     postalCode: saved?.postalCode ?? '',
@@ -61,10 +84,11 @@ export default function CheckoutPage() {
   if (lines.length === 0 && !placingRef.current) {
     return (
       <div className="mx-auto max-w-3xl px-4 py-16">
+        <input type="hidden" aria-label="Order key" value={orderKeyRef.current} readOnly />
         <Seo title="Checkout" path="/checkout" noIndex />
         <EmptyState
           title="Nothing to check out yet"
-          description="Your cart is empty. Add a few items and come back to complete your demo order."
+          description="Your cart is empty. Add a few items and come back to complete your order."
           action={
             <Link to="/search" className="rounded-lg bg-[var(--brand-orange)] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[var(--brand-orange-dark)]">
               Browse products
@@ -94,7 +118,7 @@ export default function CheckoutPage() {
     paymentMethod === 'card'
       ? `Card ending ${cardDigits.slice(-4) || '0000'}`
       : paymentMethod === 'mobile-money'
-        ? `${momo.provider} · ${momo.phone || 'demo'}`
+        ? `${momo.provider} · ${momo.phone || 'not provided'}`
         : 'Cash on delivery';
 
   const validateAddress = (): string[] => {
@@ -104,6 +128,11 @@ export default function CheckoutPage() {
     if (address.line1.trim().length < 4) list.push('Enter a street address.');
     if (!address.city.trim()) list.push('Choose a city.');
     if (!address.country) list.push('Choose a country.');
+    if (address.country === 'RW') {
+      if (!address.province) list.push('Choose a province.');
+      if (!address.district) list.push('Choose a district.');
+      if (!address.sector) list.push('Choose a sector.');
+    }
     return list;
   };
 
@@ -111,7 +140,7 @@ export default function CheckoutPage() {
     const list: string[] = [];
     // DEMO: card details are checked locally only — nothing is sent to a payment processor.
     if (paymentMethod === 'card') {
-      if (cardDigits.length < 12) list.push('Enter a demo card number (12–19 digits).');
+      if (cardDigits.length < 12) list.push('Enter a card number (12–19 digits).');
       if (card.name.trim().length < 2) list.push('Enter the name on the card.');
       if (!/^\d{2}\/\d{2}$/.test(card.expiry)) list.push('Enter expiry as MM/YY.');
       if (!/^\d{3,4}$/.test(card.cvv)) list.push('Enter a 3 or 4 digit CVV.');
@@ -172,6 +201,7 @@ export default function CheckoutPage() {
       paymentLabel,
       estimatedDelivery,
       email: user?.email,
+      idempotencyKey: orderKeyRef.current,
     });
     clearCart();
     navigate(`/order-confirmation/${order.id}`);
@@ -179,13 +209,14 @@ export default function CheckoutPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
+      <input type="hidden" aria-label="Order key" value={orderKeyRef.current} readOnly />
       <Seo title="Checkout" path="/checkout" noIndex />
       <Breadcrumbs items={[{ label: 'Home', to: '/' }, { label: 'Cart', to: '/cart' }, { label: 'Checkout' }]} />
 
       <div className="mt-2 flex flex-wrap items-end justify-between gap-2">
         <h1 className="font-serif text-3xl font-bold text-[var(--brand-ink)] sm:text-4xl">Checkout</h1>
         <p className="flex items-center gap-1 text-xs font-medium text-[var(--brand-muted)]">
-          <Lock className="h-3.5 w-3.5" aria-hidden="true" /> Demo checkout · no real payment is taken
+          <Lock className="h-3.5 w-3.5" aria-hidden="true" /> Secure checkout · order saved to this browser
         </p>
       </div>
 
@@ -252,7 +283,7 @@ export default function CheckoutPage() {
               <h2 id="address-heading" className="flex items-center gap-2 text-xl font-bold text-[var(--brand-ink)]">
                 <MapPin className="h-5 w-5 text-[var(--brand-orange)]" aria-hidden="true" /> Delivery address
               </h2>
-              <p className="mt-1 text-xs text-[var(--brand-muted)]">Tell us where this demo order should be delivered.</p>
+              <p className="mt-1 text-xs text-[var(--brand-muted)]">Tell us where this order should be delivered.</p>
 
               <div className="mt-4 grid gap-4 sm:grid-cols-2">
                 <label className="sm:col-span-2">
@@ -307,6 +338,53 @@ export default function CheckoutPage() {
                     ))}
                   </select>
                 </label>
+                {address.country === 'RW' && (
+                  <>
+                    <label>
+                      <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-[var(--brand-muted)]">Province</span>
+                      <select
+                        value={address.province ?? RW_PROVINCES[0]}
+                        onChange={(event) => {
+                          const province = event.target.value;
+                          const district = RW_DISTRICTS[province]?.[0] ?? '';
+                          setAddress((prev) => ({ ...prev, province, district, sector: RW_SECTORS[district]?.[0] ?? '' }));
+                        }}
+                        className={inputClass}
+                      >
+                        {RW_PROVINCES.map((entry) => (
+                          <option key={entry} value={entry}>{entry}</option>
+                        ))}
+                      </select>
+                    </label>
+                    <label>
+                      <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-[var(--brand-muted)]">District</span>
+                      <select
+                        value={address.district ?? ''}
+                        onChange={(event) => {
+                          const district = event.target.value;
+                          setAddress((prev) => ({ ...prev, district, sector: RW_SECTORS[district]?.[0] ?? '' }));
+                        }}
+                        className={inputClass}
+                      >
+                        {(RW_DISTRICTS[address.province ?? RW_PROVINCES[0]] ?? []).map((entry) => (
+                          <option key={entry} value={entry}>{entry}</option>
+                        ))}
+                      </select>
+                    </label>
+                    <label>
+                      <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-[var(--brand-muted)]">Sector</span>
+                      <select
+                        value={address.sector ?? ''}
+                        onChange={(event) => setAddress((prev) => ({ ...prev, sector: event.target.value }))}
+                        className={inputClass}
+                      >
+                        {(RW_SECTORS[address.district ?? ''] ?? ['Nyarugenge', 'Kimironko', 'Kicukiro', 'Remera']).map((entry) => (
+                          <option key={entry} value={entry}>{entry}</option>
+                        ))}
+                      </select>
+                    </label>
+                  </>
+                )}
                 <label>
                   <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-[var(--brand-muted)]">Postal code (optional)</span>
                   <input
@@ -418,7 +496,7 @@ export default function CheckoutPage() {
                 <Wallet className="h-5 w-5 text-[var(--brand-orange)]" aria-hidden="true" /> Payment method
               </h2>
               <p className="mt-1 text-xs text-[var(--brand-muted)]">
-                // DEMO: this checkout simulates payment. Do not enter a real card number.
+                Payments are simulated locally. Do not enter a real card number.
               </p>
 
               <div className="mt-4 grid gap-2 sm:grid-cols-3" role="radiogroup" aria-label="Payment method">
@@ -452,7 +530,7 @@ export default function CheckoutPage() {
               {paymentMethod === 'card' && (
                 <div className="mt-4 grid gap-4 sm:grid-cols-2">
                   <label className="sm:col-span-2">
-                    <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-[var(--brand-muted)]">Card number (demo)</span>
+                    <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-[var(--brand-muted)]">Card number</span>
                     <input
                       value={card.number}
                       onChange={(event) => setCard((prev) => ({ ...prev, number: event.target.value.replace(/[^\d ]/g, '').slice(0, 19) }))}
@@ -520,15 +598,14 @@ export default function CheckoutPage() {
                     />
                   </label>
                   <p className="text-xs text-[var(--brand-muted)] sm:col-span-2">
-                    In a live store you would receive a prompt on your phone. This demo never contacts a payment provider.
+                    You would normally confirm this payment on your phone. Card details are validated locally and never leave this device.
                   </p>
                 </div>
               )}
 
               {paymentMethod === 'cash' && (
                 <p className="mt-4 rounded-lg bg-[var(--brand-cream)] p-3 text-sm text-[var(--brand-ink)]">
-                  Pay the courier when your order arrives. Cash on delivery is available for eligible addresses and demo
-                  orders only.
+                  Pay the courier when your order arrives. Cash on delivery is available for eligible addresses.
                 </p>
               )}
             </section>
@@ -538,7 +615,7 @@ export default function CheckoutPage() {
             <section aria-labelledby="review-heading" className="space-y-4">
               <div className="rounded-2xl border border-[var(--brand-line)] bg-white p-4 sm:p-6">
                 <h2 id="review-heading" className="text-xl font-bold text-[var(--brand-ink)]">Review your order</h2>
-                <p className="mt-1 text-xs text-[var(--brand-muted)]">Check everything before placing your demo order.</p>
+                <p className="mt-1 text-xs text-[var(--brand-muted)]">Check everything before placing your order.</p>
 
                 <div className="mt-4 grid gap-4 sm:grid-cols-2">
                   <div className="rounded-xl bg-[var(--brand-cream)] p-3">
@@ -554,6 +631,9 @@ export default function CheckoutPage() {
                       {address.line2 ? `, ${address.line2}` : ''}
                       <br />
                       {address.city}, {getCountry(address.country).name}
+                      {address.country === 'RW' && address.province ? ` · ${address.province}` : ''}
+                      {address.country === 'RW' && address.district ? ` · ${address.district}` : ''}
+                      {address.country === 'RW' && address.sector ? ` · ${address.sector}` : ''}
                       {address.postalCode ? ` ${address.postalCode}` : ''}
                       <br />
                       {address.phone}
@@ -607,7 +687,7 @@ export default function CheckoutPage() {
             </Button>
             {step === 'review' ? (
               <Button variant="primary" onClick={handlePlaceOrder}>
-                <Lock className="h-4 w-4" aria-hidden="true" /> Place demo order · {money(total)}
+                <Lock className="h-4 w-4" aria-hidden="true" /> Place order · {money(total)}
               </Button>
             ) : (
               <Button variant="primary" onClick={goNext}>

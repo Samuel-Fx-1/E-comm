@@ -20,7 +20,7 @@ export default function ConfirmationPage() {
       <div className="mx-auto max-w-3xl px-4 py-16">
         <EmptyState
           title="Order not found"
-          description="We could not find that order number in this browser. Check Your Orders or start a new demo order."
+          description="We could not find that order number in this browser. Check Your Orders or start a new order."
           action={
             <Link to="/orders" className="rounded-lg bg-[var(--brand-orange)] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[var(--brand-orange-dark)]">
               View your orders
@@ -39,11 +39,11 @@ export default function ConfirmationPage() {
         <CheckCircle2 className="mx-auto h-14 w-14 text-[var(--brand-success)]" aria-hidden="true" />
         <h1 className="mt-3 font-serif text-3xl font-bold text-[var(--brand-ink)]">Order placed</h1>
         <p className="mt-2 text-sm text-[var(--brand-muted)]">
-          Thank you{order.address.fullName ? `, ${order.address.fullName.split(' ')[0]}` : ''}. Your demo order{' '}
+          Thank you{order.address.fullName ? `, ${order.address.fullName.split(' ')[0]}` : ''}. Your order{' '}
           <span className="font-mono font-bold text-[var(--brand-ink)]">{order.id}</span> is confirmed.
         </p>
         <p className="mt-1 text-xs text-[var(--brand-muted)]">
-          A real store would email a receipt{order.email ? ` to ${order.email}` : ''}. No email is sent and no payment was taken.
+          A hosted store would email a receipt{order.email ? ` to ${order.email}` : ''}. No email is sent and no payment was taken.
         </p>
         <div className="mt-4 flex flex-wrap justify-center gap-2">
           <Link
@@ -90,7 +90,7 @@ export default function ConfirmationPage() {
             <Wallet className="h-4 w-4" aria-hidden="true" /> Payment
           </p>
           <p className="mt-1 text-sm font-bold text-[var(--brand-ink)]">{order.paymentLabel}</p>
-          <p className="text-xs text-[var(--brand-muted)]">Simulated · demo only</p>
+          <p className="text-xs text-[var(--brand-muted)]">Recorded locally</p>
         </div>
       </div>
 
@@ -145,7 +145,7 @@ export default function ConfirmationPage() {
             </div>
           </dl>
           <p className="mt-3 rounded-lg bg-[var(--brand-cream)] p-2 text-[11px] text-[var(--brand-muted)]">
-            Demo order — totals are simulated and stored only in this browser.
+            Order totals are simulated and stored only in this browser.
           </p>
         </div>
       </div>

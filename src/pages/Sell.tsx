@@ -14,7 +14,7 @@ const steps = [
 ];
 
 const benefits = [
-  { icon: Users, title: 'Reach new shoppers', body: 'Browse across 14 demo markets with local currency display.' },
+  { icon: Users, title: 'Reach new shoppers', body: 'Browse across 14 markets with local currency display.' },
   { icon: BarChart3, title: 'Understand demand', body: 'Search terms, conversion and repeat purchase reporting.' },
   { icon: Store, title: 'Keep your brand', body: 'Your storefront, your product stories and your customer service.' },
 ];
@@ -26,7 +26,7 @@ export default function SellPage() {
     <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
       <Seo
         title="Sell on Soko"
-        description="Learn how selling works on a marketplace like Soko. This demo has no seller backend; onboarding is informational."
+        description="Learn how selling works on a marketplace like Soko. There is no seller backend here; onboarding is informational."
         path="/sell"
       />
 
@@ -36,7 +36,7 @@ export default function SellPage() {
         </p>
         <h1 className="mt-2 font-serif text-4xl font-bold sm:text-5xl">Grow your business with us.</h1>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-white/70">
-          Reach shoppers across the region with a storefront built for mobile. This demo does not include a seller
+          Reach shoppers across the region with a storefront built for mobile. This storefront does not include a seller
           backend, so the form below is illustrative and stores nothing.
         </p>
         <Link
@@ -88,7 +88,7 @@ export default function SellPage() {
         <div className="rounded-2xl border border-[var(--brand-line)] bg-white p-5">
           <h2 className="text-lg font-bold text-[var(--brand-ink)]">Express interest</h2>
           <p className="mt-1 text-xs text-[var(--brand-muted)]">
-            Demo only — this form does not submit or store anything.
+            This form does not submit or store anything.
           </p>
           <form
             className="mt-4 space-y-3"

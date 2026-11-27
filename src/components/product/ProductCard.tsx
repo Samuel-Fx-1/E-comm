@@ -30,7 +30,6 @@ export function ProductCard({ product, layout = 'grid', priority = false }: Prod
     <Link
       to={`/product/${product.slug}`}
       className="relative block overflow-hidden rounded-lg bg-[var(--brand-cream)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-orange)]"
-      aria-label={product.title}
     >
       <ImageWithFallback
         src={images[0].src}

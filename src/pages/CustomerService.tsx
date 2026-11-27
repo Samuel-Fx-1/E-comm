@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'Is this a real shop?',
     answer:
-      'No. Soko is a front-end demonstration. Products, sellers, reviews and prices are fictional. No payment is processed and no email is sent.',
+      'No. Soko runs locally in this browser. Products, sellers, reviews and prices are illustrative. No payment is processed and no email is sent.',
   },
   {
     question: 'Where is my order?',
@@ -22,12 +22,12 @@ const faqs = [
   {
     question: 'How do returns work?',
     answer:
-      'In a live marketplace you would open the order and choose "Return items" within the return window. In this demo, no courier or warehouse is involved, so returns are informational only.',
+      'In a hosted marketplace you would open the order and choose "Return items" within the return window. Orders here are stored locally, so returns are informational only.',
   },
   {
     question: 'Can I change my delivery country?',
     answer:
-      'Yes. Select the delivery-to area in the header, choose one of the available countries and a city. Prices convert using fixed demonstration exchange rates.',
+      'Yes. Select the delivery-to area in the header, choose one of the available countries and a city. Prices convert using fixed reference exchange rates.',
   },
   {
     question: 'What happens to my data?',
@@ -44,7 +44,7 @@ const faqs = [
 const topics = [
   { icon: Package, title: 'Orders & tracking', body: 'Find an order, check its status and buy again.', to: '/orders' },
   { icon: RotateCcw, title: 'Returns & refunds', body: 'Return windows, condition rules and refund timing.', to: '/orders' },
-  { icon: CreditCard, title: 'Payments', body: 'Supported demo methods and billing questions.', to: '/checkout' },
+  { icon: CreditCard, title: 'Payments', body: 'Supported payment methods and billing questions.', to: '/checkout' },
   { icon: Truck, title: 'Shipping & delivery', body: 'Delivery estimates by country and speed.', to: '/search' },
 ];
 
@@ -61,7 +61,7 @@ export default function CustomerServicePage() {
     <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
       <Seo
         title="Customer service"
-        description="Help, delivery information, returns guidance and answers to common questions about the Soko demo marketplace."
+        description="Help, delivery information, returns guidance and answers to common questions about Soko."
         path="/customer-service"
       />
 
@@ -71,7 +71,7 @@ export default function CustomerServicePage() {
         </p>
         <h1 className="mt-2 font-serif text-4xl font-bold sm:text-5xl">How can we help?</h1>
         <p className="mt-2 max-w-2xl text-sm leading-6 text-white/70">
-          Search our help topics, or jump straight to your orders. Everything here relates to a demo store with no real
+          Search our help topics, or jump straight to your orders. Everything here relates to a local storefront with no real
           transactions.
         </p>
         <div className="mt-5 flex max-w-2xl items-center gap-2 rounded-xl bg-white p-1.5 shadow-lg">
@@ -162,7 +162,7 @@ export default function CustomerServicePage() {
 
         <aside className="space-y-4">
           <div className="rounded-2xl border border-[var(--brand-line)] bg-white p-4">
-            <h2 className="text-sm font-bold text-[var(--brand-ink)]">Contact (demo)</h2>
+            <h2 className="text-sm font-bold text-[var(--brand-ink)]">Contact</h2>
             <ul className="mt-3 space-y-3 text-sm text-[var(--brand-muted)]">
               <li className="flex items-start gap-2">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[var(--brand-orange)]" aria-hidden="true" />
@@ -174,11 +174,11 @@ export default function CustomerServicePage() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[var(--brand-orange)]" aria-hidden="true" />
-                <span>Kigali, Rwanda (demo address)</span>
+                <span>Kigali, Rwanda</span>
               </li>
             </ul>
             <p className="mt-3 rounded-lg bg-[var(--brand-cream)] p-2 text-[11px] leading-4 text-[var(--brand-muted)]">
-              These contacts are illustrative. No messages are sent from this demo.
+              These contacts are illustrative. No messages are sent from this storefront.
             </p>
           </div>
 

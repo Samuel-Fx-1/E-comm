@@ -2,15 +2,11 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Search, TrendingUp } from 'lucide-react';
 import { categories } from '../../data/categories';
-import { products } from '../../data/products';
 import { apiAvailable, fetchSuggestions } from '../../data/api';
 import { useApiData } from '../../hooks/useApiData';
-import { productMatchesQuery } from '../../lib/search';
 import { useDebouncedValue, useOnClickOutside } from '../../lib/hooks';
 import { useSite } from '../../context/SiteContext';
 import { useStore } from '../../context/StoreContext';
-import { imagesFor } from '../../data/imageMap';
-import { ImageWithFallback } from '../ui/ImageWithFallback';
 
 export function SearchBox() {
   const { t, money } = useSite();
@@ -42,7 +38,7 @@ export function SearchBox() {
       return fetchSuggestions(term, 6, signal);
     },
     [term],
-    () => (term ? products.filter((product) => productMatchesQuery(product, term)).slice(0, 6) : [])
+    () => []
   );
   const matches = suggestionState.data;
 
@@ -195,10 +191,14 @@ export function SearchBox() {
                     active === index ? 'bg-[var(--brand-cream)]' : 'hover:bg-[var(--brand-cream)]'
                   } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-orange)]`}
                 >
-                  <ImageWithFallback
-                    src={imagesFor(product)[0]}
+                  <img
+                    src={product.images?.[0] ?? '/images/placeholder.svg'}
                     alt=""
-                    className="h-10 w-10 shrink-0 rounded-md object-cover"
+                    loading="lazy"
+                    className="h-10 w-10 shrink-0 rounded-md bg-[var(--brand-cream)] object-cover"
+                    onError={(event) => {
+                      event.currentTarget.src = '/images/placeholder.svg';
+                    }}
                   />
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-sm font-medium text-[var(--brand-ink)]">{product.title}</span>

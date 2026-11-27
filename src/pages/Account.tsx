@@ -61,7 +61,7 @@ export default function AccountPage() {
           </span>
           <h1 className="mt-4 font-serif text-3xl font-bold text-[var(--brand-ink)]">Sign in to your account</h1>
           <p className="mx-auto mt-2 max-w-md text-sm text-[var(--brand-muted)]">
-            See your orders, saved addresses and wishlist. New here? Create a free demo account in under a minute.
+            See your orders, saved addresses and wishlist. New here? Create a free account in under a minute.
           </p>
           <div className="mt-5 flex flex-wrap justify-center gap-2">
             <Link
@@ -78,7 +78,7 @@ export default function AccountPage() {
             </Link>
           </div>
           <p className="mt-4 text-[11px] text-[var(--brand-muted)]">
-            Demo only: accounts, addresses and orders are stored in this browser.
+            Accounts, addresses and orders are stored in this browser.
           </p>
         </div>
       </div>
@@ -121,7 +121,7 @@ export default function AccountPage() {
     addPaymentMethod(paymentForm);
     setPaymentError('');
     setPaymentForm({ type: 'card', label: '', detail: '' });
-    toast('Payment method saved (demo only).');
+    toast('Payment method saved locally.');
   };
 
   return (
@@ -185,7 +185,7 @@ export default function AccountPage() {
             </form>
             {nameError && <p className="mt-1 text-xs font-semibold text-[var(--brand-danger)]">{nameError}</p>}
             <p className="mt-2 text-[11px] text-[var(--brand-muted)]">
-              Email changes are disabled in this demo. Member since {formatDate(user.createdAt)}.
+              Email changes are disabled for local accounts. Member since {formatDate(user.createdAt)}.
             </p>
           </section>
 
@@ -307,7 +307,7 @@ export default function AccountPage() {
               <Wallet className="h-4 w-4 text-[var(--brand-orange)]" aria-hidden="true" /> Payment methods
             </h2>
             {paymentMethods.length === 0 ? (
-              <p className="mt-2 text-xs text-[var(--brand-muted)]">No saved methods. Add a demo method below.</p>
+              <p className="mt-2 text-xs text-[var(--brand-muted)]">No saved methods. Add a payment method below.</p>
             ) : (
               <ul className="mt-2 space-y-2">
                 {paymentMethods.map((method) => (
@@ -348,11 +348,11 @@ export default function AccountPage() {
               </label>
               <label className="block">
                 <span className="mb-1 block text-[10px] font-semibold uppercase tracking-wide text-[var(--brand-muted)]">Detail</span>
-                <input value={paymentForm.detail} onChange={(event) => setPaymentForm((prev) => ({ ...prev, detail: event.target.value }))} className={inputClass} placeholder="Expires 12/28 · demo only" />
+                <input value={paymentForm.detail} onChange={(event) => setPaymentForm((prev) => ({ ...prev, detail: event.target.value }))} className={inputClass} placeholder="Expires 12/28 · local" />
               </label>
               {paymentError && <p className="text-[11px] font-semibold text-[var(--brand-danger)]">{paymentError}</p>}
               <Button type="submit" size="sm" variant="outline" fullWidth>
-                Add demo method
+                Add payment method
               </Button>
             </form>
             <p className="mt-2 text-[10px] leading-4 text-[var(--brand-muted)]">
@@ -416,7 +416,7 @@ export default function AccountPage() {
 
           <p className="rounded-xl bg-[var(--brand-cream)] p-3 text-[11px] leading-4 text-[var(--brand-muted)]">
             Free delivery applies over {money(site.freeDeliveryThresholdRwf)}. All prices are stored in RWF and converted
-            at fixed demonstration rates.
+            at fixed reference rates.
           </p>
         </div>
       </div>

@@ -92,7 +92,7 @@ export function ProductGallery({ images, title, discount, credit, credits }: Pro
           ref={frameRef}
           role="button"
           tabIndex={0}
-          aria-label={`Open full-size image of ${title}`}
+          aria-label={`Open full-size image of ${title}. ${discount > 0 ? `-${discount}% off ` : ''}Click or hover to zoom`}
           className="relative aspect-square cursor-zoom-in overflow-hidden rounded-2xl border border-[var(--brand-line)] bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-orange)]"
           onMouseEnter={() => setZoomed(true)}
           onMouseLeave={() => {
@@ -139,7 +139,7 @@ export function ProductGallery({ images, title, discount, credit, credits }: Pro
           </span>
         </div>
         <p className="mt-2 text-center text-[11px] text-[var(--brand-muted)]">
-          Image {active + 1} of {images.length} · {current.illustrative ? 'Illustrative artwork' : current.source === 'generated' ? 'Bundled demo artwork' : 'Product photo'}
+          Image {active + 1} of {images.length} · {current.illustrative ? 'Illustrative artwork' : current.source === 'generated' ? 'Bundled artwork' : 'Product photo'}
         </p>
         {activeCredit && <Attribution credit={activeCredit} />}
       </div>

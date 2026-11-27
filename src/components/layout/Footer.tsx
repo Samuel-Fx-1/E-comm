@@ -70,9 +70,9 @@ export function Footer() {
             </span>
           </Link>
           <p className="mt-3 max-w-xs text-sm leading-6 text-white/65">{site.tagline}</p>
-          <p className="mt-4 max-w-xs text-xs leading-5 text-white/45">
-            A demo marketplace built for learning. Products, reviews and sellers are fictional. No real payments are
-            processed.
+          <p className="mt-4 max-w-xs text-xs leading-5 text-white/70">
+            A Rwandan storefront for everyday finds. Listings, reviews and sellers are illustrative. Checkout is local
+            and no real payments are processed.
           </p>
         </div>
 
@@ -98,7 +98,7 @@ export function Footer() {
       <div className="border-t border-white/10 pb-20 lg:pb-0">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-6 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 {site.legalName}. All rights reserved.</p>
-          <ul className="flex flex-wrap gap-2" aria-label="Accepted demo payment methods">
+          <ul className="flex flex-wrap gap-2" aria-label="Accepted payment methods">
             {['VISA', 'Mastercard', 'MTN MoMo', 'Airtel Money', 'Cash on delivery'].map((label) => (
               <li key={label} className="rounded border border-white/15 px-2 py-1 text-[10px] font-semibold text-white/70">
                 {label}

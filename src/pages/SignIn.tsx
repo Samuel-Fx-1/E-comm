@@ -51,7 +51,7 @@ export default function SignInPage() {
         <div className="rounded-2xl border border-[var(--brand-line)] bg-white p-6 shadow-sm">
           <h1 className="font-serif text-3xl font-bold text-[var(--brand-ink)]">Sign in</h1>
           <p className="mt-1 text-sm text-[var(--brand-muted)]">
-            Welcome back. Your demo account lives only in this browser.
+            Welcome back. Your account lives only in this browser.
           </p>
 
           <form onSubmit={handleSubmit(onSubmit)} className="mt-5 space-y-4" noValidate>
@@ -130,21 +130,21 @@ export default function SignInPage() {
 
           <p className="mt-4 flex items-start gap-1.5 rounded-lg bg-[var(--brand-cream)] p-3 text-[11px] leading-4 text-[var(--brand-muted)]">
             <ShieldCheck className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--brand-success)]" aria-hidden="true" />
-            Demo auth: passwords are salted and SHA-256 hashed in localStorage. Do not reuse a real password.
+            Local accounts: passwords are salted and SHA-256 hashed in localStorage. Do not reuse a real password.
           </p>
         </div>
 
         <aside className="rounded-2xl bg-[var(--brand-navy)] p-6 text-white sm:p-8">
           <h2 className="font-serif text-2xl font-bold">One account, the whole marketplace.</h2>
           <ul className="mt-4 space-y-3 text-sm text-white/80">
-            <li>Track demo orders with a delivery timeline.</li>
+            <li>Track locally saved orders with a delivery timeline.</li>
             <li>Save addresses and payment methods for faster checkout.</li>
             <li>Keep a wishlist, compare list and recently viewed items.</li>
             <li>Post reviews and questions on any product.</li>
           </ul>
           <p className="mt-6 rounded-xl bg-white/10 p-3 text-xs leading-5 text-white/70">
             This project has no backend. Everything is stored locally in your browser, and clearing site data removes
-            your demo account, cart and orders.
+            your local account, cart and orders.
           </p>
         </aside>
       </div>

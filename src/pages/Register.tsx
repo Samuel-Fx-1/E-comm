@@ -175,7 +175,7 @@ export default function RegisterPage() {
 
           <p className="mt-4 flex items-start gap-1.5 rounded-lg bg-[var(--brand-cream)] p-3 text-[11px] leading-4 text-[var(--brand-muted)]">
             <Lock className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--brand-success)]" aria-hidden="true" />
-            Demo registration: credentials are salted and hashed with SHA-256 in localStorage. There is no server and no
+            Local registration: credentials are salted and hashed with SHA-256 in localStorage. There is no server and no
             email verification.
           </p>
         </div>
@@ -189,7 +189,7 @@ export default function RegisterPage() {
             <li>Get recommendations based on what you browse.</li>
           </ul>
           <p className="mt-6 rounded-xl bg-white/10 p-3 text-xs leading-5 text-white/70">
-            Accounts are for demonstration only. No real personal data should be entered, and no credentials leave this
+            Accounts are stored locally. Do not enter real personal data, and no credentials leave this
             browser.
           </p>
         </aside>

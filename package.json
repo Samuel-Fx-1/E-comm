@@ -38,13 +38,13 @@
     "motion": "^12.23.24",
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
-    "react-helmet-async": "^3.2.0",
     "react-hook-form": "^7.92.0",
     "react-router-dom": "^7.18.7",
     "vite": "^8.3.0",
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.1",
     "@playwright/test": "^1.65.1",
     "@types/express": "^4.17.21",
     "@types/node": "^22.14.0",

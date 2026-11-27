@@ -14,7 +14,7 @@ export const site = {
   logoMark: 'S',
   tagline: 'Everyday finds, delivered.',
   description:
-    'Soko is a demo marketplace for Gen Z and Gen Alpha picks across tech, streetwear, skincare, lifestyle and kids essentials.',
+    'Soko is a Rwandan marketplace for Gen Z and Gen Alpha picks across tech, streetwear, skincare, lifestyle and kids essentials.',
   url: 'https://soko.example.com',
   supportEmail: 'help@soko.example.com',
   supportPhone: '+250 788 000 000',
@@ -22,13 +22,13 @@ export const site = {
     navy: '#0C1E36',
     navyDeep: '#071426',
     navySoft: '#16304F',
-    orange: '#F97316',
-    orangeDark: '#EA580C',
+    orange: '#C2410C',
+    orangeDark: '#9A3412',
     yellow: '#FFC94A',
     yellowDark: '#F0B429',
     cream: '#F6F3EC',
     ink: '#0F172A',
-    muted: '#64748B',
+    muted: '#475569',
     line: '#E2E8F0',
     success: '#0F766E',
     danger: '#B91C1C',
@@ -58,7 +58,7 @@ export interface Country {
   name: string;
   flag: string;
   currency: string;
-  /** Local currency units per 1 USD (demo rates). */
+  /** Local currency units per 1 USD (display-only reference rates). */
   rate: number;
   decimals: number;
   /** Round displayed prices to this step, e.g. 100 RWF. */
@@ -76,7 +76,7 @@ export const countries: Country[] = [
     currency: 'RWF',
     rate: RWF_PER_USD,
     decimals: 0,
-    rounding: 100,
+    rounding: 1,
     deliveryOffset: 2,
     cities: ['Kigali', 'Huye', 'Musanze', 'Rubavu', 'Muhanga', 'Rwamagana', 'Nyagatare'],
   },

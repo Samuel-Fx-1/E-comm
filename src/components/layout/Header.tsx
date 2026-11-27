@@ -79,7 +79,7 @@ export function Header({ onOpenAll }: HeaderProps) {
           <Link
             to="/cart"
             className="relative flex shrink-0 items-end gap-1 rounded border border-transparent px-2 py-1.5 hover:border-white/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-yellow)]"
-            aria-label={`${t('cart')}, ${cartCount} items`}
+            aria-label={`${cartCount} ${t('cart')}, ${cartCount} items`}
           >
             <span className="relative">
               <ShoppingCart className="h-7 w-7" aria-hidden="true" />
@@ -87,6 +87,7 @@ export function Header({ onOpenAll }: HeaderProps) {
                 {cartCount}
               </span>
             </span>
+            {' '}
             <span className="hidden text-sm font-bold sm:block">{t('cart')}</span>
           </Link>
         </div>

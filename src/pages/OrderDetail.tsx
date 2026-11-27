@@ -56,7 +56,7 @@ export default function OrderDetailPage() {
           <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--brand-orange)]">Order details</p>
           <h1 className="font-serif text-3xl font-bold text-[var(--brand-ink)] sm:text-4xl">{order.id}</h1>
           <p className="mt-1 text-sm text-[var(--brand-muted)]">
-            Placed {formatDate(order.createdAt, language)} · {order.sample ? 'Sample order' : 'Demo order'}
+            Placed {formatDate(order.createdAt, language)}
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -156,7 +156,7 @@ export default function OrderDetailPage() {
               <Wallet className="h-4 w-4 text-[var(--brand-orange)]" aria-hidden="true" /> Payment
             </h2>
             <p className="mt-2 text-sm text-[var(--brand-muted)]">{order.paymentLabel}</p>
-            <p className="text-[11px] text-[var(--brand-muted)]">Simulated payment · demo only</p>
+            <p className="text-[11px] text-[var(--brand-muted)]">Payment recorded locally</p>
 
             <dl className="mt-3 space-y-2 border-t border-[var(--brand-line)] pt-3 text-sm">
               <div className="flex justify-between">
