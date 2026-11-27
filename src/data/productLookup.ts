@@ -8,7 +8,6 @@
  * calls are made by this module.
  */
 import type { CartLine, Product } from '../types';
-import { getProduct, getProductById } from './products';
 
 const snapshots = new Map<string, Product>();
 
@@ -23,14 +22,14 @@ export function rememberProducts(list: Product[]): void {
   list.forEach(rememberProduct);
 }
 
-/** Resolve by id or slug from the snapshot cache, then from the bundled data. */
+/** Resolve by id or slug from products registered by the API or the lazy catalog import. */
 export function resolveProduct(idOrSlug: string): Product | undefined {
-  return snapshots.get(idOrSlug) ?? getProductById(idOrSlug) ?? getProduct(idOrSlug);
+  return snapshots.get(idOrSlug);
 }
 
 /**
  * Cart lines carry their own snapshot when possible. The stored snapshot wins,
- * then the session cache, then the local bundle.
+ * then the session cache.
  */
 export function resolveLineProduct(
   line: Pick<CartLine, 'productId' | 'snapshot'>

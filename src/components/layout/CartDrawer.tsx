@@ -2,13 +2,11 @@ import { Link } from 'react-router-dom';
 import { Bookmark, ShoppingCart, Trash2, Truck } from 'lucide-react';
 import type { Product } from '../../types';
 import { resolveLineProduct } from '../../data/productLookup';
-import { imagesFor } from '../../data/imageMap';
 import { site } from '../../config/site';
 import { useStore } from '../../context/StoreContext';
 import { useSite } from '../../context/SiteContext';
 import { Drawer } from '../ui/Modal';
 import { QuantitySelect } from '../ui/QuantitySelect';
-import { ImageWithFallback } from '../ui/ImageWithFallback';
 
 export function CartDrawer() {
   const { drawerOpen, setDrawerOpen, cart, updateQty, removeFromCart, saveForLater, cartSubtotal, cartCount } = useStore();
@@ -86,10 +84,14 @@ export function CartDrawer() {
           {lines.map(({ line, product }) => (
             <li key={product.id} className="flex gap-3 py-4 first:pt-0">
               <Link to={`/product/${product.slug}`} onClick={() => setDrawerOpen(false)} className="shrink-0">
-                <ImageWithFallback
-                  src={imagesFor(product)[0]}
+                <img
+                  src={product.images?.[0] ?? '/images/placeholder.svg'}
                   alt={product.title}
-                  className="h-20 w-20 rounded-lg object-cover"
+                  loading="lazy"
+                  className="h-20 w-20 rounded-lg bg-[var(--brand-cream)] object-cover"
+                  onError={(event) => {
+                    event.currentTarget.src = '/images/placeholder.svg';
+                  }}
                 />
               </Link>
               <div className="min-w-0 flex-1">

@@ -7,6 +7,7 @@ import {
   resolveProduct,
 } from '../data/productLookup';
 import { site } from '../config/site';
+import { fetchProducts } from '../data/api';
 import { readJSON, storageKeys, writeJSON } from '../lib/storage';
 import { useToast } from './ToastContext';
 
@@ -57,6 +58,20 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const [reviews, setReviews] = useState<Record<string, Review[]>>(() => readJSON(storageKeys.reviews, {}));
   const [questions, setQuestions] = useState<Record<string, Question[]>>(() => readJSON(storageKeys.questions, {}));
   const [drawerOpen, setDrawerOpen] = useState(false);
+
+  useEffect(() => {
+    // Keep the 100-product catalog out of the initial bundle; the API is the
+    // runtime source for resolving saved cart/wishlist IDs after navigation.
+    const controller = new AbortController();
+    Promise.all(
+      [1, 2, 3].map((page) => fetchProducts({ pageSize: 48, page }, controller.signal))
+    )
+      .then((pages) => pages.forEach((page) => page.items.forEach(cacheProduct)))
+      .catch(() => {
+        // Offline: stored product snapshots still resolve saved items.
+      });
+    return () => controller.abort();
+  }, []);
 
   useEffect(() => writeJSON(storageKeys.cart, cart), [cart]);
   useEffect(() => writeJSON(storageKeys.saved, savedForLater), [savedForLater]);
