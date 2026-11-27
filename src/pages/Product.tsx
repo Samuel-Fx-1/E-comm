@@ -1,14 +1,16 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import {
-  BadgeCheck, Check, ChevronRight, GitCompareArrows, Heart, MapPin, RotateCcw, ShieldCheck, ShoppingCart, Truck,
+  BadgeCheck, Check, ChevronRight, GitCompareArrows, Heart, MapPin, RotateCcw, ShieldCheck, ShoppingCart, Sparkles,
+  TrendingUp, Truck,
 } from 'lucide-react';
 import type { Product } from '../types';
+import { site } from '../config/site';
 import { getProduct, products } from '../data/products';
 import { apiAvailable, fetchProductBySlug, fetchRelated } from '../data/api';
 import { useApiData } from '../hooks/useApiData';
 import { getCategory } from '../data/categories';
-import { creditFor, resolveImages } from '../data/imageMap';
+import { creditsFor, resolveImages } from '../data/imageMap';
 import { relatedProducts } from '../lib/search';
 import { deliveryDateRange, classNames } from '../lib/format';
 import { useStore } from '../context/StoreContext';
@@ -59,7 +61,7 @@ function BuyBox({ product }: BuyBoxProps) {
       </button>
 
       <p className="mt-3 text-lg font-bold text-[var(--brand-success)]">
-        {product.price >= 35 ? 'FREE delivery' : 'Delivery from ' + money(4.99)}
+        {product.price >= site.freeDeliveryThresholdRwf ? 'FREE delivery' : 'Delivery from ' + money(site.standardShippingRwf)}
       </p>
       <p className="text-sm text-[var(--brand-ink)]">
         Arrives <strong>{deliveryDateRange(product.deliveryDays, countryCode, false, language)}</strong>
@@ -207,6 +209,7 @@ export default function ProductPage() {
   const category = getCategory(product.category);
   const alsoViewed = relatedState.data.filter((entry) => !recent.includes(entry.id)).slice(0, 8);
   const images = resolveImages(product);
+  const credits = creditsFor(product);
   const delivery = deliveryDateRange(product.deliveryDays, countryCode, false, language);
 
   return (
@@ -215,7 +218,7 @@ export default function ProductPage() {
         title={product.title}
         description={`${product.bullets[0]} — ${product.brand}. ${product.rating} out of 5 from ${product.reviewCount} reviews.`}
         path={`/product/${product.slug}`}
-        image={images[0].src}
+        image={images[0]?.src}
       />
 
       <Breadcrumbs
@@ -233,7 +236,7 @@ export default function ProductPage() {
               images={images}
               title={product.name}
               discount={product.discount}
-              credit={creditFor(product)}
+              credits={credits}
             />
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--brand-muted)]">
@@ -244,6 +247,28 @@ export default function ProductPage() {
               <h1 className="mt-1 font-serif text-2xl font-bold leading-tight text-[var(--brand-ink)] sm:text-3xl">
                 {product.title}
               </h1>
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {product.isBestSeller && (
+                  <span className="inline-flex items-center gap-1 rounded bg-[var(--brand-yellow)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[var(--brand-navy-deep)]">
+                    <BadgeCheck className="h-3 w-3" aria-hidden="true" /> Best seller
+                  </span>
+                )}
+                {product.isTrending && (
+                  <span className="inline-flex items-center gap-1 rounded bg-[var(--brand-orange)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
+                    <TrendingUp className="h-3 w-3" aria-hidden="true" /> Trending
+                  </span>
+                )}
+                {product.isGenZPick && (
+                  <span className="inline-flex items-center gap-1 rounded bg-[var(--brand-navy-deep)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
+                    <Sparkles className="h-3 w-3" aria-hidden="true" /> Gen Z Pick
+                  </span>
+                )}
+                {product.isViral && (
+                  <span className="inline-flex items-center gap-1 rounded bg-fuchsia-600 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
+                    <Sparkles className="h-3 w-3" aria-hidden="true" /> Viral
+                  </span>
+                )}
+              </div>
               <p className="mt-2 text-sm leading-6 text-[var(--brand-muted)]">{product.shortDescription}</p>
               <div className="mt-2 flex flex-wrap items-center gap-2">
                 <Rating rating={product.rating} size="md" showNumber />

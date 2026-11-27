@@ -1,0 +1,2129 @@
+{
+  "category": "lifestyle-aesthetic-essentials",
+  "name": "Lifestyle & Aesthetic Essentials",
+  "products": [
+    {
+      "slug": "insulated-stainless-steel-flip-straw-water-bottle-32oz",
+      "name": "Insulated Stainless Steel Flip-Straw Water Bottle (32oz)",
+      "brand": "Lumo",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Lifestyle & Aesthetic Essentials",
+      "price": 38900,
+      "listPrice": 50500,
+      "rating": 4.8,
+      "reviewCount": 10420,
+      "stock": 84,
+      "shortDescription": "An insulated flip-straw bottle that keeps drinks cold for hours and fits most cup holders.",
+      "bullets": [
+        "Double-wall insulation keeps drinks cold for up to 24 hours",
+        "A flip straw makes sipping quick and easy",
+        "The 32oz size fits most cup holders and day bags"
+      ],
+      "specs": {
+        "Capacity": "32 oz / 950 ml",
+        "Material": "Stainless steel",
+        "Insulation": "Double wall",
+        "Care": "Hand wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Cream"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Black"
+        }
+      ],
+      "seller": "Lumo Official",
+      "deliveryDays": 2,
+      "addedAt": "2026-11-21",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": true,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "insulated stainless steel water bottle",
+        "flip straw tumbler product photo",
+        "travel water bottle minimal",
+        "steel bottle lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "3737800",
+          "url": "https://images.pexels.com/photos/3737800/pexels-photo-3737800.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Hands holding black and white insulated water bottles",
+          "photographer": "cottonbro studio",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/3737800/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "10035322",
+          "url": "https://images.pexels.com/photos/10035322/pexels-photo-10035322.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Red and Blue Bottle on Snow",
+          "photographer": "Natalia García Prieto",
+          "photographerUrl": "https://www.pexels.com/@natalia-garcia-prieto-62947227/",
+          "photoUrl": "https://www.pexels.com/photo/red-and-blue-bottle-on-snow-10035322/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3648,
+          "height": 5472
+        },
+        {
+          "source": "pexels",
+          "photoId": "7262742",
+          "url": "https://images.pexels.com/photos/7262742/pexels-photo-7262742.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Person Holding a Tumbler and a Biodegradable Straw",
+          "photographer": "Sarah  Chai",
+          "photographerUrl": "https://www.pexels.com/@sarah-chai/",
+          "photoUrl": "https://www.pexels.com/photo/a-person-holding-a-tumbler-and-a-biodegradable-straw-7262742/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3360,
+          "height": 5040
+        },
+        {
+          "source": "pexels",
+          "photoId": "9263528",
+          "url": "https://images.pexels.com/photos/9263528/pexels-photo-9263528.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Photo of a Person's Hand Holding a Glass Bottle with Water",
+          "photographer": "REFARGOTOHP",
+          "photographerUrl": "https://www.pexels.com/@refargotohp-83494488/",
+          "photoUrl": "https://www.pexels.com/photo/photo-of-a-person-s-hand-holding-a-glass-bottle-with-water-9263528/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 5583,
+          "height": 8364
+        }
+      ]
+    },
+    {
+      "slug": "quilted-puffer-makeup-tech-organizer-bag",
+      "name": "Quilted Puffer Makeup & Tech Organizer Bag",
+      "brand": "Nordika",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Lifestyle & Aesthetic Essentials",
+      "price": 29900,
+      "listPrice": 29900,
+      "rating": 4.5,
+      "reviewCount": 2740,
+      "stock": 67,
+      "shortDescription": "A quilted puffer organizer with padded sections for makeup, tech and everyday essentials on the go.",
+      "bullets": [
+        "Padded compartments keep bottles and cables separated",
+        "The quilted shell wipes clean after daily use",
+        "A roomy interior still fits in most tote bags"
+      ],
+      "specs": {
+        "Material": "Quilted polyester",
+        "Closure": "Zip",
+        "Compartments": "3",
+        "Care": "Wipe clean"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Quilted Black"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Blush"
+        }
+      ],
+      "seller": "Nordika Official",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-14",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "quilted puffer organizer bag",
+        "makeup bag product photo",
+        "tech organizer pouch",
+        "padded travel bag"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "6624063",
+          "url": "https://images.pexels.com/photos/6624063/pexels-photo-6624063.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Makeup pouch with brushes on a marble background",
+          "photographer": "Nadia Dolce",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/6624063/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "9511322",
+          "url": "https://images.pexels.com/photos/9511322/pexels-photo-9511322.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Cute Girl in White Puffer Jacket and Gray Knit Cap",
+          "photographer": "Ron Lach",
+          "photographerUrl": "https://www.pexels.com/@ron-lach/",
+          "photoUrl": "https://www.pexels.com/photo/cute-girl-in-white-puffer-jacket-and-gray-knit-cap-9511322/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "28959840",
+          "url": "https://images.pexels.com/photos/28959840/pexels-photo-28959840.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Elegant Makeup Essentials with Cosmetic Bag",
+          "photographer": "Nana  Petrova",
+          "photographerUrl": "https://www.pexels.com/@nana-petrova-1460873293/",
+          "photoUrl": "https://www.pexels.com/photo/elegant-makeup-essentials-with-cosmetic-bag-28959840/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "source": "pexels",
+          "photoId": "10104605",
+          "url": "https://images.pexels.com/photos/10104605/pexels-photo-10104605.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Gadget on Top of Pouch",
+          "photographer": "I'm Zion",
+          "photographerUrl": "https://www.pexels.com/@zion/",
+          "photoUrl": "https://www.pexels.com/photo/gadget-on-top-of-pouch-10104605/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4452,
+          "height": 5565
+        }
+      ]
+    },
+    {
+      "slug": "portable-usb-c-mini-smoothie-blender",
+      "name": "Portable USB-C Mini Smoothie Blender",
+      "brand": "Lumo",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Lifestyle & Aesthetic Essentials",
+      "price": 35900,
+      "listPrice": 45500,
+      "rating": 4.3,
+      "reviewCount": 3670,
+      "stock": 74,
+      "shortDescription": "A portable USB-C mini blender that whips up smoothies in a travel-friendly 400ml cup anywhere.",
+      "bullets": [
+        "A 400ml cup blends and travels in one piece",
+        "USB-C recharging keeps it ready for the gym or desk",
+        "A quick pulse handles fruit, greens and ice"
+      ],
+      "specs": {
+        "Capacity": "400 ml",
+        "Charging": "USB-C",
+        "Blades": "4 stainless blades",
+        "Battery": "2000 mAh"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Mint"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Black"
+        }
+      ],
+      "seller": "Lumo Official",
+      "deliveryDays": 2,
+      "addedAt": "2026-11-11",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "portable mini blender",
+        "USB-C smoothie blender",
+        "travel blender product photo",
+        "smoothie blender lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7936983",
+          "url": "https://images.pexels.com/photos/7936983/pexels-photo-7936983.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Hands using a blender with bananas and greens",
+          "photographer": "Nicola Barts",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/7936983/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "30238394",
+          "url": "https://images.pexels.com/photos/30238394/pexels-photo-30238394.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Stainless Steel Food Processor on Wooden Surface",
+          "photographer": "Mohammad abasi",
+          "photographerUrl": "https://www.pexels.com/@mohammadabbasi/",
+          "photoUrl": "https://www.pexels.com/photo/stainless-steel-food-processor-on-wooden-surface-30238394/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3648,
+          "height": 5472
+        },
+        {
+          "source": "pexels",
+          "photoId": "27861734",
+          "url": "https://images.pexels.com/photos/27861734/pexels-photo-27861734.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A blender with a cucumber and other food in it",
+          "photographer": "Nastia Ligrain",
+          "photographerUrl": "https://www.pexels.com/@nastia-ligrain-369190782/",
+          "photoUrl": "https://www.pexels.com/photo/a-blender-with-a-cucumber-and-other-food-in-it-27861734/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3071,
+          "height": 4095
+        },
+        {
+          "source": "pexels",
+          "photoId": "37283263",
+          "url": "https://images.pexels.com/photos/37283263/pexels-photo-37283263.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Healthy Green Smoothie Ingredients in Blender",
+          "photographer": "Natalie Bond",
+          "photographerUrl": "https://www.pexels.com/@natalie-bond-320378/",
+          "photoUrl": "https://www.pexels.com/photo/healthy-green-smoothie-ingredients-in-blender-37283263/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3830,
+          "height": 5745
+        }
+      ]
+    },
+    {
+      "slug": "ceramic-pour-over-coffee-set",
+      "name": "Hushline Pour-Over Set",
+      "brand": "Hushline",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Kitchenware",
+      "price": 54800,
+      "listPrice": 64000,
+      "rating": 4.8,
+      "reviewCount": 167,
+      "stock": 12,
+      "shortDescription": "A matte ceramic dripper, carafe and two cups make a slow morning brew feel deliberate without taking over the counter.",
+      "bullets": [
+        "Dripper fits standard paper filters.",
+        "Carafe holds 600 ml for two mugs.",
+        "Dishwasher safe on the top rack."
+      ],
+      "specs": {
+        "Material": "stoneware",
+        "Carafe capacity": "600 ml",
+        "Filter size": "number 2",
+        "Finish": "matte glaze"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Clay, Fog"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "4 piece"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": true,
+        "isDeal": true,
+        "isTrending": true,
+        "isGenZPick": false,
+        "isViral": true
+      },
+      "imageQueries": [
+        "ceramic pour over set",
+        "coffee dripper product photo",
+        "morning coffee ritual lifestyle",
+        "stoneware carafe and cups"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "8004596",
+          "url": "https://images.pexels.com/photos/8004596/pexels-photo-8004596.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Hand Pouring Hot Water on a Cup",
+          "photographer": "Darina Belonogova",
+          "photographerUrl": "https://www.pexels.com/@darina-belonogova/",
+          "photoUrl": "https://www.pexels.com/photo/a-hand-pouring-hot-water-on-a-cup-8004596/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2333,
+          "height": 3500
+        },
+        {
+          "source": "pexels",
+          "photoId": "6775603",
+          "url": "https://images.pexels.com/photos/6775603/pexels-photo-6775603.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Coffee Brewing in a Ceramic Dripper",
+          "photographer": "Q. Hưng Phạm",
+          "photographerUrl": "https://www.pexels.com/@qhung999/",
+          "photoUrl": "https://www.pexels.com/photo/coffee-brewing-in-a-ceramic-dripper-6775603/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2319,
+          "height": 3146
+        },
+        {
+          "source": "pexels",
+          "photoId": "15923911",
+          "url": "https://images.pexels.com/photos/15923911/pexels-photo-15923911.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Cup of Coffee in Hand",
+          "photographer": "Алеся Горбунова",
+          "photographerUrl": "https://www.pexels.com/@84327456/",
+          "photoUrl": "https://www.pexels.com/photo/cup-of-coffee-in-hand-15923911/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1988,
+          "height": 3534
+        },
+        {
+          "source": "pexels",
+          "photoId": "11889246",
+          "url": "https://images.pexels.com/photos/11889246/pexels-photo-11889246.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Photo of Brown Ceramic Cups",
+          "photographer": "Andreea Ch",
+          "photographerUrl": "https://www.pexels.com/@andreea-ch-371539/",
+          "photoUrl": "https://www.pexels.com/photo/photo-of-brown-ceramic-cups-11889246/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        }
+      ]
+    },
+    {
+      "slug": "washed-linen-table-runner",
+      "name": "DailyLoom Linen Runner",
+      "brand": "DailyLoom",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Home Textiles",
+      "price": 32600,
+      "listPrice": 38000,
+      "rating": 4.6,
+      "reviewCount": 121,
+      "stock": 20,
+      "shortDescription": "A washed linen runner softens a dining table and drapes neatly over a console without stiff folds.",
+      "bullets": [
+        "Fabric relaxes with every wash.",
+        "Hem is stitched for a clean edge.",
+        "Fits a four to six seat table."
+      ],
+      "specs": {
+        "Material": "washed linen",
+        "Length": "180 cm",
+        "Width": "34 cm",
+        "Care": "machine wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Oat, Olive"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "180 cm"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "washed linen table runner",
+        "linen table setting product photo",
+        "neutral dining table styling",
+        "natural fabric runner"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "34232560",
+          "url": "https://images.pexels.com/photos/34232560/pexels-photo-34232560.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Cozy Table Setting with Striped Table Runner",
+          "photographer": "Марина Кулясова",
+          "photographerUrl": "https://www.pexels.com/@2156489496/",
+          "photoUrl": "https://www.pexels.com/photo/cozy-table-setting-with-striped-table-runner-34232560/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "source": "pexels",
+          "photoId": "8112792",
+          "url": "https://images.pexels.com/photos/8112792/pexels-photo-8112792.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Table Napkins on a Plate",
+          "photographer": "Rachel Claire",
+          "photographerUrl": "https://www.pexels.com/@rachel-claire/",
+          "photoUrl": "https://www.pexels.com/photo/table-napkins-on-a-plate-8112792/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
+        },
+        {
+          "source": "pexels",
+          "photoId": "27459702",
+          "url": "https://images.pexels.com/photos/27459702/pexels-photo-27459702.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A white dining table with a wooden chair and a picture on the wall",
+          "photographer": "Martin Lang",
+          "photographerUrl": "https://www.pexels.com/@martin-lang-1604991777/",
+          "photoUrl": "https://www.pexels.com/photo/a-white-dining-table-with-a-wooden-chair-and-a-picture-on-the-wall-27459702/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2000,
+          "height": 3000
+        },
+        {
+          "source": "pexels",
+          "photoId": "39527137",
+          "url": "https://images.pexels.com/photos/39527137/pexels-photo-39527137.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Elegant Wedding Table Setting with Satin Ribbon",
+          "photographer": "Eugenia Remark",
+          "photographerUrl": "https://www.pexels.com/@eugenia-remark-5767088/",
+          "photoUrl": "https://www.pexels.com/photo/elegant-wedding-table-setting-with-satin-ribbon-39527137/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3024,
+          "height": 4032
+        }
+      ]
+    },
+    {
+      "slug": "soy-wax-candle-glass-jar",
+      "name": "GlowNest Amber Candle",
+      "brand": "GlowNest",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Home Fragrance",
+      "price": 21900,
+      "listPrice": 26000,
+      "rating": 4.7,
+      "reviewCount": 289,
+      "stock": 25,
+      "shortDescription": "A soy wax candle in a reusable glass jar fills a room with a soft amber scent and a warm glow for quiet evenings.",
+      "bullets": [
+        "Burn time reaches roughly 35 hours.",
+        "Cotton wick keeps the flame steady.",
+        "Jar rinses out for pens or spices."
+      ],
+      "specs": {
+        "Wax": "soy blend",
+        "Burn time": "35 hours",
+        "Jar": "reusable glass",
+        "Scent": "amber and cedar"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Amber"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "180 g"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": true,
+        "isGenZPick": false,
+        "isViral": true
+      },
+      "imageQueries": [
+        "soy candle in glass jar",
+        "amber candle product photo",
+        "cozy home candle lifestyle",
+        "minimal candle on shelf"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "20179858",
+          "url": "https://images.pexels.com/photos/20179858/pexels-photo-20179858.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Jars of Fruit Jam",
+          "photographer": "Кристина Чехова",
+          "photographerUrl": "https://www.pexels.com/@985235800/",
+          "photoUrl": "https://www.pexels.com/photo/jars-of-fruit-jam-20179858/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "source": "pexels",
+          "photoId": "7615885",
+          "url": "https://images.pexels.com/photos/7615885/pexels-photo-7615885.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Natural oil in glass bottle placed near aroma candle",
+          "photographer": "Los Muertos Crew",
+          "photographerUrl": "https://www.pexels.com/@cristian-rojas/",
+          "photoUrl": "https://www.pexels.com/photo/natural-oil-in-glass-bottle-placed-near-aroma-candle-7615885/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 5304,
+          "height": 7952
+        },
+        {
+          "source": "pexels",
+          "photoId": "27969186",
+          "url": "https://images.pexels.com/photos/27969186/pexels-photo-27969186.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A woman holding a jar of a candle",
+          "photographer": "Valeriia Harbuz",
+          "photographerUrl": "https://www.pexels.com/@valeriia-harbuz-2161259/",
+          "photoUrl": "https://www.pexels.com/photo/a-woman-holding-a-jar-of-a-candle-27969186/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "7195042",
+          "url": "https://images.pexels.com/photos/7195042/pexels-photo-7195042.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Minimalistic Home Decor and Candle Holder on a White Shelf",
+          "photographer": "kaboompics",
+          "photographerUrl": "https://www.pexels.com/@karola-g/",
+          "photoUrl": "https://www.pexels.com/photo/minimalistic-home-decor-and-candle-holder-on-a-white-shelf-7195042/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4480,
+          "height": 6720
+        }
+      ]
+    },
+    {
+      "slug": "woven-storage-baskets-set-3",
+      "name": "Foldwell Woven Baskets",
+      "brand": "Foldwell",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Storage",
+      "price": 43800,
+      "listPrice": 51000,
+      "rating": 4.5,
+      "reviewCount": 96,
+      "stock": 11,
+      "shortDescription": "Three woven baskets corral blankets, toys and laundry while adding texture to a shelf or a corner of the bedroom.",
+      "bullets": [
+        "Handles make them easy to move.",
+        "Liners wipe clean.",
+        "Sizes nest for compact storage."
+      ],
+      "specs": {
+        "Material": "seagrass",
+        "Set count": "3",
+        "Large size": "38 cm",
+        "Lining": "removable"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Natural"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "Set of 3"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": true,
+        "isDeal": false,
+        "isTrending": true,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "woven storage baskets",
+        "seagrass basket product photo",
+        "neat shelves lifestyle",
+        "neutral home storage baskets"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "40365190",
+          "url": "https://images.pexels.com/photos/40365190/pexels-photo-40365190.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Rustic Display of Handwoven Baskets in Market",
+          "photographer": "Mehmet Turgut  Kirkgoz",
+          "photographerUrl": "https://www.pexels.com/@tkirkgoz/",
+          "photoUrl": "https://www.pexels.com/photo/rustic-display-of-handwoven-baskets-in-market-40365190/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2560,
+          "height": 3840
+        },
+        {
+          "source": "pexels",
+          "photoId": "5716215",
+          "url": "https://images.pexels.com/photos/5716215/pexels-photo-5716215.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Choice of Wicker Baskets",
+          "photographer": "Ali Camacho Adarve",
+          "photographerUrl": "https://www.pexels.com/@ali-camacho-adarve-2954347/",
+          "photoUrl": "https://www.pexels.com/photo/choice-of-wicker-baskets-5716215/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3072,
+          "height": 4608
+        },
+        {
+          "source": "pexels",
+          "photoId": "7703311",
+          "url": "https://images.pexels.com/photos/7703311/pexels-photo-7703311.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Person Wiping a Shelf with a Cloth",
+          "photographer": "cottonbro studio",
+          "photographerUrl": "https://www.pexels.com/@cottonbro/",
+          "photoUrl": "https://www.pexels.com/photo/a-person-wiping-a-shelf-with-a-cloth-7703311/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3870,
+          "height": 5805
+        },
+        {
+          "source": "pexels",
+          "photoId": "15625996",
+          "url": "https://images.pexels.com/photos/15625996/pexels-photo-15625996.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Bag with Fabrics near Plant at Home",
+          "photographer": "Seyd Designer",
+          "photographerUrl": "https://www.pexels.com/@seyd-designer-461424114/",
+          "photoUrl": "https://www.pexels.com/photo/bag-with-fabrics-near-plant-at-home-15625996/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        }
+      ]
+    },
+    {
+      "slug": "stoneware-mug-set-of-4",
+      "name": "TerraSip Stoneware Mugs",
+      "brand": "TerraSip",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Kitchenware",
+      "price": 39400,
+      "listPrice": 46000,
+      "rating": 4.7,
+      "reviewCount": 205,
+      "stock": 18,
+      "shortDescription": "Four heavy stoneware mugs hold tea or coffee with a comfortable handle and a glaze that feels good in the hand.",
+      "bullets": [
+        "Each cup holds 350 ml.",
+        "Stacking shape saves cupboard space.",
+        "Safe for dishwasher and microwave."
+      ],
+      "specs": {
+        "Material": "stoneware",
+        "Capacity": "350 ml",
+        "Set count": "4",
+        "Care": "dishwasher safe"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Sand, Charcoal"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "Set of 4"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "stoneware mugs product photo",
+        "ceramic mug set flat lay",
+        "kitchen cupboard styling",
+        "handmade looking coffee mugs"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "27682102",
+          "url": "https://images.pexels.com/photos/27682102/pexels-photo-27682102.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A shelf with many different types of mugs on it",
+          "photographer": "Dmitry Ovsyannikov",
+          "photographerUrl": "https://www.pexels.com/@dmitry-ovsyannikov-271243380/",
+          "photoUrl": "https://www.pexels.com/photo/a-shelf-with-many-different-types-of-mugs-on-it-27682102/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "15124457",
+          "url": "https://images.pexels.com/photos/15124457/pexels-photo-15124457.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Pattern of White Cups",
+          "photographer": "Carlo Obrien",
+          "photographerUrl": "https://www.pexels.com/@carlo-obrien-402486657/",
+          "photoUrl": "https://www.pexels.com/photo/pattern-of-white-cups-15124457/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4130,
+          "height": 5782
+        },
+        {
+          "source": "pexels",
+          "photoId": "8112354",
+          "url": "https://images.pexels.com/photos/8112354/pexels-photo-8112354.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Rustic Cupboard in Home Interior",
+          "photographer": "Rachel Claire",
+          "photographerUrl": "https://www.pexels.com/@rachel-claire/",
+          "photoUrl": "https://www.pexels.com/photo/rustic-cupboard-in-home-interior-8112354/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
+        },
+        {
+          "source": "pexels",
+          "photoId": "6114598",
+          "url": "https://images.pexels.com/photos/6114598/pexels-photo-6114598.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Sale Sign Beside Cups on a Wooden Shelf",
+          "photographer": "cottonbro studio",
+          "photographerUrl": "https://www.pexels.com/@cottonbro/",
+          "photoUrl": "https://www.pexels.com/photo/a-sale-sign-beside-cups-on-a-wooden-shelf-6114598/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2333,
+          "height": 3500
+        }
+      ]
+    },
+    {
+      "slug": "waffle-cotton-bath-robe",
+      "name": "Hushline Waffle Robe",
+      "brand": "Hushline",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Bath and Body",
+      "price": 64200,
+      "listPrice": 75000,
+      "rating": 4.8,
+      "reviewCount": 88,
+      "stock": 9,
+      "shortDescription": "A waffle cotton robe feels light after a shower and folds small enough for a weekend bag or guest shelf.",
+      "bullets": [
+        "Belt ties at the waist.",
+        "Two pockets hold small essentials.",
+        "Machine washes without losing texture."
+      ],
+      "specs": {
+        "Material": "cotton waffle",
+        "Length": "110 cm",
+        "Pockets": "2",
+        "Care": "machine wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "White, Stone"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "S, M, L"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": true,
+        "isGenZPick": false,
+        "isViral": true
+      },
+      "imageQueries": [
+        "waffle bath robe",
+        "cotton robe product photo",
+        "spa morning lifestyle",
+        "minimal robe hanging"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "36482980",
+          "url": "https://images.pexels.com/photos/36482980/pexels-photo-36482980.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Luxurious Spa Robe and Towel at The Wellness Club",
+          "photographer": "Taiye Salawu",
+          "photographerUrl": "https://www.pexels.com/@taiyesalawu/",
+          "photoUrl": "https://www.pexels.com/photo/luxurious-spa-robe-and-towel-at-the-wellness-club-36482980/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2624,
+          "height": 3936
+        },
+        {
+          "source": "pexels",
+          "photoId": "10130828",
+          "url": "https://images.pexels.com/photos/10130828/pexels-photo-10130828.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Folded Pajama Put Down",
+          "photographer": "Ron Lach",
+          "photographerUrl": "https://www.pexels.com/@ron-lach/",
+          "photoUrl": "https://www.pexels.com/photo/folded-pajama-put-down-10130828/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "17720243",
+          "url": "https://images.pexels.com/photos/17720243/pexels-photo-17720243.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman in Bathrobe with Coffee Cup in Hand",
+          "photographer": "Dmitriy Steinke",
+          "photographerUrl": "https://www.pexels.com/@dmitriy-steinke-559643503/",
+          "photoUrl": "https://www.pexels.com/photo/woman-in-bathrobe-with-coffee-cup-in-hand-17720243/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4572,
+          "height": 4572
+        },
+        {
+          "source": "pexels",
+          "photoId": "17665257",
+          "url": "https://images.pexels.com/photos/17665257/pexels-photo-17665257.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman in White Clothes Standing near Dress on Hanger",
+          "photographer": "Samet  Korkmaz",
+          "photographerUrl": "https://www.pexels.com/@samet-korkmaz-267675092/",
+          "photoUrl": "https://www.pexels.com/photo/woman-in-white-clothes-standing-near-dress-on-hanger-17665257/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 5152,
+          "height": 7728
+        }
+      ]
+    },
+    {
+      "slug": "minimal-wall-clock",
+      "name": "Hushline Quiet Wall Clock",
+      "brand": "Hushline",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Home Decor",
+      "price": 47500,
+      "listPrice": 55000,
+      "rating": 4.5,
+      "reviewCount": 74,
+      "stock": 13,
+      "shortDescription": "A silent wall clock keeps a room calm with a slim frame, readable hands and no ticking to interrupt a work call.",
+      "bullets": [
+        "Sweep movement runs quietly.",
+        "Frame mounts in minutes.",
+        "Readable from across the room."
+      ],
+      "specs": {
+        "Movement": "silent sweep",
+        "Diameter": "30 cm",
+        "Frame": "aluminium",
+        "Power": "1 AA battery"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Black, White"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "30 cm"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "minimal wall clock",
+        "silent clock product photo",
+        "modern interior wall styling",
+        "simple clock on plain wall"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "8728682",
+          "url": "https://images.pexels.com/photos/8728682/pexels-photo-8728682.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Gold Round Wall Clock on White Painted Wall",
+          "photographer": "𝗛&𝗖𝗢",
+          "photographerUrl": "https://www.pexels.com/@hngstrm/",
+          "photoUrl": "https://www.pexels.com/photo/gold-round-wall-clock-on-white-painted-wall-8728682/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3264,
+          "height": 4896
+        },
+        {
+          "source": "pexels",
+          "photoId": "32421579",
+          "url": "https://images.pexels.com/photos/32421579/pexels-photo-32421579.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Minimalist Wall Clock on White Background",
+          "photographer": "Obsolete Lense",
+          "photographerUrl": "https://www.pexels.com/@rahatali/",
+          "photoUrl": "https://www.pexels.com/photo/minimalist-wall-clock-on-white-background-32421579/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3966,
+          "height": 5288
+        },
+        {
+          "source": "pexels",
+          "photoId": "20297143",
+          "url": "https://images.pexels.com/photos/20297143/pexels-photo-20297143.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Shadows on Wall over Couch",
+          "photographer": "Çisel Bozar",
+          "photographerUrl": "https://www.pexels.com/@cisel-bozar-986913576/",
+          "photoUrl": "https://www.pexels.com/photo/shadows-on-wall-over-couch-20297143/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2237,
+          "height": 3977
+        },
+        {
+          "source": "pexels",
+          "photoId": "35873267",
+          "url": "https://images.pexels.com/photos/35873267/pexels-photo-35873267.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Vintage Alarm Clock on Wall Casting Shadow",
+          "photographer": "Doru Agafitei",
+          "photographerUrl": "https://www.pexels.com/@doru-agafitei-8806395/",
+          "photoUrl": "https://www.pexels.com/photo/vintage-alarm-clock-on-wall-casting-shadow-35873267/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 6500,
+          "height": 5769
+        }
+      ]
+    },
+    {
+      "slug": "bamboo-serving-tray",
+      "name": "Foldwell Bamboo Tray",
+      "brand": "Foldwell",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Kitchenware",
+      "price": 26400,
+      "listPrice": 31000,
+      "rating": 4.6,
+      "reviewCount": 157,
+      "stock": 22,
+      "shortDescription": "A bamboo tray carries breakfast, tea or small plates with raised edges that keep cups from sliding.",
+      "bullets": [
+        "Wood grain makes each tray a little different.",
+        "Handles cut into the frame.",
+        "Wipes clean with a damp cloth."
+      ],
+      "specs": {
+        "Material": "bamboo",
+        "Size": "40 by 28 cm",
+        "Edge height": "2 cm",
+        "Care": "hand wipe"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Honey"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "40 cm"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "bamboo serving tray",
+        "wooden tray product photo",
+        "breakfast in bed lifestyle",
+        "minimal serving platter"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "34471733",
+          "url": "https://images.pexels.com/photos/34471733/pexels-photo-34471733.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Traditional Middle Eastern Coffee Serving Setup",
+          "photographer": "Maya Ali",
+          "photographerUrl": "https://www.pexels.com/@maya-ali-1763363404/",
+          "photoUrl": "https://www.pexels.com/photo/traditional-middle-eastern-coffee-serving-setup-34471733/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3120,
+          "height": 4160
+        },
+        {
+          "source": "pexels",
+          "photoId": "34263270",
+          "url": "https://images.pexels.com/photos/34263270/pexels-photo-34263270.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Minimalist Black Tray on Textured Surface",
+          "photographer": "Fernanda Neitzel",
+          "photographerUrl": "https://www.pexels.com/@fernanda-neitzel-2155821056/",
+          "photoUrl": "https://www.pexels.com/photo/minimalist-black-tray-on-textured-surface-34263270/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "source": "pexels",
+          "photoId": "6822529",
+          "url": "https://images.pexels.com/photos/6822529/pexels-photo-6822529.png?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Croissants on Wooden Tray near a Bed",
+          "photographer": "Jasmijn Van der Maaten",
+          "photographerUrl": "https://www.pexels.com/@jasmijn-van-der-maaten-822438/",
+          "photoUrl": "https://www.pexels.com/photo/croissants-on-wooden-tray-near-a-bed-6822529/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1825,
+          "height": 2738
+        },
+        {
+          "source": "pexels",
+          "photoId": "8472931",
+          "url": "https://images.pexels.com/photos/8472931/pexels-photo-8472931.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Glasses of Wine and a Variety of Cheese on a Table",
+          "photographer": "Cup of  Couple",
+          "photographerUrl": "https://www.pexels.com/@cup-of-couple/",
+          "photoUrl": "https://www.pexels.com/photo/glasses-of-wine-and-a-variety-of-cheese-on-a-table-8472931/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4901,
+          "height": 7348
+        }
+      ]
+    },
+    {
+      "slug": "reusable-canvas-market-tote",
+      "name": "DailyLoom Market Tote",
+      "brand": "DailyLoom",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Bags",
+      "price": 18200,
+      "listPrice": 21500,
+      "rating": 4.7,
+      "reviewCount": 318,
+      "stock": 30,
+      "shortDescription": "A sturdy canvas tote folds flat in a drawer and opens wide for market runs, library visits and light daily errands.",
+      "bullets": [
+        "Interior pocket keeps keys separate.",
+        "Straps sit comfortably on the shoulder.",
+        "Machine washable cotton canvas."
+      ],
+      "specs": {
+        "Material": "cotton canvas",
+        "Capacity": "12 litres",
+        "Pocket": "1 interior",
+        "Care": "machine wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Natural, Ink"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "One size"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": true,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "canvas tote bag",
+        "reusable market tote product photo",
+        "grocery shopping lifestyle",
+        "plain cotton shopping bag"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "19517458",
+          "url": "https://images.pexels.com/photos/19517458/pexels-photo-19517458.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Tote Bag by the Tree in a Park",
+          "photographer": "Beyzaa",
+          "photographerUrl": "https://www.pexels.com/@beyzaa-279977530/",
+          "photoUrl": "https://www.pexels.com/photo/tote-bag-by-the-tree-in-a-park-19517458/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
+        },
+        {
+          "source": "pexels",
+          "photoId": "8805191",
+          "url": "https://images.pexels.com/photos/8805191/pexels-photo-8805191.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman Looking at the Parsley Inside Her Tote Bag",
+          "photographer": "Mike Jones",
+          "photographerUrl": "https://www.pexels.com/@mike-jones/",
+          "photoUrl": "https://www.pexels.com/photo/woman-looking-at-the-parsley-inside-her-tote-bag-8805191/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2937,
+          "height": 4406
+        },
+        {
+          "source": "pexels",
+          "photoId": "26309839",
+          "url": "https://images.pexels.com/photos/26309839/pexels-photo-26309839.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Small Local Greengrocers Shop",
+          "photographer": "Hoteles Sublimes",
+          "photographerUrl": "https://www.pexels.com/@hoteles-sublimes-655848650/",
+          "photoUrl": "https://www.pexels.com/photo/small-local-greengrocers-shop-26309839/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "source": "pexels",
+          "photoId": "3850557",
+          "url": "https://images.pexels.com/photos/3850557/pexels-photo-3850557.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Drawstring Pouches With Different Sizes",
+          "photographer": "ready made",
+          "photographerUrl": "https://www.pexels.com/@readymade/",
+          "photoUrl": "https://www.pexels.com/photo/drawstring-pouches-with-different-sizes-3850557/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3775,
+          "height": 5669
+        }
+      ]
+    },
+    {
+      "slug": "desk-plant-pot-with-drainage",
+      "name": "GlowNest Desk Planter",
+      "brand": "GlowNest",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Plant Decor",
+      "price": 23800,
+      "listPrice": 28000,
+      "rating": 4.5,
+      "reviewCount": 103,
+      "stock": 19,
+      "shortDescription": "A small ceramic planter with a drainage saucer keeps a desk plant tidy while adding a quiet green accent.",
+      "bullets": [
+        "Saucer catches excess water.",
+        "Opening suits small herbs and pothos.",
+        "Glaze wipes clean."
+      ],
+      "specs": {
+        "Material": "ceramic",
+        "Diameter": "12 cm",
+        "Drainage": "yes",
+        "Includes": "saucer"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Chalk, Moss"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "12 cm"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "desk plant pot",
+        "ceramic planter product photo",
+        "small plant on desk lifestyle",
+        "indoor plant pot with saucer"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "28350928",
+          "url": "https://images.pexels.com/photos/28350928/pexels-photo-28350928.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Potted Plant in a Home Office",
+          "photographer": "minhphuc .workspace",
+          "photographerUrl": "https://www.pexels.com/@mintworkspace/",
+          "photoUrl": "https://www.pexels.com/photo/a-desk-with-a-plant-and-a-computer-on-it-28350928/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3374,
+          "height": 5062
+        },
+        {
+          "source": "pexels",
+          "photoId": "35669377",
+          "url": "https://images.pexels.com/photos/35669377/pexels-photo-35669377.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Playful Ceramic Planters with Face Designs",
+          "photographer": "zeynepshoots",
+          "photographerUrl": "https://www.pexels.com/@zeynepshoots-2151869851/",
+          "photoUrl": "https://www.pexels.com/photo/playful-ceramic-planters-with-face-designs-35669377/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "16033789",
+          "url": "https://images.pexels.com/photos/16033789/pexels-photo-16033789.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Potted Plants Standing next to a Laptop",
+          "photographer": "Sergei Bezborodov",
+          "photographerUrl": "https://www.pexels.com/@go0fyy/",
+          "photoUrl": "https://www.pexels.com/photo/potted-plants-standing-next-to-a-laptop-16033789/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2592,
+          "height": 3888
+        },
+        {
+          "source": "pexels",
+          "photoId": "20089989",
+          "url": "https://images.pexels.com/photos/20089989/pexels-photo-20089989.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Monstera Growing in a Pot with Cane",
+          "photographer": "Jardín  De Neko",
+          "photographerUrl": "https://www.pexels.com/@jardindeneko/",
+          "photoUrl": "https://www.pexels.com/photo/monstera-growing-in-a-pot-with-cane-20089989/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3291,
+          "height": 4936
+        }
+      ]
+    },
+    {
+      "slug": "soft-waffle-throw-blanket",
+      "name": "Hushline Cloud Throw",
+      "brand": "Hushline",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Home Textiles",
+      "price": 71800,
+      "listPrice": 84000,
+      "rating": 4.8,
+      "reviewCount": 142,
+      "stock": 10,
+      "shortDescription": "A soft waffle throw drapes over a sofa or foot of a bed for extra warmth on cool Kigali evenings.",
+      "bullets": [
+        "Fringed edges stay neat after washing.",
+        "Light enough to layer in any season.",
+        "Machine wash cold."
+      ],
+      "specs": {
+        "Material": "cotton blend",
+        "Size": "150 by 200 cm",
+        "Weave": "waffle",
+        "Care": "machine wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Fog, Clay"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "150x200 cm"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": true,
+        "isGenZPick": false,
+        "isViral": true
+      },
+      "imageQueries": [
+        "soft throw blanket",
+        "waffle weave blanket product photo",
+        "cozy sofa lifestyle",
+        "neutral knit throw"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "27471094",
+          "url": "https://images.pexels.com/photos/27471094/pexels-photo-27471094.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Code \"CA243\" and Link in bio 📣Blossoms as Lively as Summer, Decorative Throw Blankets for Sofa",
+          "photographer": "SlipcoverKAS .COM",
+          "photographerUrl": "https://www.pexels.com/@slipcoverkas/",
+          "photoUrl": "https://www.pexels.com/photo/code-ca243-and-link-in-bio-blossoms-as-lively-as-summer-decorative-throw-blankets-for-sofa-27471094/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 5334,
+          "height": 7997
+        },
+        {
+          "source": "pexels",
+          "photoId": "30324277",
+          "url": "https://images.pexels.com/photos/30324277/pexels-photo-30324277.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Detailed Close-Up of Textured Fabric with Fringe",
+          "photographer": "SlipcoverKAS .COM",
+          "photographerUrl": "https://www.pexels.com/@slipcoverkas/",
+          "photoUrl": "https://www.pexels.com/photo/detailed-close-up-of-textured-fabric-with-fringe-30324277/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3000,
+          "height": 4499
+        },
+        {
+          "source": "pexels",
+          "photoId": "19650953",
+          "url": "https://images.pexels.com/photos/19650953/pexels-photo-19650953.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Interior of a Modern Apartment Room",
+          "photographer": "tiago alves",
+          "photographerUrl": "https://www.pexels.com/@tiago-alves-710726839/",
+          "photoUrl": "https://www.pexels.com/photo/interior-of-a-modern-apartment-room-19650953/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3000,
+          "height": 4000
+        },
+        {
+          "source": "pexels",
+          "photoId": "5603255",
+          "url": "https://images.pexels.com/photos/5603255/pexels-photo-5603255.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Folded Clothes on Gray Sofa",
+          "photographer": "Vlada Karpovich",
+          "photographerUrl": "https://www.pexels.com/@vlada-karpovich/",
+          "photoUrl": "https://www.pexels.com/photo/folded-clothes-on-gray-sofa-5603255/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3202,
+          "height": 4803
+        }
+      ]
+    },
+    {
+      "slug": "glass-water-carafe",
+      "name": "TerraSip Glass Carafe",
+      "brand": "TerraSip",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Kitchenware",
+      "price": 29700,
+      "listPrice": 35000,
+      "rating": 4.4,
+      "reviewCount": 91,
+      "stock": 17,
+      "shortDescription": "A clear glass carafe keeps water within reach at the table and pours cleanly thanks to a shaped spout.",
+      "bullets": [
+        "One litre capacity suits shared meals.",
+        "Broad base resists tipping.",
+        "Dishwasher safe glass."
+      ],
+      "specs": {
+        "Material": "borosilicate glass",
+        "Capacity": "1 litre",
+        "Height": "24 cm",
+        "Care": "dishwasher safe"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Clear"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "1 L"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "glass water carafe",
+        "glass pitcher product photo",
+        "dining table water lifestyle",
+        "minimal glass jug"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "16966950",
+          "url": "https://images.pexels.com/photos/16966950/pexels-photo-16966950.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Lemonade in a Glass Carafe",
+          "photographer": "Valeria Boltneva",
+          "photographerUrl": "https://www.pexels.com/@valeriya/",
+          "photoUrl": "https://www.pexels.com/photo/lemonade-in-a-glass-carafe-16966950/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 5464,
+          "height": 8192
+        },
+        {
+          "source": "pexels",
+          "photoId": "10074017",
+          "url": "https://images.pexels.com/photos/10074017/pexels-photo-10074017.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close-Up Shot of a Glass Tumbler",
+          "photographer": "Elīna Arāja",
+          "photographerUrl": "https://www.pexels.com/@elina-araja-1743227/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-shot-of-a-glass-tumbler-10074017/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3257,
+          "height": 4885
+        },
+        {
+          "source": "pexels",
+          "photoId": "20488501",
+          "url": "https://images.pexels.com/photos/20488501/pexels-photo-20488501.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman Holding Glass of Water over Table with Food",
+          "photographer": "Gül Işık",
+          "photographerUrl": "https://www.pexels.com/@ekrulila/",
+          "photoUrl": "https://www.pexels.com/photo/woman-holding-glass-of-water-over-table-with-food-20488501/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4672,
+          "height": 7008
+        },
+        {
+          "source": "pexels",
+          "photoId": "8059290",
+          "url": "https://images.pexels.com/photos/8059290/pexels-photo-8059290.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Clear Glass Items Beside White Notebook",
+          "photographer": "Eva Bronzini",
+          "photographerUrl": "https://www.pexels.com/@eva-bronzini/",
+          "photoUrl": "https://www.pexels.com/photo/clear-glass-items-beside-white-notebook-8059290/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3712,
+          "height": 5568
+        }
+      ]
+    },
+    {
+      "slug": "aesthetic-photo-frame-set-three",
+      "name": "Foldwell Gallery Frames",
+      "brand": "Foldwell",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Home Decor",
+      "price": 36700,
+      "listPrice": 43000,
+      "rating": 4.6,
+      "reviewCount": 118,
+      "stock": 14,
+      "shortDescription": "Three slim frames in mixed sizes make a small gallery wall easy to arrange with photos or prints.",
+      "bullets": [
+        "Frames hang or stand on a shelf.",
+        "Glass front keeps prints flat.",
+        "Hardware is included."
+      ],
+      "specs": {
+        "Set count": "3",
+        "Sizes": "4x6, 5x7, 6x8",
+        "Material": "wood composite",
+        "Mount": "wall or table"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Black, Oak"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "Set of 3"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "photo frame set",
+        "gallery wall frames product photo",
+        "minimal home decor styling",
+        "three picture frames on shelf"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "10252177",
+          "url": "https://images.pexels.com/photos/10252177/pexels-photo-10252177.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Photograph of a Woman in Picture Frame",
+          "photographer": "cottonbro studio",
+          "photographerUrl": "https://www.pexels.com/@cottonbro/",
+          "photoUrl": "https://www.pexels.com/photo/photograph-of-a-woman-in-picture-frame-10252177/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3739,
+          "height": 5609
+        },
+        {
+          "source": "pexels",
+          "photoId": "34767318",
+          "url": "https://images.pexels.com/photos/34767318/pexels-photo-34767318.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Elegant Living Room with Wall Art Decor",
+          "photographer": "Hanife Altan",
+          "photographerUrl": "https://www.pexels.com/@hanife-altan-45420650/",
+          "photoUrl": "https://www.pexels.com/photo/elegant-living-room-with-wall-art-decor-34767318/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3060,
+          "height": 4080
+        },
+        {
+          "source": "pexels",
+          "photoId": "6368947",
+          "url": "https://images.pexels.com/photos/6368947/pexels-photo-6368947.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Interior details of minimalist office with comfortable armchair and small table",
+          "photographer": "Skylar Kang",
+          "photographerUrl": "https://www.pexels.com/@skylar-kang/",
+          "photoUrl": "https://www.pexels.com/photo/interior-details-of-minimalist-office-with-comfortable-armchair-and-small-table-6368947/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2448,
+          "height": 3696
+        },
+        {
+          "source": "pexels",
+          "photoId": "6851831",
+          "url": "https://images.pexels.com/photos/6851831/pexels-photo-6851831.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black Wooden Picture Frame Hanging on the Wall",
+          "photographer": "janam thapa",
+          "photographerUrl": "https://www.pexels.com/@janamthapa/",
+          "photoUrl": "https://www.pexels.com/photo/black-wooden-picture-frame-hanging-on-the-wall-6851831/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3024,
+          "height": 4032
+        }
+      ]
+    },
+    {
+      "slug": "refillable-hand-soap-dispenser",
+      "name": "GlowNest Pump Dispenser",
+      "brand": "GlowNest",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Bath and Body",
+      "price": 19800,
+      "listPrice": 23500,
+      "rating": 4.5,
+      "reviewCount": 176,
+      "stock": 23,
+      "shortDescription": "A refillable pump bottle keeps hand soap tidy by the sink and cuts down on single-use plastic.",
+      "bullets": [
+        "Pump delivers a measured dose.",
+        "Wide neck makes refilling simple.",
+        "Matte body resists fingerprints."
+      ],
+      "specs": {
+        "Material": "ceramic",
+        "Capacity": "350 ml",
+        "Pump": "brushed metal",
+        "Refill": "wide neck"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Chalk, Sand"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "350 ml"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "soap dispenser bottle",
+        "ceramic pump dispenser product photo",
+        "bathroom sink styling",
+        "minimal hand soap bottle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7303922",
+          "url": "https://images.pexels.com/photos/7303922/pexels-photo-7303922.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Pair of White Pump Bottles on White Surface",
+          "photographer": "Cup of  Couple",
+          "photographerUrl": "https://www.pexels.com/@cup-of-couple/",
+          "photoUrl": "https://www.pexels.com/photo/a-pair-of-white-pump-bottles-on-white-surface-7303922/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4480,
+          "height": 6720
+        },
+        {
+          "source": "pexels",
+          "photoId": "7956955",
+          "url": "https://images.pexels.com/photos/7956955/pexels-photo-7956955.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Shallow Focus Photo of Floral Soap Dispenser Placed on Blue Face Masks",
+          "photographer": "Tamanna Rumee",
+          "photographerUrl": "https://www.pexels.com/@tamanna-rumee-52377920/",
+          "photoUrl": "https://www.pexels.com/photo/shallow-focus-photo-of-floral-soap-dispenser-placed-on-blue-face-masks-7956955/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3456,
+          "height": 5184
+        },
+        {
+          "source": "pexels",
+          "photoId": "39795565",
+          "url": "https://images.pexels.com/photos/39795565/pexels-photo-39795565.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Modern Bathroom Interior with Minimalist Decor",
+          "photographer": "Maryna Pryvalova",
+          "photographerUrl": "https://www.pexels.com/@maryna-pryvalova-2155007342/",
+          "photoUrl": "https://www.pexels.com/photo/modern-bathroom-interior-with-minimalist-decor-39795565/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4284,
+          "height": 5712
+        },
+        {
+          "source": "pexels",
+          "photoId": "10568476",
+          "url": "https://images.pexels.com/photos/10568476/pexels-photo-10568476.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Hand Holding Bottle of Soap",
+          "photographer": "Ron Lach",
+          "photographerUrl": "https://www.pexels.com/@ron-lach/",
+          "photoUrl": "https://www.pexels.com/photo/hand-holding-bottle-of-soap-10568476/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3157,
+          "height": 4736
+        }
+      ]
+    },
+    {
+      "slug": "cork-laptop-sleeve-14",
+      "name": "Foldwell Cork Sleeve",
+      "brand": "Foldwell",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Tech Accessories",
+      "price": 41800,
+      "listPrice": 49000,
+      "rating": 4.7,
+      "reviewCount": 127,
+      "stock": 12,
+      "shortDescription": "A cork sleeve cushions a 14 inch laptop without bulk and adds a natural texture to a work bag.",
+      "bullets": [
+        "Felt lining guards the screen.",
+        "Envelope flap keeps the device in place.",
+        "Fits most slim 14 inch notebooks."
+      ],
+      "specs": {
+        "Material": "cork and felt",
+        "Fits": "14 inch laptop",
+        "Closure": "envelope flap",
+        "Thickness": "8 mm"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Natural"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "14 inch"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": true,
+        "isViral": false
+      },
+      "imageQueries": [
+        "cork laptop sleeve",
+        "laptop sleeve product photo",
+        "desk setup with cork case",
+        "minimal tech accessories"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "27524198",
+          "url": "https://images.pexels.com/photos/27524198/pexels-photo-27524198.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A person is holding a book and a cup of coffee",
+          "photographer": "Esra Saltürk",
+          "photographerUrl": "https://www.pexels.com/@esra-salturk-1165434438/",
+          "photoUrl": "https://www.pexels.com/photo/a-person-is-holding-a-book-and-a-cup-of-coffee-27524198/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3456,
+          "height": 5184
+        },
+        {
+          "source": "pexels",
+          "photoId": "7742558",
+          "url": "https://images.pexels.com/photos/7742558/pexels-photo-7742558.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Leather Laptop Sleeves",
+          "photographer": "Rann Vijay",
+          "photographerUrl": "https://www.pexels.com/@rann-vijay-677553/",
+          "photoUrl": "https://www.pexels.com/photo/leather-laptop-sleeves-7742558/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3456,
+          "height": 4608
+        },
+        {
+          "source": "pexels",
+          "photoId": "17350366",
+          "url": "https://images.pexels.com/photos/17350366/pexels-photo-17350366.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Collection of Action Figures Displayed on a Desk with a Computer Keyboard",
+          "photographer": "Pew Nguyen",
+          "photographerUrl": "https://www.pexels.com/@nguyendesigner/",
+          "photoUrl": "https://www.pexels.com/photo/collection-of-action-figures-displayed-on-a-desk-with-a-computer-keyboard-17350366/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2000,
+          "height": 3000
+        },
+        {
+          "source": "pexels",
+          "photoId": "18542240",
+          "url": "https://images.pexels.com/photos/18542240/pexels-photo-18542240.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Loudspeaker and Earphones",
+          "photographer": "Ravi Roshan",
+          "photographerUrl": "https://www.pexels.com/@ravi-roshan-2875998/",
+          "photoUrl": "https://www.pexels.com/photo/loudspeaker-and-earphones-18542240/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        }
+      ]
+    },
+    {
+      "slug": "insulated-lunch-box-leakproof",
+      "name": "TerraSip Lunch Box",
+      "brand": "TerraSip",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Kitchenware",
+      "price": 46200,
+      "listPrice": 54000,
+      "rating": 4.6,
+      "reviewCount": 194,
+      "stock": 15,
+      "shortDescription": "An insulated lunch box keeps midday meals neat with a leakproof tray and enough room for a drink and a snack.",
+      "bullets": [
+        "Lining wipes clean after use.",
+        "Handle folds flat for a bag.",
+        "Latch opens with one hand."
+      ],
+      "specs": {
+        "Capacity": "1.2 litres",
+        "Lining": "insulated polyester",
+        "Tray": "leakproof insert",
+        "Care": "wipe clean"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Olive, Charcoal"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "One size"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "insulated lunch box",
+        "leakproof lunch box product photo",
+        "packed lunch flat lay",
+        "office lunch container"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "37343559",
+          "url": "https://images.pexels.com/photos/37343559/pexels-photo-37343559.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Eco-Friendly Picnic Setup with Tote and Thermos",
+          "photographer": "Şehriban karakaya",
+          "photographerUrl": "https://www.pexels.com/@sehriban-karakaya-49565301/",
+          "photoUrl": "https://www.pexels.com/photo/eco-friendly-picnic-setup-with-tote-and-thermos-37343559/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2687,
+          "height": 4033
+        },
+        {
+          "source": "pexels",
+          "photoId": "5971293",
+          "url": "https://images.pexels.com/photos/5971293/pexels-photo-5971293.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Elderly Woman Eating Packed Lunch at the Office",
+          "photographer": "cottonbro studio",
+          "photographerUrl": "https://www.pexels.com/@cottonbro/",
+          "photoUrl": "https://www.pexels.com/photo/elderly-woman-eating-packed-lunch-at-the-office-5971293/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3760,
+          "height": 5640
+        },
+        {
+          "source": "pexels",
+          "photoId": "5852319",
+          "url": "https://images.pexels.com/photos/5852319/pexels-photo-5852319.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Photo of Lunch Boxes with Sandwiches and Vegetables",
+          "photographer": "Antoni Shkraba",
+          "photographerUrl": "https://www.pexels.com/@shkrabaanthony/",
+          "photoUrl": "https://www.pexels.com/photo/photo-of-lunch-boxes-with-sandwiches-and-vegetables-5852319/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "3202232",
+          "url": "https://images.pexels.com/photos/3202232/pexels-photo-3202232.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Man Using a Macbook",
+          "photographer": "cottonbro studio",
+          "photographerUrl": "https://www.pexels.com/@cottonbro/",
+          "photoUrl": "https://www.pexels.com/photo/man-using-a-macbook-3202232/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2832,
+          "height": 4240
+        }
+      ]
+    },
+    {
+      "slug": "satin-pillowcase-set-two",
+      "name": "SilkRoot Satin Cases",
+      "brand": "SilkRoot",
+      "category": "lifestyle-aesthetic-essentials",
+      "subcategory": "Bed and Bath",
+      "price": 34700,
+      "listPrice": 40500,
+      "rating": 4.7,
+      "reviewCount": 211,
+      "stock": 16,
+      "shortDescription": "Two satin pillowcases feel smooth against hair and skin and add a soft sheen to a bedtime setup.",
+      "bullets": [
+        "Envelope closure hides the insert.",
+        "Machine washes on a gentle cycle.",
+        "Fits standard pillows."
+      ],
+      "specs": {
+        "Set count": "2",
+        "Material": "satin polyester",
+        "Size": "standard",
+        "Pillow count": "2"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Champagne, Rose"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "Standard"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "satin pillowcase set",
+        "satin pillow product photo",
+        "bedroom lifestyle neutral",
+        "smooth pillow cases"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "6207464",
+          "url": "https://images.pexels.com/photos/6207464/pexels-photo-6207464.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Cushions and bedclothes with ornament on mattress",
+          "photographer": "Skylar Kang",
+          "photographerUrl": "https://www.pexels.com/@skylar-kang/",
+          "photoUrl": "https://www.pexels.com/photo/cushions-and-bedclothes-with-ornament-on-mattress-6207464/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2448,
+          "height": 3696
+        },
+        {
+          "source": "pexels",
+          "photoId": "10257100",
+          "url": "https://images.pexels.com/photos/10257100/pexels-photo-10257100.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Man and Woman Holding Pillows on Bed",
+          "photographer": "Evgeniy Volivach",
+          "photographerUrl": "https://www.pexels.com/@vovfoto/",
+          "photoUrl": "https://www.pexels.com/photo/man-and-woman-holding-pillows-on-bed-10257100/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
+        },
+        {
+          "source": "pexels",
+          "photoId": "29162163",
+          "url": "https://images.pexels.com/photos/29162163/pexels-photo-29162163.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Young Woman Relaxing in Minimalist Bedroom",
+          "photographer": "Alexander Mass",
+          "photographerUrl": "https://www.pexels.com/@rebornfilmes/",
+          "photoUrl": "https://www.pexels.com/photo/young-woman-relaxing-in-minimalist-bedroom-29162163/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
+        },
+        {
+          "source": "pexels",
+          "photoId": "8762878",
+          "url": "https://images.pexels.com/photos/8762878/pexels-photo-8762878.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman Leaning Head on Stacked Pillows",
+          "photographer": "Ron Lach",
+          "photographerUrl": "https://www.pexels.com/@ron-lach/",
+          "photoUrl": "https://www.pexels.com/photo/woman-leaning-head-on-stacked-pillows-8762878/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2377,
+          "height": 3565
+        }
+      ]
+    }
+  ]
+}

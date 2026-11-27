@@ -1,44 +1,25 @@
 /**
- * Single image resolver for Soko. Photos are resolved once by
- * scripts/fetch-product-images.mjs and cached in data/product-images.json;
- * nothing here calls an API at page load.
+ * Single image resolver for Soko. Gallery images come only from the catalog
+ * JSON files; no generated SVG is padded into a photo slot. Manual photos in
+ * data/image-overrides.json take priority over catalog photos.
  *
- * Priority: data/image-overrides.json (your own photos) → cached API photos →
- * bundled SVG artwork. Unsplash URLs are hotlinked, never rehosted.
+ * Pexels CDN URLs are hotlinked with 320/640/1200 srcset variants. Nothing here
+ * calls an API at page load.
  */
 import type { Product, ResolvedImage } from '../types';
+import { catalogEntries, catalogEntryBySlug } from './catalog';
+import type { CatalogImage } from './catalog';
 import { products } from './products';
-import imageCache from '../../data/product-images.json';
 import overridesData from '../../data/image-overrides.json';
 
 export interface ImageCredit {
+  photoId?: string;
   photographer: string;
   photographerUrl: string;
   photoUrl: string;
   license: string;
   licenseUrl?: string;
   downloadLocation?: string;
-}
-
-interface CachedImage {
-  source: 'unsplash' | 'pexels' | 'pixabay';
-  photoId?: string;
-  baseUrl?: string;
-  paths?: string[];
-  alt: string;
-  width: number;
-  height: number;
-  color?: string;
-  credit: ImageCredit;
-}
-
-interface CachedEntry {
-  title: string;
-  category: string;
-  status: 'pending' | 'resolved' | 'unmatched';
-  source: string;
-  reason?: string;
-  images: CachedImage[];
 }
 
 interface OverrideEntry {
@@ -49,67 +30,51 @@ interface OverrideEntry {
 }
 
 export interface ImageInfo extends ResolvedImage {
-  /** Bundled artwork to use if a remote photo fails to load. */
+  /** Set only for manually supplied local photos. */
   fallbackSrc?: string;
 }
 
-const cache = imageCache as unknown as { products: Record<string, CachedEntry> };
 const overrides = overridesData as Record<string, OverrideEntry>;
 
 const IMAGE_SIZES: readonly number[] = [320, 640, 1200];
 const CARD_SIZES = '(max-width: 640px) 46vw, (max-width: 1024px) 24vw, 240px';
 const LARGE_SIZES = '(max-width: 768px) 100vw, 620px';
 
-function unsplashUrl(base: string, width: number, height: number, blur = false): string {
-  const url = new URL(base);
-  url.searchParams.set('fit', 'crop');
-  url.searchParams.set('crop', 'entropy');
-  url.searchParams.set('w', String(width));
-  url.searchParams.set('h', String(height));
-  url.searchParams.set('q', blur ? '35' : String(width <= 320 ? 70 : width <= 640 ? 78 : 82));
-  url.searchParams.set('fm', 'webp');
-  if (blur) url.searchParams.set('blur', '200');
-  return url.toString();
-}
-
 function srcSetFromUrls(build: (width: number) => string): string {
   return IMAGE_SIZES.map((width) => `${build(width)} ${width}w`).join(', ');
 }
 
-function cachedToImage(image: CachedImage, product: Product, index: number): ResolvedImage | undefined {
-  const alt = image.alt || `${product.name} — view ${index + 1}`;
-  if (image.source === 'unsplash') {
-    if (!image.baseUrl) return undefined;
-    return {
-      src: unsplashUrl(image.baseUrl, 640, 640),
-      srcSet: srcSetFromUrls((width) => unsplashUrl(image.baseUrl!, width, width)),
-      sizes: CARD_SIZES,
-      alt,
-      source: 'unsplash',
-      width: 1200,
-      height: 1200,
-      blurSrc: unsplashUrl(image.baseUrl, 32, 32, true),
-      color: image.color,
-      creditId: image.photoId,
-    };
-  }
-  if (image.source === 'pexels' || image.source === 'pixabay') {
-    const paths = image.paths ?? [];
-    if (paths.length === 0) return undefined;
-    const byWidth = new Map(IMAGE_SIZES.map((width, position) => [width, paths[position] ?? paths[paths.length - 1]]));
-    return {
-      src: byWidth.get(640)!,
-      srcSet: srcSetFromUrls((width) => byWidth.get(width)!),
-      sizes: CARD_SIZES,
-      alt,
-      source: image.source,
-      width: 1200,
-      height: 1200,
-      color: image.color,
-      creditId: image.photoId,
-    };
-  }
-  return undefined;
+function pexelsSized(url: string, width: number): string {
+  const sized = new URL(url);
+  sized.searchParams.set('w', String(width));
+  sized.searchParams.set('h', String(width));
+  return sized.toString();
+}
+
+function catalogImageToImage(image: CatalogImage, product: Product, index: number): ResolvedImage {
+  const isPexels = image.source === 'pexels';
+  return {
+    src: isPexels ? pexelsSized(image.url, 640) : image.url,
+    srcSet: isPexels ? srcSetFromUrls((width) => pexelsSized(image.url, width)) : undefined,
+    sizes: CARD_SIZES,
+    alt: image.alt || `${product.name} — view ${index + 1}`,
+    source: image.source,
+    width: image.width,
+    height: image.height,
+    color: image.color,
+    creditId: image.photoId,
+  };
+}
+
+export function creditFromImage(image: CatalogImage): ImageCredit {
+  return {
+    photoId: image.photoId,
+    photographer: image.photographer,
+    photographerUrl: image.photographerUrl,
+    photoUrl: image.photoUrl,
+    license: image.license,
+    licenseUrl: image.licenseUrl,
+  };
 }
 
 function overrideToImage(path: string, entry: OverrideEntry, product: Product, index: number): ResolvedImage {
@@ -130,38 +95,14 @@ function overrideToImage(path: string, entry: OverrideEntry, product: Product, i
   };
 }
 
-function generatedImages(product: Product): ResolvedImage[] {
-  return product.images.map((path, index) => ({
-    src: path,
-    alt: `${product.name} — view ${index + 1}`,
-    source: 'generated',
-    width: 800,
-    height: 800,
-  }));
-}
-
-/** Main image plus gallery views; always at least four entries. */
+/** Real gallery photos only; returns fewer than four entries when photos are missing. */
 export function resolveImages(product: Product): ResolvedImage[] {
-  const generated = generatedImages(product);
   const override = overrides[product.slug];
-  let selected: ResolvedImage[] = [];
-
   if (override?.images?.length) {
-    selected = override.images.map((path, index) => overrideToImage(path, override, product, index));
-  } else {
-    const entry = cache.products?.[product.slug];
-    if (entry?.status === 'resolved' && entry.images?.length) {
-      selected = entry.images
-        .map((image, index) => cachedToImage(image, product, index))
-        .filter((image): image is ResolvedImage => Boolean(image));
-    }
+    return override.images.map((path, index) => overrideToImage(path, override, product, index));
   }
-
-  const images: ResolvedImage[] = [];
-  for (let index = 0; index < Math.max(4, selected.length); index += 1) {
-    images.push(selected[index] ?? generated[index] ?? generated[generated.length - 1]);
-  }
-  return images;
+  const entry = catalogEntryBySlug.get(product.slug);
+  return entry?.images.map((image, index) => catalogImageToImage(image, product, index)) ?? [];
 }
 
 /** Backwards-compatible helper used by existing thumbnails and order history. */
@@ -170,30 +111,57 @@ export function imagesFor(product: Pick<Product, 'slug' | 'images' | 'name'>): s
   return resolveImages(full).map((image) => image.src);
 }
 
+/** Credit for the first gallery photo. */
 export function creditFor(product: Product): ImageCredit | undefined {
   const override = overrides[product.slug];
   if (override?.credit) return override.credit;
-  const entry = cache.products?.[product.slug];
-  return entry?.status === 'resolved' ? entry.images?.[0]?.credit : undefined;
+  const entry = catalogEntryBySlug.get(product.slug);
+  return entry?.images[0] ? creditFromImage(entry.images[0]) : undefined;
+}
+
+/** Credits aligned with the gallery order. */
+export function creditsFor(product: Product): ImageCredit[] {
+  const override = overrides[product.slug];
+  if (override?.credit) {
+    return resolveImages(product).map(() => override.credit!);
+  }
+  const entry = catalogEntryBySlug.get(product.slug);
+  return entry?.images.map(creditFromImage) ?? [];
 }
 
 export function creditedProducts(): Array<{ product: Product; image: ResolvedImage; credit: ImageCredit }> {
   return products.flatMap((product) => {
-    const credit = creditFor(product);
-    if (!credit) return [];
-    return [{ product, image: resolveImages(product)[0], credit }];
+    const images = resolveImages(product);
+    const credits = creditsFor(product);
+    if (!images[0] || !credits[0]) return [];
+    return [{ product, image: images[0], credit: credits[0] }];
   });
 }
 
+/** Every gallery photo with its matching credit, for the /credits page. */
+export function allCreditedPhotos(): Array<{ product: Product; image: ResolvedImage; credit: ImageCredit }> {
+  return products.flatMap((product) => {
+    const images = resolveImages(product);
+    const credits = creditsFor(product);
+    return images.flatMap((image, index) =>
+      credits[index] ? [{ product, image, credit: credits[index] }] : []
+    );
+  });
+}
+
+/** Products that need manual photo replacement because the gallery is empty. */
 export function fallbackProducts(): Product[] {
-  return products.filter((product) => resolveImages(product)[0].source === 'generated');
+  return products.filter((product) => resolveImages(product).length === 0);
+}
+
+export function catalogImageQueries(slug: string): string[] {
+  return catalogEntries.find((entry) => entry.slug === slug)?.imageQueries ?? [];
 }
 
 const infoBySrc = new Map<string, ImageInfo>();
 for (const product of products) {
-  const resolved = resolveImages(product);
-  resolved.forEach((image, index) => {
-    infoBySrc.set(image.src, { ...image, fallbackSrc: product.images[index] ?? product.images[0] });
+  resolveImages(product).forEach((image) => {
+    infoBySrc.set(image.src, { ...image });
   });
 }
 

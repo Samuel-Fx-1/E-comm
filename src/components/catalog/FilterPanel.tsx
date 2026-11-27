@@ -110,7 +110,7 @@ export function FilterPanel({
       )}
 
       <fieldset className="border-t border-[var(--brand-line)] pt-4">
-        <legend className="mb-2 text-xs font-bold uppercase tracking-wide text-[var(--brand-muted)]">Price (USD)</legend>
+        <legend className="mb-2 text-xs font-bold uppercase tracking-wide text-[var(--brand-muted)]">Price (RWF)</legend>
         <form
           className="flex items-center gap-2"
           onSubmit={(event) => {

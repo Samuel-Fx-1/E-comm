@@ -25,6 +25,7 @@ const CollectionPage = lazy(() => import('./pages/Collection'));
 const CustomerServicePage = lazy(() => import('./pages/CustomerService'));
 const SellPage = lazy(() => import('./pages/Sell'));
 const CreditsPage = lazy(() => import('./pages/Credits'));
+const DevImageReviewPage = lazy(() => import('./pages/DevImageReview'));
 const NotFoundPage = lazy(() => import('./pages/NotFound'));
 
 function RouteFallback() {
@@ -204,6 +205,22 @@ export default function App() {
             }
           />
           <Route
+            path="gen-z-picks"
+            element={
+              <Suspense fallback={<RouteFallback />}>
+                <CollectionPage kind="gen-z-picks" />
+              </Suspense>
+            }
+          />
+          <Route
+            path="viral"
+            element={
+              <Suspense fallback={<RouteFallback />}>
+                <CollectionPage kind="viral" />
+              </Suspense>
+            }
+          />
+          <Route
             path="customer-service"
             element={
               <Suspense fallback={<RouteFallback />}>
@@ -227,6 +244,16 @@ export default function App() {
               </Suspense>
             }
           />
+          {import.meta.env.DEV && (
+            <Route
+              path="dev/image-review"
+              element={
+                <Suspense fallback={<RouteFallback />}>
+                  <DevImageReviewPage />
+                </Suspense>
+              }
+            />
+          )}
           <Route
             path="*"
             element={

@@ -2,10 +2,13 @@ import type { CategorySlug, Product, ProductVariant } from '../types';
 import { discountPercent } from '../lib/format';
 
 export interface ProductSeed {
+  /** Catalog slug wins over a title-derived slug when both are available. */
+  slug?: string;
   title: string;
   brand: string;
   category: CategorySlug;
   subcategory?: string;
+  /** All prices are whole RWF amounts, e.g. 12500. */
   price: number;
   listPrice?: number;
   rating: number;
@@ -20,35 +23,39 @@ export interface ProductSeed {
   isBestSeller?: boolean;
   isDeal?: boolean;
   isTrending?: boolean;
+  isGenZPick?: boolean;
+  isViral?: boolean;
   addedAt?: string;
 }
 
-const RWF_RATE = 1300;
-const RWF_ROUNDING = 100;
+function requireWholeRwf(value: number, field: string): number {
+  if (!Number.isInteger(value) || value <= 0) {
+    throw new Error(`${field} must be a positive whole RWF amount`);
+  }
+  return value;
+}
 
 const subcategories: Record<CategorySlug, string> = {
-  'tech-audio-accessories': 'Tech & audio accessories',
-  'apparel-footwear': 'Apparel & footwear',
-  'skincare-personal-care': 'Skincare & personal care',
-  'home-kitchen': 'Home & kitchen essentials',
-  digital: 'Digital products',
+  'tech-gaming': 'Tech & gaming',
+  'streetwear-footwear': 'Streetwear & footwear',
+  'viral-skincare-haircare': 'Viral skincare & haircare',
+  'lifestyle-aesthetic-essentials': 'Lifestyle & aesthetic essentials',
+  'gen-alpha-kids-corner': 'Gen Alpha & kids corner',
 };
 
 const defaultVariants: Record<CategorySlug, ProductVariant[]> = {
-  'tech-audio-accessories': [
+  'tech-gaming': [
     { type: 'color', name: 'Colour', value: 'Black' },
     { type: 'color', name: 'Colour', value: 'White' },
   ],
-  'apparel-footwear': [
+  'streetwear-footwear': [
     { type: 'size', name: 'Size', value: 'M' },
     { type: 'size', name: 'Size', value: 'L' },
   ],
-  'skincare-personal-care': [],
-  'home-kitchen': [{ type: 'color', name: 'Finish', value: 'Natural' }],
-  digital: [{ type: 'size', name: 'Format', value: 'Instant download' }],
+  'viral-skincare-haircare': [],
+  'lifestyle-aesthetic-essentials': [{ type: 'color', name: 'Colour', value: 'Black' }],
+  'gen-alpha-kids-corner': [{ type: 'size', name: 'Age', value: 'Ages 8+' }],
 };
-
-const toRwf = (usd: number): number => Math.round((usd * RWF_RATE) / RWF_ROUNDING) * RWF_ROUNDING;
 
 export function slugify(text: string): string {
   return text
@@ -71,9 +78,13 @@ function hash(text: string): number {
 const BASE_DATE = new Date('2026-10-30T00:00:00Z').getTime();
 
 export function makeProduct(seed: ProductSeed): Product {
-  const slug = slugify(seed.title);
+  const slug = seed.slug ?? slugify(seed.title);
   const seedHash = hash(slug);
-  const listPrice = seed.listPrice ?? seed.price;
+  const price = requireWholeRwf(seed.price, 'price');
+  const listPrice = seed.listPrice === undefined
+    ? price
+    : requireWholeRwf(seed.listPrice, 'listPrice');
+  if (listPrice < price) throw new Error('listPrice cannot be lower than price');
   const daysAgo = seedHash % 210;
   const addedAt = seed.addedAt ?? new Date(BASE_DATE - daysAgo * 86_400_000).toISOString().slice(0, 10);
 
@@ -90,11 +101,11 @@ export function makeProduct(seed: ProductSeed): Product {
     brand: seed.brand,
     category: seed.category,
     subcategory: seed.subcategory ?? subcategories[seed.category],
-    priceRwf: toRwf(seed.price),
-    oldPriceRwf: toRwf(listPrice),
-    price: seed.price,
+    priceRwf: price,
+    oldPriceRwf: listPrice,
+    price,
     listPrice,
-    discount: discountPercent(seed.price, listPrice),
+    discount: discountPercent(price, listPrice),
     rating: seed.rating,
     reviewCount: seed.reviewCount,
     stock: seed.stock,
@@ -108,6 +119,8 @@ export function makeProduct(seed: ProductSeed): Product {
     isBestSeller: seed.isBestSeller ?? false,
     isDeal: seed.isDeal ?? false,
     isTrending: seed.isTrending ?? false,
+    isGenZPick: seed.isGenZPick ?? false,
+    isViral: seed.isViral ?? false,
     addedAt,
   };
 }

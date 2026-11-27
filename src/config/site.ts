@@ -2,6 +2,10 @@
  * Soko brand + market configuration.
  * Change the brand name, logo text and palette here — the UI reads these values.
  */
+
+/** The single USD → RWF conversion rate used by the catalog and formatter. */
+const RWF_PER_USD = 1300;
+
 export const site = {
   name: 'Soko',
   legalName: 'Soko Marketplace Ltd',
@@ -10,7 +14,7 @@ export const site = {
   logoMark: 'S',
   tagline: 'Everyday finds, delivered.',
   description:
-    'Soko is a demo online marketplace for tech accessories, apparel, skincare, home essentials and digital products with delivery across East Africa and beyond.',
+    'Soko is a demo marketplace for Gen Z and Gen Alpha picks across tech, streetwear, skincare, lifestyle and kids essentials.',
   url: 'https://soko.example.com',
   supportEmail: 'help@soko.example.com',
   supportPhone: '+250 788 000 000',
@@ -32,14 +36,16 @@ export const site = {
   },
   defaultCountry: 'RW',
   defaultLanguage: 'en' as const,
+  /** One configurable conversion rate: local currency units per 1 USD. */
+  rwfPerUsd: RWF_PER_USD,
   languages: [
     { code: 'en', label: 'English' },
     { code: 'fr', label: 'Français' },
   ],
-  freeShippingThresholdUsd: 35,
+  freeDeliveryThresholdRwf: 45500,
   taxRate: 0.08,
-  standardShippingUsd: 4.99,
-  expressShippingUsd: 12.99,
+  standardShippingRwf: 6500,
+  expressShippingRwf: 16900,
   productsPerPage: 12,
   maxCompare: 3,
   maxRecentlyViewed: 12,
@@ -68,7 +74,7 @@ export const countries: Country[] = [
     name: 'Rwanda',
     flag: '🇷🇼',
     currency: 'RWF',
-    rate: 1300,
+    rate: RWF_PER_USD,
     decimals: 0,
     rounding: 100,
     deliveryOffset: 2,

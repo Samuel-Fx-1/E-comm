@@ -124,25 +124,25 @@ const QUESTIONS: Array<{ q: string; a: string }> = [
 ];
 
 const CATEGORY_QUESTIONS: Record<string, { q: string; a: string }> = {
-  'tech-audio-accessories': {
-    q: 'Does it work with 220-240V power and local plugs?',
+  'tech-gaming': {
+    q: 'Does it work with local power and plugs?',
     a: 'Yes. Chargers ship with a compatible plug or a USB-C cable; check the specs table for the exact input.',
   },
-  'apparel-footwear': {
+  'streetwear-footwear': {
     q: 'How does the sizing run?',
     a: 'Most pieces run true to size. The specs table lists the available sizes and fit; check the size guide on the product page.',
   },
-  'skincare-personal-care': {
+  'viral-skincare-haircare': {
     q: 'Is it suitable for sensitive skin?',
-    a: 'Formulas are fragrance-free unless noted. Patch test first and check the ingredient list in the specs table.',
+    a: 'Check the ingredient list in the specs table and patch test first if your skin reacts easily.',
   },
-  'home-kitchen': {
-    q: 'Is it dishwasher safe?',
-    a: 'Check the Care or Material row in the specs table. Items marked dishwasher safe can go on the top rack.',
+  'lifestyle-aesthetic-essentials': {
+    q: 'Is it easy to travel with?',
+    a: 'Most pieces are compact and reuse-friendly. Check the Capacity or Material row in the specs table for details.',
   },
-  digital: {
-    q: 'How do I receive a digital product?',
-    a: 'Digital files are available immediately after checkout; no shipping address or delivery courier is needed.',
+  'gen-alpha-kids-corner': {
+    q: 'What age is this for?',
+    a: 'Listed products are for ages 8+. Adult help is suggested for a first build or setup.',
   },
 };
 

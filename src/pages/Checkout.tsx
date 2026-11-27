@@ -77,10 +77,10 @@ export default function CheckoutPage() {
 
   const shipping =
     delivery === 'express'
-      ? site.expressShippingUsd
-      : cartSubtotal >= site.freeShippingThresholdUsd
+      ? site.expressShippingRwf
+      : cartSubtotal >= site.freeDeliveryThresholdRwf
         ? 0
-        : site.standardShippingUsd;
+        : site.standardShippingRwf;
   const tax = cartSubtotal * site.taxRate;
   const total = cartSubtotal + shipping + tax;
 
@@ -379,11 +379,11 @@ export default function CheckoutPage() {
                     <span className="flex flex-wrap items-center justify-between gap-2">
                       <span className="font-bold text-[var(--brand-ink)]">Standard delivery</span>
                       <span className="font-bold text-[var(--brand-ink)]">
-                        {cartSubtotal >= site.freeShippingThresholdUsd ? 'Free' : money(site.standardShippingUsd)}
+                        {cartSubtotal >= site.freeDeliveryThresholdRwf ? 'Free' : money(site.standardShippingRwf)}
                       </span>
                     </span>
                     <span className="mt-1 block text-sm text-[var(--brand-muted)]">Arrives {standardEstimate}</span>
-                    <span className="mt-0.5 block text-xs text-[var(--brand-success)]">Free on orders over {money(site.freeShippingThresholdUsd)}</span>
+                    <span className="mt-0.5 block text-xs text-[var(--brand-success)]">Free on orders over {money(site.freeDeliveryThresholdRwf)}</span>
                   </span>
                 </label>
                 <label
@@ -402,7 +402,7 @@ export default function CheckoutPage() {
                   <span className="flex-1">
                     <span className="flex flex-wrap items-center justify-between gap-2">
                       <span className="font-bold text-[var(--brand-ink)]">Express delivery</span>
-                      <span className="font-bold text-[var(--brand-ink)]">{money(site.expressShippingUsd)}</span>
+                      <span className="font-bold text-[var(--brand-ink)]">{money(site.expressShippingRwf)}</span>
                     </span>
                     <span className="mt-1 block text-sm text-[var(--brand-muted)]">Arrives {expressEstimate}</span>
                     <span className="mt-0.5 block text-xs text-[var(--brand-muted)]">Priority handling where available.</span>

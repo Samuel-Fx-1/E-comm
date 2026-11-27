@@ -31,7 +31,7 @@ const SORTS: Array<{ value: ProductFilters['sort']; label: string }> = [
   { value: 'newest', label: 'Newest arrivals' },
 ];
 
-/** Bounded local fallback — only the 85 bundled products are ever scanned. */
+/** Bounded local fallback — only the 20 bundled products are ever scanned. */
 const localBounds = {
   min: Math.floor(Math.min(...products.map((product) => product.price))),
   max: Math.ceil(Math.max(...products.map((product) => product.price))),

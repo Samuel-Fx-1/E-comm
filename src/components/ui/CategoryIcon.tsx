@@ -1,5 +1,5 @@
 import {
-  BookOpen, CookingPot, Cpu, Download, Dumbbell, Headphones, Shirt, ShoppingBasket, Sparkles, ToyBrick,
+  BookOpen, CookingPot, Cpu, Download, Dumbbell, Gamepad2, Headphones, Shirt, ShoppingBag, ShoppingBasket, Sparkles, ToyBrick,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -9,8 +9,10 @@ const icons: Record<string, LucideIcon> = {
   Cpu,
   Download,
   Dumbbell,
+  Gamepad2,
   Headphones,
   Shirt,
+  ShoppingBag,
   ShoppingBasket,
   Sparkles,
   ToyBrick,

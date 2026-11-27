@@ -1,0 +1,2087 @@
+{
+  "category": "tech-gaming",
+  "name": "Tech & Gaming",
+  "products": [
+    {
+      "slug": "wireless-noise-canceling-over-ear-headphones",
+      "name": "Wireless Noise-Canceling Over-Ear Headphones",
+      "brand": "Auralis",
+      "category": "tech-gaming",
+      "subcategory": "Tech & Gaming",
+      "price": 116900,
+      "listPrice": 155900,
+      "rating": 4.8,
+      "reviewCount": 8420,
+      "stock": 64,
+      "shortDescription": "Immersive over-ear sound with adaptive noise cancellation, plush ear cups and a 40-hour battery.",
+      "bullets": [
+        "Adaptive noise cancellation quietens commutes and busy shared spaces",
+        "40 hours of playback with a quick charge that adds 5 hours in 10 minutes",
+        "Memory-foam cushions and a foldable frame make travel easy"
+      ],
+      "specs": {
+        "Driver": "40 mm dynamic",
+        "Battery": "40 h",
+        "Connectivity": "Bluetooth 5.4",
+        "Weight": "248 g"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Midnight Black"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Warm Sand"
+        }
+      ],
+      "seller": "Auralis Official",
+      "deliveryDays": 6,
+      "addedAt": "2026-11-24",
+      "flags": {
+        "isBestSeller": true,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": true,
+        "isViral": false
+      },
+      "imageQueries": [
+        "noise cancelling over ear headphones",
+        "black wireless headphones studio",
+        "headphones product photography white background",
+        "minimal over ear headphones lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "210927",
+          "url": "https://images.pexels.com/photos/210927/pexels-photo-210927.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Minimalist black over-ear headphones on a white background",
+          "photographer": "Aleksandar Spasojevic",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/210927/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "33305814",
+          "url": "https://images.pexels.com/photos/33305814/pexels-photo-33305814.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Sleek Beige Wireless Headphones on Dark Surface",
+          "photographer": "cookiemonster",
+          "photographerUrl": "https://www.pexels.com/@cookiemonster-221712119/",
+          "photoUrl": "https://www.pexels.com/photo/sleek-beige-wireless-headphones-on-dark-surface-33305814/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3000,
+          "height": 4000
+        },
+        {
+          "source": "pexels",
+          "photoId": "7772548",
+          "url": "https://images.pexels.com/photos/7772548/pexels-photo-7772548.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black headphones on white surface",
+          "photographer": "Caleb Oquendo",
+          "photographerUrl": "https://www.pexels.com/@caleboquendo/",
+          "photoUrl": "https://www.pexels.com/photo/black-headphones-on-white-surface-7772548/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3544,
+          "height": 5316
+        },
+        {
+          "source": "pexels",
+          "photoId": "15487609",
+          "url": "https://images.pexels.com/photos/15487609/pexels-photo-15487609.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black Headphones Lying",
+          "photographer": "Sunil Satapathy",
+          "photographerUrl": "https://www.pexels.com/@sunil-satapathy-61455468/",
+          "photoUrl": "https://www.pexels.com/photo/black-headphones-lying-15487609/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3000,
+          "height": 4000
+        }
+      ]
+    },
+    {
+      "slug": "low-latency-gaming-wireless-earbuds",
+      "name": "Low-Latency Gaming Wireless Earbuds",
+      "brand": "Voltix",
+      "category": "tech-gaming",
+      "subcategory": "Tech & Gaming",
+      "price": 51900,
+      "listPrice": 64900,
+      "rating": 4.6,
+      "reviewCount": 3180,
+      "stock": 112,
+      "shortDescription": "Low-latency wireless earbuds with a snug sport fit, punchy bass and a pocketable charging case.",
+      "bullets": [
+        "Game mode keeps audio and on-screen action in sync",
+        "Three tip sizes help you find a secure, comfortable seal",
+        "The compact case adds up to 24 hours of total listening time"
+      ],
+      "specs": {
+        "Driver": "10 mm dynamic",
+        "Battery": "6 h + 18 h case",
+        "Latency": "45 ms",
+        "Connectivity": "Bluetooth 5.4"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Black"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "White"
+        }
+      ],
+      "seller": "Voltix Official",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-22",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "wireless gaming earbuds",
+        "black sport earbuds charging case",
+        "earbuds product photography",
+        "gaming earbuds desk setup"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "10997624",
+          "url": "https://images.pexels.com/photos/10997624/pexels-photo-10997624.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "White wireless earbuds beside a gaming controller",
+          "photographer": "Nathan J Hilton",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/10997624/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "33319872",
+          "url": "https://images.pexels.com/photos/33319872/pexels-photo-33319872.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Stylish Wireless Earbuds on Mossy Surface",
+          "photographer": "Amal A S",
+          "photographerUrl": "https://www.pexels.com/@amal-a-s-2150318757/",
+          "photoUrl": "https://www.pexels.com/photo/stylish-wireless-earbuds-on-mossy-surface-33319872/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2600,
+          "height": 4624
+        },
+        {
+          "source": "pexels",
+          "photoId": "8858287",
+          "url": "https://images.pexels.com/photos/8858287/pexels-photo-8858287.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black Earbuds in Black Casing",
+          "photographer": "SpotwizardLee",
+          "photographerUrl": "https://www.pexels.com/@spotwizardlee-35777904/",
+          "photoUrl": "https://www.pexels.com/photo/black-earbuds-in-black-casing-8858287/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4603,
+          "height": 4461
+        },
+        {
+          "source": "pexels",
+          "photoId": "11599423",
+          "url": "https://images.pexels.com/photos/11599423/pexels-photo-11599423.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "White Ear Buds",
+          "photographer": "Hemil Dhanani",
+          "photographerUrl": "https://www.pexels.com/@hemildhanani/",
+          "photoUrl": "https://www.pexels.com/photo/white-ear-buds-11599423/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2070,
+          "height": 3105
+        }
+      ]
+    },
+    {
+      "slug": "compact-mechanical-hall-effect-keyboard",
+      "name": "Compact Mechanical Hall-Effect Keyboard",
+      "brand": "Nordika",
+      "category": "tech-gaming",
+      "subcategory": "Tech & Gaming",
+      "price": 116900,
+      "listPrice": 142900,
+      "rating": 4.7,
+      "reviewCount": 1260,
+      "stock": 38,
+      "shortDescription": "A compact hall-effect keyboard with adjustable actuation, hot-swap switches and a clean low profile.",
+      "bullets": [
+        "Hall-effect switches let you tune how far each key travels",
+        "Hot-swappable keycaps make it easy to refresh the look",
+        "A 75% layout leaves room for your mouse without losing the number row"
+      ],
+      "specs": {
+        "Layout": "75% / 82 keys",
+        "Switches": "Hall-effect",
+        "Actuation": "Adjustable",
+        "Connectivity": "USB-C"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Graphite"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Ivory"
+        }
+      ],
+      "seller": "Nordika Official",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-21",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": true,
+        "isViral": false
+      },
+      "imageQueries": [
+        "compact mechanical keyboard",
+        "75 percent keyboard desk setup",
+        "mechanical keyboard close up",
+        "keyboard product photography"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "9020272",
+          "url": "https://images.pexels.com/photos/9020272/pexels-photo-9020272.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close-up of a mechanical keyboard with exposed switches",
+          "photographer": "Castorly Stock",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/9020272/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "17895080",
+          "url": "https://images.pexels.com/photos/17895080/pexels-photo-17895080.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Illuminated Computer Keyboard",
+          "photographer": "Isabella Mendes",
+          "photographerUrl": "https://www.pexels.com/@isabella-mendes-107313/",
+          "photoUrl": "https://www.pexels.com/photo/illuminated-computer-keyboard-17895080/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4016,
+          "height": 6016
+        },
+        {
+          "source": "pexels",
+          "photoId": "34688826",
+          "url": "https://images.pexels.com/photos/34688826/pexels-photo-34688826.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Cozy Home Workspace with Clock and Decor",
+          "photographer": "Suhas Hanjar",
+          "photographerUrl": "https://www.pexels.com/@suhashanjar/",
+          "photoUrl": "https://www.pexels.com/photo/cozy-home-workspace-with-clock-and-decor-34688826/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3067,
+          "height": 4600
+        },
+        {
+          "source": "pexels",
+          "photoId": "4145372",
+          "url": "https://images.pexels.com/photos/4145372/pexels-photo-4145372.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Keyboard of typewriter with red button",
+          "photographer": "Mochammad  Algi",
+          "photographerUrl": "https://www.pexels.com/@cripsdog/",
+          "photoUrl": "https://www.pexels.com/photo/keyboard-of-typewriter-with-red-button-4145372/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 7380,
+          "height": 11072
+        }
+      ]
+    },
+    {
+      "slug": "rgb-smart-led-room-strip-lights",
+      "name": "RGB Smart LED Room Strip Lights",
+      "brand": "Lumo",
+      "category": "tech-gaming",
+      "subcategory": "Tech & Gaming",
+      "price": 32500,
+      "listPrice": 45500,
+      "rating": 4.5,
+      "reviewCount": 5210,
+      "stock": 145,
+      "shortDescription": "Smart RGB strip lights with app control, music sync and peel-and-stick backing for any room.",
+      "bullets": [
+        "Sixteen million colours and scene presets set the mood instantly",
+        "Music mode makes the lights react to your playlist",
+        "Peel-and-stick backing installs in minutes without tools"
+      ],
+      "specs": {
+        "Length": "5 m",
+        "Colours": "16 million",
+        "Control": "App + remote",
+        "Power": "USB 5 V"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Length",
+          "value": "5 m"
+        },
+        {
+          "type": "color",
+          "name": "Length",
+          "value": "10 m"
+        }
+      ],
+      "seller": "Lumo Official",
+      "deliveryDays": 6,
+      "addedAt": "2026-11-19",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "RGB LED strip lights",
+        "smart room lighting strip",
+        "LED lights bedroom setup",
+        "LED strip product photography"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "10482375",
+          "url": "https://images.pexels.com/photos/10482375/pexels-photo-10482375.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Red LED strip lights illuminating a dark room",
+          "photographer": "Ducky",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/10482375/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "17784701",
+          "url": "https://images.pexels.com/photos/17784701/pexels-photo-17784701.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Gaming Computer, Laptop and Keyboard on Desk",
+          "photographer": "Pramod  Tiwari",
+          "photographerUrl": "https://www.pexels.com/@pramodtiwari/",
+          "photoUrl": "https://www.pexels.com/photo/gaming-computer-laptop-and-keyboard-on-desk-17784701/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3648,
+          "height": 4816
+        },
+        {
+          "source": "pexels",
+          "photoId": "28786771",
+          "url": "https://images.pexels.com/photos/28786771/pexels-photo-28786771.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Modern Gaming Setup with RGB Lighting",
+          "photographer": "UMUT   🆁🅰🆆",
+          "photographerUrl": "https://www.pexels.com/@umudicreative/",
+          "photoUrl": "https://www.pexels.com/photo/modern-gaming-setup-with-rgb-lighting-28786771/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
+        },
+        {
+          "source": "pexels",
+          "photoId": "5489398",
+          "url": "https://images.pexels.com/photos/5489398/pexels-photo-5489398.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Gamer Sitting on a Bed",
+          "photographer": "Florenz Mendoza",
+          "photographerUrl": "https://www.pexels.com/@florenz-mendoza-3667096/",
+          "photoUrl": "https://www.pexels.com/photo/a-gamer-sitting-on-a-bed-5489398/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4683,
+          "height": 7021
+        }
+      ]
+    },
+    {
+      "slug": "wireless-charging-desk-mat",
+      "name": "Wireless Charging Desk Mat",
+      "brand": "Lumo",
+      "category": "tech-gaming",
+      "subcategory": "Tech & Gaming",
+      "price": 47900,
+      "listPrice": 58500,
+      "rating": 4.4,
+      "reviewCount": 860,
+      "stock": 72,
+      "shortDescription": "A stitched desk mat with a built-in 15W wireless charging pad and a smooth, tidy surface for work.",
+      "bullets": [
+        "A stitched, water-resistant surface protects a full desk setup",
+        "The built-in 15W pad charges a phone while you work",
+        "A non-slip rubber base keeps everything in place"
+      ],
+      "specs": {
+        "Size": "900 × 400 mm",
+        "Charging": "15 W Qi",
+        "Material": "PU leather",
+        "Base": "Non-slip rubber"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Slate"
+        },
+        {
+          "type": "color",
+          "name": "Colour",
+          "value": "Beige"
+        }
+      ],
+      "seller": "Lumo Official",
+      "deliveryDays": 2,
+      "addedAt": "2026-11-17",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": true,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "wireless charging desk mat",
+        "large desk pad setup",
+        "desk mat product photography",
+        "minimal desk accessories mat"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7742585",
+          "url": "https://images.pexels.com/photos/7742585/pexels-photo-7742585.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Phone charging wirelessly on a desk beside a laptop",
+          "photographer": "Rann Vijay",
+          "photographerUrl": "https://www.pexels.com/",
+          "photoUrl": "https://www.pexels.com/photo/7742585/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1200,
+          "height": 1200,
+          "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "21391577",
+          "url": "https://images.pexels.com/photos/21391577/pexels-photo-21391577.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Desk with Laptop and Monitor on Stand",
+          "photographer": "Oladimeji Ajegbile",
+          "photographerUrl": "https://www.pexels.com/@diimejii/",
+          "photoUrl": "https://www.pexels.com/photo/desk-with-laptop-and-monitor-on-stand-21391577/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "27559487",
+          "url": "https://images.pexels.com/photos/27559487/pexels-photo-27559487.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A mouse pad with a keyboard and mouse on it",
+          "photographer": "minhphuc .workspace",
+          "photographerUrl": "https://www.pexels.com/@mintworkspace/",
+          "photoUrl": "https://www.pexels.com/photo/a-mouse-pad-with-a-keyboard-and-mouse-on-it-27559487/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3089,
+          "height": 4633
+        },
+        {
+          "source": "pexels",
+          "photoId": "14151561",
+          "url": "https://images.pexels.com/photos/14151561/pexels-photo-14151561.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Man in Pink Shirt Using Laptop",
+          "photographer": "Vince Andrada",
+          "photographerUrl": "https://www.pexels.com/@vince-andrada-309492119/",
+          "photoUrl": "https://www.pexels.com/photo/a-man-in-pink-shirt-using-laptop-14151561/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        }
+      ]
+    },
+    {
+      "slug": "stream-4k-webcam-ring-light",
+      "name": "PixelNest Stream Webcam",
+      "brand": "PixelNest",
+      "category": "tech-gaming",
+      "subcategory": "Video",
+      "price": 119000,
+      "listPrice": 139000,
+      "rating": 4.7,
+      "reviewCount": 186,
+      "stock": 11,
+      "shortDescription": "A 4K webcam with a built-in ring light keeps video calls clear at a desk without a separate lighting rig.",
+      "bullets": [
+        "Autofocus locks on quickly.",
+        "Light brightness adjusts by touch.",
+        "Clip fits most monitors."
+      ],
+      "specs": {
+        "Sensor": "4K CMOS",
+        "Frame rate": "30 fps",
+        "Light": "3 brightness levels",
+        "Mount": "monitor clip"
+      },
+      "variants": [],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": true,
+        "isGenZPick": true,
+        "isViral": true
+      },
+      "imageQueries": [
+        "4K webcam product photo",
+        "streaming webcam with ring light",
+        "desk video call setup",
+        "webcam on monitor lifestyle"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7172687",
+          "url": "https://images.pexels.com/photos/7172687/pexels-photo-7172687.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Gadgets for photography placed on table at workplace",
+          "photographer": "Matheus Bertelli",
+          "photographerUrl": "https://www.pexels.com/@bertellifotografia/",
+          "photoUrl": "https://www.pexels.com/photo/gadgets-for-photography-placed-on-table-at-workplace-7172687/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4460,
+          "height": 5575
+        },
+        {
+          "source": "pexels",
+          "photoId": "6670747",
+          "url": "https://images.pexels.com/photos/6670747/pexels-photo-6670747.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman Watching on Phone on a Black Phone Holder",
+          "photographer": "Tima Miroshnichenko",
+          "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko/",
+          "photoUrl": "https://www.pexels.com/photo/woman-watching-on-phone-on-a-black-phone-holder-6670747/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2515,
+          "height": 3772
+        },
+        {
+          "source": "pexels",
+          "photoId": "8866721",
+          "url": "https://images.pexels.com/photos/8866721/pexels-photo-8866721.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close-Up Shot of a Headset on a Laptop",
+          "photographer": "Yan Krukau",
+          "photographerUrl": "https://www.pexels.com/@yankrukov/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-shot-of-a-headset-on-a-laptop-8866721/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "7172701",
+          "url": "https://images.pexels.com/photos/7172701/pexels-photo-7172701.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Modern video camera hanging on display of laptop",
+          "photographer": "Matheus Bertelli",
+          "photographerUrl": "https://www.pexels.com/@bertellifotografia/",
+          "photoUrl": "https://www.pexels.com/photo/modern-video-camera-hanging-on-display-of-laptop-7172701/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4480,
+          "height": 5600
+        }
+      ]
+    },
+    {
+      "slug": "portable-ssd-enclosure-usb-c",
+      "name": "VoltArc SSD Enclosure",
+      "brand": "VoltArc",
+      "category": "tech-gaming",
+      "subcategory": "Storage",
+      "price": 34800,
+      "listPrice": 41000,
+      "rating": 4.6,
+      "reviewCount": 124,
+      "stock": 18,
+      "shortDescription": "A slim USB-C enclosure turns a spare NVMe drive into fast portable storage for backups and large project files.",
+      "bullets": [
+        "Tool-free tray opens in seconds.",
+        "Aluminium shell draws heat away.",
+        "Cable is included."
+      ],
+      "specs": {
+        "Interface": "USB-C 3.2",
+        "Drive support": "NVMe M.2",
+        "Shell": "aluminium",
+        "Cable length": "20 cm"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Grey"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "One size"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "NVMe enclosure product photo",
+        "portable SSD drive desk setup",
+        "external storage minimal",
+        "USB C hard drive"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "30070239",
+          "url": "https://images.pexels.com/photos/30070239/pexels-photo-30070239.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "External Hard Drive with Orange Protective Casing",
+          "photographer": "Amar  Preciado",
+          "photographerUrl": "https://www.pexels.com/@amar/",
+          "photoUrl": "https://www.pexels.com/photo/external-hard-drive-with-orange-protective-casing-30070239/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3651,
+          "height": 5477
+        },
+        {
+          "source": "pexels",
+          "photoId": "39049155",
+          "url": "https://images.pexels.com/photos/39049155/pexels-photo-39049155.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Portable External SSD Connected to Laptop Outdoors",
+          "photographer": "Annie Hatuanh",
+          "photographerUrl": "https://www.pexels.com/@anniehatuanh/",
+          "photoUrl": "https://www.pexels.com/photo/portable-external-ssd-connected-to-laptop-outdoors-39049155/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3916,
+          "height": 5121
+        },
+        {
+          "source": "pexels",
+          "photoId": "30758135",
+          "url": "https://images.pexels.com/photos/30758135/pexels-photo-30758135.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Sleek Portable SSD on Vibrant Orange Background",
+          "photographer": "Cemrecan Yurtman",
+          "photographerUrl": "https://www.pexels.com/@cmrcn/",
+          "photoUrl": "https://www.pexels.com/photo/sleek-portable-ssd-on-vibrant-orange-background-30758135/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3510,
+          "height": 6240
+        },
+        {
+          "source": "pexels",
+          "photoId": "5335964",
+          "url": "https://images.pexels.com/photos/5335964/pexels-photo-5335964.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Sandisk Extreme Portable External Solid State Drive",
+          "photographer": "thiago japyassu",
+          "photographerUrl": "https://www.pexels.com/@japy/",
+          "photoUrl": "https://www.pexels.com/photo/sandisk-extreme-portable-external-solid-state-drive-5335964/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3375,
+          "height": 6000
+        }
+      ]
+    },
+    {
+      "slug": "programmable-macro-keypad",
+      "name": "NovaKey Macro Pad",
+      "brand": "NovaKey",
+      "category": "tech-gaming",
+      "subcategory": "Keyboards",
+      "price": 42700,
+      "listPrice": 50000,
+      "rating": 4.8,
+      "reviewCount": 97,
+      "stock": 13,
+      "shortDescription": "A nine-key macro pad handles shortcuts for editing, streaming and spreadsheets with programmable keys.",
+      "bullets": [
+        "Keys feel crisp and quiet.",
+        "Profiles save to onboard memory.",
+        "Pad sits flat beside a keyboard."
+      ],
+      "specs": {
+        "Keys": "9 programmable",
+        "Switches": "tactile",
+        "Connection": "USB-C",
+        "Memory": "3 profiles"
+      },
+      "variants": [],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": true,
+        "isViral": false
+      },
+      "imageQueries": [
+        "macro keypad product photo",
+        "programmable keypad desk setup",
+        "mechanical mini keyboard close up",
+        "streaming control pad"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "17994444",
+          "url": "https://images.pexels.com/photos/17994444/pexels-photo-17994444.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Blue Keys on Keyboard",
+          "photographer": "Dušan Cvetanović",
+          "photographerUrl": "https://www.pexels.com/@dusan-cvetanovic-254415846/",
+          "photoUrl": "https://www.pexels.com/photo/blue-keys-on-keyboard-17994444/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2333,
+          "height": 3500
+        },
+        {
+          "source": "pexels",
+          "photoId": "11376182",
+          "url": "https://images.pexels.com/photos/11376182/pexels-photo-11376182.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close Up Photo of a Computer Keyboard",
+          "photographer": "thiago japyassu",
+          "photographerUrl": "https://www.pexels.com/@japy/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-photo-of-a-computer-keyboard-11376182/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "32313569",
+          "url": "https://images.pexels.com/photos/32313569/pexels-photo-32313569.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Custom Mechanical Keyboard on Wooden Desk",
+          "photographer": "Alexey Demidov",
+          "photographerUrl": "https://www.pexels.com/@alexeydemidov/",
+          "photoUrl": "https://www.pexels.com/photo/custom-mechanical-keyboard-on-wooden-desk-32313569/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3840,
+          "height": 5760
+        },
+        {
+          "source": "pexels",
+          "photoId": "3945688",
+          "url": "https://images.pexels.com/photos/3945688/pexels-photo-3945688.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "White and Black Game Controller",
+          "photographer": "cottonbro studio",
+          "photographerUrl": "https://www.pexels.com/@cottonbro/",
+          "photoUrl": "https://www.pexels.com/photo/white-and-black-game-controller-3945688/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        }
+      ]
+    },
+    {
+      "slug": "usb-c-8-in-1-hub",
+      "name": "VoltArc Eight Port Hub",
+      "brand": "VoltArc",
+      "category": "tech-gaming",
+      "subcategory": "Accessories",
+      "price": 51600,
+      "listPrice": 60000,
+      "rating": 4.5,
+      "reviewCount": 241,
+      "stock": 20,
+      "shortDescription": "An eight-port hub adds HDMI, card slots and USB-A ports to a slim laptop without a messy adapter stack.",
+      "bullets": [
+        "HDMI supports 4K at 30 Hz.",
+        "Pass-through charging keeps the laptop powered.",
+        "Cable is short enough for a bag."
+      ],
+      "specs": {
+        "Ports": "8",
+        "Video": "HDMI 4K",
+        "Card slots": "SD and microSD",
+        "Power delivery": "100 W"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Slate"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "One size"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "USB C hub product photo",
+        "laptop adapter desk setup",
+        "multiport hub close up",
+        "minimal desk accessories"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7054723",
+          "url": "https://images.pexels.com/photos/7054723/pexels-photo-7054723.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Close-Up Shot of a USB Hub Attached on a Laptop",
+          "photographer": "Kindel Media",
+          "photographerUrl": "https://www.pexels.com/@kindelmedia/",
+          "photoUrl": "https://www.pexels.com/photo/a-close-up-shot-of-a-usb-hub-attached-on-a-laptop-7054723/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2200,
+          "height": 2888
+        },
+        {
+          "source": "pexels",
+          "photoId": "4325082",
+          "url": "https://images.pexels.com/photos/4325082/pexels-photo-4325082.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Laptop on the Table",
+          "photographer": "Samuel Reis",
+          "photographerUrl": "https://www.pexels.com/@samuel-reis-2783455/",
+          "photoUrl": "https://www.pexels.com/photo/a-laptop-on-the-table-4325082/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3840,
+          "height": 5760
+        },
+        {
+          "source": "pexels",
+          "photoId": "32328271",
+          "url": "https://images.pexels.com/photos/32328271/pexels-photo-32328271.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Blurred Close-Up of Technology Devices on Desk",
+          "photographer": "Alexey Demidov",
+          "photographerUrl": "https://www.pexels.com/@alexeydemidov/",
+          "photoUrl": "https://www.pexels.com/photo/blurred-close-up-of-technology-devices-on-desk-32328271/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3840,
+          "height": 5760
+        },
+        {
+          "source": "pexels",
+          "photoId": "5882563",
+          "url": "https://images.pexels.com/photos/5882563/pexels-photo-5882563.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Pens in Cup and Flash Drive on White Desk",
+          "photographer": "kaboompics",
+          "photographerUrl": "https://www.pexels.com/@karola-g/",
+          "photoUrl": "https://www.pexels.com/photo/pens-in-cup-and-flash-drive-on-white-desk-5882563/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4480,
+          "height": 6720
+        }
+      ]
+    },
+    {
+      "slug": "aluminium-laptop-stand",
+      "name": "PixelNest Laptop Stand",
+      "brand": "PixelNest",
+      "category": "tech-gaming",
+      "subcategory": "Desk Setup",
+      "price": 46900,
+      "listPrice": 55000,
+      "rating": 4.7,
+      "reviewCount": 158,
+      "stock": 15,
+      "shortDescription": "An aluminium riser lifts a laptop to eye level and opens space underneath for a keyboard and notebook.",
+      "bullets": [
+        "Hinges hold firm during typing.",
+        "Rubber pads stop sliding.",
+        "Folds flat for travel."
+      ],
+      "specs": {
+        "Material": "aluminium",
+        "Fits": "10-16 inch laptops",
+        "Height": "6 levels",
+        "Weight": "900 g"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Silver, Black"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "One size"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "laptop stand product photo",
+        "aluminium riser desk setup",
+        "raised laptop workspace",
+        "minimal desk stand"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7172439",
+          "url": "https://images.pexels.com/photos/7172439/pexels-photo-7172439.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Laptop on White Table",
+          "photographer": "Standsome Worklifestyle",
+          "photographerUrl": "https://www.pexels.com/@standsome-worklifestyle-3540493/",
+          "photoUrl": "https://www.pexels.com/photo/laptop-on-white-table-7172439/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "source": "pexels",
+          "photoId": "13620266",
+          "url": "https://images.pexels.com/photos/13620266/pexels-photo-13620266.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Monitor on a Desk",
+          "photographer": "Pramod  Tiwari",
+          "photographerUrl": "https://www.pexels.com/@pramodtiwari/",
+          "photoUrl": "https://www.pexels.com/photo/a-monitor-on-a-desk-13620266/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3648,
+          "height": 3979
+        },
+        {
+          "source": "pexels",
+          "photoId": "34502078",
+          "url": "https://images.pexels.com/photos/34502078/pexels-photo-34502078.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Modern Workspace with Laptop and Decorative Elements",
+          "photographer": "Karina Finger",
+          "photographerUrl": "https://www.pexels.com/@karina-finger-1241775501/",
+          "photoUrl": "https://www.pexels.com/photo/modern-workspace-with-laptop-and-decorative-elements-34502078/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1728,
+          "height": 2592
+        },
+        {
+          "source": "pexels",
+          "photoId": "33572895",
+          "url": "https://images.pexels.com/photos/33572895/pexels-photo-33572895.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Modern Coding Workspace with Dual Monitors",
+          "photographer": "Bashir Khabir",
+          "photographerUrl": "https://www.pexels.com/@bashir-khabir-2155066672/",
+          "photoUrl": "https://www.pexels.com/photo/modern-coding-workspace-with-dual-monitors-33572895/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1526,
+          "height": 2622
+        }
+      ]
+    },
+    {
+      "slug": "ergonomic-wireless-mouse",
+      "name": "NovaKey Glide Mouse",
+      "brand": "NovaKey",
+      "category": "tech-gaming",
+      "subcategory": "Input Devices",
+      "price": 38900,
+      "listPrice": 45000,
+      "rating": 4.6,
+      "reviewCount": 302,
+      "stock": 22,
+      "shortDescription": "An ergonomic wireless mouse supports the hand through long work sessions with a soft grip and a quiet scroll wheel.",
+      "bullets": [
+        "Two connectivity modes switch easily.",
+        "Buttons stay quiet in shared spaces.",
+        "Batteries last for months."
+      ],
+      "specs": {
+        "Sensor": "1600 DPI",
+        "Connection": "Bluetooth and 2.4 GHz",
+        "Buttons": "6 silent",
+        "Battery": "2 AA"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Black, Grey"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "One size"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "ergonomic mouse product photo",
+        "wireless mouse desk flat lay",
+        "quiet office mouse",
+        "computer mouse close up"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "32755760",
+          "url": "https://images.pexels.com/photos/32755760/pexels-photo-32755760.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Person Holding Ergonomic Wireless Mouse in Hand",
+          "photographer": "Matheus Bertelli",
+          "photographerUrl": "https://www.pexels.com/@bertellifotografia/",
+          "photoUrl": "https://www.pexels.com/photo/person-holding-ergonomic-wireless-mouse-in-hand-32755760/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4480,
+          "height": 6720
+        },
+        {
+          "source": "pexels",
+          "photoId": "16171553",
+          "url": "https://images.pexels.com/photos/16171553/pexels-photo-16171553.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Top View of a Laptop and Headphones",
+          "photographer": "Anthony Rondón",
+          "photographerUrl": "https://www.pexels.com/@anthony-rondon-435442901/",
+          "photoUrl": "https://www.pexels.com/photo/top-view-of-a-laptop-and-headphones-16171553/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2839,
+          "height": 3785
+        },
+        {
+          "source": "pexels",
+          "photoId": "12786594",
+          "url": "https://images.pexels.com/photos/12786594/pexels-photo-12786594.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Professional Speakers Standing by Monitor on Desk",
+          "photographer": "Pew Nguyen",
+          "photographerUrl": "https://www.pexels.com/@nguyendesigner/",
+          "photoUrl": "https://www.pexels.com/photo/professional-speakers-standing-by-monitor-on-desk-12786594/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
+        },
+        {
+          "source": "pexels",
+          "photoId": "7240353",
+          "url": "https://images.pexels.com/photos/7240353/pexels-photo-7240353.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black Computer Mouse Beside the White Laptop",
+          "photographer": "Bia Sousa",
+          "photographerUrl": "https://www.pexels.com/@biasousa/",
+          "photoUrl": "https://www.pexels.com/photo/black-computer-mouse-beside-the-white-laptop-7240353/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        }
+      ]
+    },
+    {
+      "slug": "headset-stand-with-dock",
+      "name": "EchoDock Headset Stand",
+      "brand": "EchoDock",
+      "category": "tech-gaming",
+      "subcategory": "Desk Setup",
+      "price": 27900,
+      "listPrice": 33000,
+      "rating": 4.5,
+      "reviewCount": 113,
+      "stock": 17,
+      "shortDescription": "A weighted headset stand keeps headphones off the desk and adds a small tray for cables and cards.",
+      "bullets": [
+        "Base grips the surface.",
+        "Hook suits over-ear models.",
+        "Assembly needs no tools."
+      ],
+      "specs": {
+        "Material": "aluminium and silicone",
+        "Height": "30 cm",
+        "Base": "weighted",
+        "Tray": "small storage"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Black"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "One size"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "headphone stand product photo",
+        "headset holder desk setup",
+        "gaming desk accessories",
+        "headphones on stand"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "10433458",
+          "url": "https://images.pexels.com/photos/10433458/pexels-photo-10433458.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Pair of Headphones on a Headphone Stand",
+          "photographer": "TStudio",
+          "photographerUrl": "https://www.pexels.com/@tstudio-34805588/",
+          "photoUrl": "https://www.pexels.com/photo/a-pair-of-headphones-on-a-headphone-stand-10433458/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2400,
+          "height": 4240
+        },
+        {
+          "source": "pexels",
+          "photoId": "36481291",
+          "url": "https://images.pexels.com/photos/36481291/pexels-photo-36481291.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Modern Desk Setup with Gaming Mouse and Headphones",
+          "photographer": "FOX ^.ᆽ.^= ∫",
+          "photographerUrl": "https://www.pexels.com/@fox-58267/",
+          "photoUrl": "https://www.pexels.com/photo/modern-desk-setup-with-gaming-mouse-and-headphones-36481291/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3856,
+          "height": 5784
+        },
+        {
+          "source": "pexels",
+          "photoId": "19197878",
+          "url": "https://images.pexels.com/photos/19197878/pexels-photo-19197878.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Gaming Accessories by Desk",
+          "photographer": "minhphuc .workspace",
+          "photographerUrl": "https://www.pexels.com/@mintworkspace/",
+          "photoUrl": "https://www.pexels.com/photo/gaming-accessories-by-desk-19197878/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "6185147",
+          "url": "https://images.pexels.com/photos/6185147/pexels-photo-6185147.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Microphone and a Headphone on a Mic Stand",
+          "photographer": "Bulat Latypov",
+          "photographerUrl": "https://www.pexels.com/@bulat-latypov-2585984/",
+          "photoUrl": "https://www.pexels.com/photo/a-microphone-and-a-headphone-on-a-mic-stand-6185147/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3785,
+          "height": 5669
+        }
+      ]
+    },
+    {
+      "slug": "monitor-light-bar",
+      "name": "LumaBoard Monitor Bar",
+      "brand": "LumaBoard",
+      "category": "tech-gaming",
+      "subcategory": "Lighting",
+      "price": 53900,
+      "listPrice": 63000,
+      "rating": 4.7,
+      "reviewCount": 139,
+      "stock": 12,
+      "shortDescription": "A monitor light bar puts even light over a keyboard without glare on the screen during late work sessions.",
+      "bullets": [
+        "Brightness and warmth adjust by dial.",
+        "Clamp fits thin monitor frames.",
+        "USB-C power keeps the desk tidy."
+      ],
+      "specs": {
+        "Length": "45 cm",
+        "Colour temp": "3000-6000 K",
+        "Mount": "clamp",
+        "Power": "USB-C"
+      },
+      "variants": [],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": true,
+        "isDeal": false,
+        "isTrending": true,
+        "isGenZPick": false,
+        "isViral": true
+      },
+      "imageQueries": [
+        "monitor light bar product photo",
+        "desk lamp for monitor close up",
+        "workspace lighting setup",
+        "screen bar on display"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "36124105",
+          "url": "https://images.pexels.com/photos/36124105/pexels-photo-36124105.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Modern Minimalist Desk Setup with Monitors",
+          "photographer": "Mohammed Alim",
+          "photographerUrl": "https://www.pexels.com/@apyfz/",
+          "photoUrl": "https://www.pexels.com/photo/modern-minimalist-desk-setup-with-monitors-36124105/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 8573,
+          "height": 11431
+        },
+        {
+          "source": "pexels",
+          "photoId": "7107482",
+          "url": "https://images.pexels.com/photos/7107482/pexels-photo-7107482.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close Up Shot of a Computer Monitor",
+          "photographer": "Gagareen",
+          "photographerUrl": "https://www.pexels.com/@gagareen-687727/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-shot-of-a-computer-monitor-7107482/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3056,
+          "height": 4592
+        },
+        {
+          "source": "pexels",
+          "photoId": "37468393",
+          "url": "https://images.pexels.com/photos/37468393/pexels-photo-37468393.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Professional Photography Studio Setup with Lighting",
+          "photographer": "McFollis",
+          "photographerUrl": "https://www.pexels.com/@thisismcfollis/",
+          "photoUrl": "https://www.pexels.com/photo/professional-photography-studio-setup-with-lighting-37468393/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4363,
+          "height": 6108
+        },
+        {
+          "source": "pexels",
+          "photoId": "3069868",
+          "url": "https://images.pexels.com/photos/3069868/pexels-photo-3069868.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Colorful Monitor",
+          "photographer": "JACK REDGATE",
+          "photographerUrl": "https://www.pexels.com/@jack-redgate-333633/",
+          "photoUrl": "https://www.pexels.com/photo/colorful-monitor-3069868/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 5000
+        }
+      ]
+    },
+    {
+      "slug": "cable-management-kit-12",
+      "name": "VoltArc Cable Kit",
+      "brand": "VoltArc",
+      "category": "tech-gaming",
+      "subcategory": "Accessories",
+      "price": 16400,
+      "listPrice": 19500,
+      "rating": 4.4,
+      "reviewCount": 198,
+      "stock": 30,
+      "shortDescription": "A twelve-piece cable kit gathers loose leads under a desk and along a wall without cutting or drilling.",
+      "bullets": [
+        "Clips hold flat and round cables.",
+        "Adhesive pads peel off cleanly.",
+        "Pieces sort in a small box."
+      ],
+      "specs": {
+        "Pieces": "12",
+        "Types": "clips and sleeves",
+        "Adhesive": "removable",
+        "Colour": "black"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Black"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "12 piece"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "cable management kit",
+        "desk cable clips product photo",
+        "neat desk setup cables",
+        "hidden wires under desk"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "34956927",
+          "url": "https://images.pexels.com/photos/34956927/pexels-photo-34956927.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close-up of Modern Computer Hardware Device",
+          "photographer": "Sirius Df",
+          "photographerUrl": "https://www.pexels.com/@sirius-df-440758016/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-of-modern-computer-hardware-device-34956927/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2930,
+          "height": 2930
+        },
+        {
+          "source": "pexels",
+          "photoId": "8534458",
+          "url": "https://images.pexels.com/photos/8534458/pexels-photo-8534458.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black Clips on White Table",
+          "photographer": "Hanna Pad",
+          "photographerUrl": "https://www.pexels.com/@anna-nekrashevich/",
+          "photoUrl": "https://www.pexels.com/photo/black-clips-on-white-table-8534458/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
+        },
+        {
+          "source": "pexels",
+          "photoId": "11747565",
+          "url": "https://images.pexels.com/photos/11747565/pexels-photo-11747565.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Computer Mouse on a Desk",
+          "photographer": "Nikita Nikitin",
+          "photographerUrl": "https://www.pexels.com/@nikitaxnikitin/",
+          "photoUrl": "https://www.pexels.com/photo/a-computer-mouse-on-a-desk-11747565/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3468,
+          "height": 4624
+        },
+        {
+          "source": "pexels",
+          "photoId": "9986105",
+          "url": "https://images.pexels.com/photos/9986105/pexels-photo-9986105.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Person Sitting under Table",
+          "photographer": "Мария Кашина",
+          "photographerUrl": "https://www.pexels.com/@84745775/",
+          "photoUrl": "https://www.pexels.com/photo/person-sitting-under-table-9986105/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3630,
+          "height": 5796
+        }
+      ]
+    },
+    {
+      "slug": "compact-bluetooth-speaker",
+      "name": "EchoDock Pocket Speaker",
+      "brand": "EchoDock",
+      "category": "tech-gaming",
+      "subcategory": "Audio",
+      "price": 62900,
+      "listPrice": 74000,
+      "rating": 4.6,
+      "reviewCount": 226,
+      "stock": 14,
+      "shortDescription": "A compact Bluetooth speaker fills a room or a small terrace with clear sound without dominating a shelf.",
+      "bullets": [
+        "Battery lasts through a workday.",
+        "Pairing takes a few seconds.",
+        "Fabric grille resists light splashes."
+      ],
+      "specs": {
+        "Output": "20 W",
+        "Battery": "12 hours",
+        "Connection": "Bluetooth 5.3",
+        "Water rating": "IPX5"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Charcoal, Sand"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "One size"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "compact bluetooth speaker",
+        "portable speaker product photo",
+        "small speaker on desk lifestyle",
+        "wireless speaker close up"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "14555249",
+          "url": "https://images.pexels.com/photos/14555249/pexels-photo-14555249.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close-Up Shot of a Speaker",
+          "photographer": "JACK BROWN",
+          "photographerUrl": "https://www.pexels.com/@jack-brown-376393468/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-shot-of-a-speaker-14555249/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3507,
+          "height": 4384
+        },
+        {
+          "source": "pexels",
+          "photoId": "18542239",
+          "url": "https://images.pexels.com/photos/18542239/pexels-photo-18542239.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black and White Photography of Bluetooth Speakers",
+          "photographer": "Ravi Roshan",
+          "photographerUrl": "https://www.pexels.com/@ravi-roshan-2875998/",
+          "photoUrl": "https://www.pexels.com/photo/black-and-white-photography-of-bluetooth-speakers-18542239/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "35436825",
+          "url": "https://images.pexels.com/photos/35436825/pexels-photo-35436825.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Portable Bluetooth Speaker on Wooden Table",
+          "photographer": "Eric Joseph",
+          "photographerUrl": "https://www.pexels.com/@ericc/",
+          "photoUrl": "https://www.pexels.com/photo/portable-bluetooth-speaker-on-wooden-table-35436825/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4672,
+          "height": 5840
+        },
+        {
+          "source": "pexels",
+          "photoId": "13465232",
+          "url": "https://images.pexels.com/photos/13465232/pexels-photo-13465232.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close-up Photo of Wireless Red Speakers",
+          "photographer": "Nicholas Derio Palacios",
+          "photographerUrl": "https://www.pexels.com/@derio/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-photo-of-wireless-red-speakers-13465232/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2488,
+          "height": 4416
+        }
+      ]
+    },
+    {
+      "slug": "wifi-smart-plug-pair",
+      "name": "VoltArc Smart Plug Pair",
+      "brand": "VoltArc",
+      "category": "tech-gaming",
+      "subcategory": "Smart Home",
+      "price": 34900,
+      "listPrice": 41000,
+      "rating": 4.5,
+      "reviewCount": 167,
+      "stock": 19,
+      "shortDescription": "A pair of smart plugs schedules lamps and fans from a phone and keeps daily energy use visible in one place.",
+      "bullets": [
+        "Setup takes a few steps.",
+        "Each plug has a manual button.",
+        "Schedules work without internet."
+      ],
+      "specs": {
+        "Count": "2 plugs",
+        "Protocol": "Wi-Fi",
+        "Rating": "16 A",
+        "Control": "app and button"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "White"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "2 pack"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "smart plug product photo",
+        "wifi plug in wall lifestyle",
+        "home automation accessories",
+        "smart home plug close up"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "15000981",
+          "url": "https://images.pexels.com/photos/15000981/pexels-photo-15000981.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Photo of Chargers Put into Extension Electric Cord on a Table",
+          "photographer": "Sarah Shi",
+          "photographerUrl": "https://www.pexels.com/@sarah-shi-363894013/",
+          "photoUrl": "https://www.pexels.com/photo/photo-of-chargers-put-into-extension-electric-cord-on-a-table-15000981/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
+        },
+        {
+          "source": "pexels",
+          "photoId": "18358118",
+          "url": "https://images.pexels.com/photos/18358118/pexels-photo-18358118.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Plugs Plugged into Wall Outlet",
+          "photographer": "Steve A Johnson",
+          "photographerUrl": "https://www.pexels.com/@steve/",
+          "photoUrl": "https://www.pexels.com/photo/plugs-plugged-into-wall-outlet-18358118/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3648,
+          "height": 5472
+        },
+        {
+          "source": "pexels",
+          "photoId": "16423102",
+          "url": "https://images.pexels.com/photos/16423102/pexels-photo-16423102.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "home security camera",
+          "photographer": "Jakub Zerdzicki",
+          "photographerUrl": "https://www.pexels.com/@jakubzerdzicki/",
+          "photoUrl": "https://www.pexels.com/photo/home-security-camera-16423102/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1936,
+          "height": 2600
+        },
+        {
+          "source": "pexels",
+          "photoId": "28117696",
+          "url": "https://images.pexels.com/photos/28117696/pexels-photo-28117696.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Smart socket power electricity automation",
+          "photographer": "Jakub Zerdzicki",
+          "photographerUrl": "https://www.pexels.com/@jakubzerdzicki/",
+          "photoUrl": "https://www.pexels.com/photo/smart-socket-power-electricity-automation-28117696/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3000,
+          "height": 2710
+        }
+      ]
+    },
+    {
+      "slug": "small-drawing-tablet",
+      "name": "PixelNest Sketch Tablet",
+      "brand": "PixelNest",
+      "category": "tech-gaming",
+      "subcategory": "Creative Tools",
+      "price": 148900,
+      "listPrice": 175000,
+      "rating": 4.7,
+      "reviewCount": 82,
+      "stock": 8,
+      "shortDescription": "A compact drawing tablet gives digital artists a natural surface for lines and shading beside a laptop.",
+      "bullets": [
+        "Pen needs no battery.",
+        "Keys are programmable.",
+        "Surface has a light texture."
+      ],
+      "specs": {
+        "Active area": "10 by 6 inch",
+        "Pen": "battery free",
+        "Keys": "4 programmable",
+        "Connection": "USB-C"
+      },
+      "variants": [],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "drawing tablet product photo",
+        "graphic tablet desk setup",
+        "digital art workspace",
+        "pen tablet close up"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "16313517",
+          "url": "https://images.pexels.com/photos/16313517/pexels-photo-16313517.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman Editing Photos on Laptop",
+          "photographer": "Kawê  Rodrigues",
+          "photographerUrl": "https://www.pexels.com/@kawerodriguess/",
+          "photoUrl": "https://www.pexels.com/photo/woman-editing-photos-on-laptop-16313517/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "2582933",
+          "url": "https://images.pexels.com/photos/2582933/pexels-photo-2582933.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black Flat Screen Computer Monitor",
+          "photographer": "Athena Sandrini",
+          "photographerUrl": "https://www.pexels.com/@athena/",
+          "photoUrl": "https://www.pexels.com/photo/black-flat-screen-computer-monitor-2582933/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "25037119",
+          "url": "https://images.pexels.com/photos/25037119/pexels-photo-25037119.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Drawing on a Tablet",
+          "photographer": "aju.bee",
+          "photographerUrl": "https://www.pexels.com/@aju-bee-325140257/",
+          "photoUrl": "https://www.pexels.com/photo/drawing-on-a-tablet-25037119/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2624,
+          "height": 3936
+        },
+        {
+          "source": "pexels",
+          "photoId": "16313648",
+          "url": "https://images.pexels.com/photos/16313648/pexels-photo-16313648.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Photographer Using Wacom Intuos Pro M Tablet",
+          "photographer": "Kawê  Rodrigues",
+          "photographerUrl": "https://www.pexels.com/@kawerodriguess/",
+          "photoUrl": "https://www.pexels.com/photo/photographer-using-wacom-intuos-pro-m-tablet-16313648/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3615,
+          "height": 5422
+        }
+      ]
+    },
+    {
+      "slug": "mini-desktop-microphone",
+      "name": "EchoDock Desk Mic",
+      "brand": "EchoDock",
+      "category": "tech-gaming",
+      "subcategory": "Audio",
+      "price": 78900,
+      "listPrice": 92000,
+      "rating": 4.6,
+      "reviewCount": 104,
+      "stock": 10,
+      "shortDescription": "A compact desktop microphone picks up voice clearly for calls and recordings without a large boom arm.",
+      "bullets": [
+        "Capsule reduces keyboard noise.",
+        "Base fits a small corner of the desk.",
+        "Monitor headphone jack works for zero latency."
+      ],
+      "specs": {
+        "Capsule": "cardioid",
+        "Connection": "USB-C",
+        "Sample rate": "48 kHz",
+        "Mount": "desktop base"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Black"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "One size"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "desktop microphone product photo",
+        "podcast mic on desk",
+        "home studio setup",
+        "small USB microphone"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "31726550",
+          "url": "https://images.pexels.com/photos/31726550/pexels-photo-31726550.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Modern Home Office with Microphone and Desktop",
+          "photographer": "AEN Studio",
+          "photographerUrl": "https://www.pexels.com/@alphaen/",
+          "photoUrl": "https://www.pexels.com/photo/modern-home-office-with-microphone-and-desktop-31726550/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3265,
+          "height": 4898
+        },
+        {
+          "source": "pexels",
+          "photoId": "31236103",
+          "url": "https://images.pexels.com/photos/31236103/pexels-photo-31236103.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Professional Microphone on Adjustable Arm Stand",
+          "photographer": "AEN Studio",
+          "photographerUrl": "https://www.pexels.com/@alphaen/",
+          "photoUrl": "https://www.pexels.com/photo/professional-microphone-on-adjustable-arm-stand-31236103/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4637,
+          "height": 6955
+        },
+        {
+          "source": "pexels",
+          "photoId": "39556391",
+          "url": "https://images.pexels.com/photos/39556391/pexels-photo-39556391.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Home Studio Setup with DJ Controller and Keyboard",
+          "photographer": "Dima Zimakov",
+          "photographerUrl": "https://www.pexels.com/@dima-zimakov-2164205370/",
+          "photoUrl": "https://www.pexels.com/photo/home-studio-setup-with-dj-controller-and-keyboard-39556391/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "12541646",
+          "url": "https://images.pexels.com/photos/12541646/pexels-photo-12541646.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close-up Shot of a Microphone",
+          "photographer": "Dušan Cvetanović",
+          "photographerUrl": "https://www.pexels.com/@dusan-cvetanovic-254415846/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-shot-of-a-microphone-12541646/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3696,
+          "height": 5469
+        }
+      ]
+    },
+    {
+      "slug": "laptop-cooling-pad",
+      "name": "VoltArc Cooling Pad",
+      "brand": "VoltArc",
+      "category": "tech-gaming",
+      "subcategory": "Accessories",
+      "price": 41700,
+      "listPrice": 49000,
+      "rating": 4.4,
+      "reviewCount": 91,
+      "stock": 16,
+      "shortDescription": "A low cooling pad lifts a laptop and moves air across the base during long renders and downloads.",
+      "bullets": [
+        "Fans stay quiet at low speed.",
+        "Stand angle adjusts in two steps.",
+        "USB pass-through saves a port."
+      ],
+      "specs": {
+        "Fans": "2",
+        "Fits": "up to 17 inch",
+        "Angles": "2 levels",
+        "Power": "USB"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Black"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "One size"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "laptop cooling pad product Photo",
+        "cooling fan stand desk",
+        "gaming laptop setup",
+        "laptop on cooler"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "6893340",
+          "url": "https://images.pexels.com/photos/6893340/pexels-photo-6893340.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Silver and Black Laptop on the Table",
+          "photographer": "Mikhail Nilov",
+          "photographerUrl": "https://www.pexels.com/@mikhail-nilov/",
+          "photoUrl": "https://www.pexels.com/photo/silver-and-black-laptop-on-the-table-6893340/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "38902577",
+          "url": "https://images.pexels.com/photos/38902577/pexels-photo-38902577.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Stylish Portable Fan on Colorful Blanket",
+          "photographer": "Roman Koval",
+          "photographerUrl": "https://www.pexels.com/@roman-koval-428095504/",
+          "photoUrl": "https://www.pexels.com/photo/stylish-portable-fan-on-colorful-blanket-38902577/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3072,
+          "height": 4080
+        },
+        {
+          "source": "pexels",
+          "photoId": "32327414",
+          "url": "https://images.pexels.com/photos/32327414/pexels-photo-32327414.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Modern Home Office Setup with Tech Gadgets",
+          "photographer": "Paul De Vota",
+          "photographerUrl": "https://www.pexels.com/@paul-de-vota-346077340/",
+          "photoUrl": "https://www.pexels.com/photo/modern-home-office-setup-with-tech-gadgets-32327414/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2560,
+          "height": 3840
+        },
+        {
+          "source": "pexels",
+          "photoId": "33792045",
+          "url": "https://images.pexels.com/photos/33792045/pexels-photo-33792045.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close-up of Laptop Cooling System Components",
+          "photographer": "Richard L",
+          "photographerUrl": "https://www.pexels.com/@richard-l-2150581203/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-of-laptop-cooling-system-components-33792045/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4531,
+          "height": 6796
+        }
+      ]
+    },
+    {
+      "slug": "power-bank-20000mah",
+      "name": "VoltArc Power Cell 20K",
+      "brand": "VoltArc",
+      "category": "tech-gaming",
+      "subcategory": "Power",
+      "price": 69400,
+      "listPrice": 81000,
+      "rating": 4.8,
+      "reviewCount": 321,
+      "stock": 21,
+      "shortDescription": "A 20,000 mAh power bank keeps a phone and laptop charged through a long travel day away from a socket.",
+      "bullets": [
+        "Two ports charge at once.",
+        "Display shows remaining charge.",
+        "Case fits in a day bag."
+      ],
+      "specs": {
+        "Capacity": "20000 mAh",
+        "Output": "45 W USB-C",
+        "Ports": "2",
+        "Display": "digital"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Black, Grey"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "20000 mAh"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "power bank product photo",
+        "portable charger desk flat lay",
+        "travel tech accessories",
+        "large battery pack"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "10104320",
+          "url": "https://images.pexels.com/photos/10104320/pexels-photo-10104320.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close-up of a Power Bank on the Hand of a Person",
+          "photographer": "I'm Zion",
+          "photographerUrl": "https://www.pexels.com/@zion/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-of-a-power-bank-on-the-hand-of-a-person-10104320/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4279,
+          "height": 5349
+        },
+        {
+          "source": "pexels",
+          "photoId": "10104283",
+          "url": "https://images.pexels.com/photos/10104283/pexels-photo-10104283.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Dual Port Power Bank with Gadgets on a Desk",
+          "photographer": "I'm Zion",
+          "photographerUrl": "https://www.pexels.com/@zion/",
+          "photoUrl": "https://www.pexels.com/photo/dual-port-power-bank-with-gadgets-on-a-desk-10104283/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3738,
+          "height": 4672
+        },
+        {
+          "source": "pexels",
+          "photoId": "3394663",
+          "url": "https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "White Cordless Headphones With Bag",
+          "photographer": "Sound On",
+          "photographerUrl": "https://www.pexels.com/@sound-on/",
+          "photoUrl": "https://www.pexels.com/photo/white-cordless-headphones-with-bag-3394663/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4912,
+          "height": 7360
+        },
+        {
+          "source": "pexels",
+          "photoId": "19810744",
+          "url": "https://images.pexels.com/photos/19810744/pexels-photo-19810744.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Pills and Charger",
+          "photographer": "wutthichai charoenburi",
+          "photographerUrl": "https://www.pexels.com/@wutthichai-charoenburi-553075115/",
+          "photoUrl": "https://www.pexels.com/photo/pills-and-charger-19810744/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2112,
+          "height": 3168
+        }
+      ]
+    }
+  ]
+}

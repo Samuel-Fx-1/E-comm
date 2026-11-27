@@ -33,12 +33,21 @@ export interface ProductQuery {
   rating?: number;
   inStock?: boolean;
   deals?: boolean;
+  genZPick?: boolean;
+  viral?: boolean;
   sort?: 'featured' | 'price-asc' | 'price-desc' | 'rating' | 'newest' | string;
   page?: number;
   pageSize?: number;
 }
 
-export type CollectionName = 'deals' | 'best-sellers' | 'new-arrivals' | 'featured' | 'trending';
+export type CollectionName =
+  | 'deals'
+  | 'best-sellers'
+  | 'new-arrivals'
+  | 'featured'
+  | 'trending'
+  | 'gen-z-picks'
+  | 'viral';
 
 const API_BASE = '/api';
 const HEALTH_TIMEOUT_MS = 3000;
@@ -60,6 +69,8 @@ function productQueryString(filters: ProductQuery): string {
   addParam(params, 'rating', filters.rating && filters.rating > 0 ? filters.rating : undefined);
   addParam(params, 'inStock', filters.inStock ? 1 : undefined);
   addParam(params, 'deals', filters.deals ? 1 : undefined);
+  addParam(params, 'genZPick', filters.genZPick ? 1 : undefined);
+  addParam(params, 'viral', filters.viral ? 1 : undefined);
   addParam(params, 'sort', filters.sort && filters.sort !== 'featured' ? filters.sort : undefined);
   addParam(params, 'page', filters.page);
   addParam(params, 'pageSize', filters.pageSize);

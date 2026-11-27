@@ -1,24 +1,25 @@
 import type { Country } from '../config/site';
-import { getCountry } from '../config/site';
+import { getCountry, site } from '../config/site';
 
-export function convertPrice(usd: number, country: Country): number {
-  const raw = usd * country.rate;
+/** Convert an RWF-native amount into a selected country's display currency. */
+export function convertRwf(rwf: number, country: Country): number {
+  const raw = (rwf / site.rwfPerUsd) * country.rate;
   if (country.rounding > 1) {
     return Math.round(raw / country.rounding) * country.rounding;
   }
   return Math.round(raw * 100) / 100;
 }
 
-export function formatMoney(usd: number, countryCode: string): string {
+export function formatMoney(rwf: number, countryCode: string): string {
   const country = getCountry(countryCode);
-  return formatMoneyMeta(usd, country);
+  return formatMoneyMeta(rwf, country);
 }
 
 export function formatMoneyMeta(
-  usd: number,
+  rwf: number,
   meta: { currency: string; rate: number; decimals: number; rounding: number }
 ): string {
-  const raw = usd * meta.rate;
+  const raw = (rwf / site.rwfPerUsd) * meta.rate;
   const value =
     meta.rounding > 1
       ? Math.round(raw / meta.rounding) * meta.rounding

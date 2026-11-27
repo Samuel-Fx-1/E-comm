@@ -144,7 +144,7 @@ function TopNav({ onOpenAll }: { onOpenAll: () => void }) {
         ))}
         <span className="ml-auto hidden shrink-0 items-center gap-1.5 px-2 text-xs text-white/75 lg:flex">
           <Sparkles className="h-3.5 w-3.5 text-[var(--brand-yellow)]" aria-hidden="true" />
-          Free delivery on orders over {money(35)}
+          Free delivery on orders over {money(site.freeDeliveryThresholdRwf)}
         </span>
       </div>
     </nav>

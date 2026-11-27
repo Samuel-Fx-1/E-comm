@@ -78,7 +78,12 @@ export function filterProducts(all: Product[], filters: ProductFilters): FacetRe
     default:
       items = [...items].sort((a, b) => {
         const score = (p: Product) =>
-          (p.isBestSeller ? 2 : 0) + (p.isTrending ? 1 : 0) + (p.isDeal ? 1 : 0) + p.rating / 5;
+          (p.isBestSeller ? 2 : 0) +
+          (p.isGenZPick ? 2 : 0) +
+          (p.isTrending ? 1 : 0) +
+          (p.isViral ? 1 : 0) +
+          (p.isDeal ? 1 : 0) +
+          p.rating / 5;
         return score(b) - score(a);
       });
   }

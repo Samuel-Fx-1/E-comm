@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { creditedProducts, fallbackProducts } from '../data/imageMap';
+import { allCreditedPhotos, fallbackProducts } from '../data/imageMap';
 import { Seo } from '../components/ui/Seo';
 import { Breadcrumbs } from '../components/ui/Breadcrumbs';
 import { EmptyState } from '../components/ui/EmptyState';
 
 export default function CreditsPage() {
-  const credited = creditedProducts();
+  const credited = allCreditedPhotos();
   const fallbacks = fallbackProducts();
 
   return (
@@ -19,31 +19,21 @@ export default function CreditsPage() {
 
       <h1 className="mt-4 font-serif text-3xl font-bold text-[var(--brand-ink)]">Image credits</h1>
       <p className="mt-2 max-w-3xl text-sm leading-6 text-[var(--brand-muted)]">
-        Product photos are resolved once by a local seed script and cached in{' '}
-        <code className="rounded bg-[var(--brand-cream)] px-1">data/product-images.json</code>. Unsplash photos are
-        hotlinked from <code className="rounded bg-[var(--brand-cream)] px-1">images.unsplash.com</code> and are never
-        downloaded or rehosted. Pixabay and Pexels photos, and your own overrides, are downloaded once and stored locally
-        as optimised WebP files. Every photo keeps its photographer and licence link below.
+        Product photos are declared in{' '}
+        <code className="rounded bg-[var(--brand-cream)] px-1">data/catalog/*.json</code> and hotlinked from{' '}
+        <code className="rounded bg-[var(--brand-cream)] px-1">images.pexels.com</code>; they are never downloaded or
+        rehosted. Your own overrides can be stored locally. Every photo keeps its photographer and licence link below.
       </p>
 
       <div className="mt-4 flex flex-wrap gap-4 text-xs">
-        <a href="https://unsplash.com/developers" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
-          Unsplash API
-        </a>
-        <a href="https://help.unsplash.com/en/articles/2511245-unsplash-api-guidelines" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
-          Unsplash API guidelines
-        </a>
-        <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
-          Unsplash License
-        </a>
         <a href="https://www.pexels.com/api/documentation/" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
           Pexels API
         </a>
         <a href="https://www.pexels.com/license/" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
           Pexels License
         </a>
-        <a href="https://pixabay.com/api/docs/" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
-          Pixabay API
+        <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
+          Unsplash License
         </a>
         <a href="https://pixabay.com/service/license/" target="_blank" rel="noopener noreferrer" className="text-[var(--brand-navy)] underline">
           Pixabay Content License
@@ -54,7 +44,7 @@ export default function CreditsPage() {
         <div className="mt-8">
           <EmptyState
             title="No stock photos resolved yet"
-            description="All listings currently show bundled demo artwork. Once an image API key is available, run the seed script and photographer credits will appear here."
+            description="No licensed gallery photos have been added yet. Add Pexels photos to the catalog JSON and credits will appear here."
             action={
               <Link to="/search" className="inline-flex rounded-lg bg-[var(--brand-orange)] px-4 py-2.5 text-sm font-semibold text-white">
                 Browse products
@@ -64,8 +54,8 @@ export default function CreditsPage() {
         </div>
       ) : (
         <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {credited.map(({ product, image, credit }) => (
-            <li key={product.id} className="rounded-xl border border-[var(--brand-line)] bg-white p-4">
+          {credited.map(({ product, image, credit }, index) => (
+            <li key={`${product.id}-${index}`} className="rounded-xl border border-[var(--brand-line)] bg-white p-4">
               <p className="text-xs font-semibold uppercase tracking-wide text-[var(--brand-muted)]">{product.brand}</p>
               <Link to={`/product/${product.slug}`} className="mt-1 block text-sm font-bold text-[var(--brand-ink)] hover:underline">
                 {product.name}
@@ -89,16 +79,15 @@ export default function CreditsPage() {
       )}
 
       <section className="mt-10 rounded-2xl border border-[var(--brand-line)] bg-white p-5">
-        <h2 className="font-serif text-xl font-bold text-[var(--brand-ink)]">Bundled demo artwork</h2>
+        <h2 className="font-serif text-xl font-bold text-[var(--brand-ink)]">Photos needed</h2>
         <p className="mt-2 text-sm leading-6 text-[var(--brand-muted)]">
-          Listings without a suitable licensed photo use deterministic SVG artwork generated by{' '}
-          <code className="rounded bg-[var(--brand-cream)] px-1">npm run images:placeholders</code>. It is original to
-          this demo and marked “SOKO · DEMO ART”. {fallbacks.length} product(s) currently use this fallback.
+          Products with no usable gallery photo are listed here instead of being filled with generated artwork.{' '}
+          {fallbacks.length} product(s) currently need manual photo replacement.
         </p>
         {fallbacks.length > 0 && (
           <details className="mt-3">
             <summary className="cursor-pointer text-sm font-semibold text-[var(--brand-navy)]">
-              Show products using demo artwork ({fallbacks.length})
+              Show products needing photos ({fallbacks.length})
             </summary>
             <ul className="mt-3 grid gap-1 text-xs text-[var(--brand-muted)] sm:grid-cols-2">
               {fallbacks.map((product) => (

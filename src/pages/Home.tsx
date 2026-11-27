@@ -1,8 +1,9 @@
 import { useCallback, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Clock3, Flame, Sparkles } from 'lucide-react';
+import { site } from '../config/site';
 import { categories } from '../data/categories';
-import { products, bestSellers, deals, newArrivals, trending } from '../data/products';
+import { products, bestSellers, deals, newArrivals, trending, genZPicks, viral } from '../data/products';
 import { apiAvailable, fetchCollection, fetchProducts } from '../data/api';
 import { resolveProduct } from '../data/productLookup';
 import { useApiData } from '../hooks/useApiData';
@@ -18,7 +19,7 @@ import { Price } from '../components/ui/Price';
 import { Countdown } from '../components/ui/Countdown';
 import { CategoryIcon } from '../components/ui/CategoryIcon';
 
-/** All local fallbacks are bounded to the 16 curated products. */
+/** All local fallbacks are bounded to the 20 curated products. */
 export default function HomePage() {
   const { t, money } = useSite();
   const { wishlist, recent } = useStore();
@@ -54,6 +55,39 @@ export default function HomePage() {
     },
     [],
     () => trending.slice(0, 8)
+  );
+  const featuredState = useApiData(
+    async (signal) => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      return fetchCollection('featured', 8, signal);
+    },
+    [],
+    () =>
+      [...products]
+        .sort((a, b) =>
+          Number(b.isGenZPick) - Number(a.isGenZPick) ||
+          Number(b.isViral) - Number(a.isViral) ||
+          Number(b.isTrending) - Number(a.isTrending) ||
+          Number(b.isBestSeller) - Number(a.isBestSeller) ||
+          b.rating - a.rating
+        )
+        .slice(0, 8)
+  );
+  const genZPickState = useApiData(
+    async (signal) => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      return fetchCollection('gen-z-picks', 8, signal);
+    },
+    [],
+    () => genZPicks.slice(0, 8)
+  );
+  const viralState = useApiData(
+    async (signal) => {
+      if (!(await apiAvailable())) throw new Error('API unavailable');
+      return fetchCollection('viral', 8, signal);
+    },
+    [],
+    () => viral.slice(0, 8)
   );
 
   const wishlistKey = wishlist.join(',');
@@ -223,6 +257,27 @@ export default function HomePage() {
       />
 
       <ProductRow
+        title="Featured now"
+        subtitle="Flagged first: our picks, viral finds and best sellers"
+        products={featuredState.data}
+        href="/gen-z-picks"
+      />
+
+      <ProductRow
+        title="Gen Z picks"
+        subtitle="The shortlist your feed keeps coming back to"
+        products={genZPickState.data}
+        href="/gen-z-picks"
+      />
+
+      <ProductRow
+        title="Viral now"
+        subtitle="Saved, shared and showing up everywhere"
+        products={viralState.data}
+        href="/viral"
+      />
+
+      <ProductRow
         title="Recommended for you"
         subtitle={affinityCategory ? 'Based on your wishlist and browsing' : 'Top-rated picks across the store'}
         products={recommended}
@@ -280,7 +335,7 @@ export default function HomePage() {
       <section className="rounded-2xl border border-[var(--brand-line)] bg-white p-6 text-center">
         <h2 className="font-serif text-2xl font-bold text-[var(--brand-ink)]">New here? Start with the essentials.</h2>
         <p className="mx-auto mt-2 max-w-xl text-sm text-[var(--brand-muted)]">
-          {t('freeDelivery')} on orders over {money(35)}. Standard delivery is available across Rwanda and 13 more
+          {t('freeDelivery')} on orders over {money(site.freeDeliveryThresholdRwf)}. Standard delivery is available across Rwanda and 13 more
           countries.
         </p>
         <Link
