@@ -43,9 +43,11 @@ npm test                         # schema + content + URL validation of all 100 
 npm run validate                 # same validator, used by npm test
 npm run images:check             # assert four catalog photos per product; no SVG art
 npm run images:fetch:dry         # list catalog Pexels queries without API calls
-npm run images:pexels            # official Pexels pipeline (PEXELS_API_KEY in .env.local)
+npm run images:pexels            # primary official Pexels API pipeline (PEXELS_API_KEY in .env.local)
+npm run images:repick            # replace only rejected slots, then validate
+npm run images:compare           # compare catalog credits with official API cache
 npm run images:public            # cache-driven public Pexels fallback selector
-npm run test:e2e                 # Playwright home/category/gallery/cart smoke tests
+npm run test:e2e                 # Playwright smoke + image-review workflow tests
 ```
 
 Node 20.19+ / 22.12+ is recommended for Vite 8 (Node 22.5+ for the built-in `node:sqlite` API used by the server). `npm test` runs the catalog validator; `npm run test:e2e` runs the Playwright smoke suite.
@@ -111,11 +113,14 @@ The catalog contains 400 distinct Pexels photo IDs — four square/portrait phot
 
 ```bash
 npm run images:check          # verify four catalog photos per product
-npm run images:pexels:dry     # preview the official API selector
-npm run images:public:dry     # preview the key-free cache-driven selector
+npm run images:pexels:dry     # preview the primary official API selector
+npm run images:repick:dry     # preview rejected-slot replacement without API calls
+npm run images:public:dry     # preview the key-free cache-driven fallback
 ```
 
-`PEXELS_API_KEY` is read only from gitignored `.env.local` by the server-side pipeline. When it is absent, the committed public Pexels fallback selector consumes `data/pexels-public-cache.json`; it never substitutes another provider. `data/image-rejects.json` holds manually rejected photo IDs, and `data/image-overrides.json` is reserved for your own local photos. `/credits` renders every credited photo from the catalog, and `/dev/image-review` is a development-only four-slot audit page. **API keys must never be committed.**
+`PEXELS_API_KEY` is read only from gitignored `.env.local` by the primary, server-side official API pipeline (`npm run images:pexels`). It requests `https://api.pexels.com/v1/search?query=…&per_page=15&orientation=portrait`, caches results in `data/pexels-api-cache.json`, rate-limits new queries and supports `--category` / `--limit` batches. When the key was absent, the catalog was populated from the public Pexels fallback: an in-browser `fetch()` requested `https://www.pexels.com/search/<encoded query>/`, parsed the page's `__NEXT_DATA__` payload, checked candidate CDN URLs and stored compact records in `data/pexels-public-cache.json`. That path did **not** use the official API. `npm run images:compare` checks catalog photo ids, photographers, URLs and alt text against the official cache after a keyed run.
+
+`data/image-rejects.json` holds manually rejected photo IDs; `/dev/image-review` filters all four slots per product by category or search and appends rejects through a development-only Vite endpoint (absent from production builds). `npm run images:repick` replaces only rejected slots through the official API and then re-runs the catalog validator. `data/image-overrides.json` is reserved for your own local photos. `/credits` renders every credited photo from the catalog, and product pages show credits in the gallery. **API keys must never be committed.**
 
 Run `npm run sitemap` after changing routes or products to refresh `public/sitemap.xml`.
 
