@@ -71,7 +71,9 @@ const catalogs = FILES.map((slug) => ({ slug, path: join(CATALOG_DIR, `${slug}.j
 const products = catalogs.flatMap((entry) => entry.data.products);
 const rejects = new Set((readJson(REJECTS_PATH).photoIds ?? []).map(String));
 
-const cache = {};
+const cache = (() => {
+  try { return readJson(CACHE_PATH); } catch { return {}; }
+})();
 for (const group of groups) {
   for (const photo of group) {
     const key = `public:${String(photo.q).toLowerCase()}`;
@@ -84,16 +86,18 @@ const used = new Set(products.flatMap((product) => product.images.map((image) =>
 let added = 0;
 
 for (const product of products) {
-  for (const query of product.imageQueries) {
-    if (product.images.length >= 4) break;
-    const candidates = cache[`public:${query.toLowerCase()}`] ?? [];
-    const photo = candidates.find((item) => !used.has(String(item.id)) && !rejects.has(String(item.id)));
-    if (!photo) continue;
-    const image = toImage(photo);
-    if (!image) continue;
-    product.images.push(image);
-    used.add(image.photoId);
-    added += 1;
+  for (let pass = 0; pass < 2 && product.images.length < 4; pass += 1) {
+    for (const query of product.imageQueries) {
+      if (product.images.length >= 4) break;
+      const candidates = cache[`public:${query.toLowerCase()}`] ?? [];
+      const photo = candidates.find((item) => !used.has(String(item.id)) && !rejects.has(String(item.id)));
+      if (!photo) continue;
+      const image = toImage(photo);
+      if (!image) continue;
+      product.images.push(image);
+      used.add(image.photoId);
+      added += 1;
+    }
   }
 }
 

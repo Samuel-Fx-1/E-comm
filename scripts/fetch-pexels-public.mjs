@@ -92,7 +92,7 @@ function photoId(photo) {
 }
 
 function photoText(photo) {
-  return String(photo.text ?? [photo.name, photo.description, photo.caption, photo.keywords]
+  return String(photo.text ?? [photo.t, photo.s, photo.q, photo.name, photo.description, photo.caption, photo.keywords]
     .filter(Boolean).join(' ')).toLowerCase();
 }
 
@@ -116,8 +116,9 @@ function squareOrPortrait(photo) {
 
 function toImage(photo, query) {
   const id = photoId(photo);
-  if (!id || !photo.contentUrl) return null;
-  const url = new URL(photo.contentUrl);
+  if (!id) return null;
+  const extension = photo.ext === 'png' ? 'png' : 'jpeg';
+  const url = new URL(photo.contentUrl ?? `https://images.pexels.com/photos/${id}/pexels-photo-${id}.${extension}`);
   url.searchParams.set('auto', 'compress');
   url.searchParams.set('cs', 'tinysrgb');
   url.searchParams.set('w', '1200');
