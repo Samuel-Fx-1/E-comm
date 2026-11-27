@@ -50,7 +50,7 @@ export default function OrdersPage() {
         <div>
           <h1 className="font-serif text-3xl font-bold text-[var(--brand-ink)] sm:text-4xl">Your orders</h1>
           <p className="mt-1 text-sm text-[var(--brand-muted)]">
-            Track demo purchases and reorder your favourites. Sample orders are included so this page is never empty.
+            Track purchases saved in this browser and reorder your favourites.
           </p>
         </div>
         <Link to="/account" className="text-sm font-semibold text-[var(--brand-navy)] underline-offset-2 hover:underline">
@@ -82,7 +82,7 @@ export default function OrdersPage() {
           <EmptyState
             icon={<Package className="h-7 w-7" aria-hidden="true" />}
             title="No orders in this status"
-            description="Try another filter, or start a demo checkout to create an order."
+            description="Try another filter, or start a checkout to create an order."
             action={
               <Link to="/search" className="rounded-lg bg-[var(--brand-orange)] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[var(--brand-orange-dark)]">
                 Start shopping
@@ -113,7 +113,7 @@ export default function OrdersPage() {
                   <div className="sm:text-right">
                     <p className="uppercase tracking-wide text-[var(--brand-muted)]">Order # {order.id}</p>
                     <p className="mt-0.5 font-semibold text-[var(--brand-ink)]">
-                      {order.sample ? 'Sample order' : 'Demo order'}
+                      Order
                     </p>
                   </div>
                 </div>

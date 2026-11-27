@@ -231,7 +231,7 @@ export default function CatalogPage() {
     <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6">
       <Seo
         title={categoryMeta ? categoryMeta.name : query ? `Search: ${query}` : 'All products'}
-        description={categoryMeta ? categoryMeta.blurb : 'Browse the full Soko demo catalogue.'}
+        description={categoryMeta ? categoryMeta.blurb : 'Browse the full Soko catalogue.'}
         path={lockedCategory ? `/category/${lockedCategory}` : '/search'}
         noIndex={Boolean(query)}
       />

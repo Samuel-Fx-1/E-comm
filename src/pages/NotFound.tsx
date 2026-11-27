@@ -15,7 +15,7 @@ export default function NotFoundPage() {
       <h1 className="mt-2 font-serif text-4xl font-bold text-[var(--brand-ink)] sm:text-5xl">We couldn't find that page</h1>
       <p className="mt-3 max-w-lg text-sm leading-6 text-[var(--brand-muted)]">
         The address <code className="rounded bg-white px-1.5 py-0.5 font-mono text-xs">{location.pathname}</code> does not
-        match any route in this demo store. Try searching the catalogue or head back home.
+        match any route in this storefront. Try searching the catalogue or head back home.
       </p>
       <div className="mt-6 flex flex-wrap justify-center gap-2">
         <Link
