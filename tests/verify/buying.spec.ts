@@ -102,7 +102,7 @@ async function completeCheckout(page: Page, payment: 'card' | 'cash' = 'card'): 
   if (payment === 'cash') {
     await page.getByRole('radio', { name: /Cash on delivery/i }).check();
   } else {
-    await page.getByLabel('Card number (demo)').fill('4242 4242 4242 4242');
+    await page.getByLabel('Card number').fill('4242 4242 4242 4242');
     await page.getByLabel('Name on card').fill('Aline Mukamana');
     await page.getByLabel('Expiry (MM/YY)').fill('12/28');
     await page.getByLabel('CVV').fill('123');
@@ -110,7 +110,7 @@ async function completeCheckout(page: Page, payment: 'card' | 'cash' = 'card'): 
 
   await page.getByRole('button', { name: 'Continue' }).click();
   await expect(page.getByRole('heading', { name: 'Review your order' })).toBeVisible();
-  await page.getByRole('button', { name: /Place demo order/ }).click();
+  await page.getByRole('button', { name: /Place order/ }).click();
   await expect(page).toHaveURL(/\/order-confirmation\/[^/]+$/);
   return decodeURIComponent(page.url().split('/').filter(Boolean).pop() ?? '');
 }
@@ -211,14 +211,14 @@ test('Checkout — buying', async ({ page }) => {
     await fillAddressAndContinue(page);
     await page.getByRole('button', { name: 'Continue' }).click();
     await expect(page.getByRole('heading', { name: 'Payment method' })).toBeVisible();
-    await page.getByLabel('Card number (demo)').fill('4242 4242 4242 4242');
+    await page.getByLabel('Card number').fill('4242 4242 4242 4242');
     await page.getByLabel('Name on card').fill('Aline Mukamana');
     await page.getByLabel('Expiry (MM/YY)').fill('12/28');
     await page.getByLabel('CVV').fill('123');
     await page.getByRole('button', { name: 'Continue' }).click();
     await expect(page.getByRole('heading', { name: 'Review your order' })).toBeVisible();
     await expect(page.getByText(product.title).first()).toBeVisible();
-    await page.getByRole('button', { name: /Place demo order/ }).click();
+    await page.getByRole('button', { name: /Place order/ }).click();
 
     await expect(page).toHaveURL(/\/order-confirmation\/[^/]+$/);
     const orderId = page.url().split('/').filter(Boolean).pop() ?? '';
@@ -383,12 +383,12 @@ test('Payment providers — buying', async ({ page }) => {
     await expect(methods.getByRole('radio', { name: /^Card$/i }), 'card option').toBeVisible();
     await expect(methods.getByRole('radio', { name: /Mobile money/i }), 'Mobile Money option').toBeVisible();
     await expect(methods.getByRole('radio', { name: /Cash on delivery/i }), 'Cash on Delivery option').toBeVisible();
-    await expect(page.getByText(/this checkout simulates payment/i), 'mock-only copy').toBeVisible();
-    await expect(page.getByText(/no real payment is taken/i), 'no real charge copy').toBeVisible();
+    await expect(page.getByText(/Payments are simulated locally/i), 'local payment copy').toBeVisible();
+    await expect(page.getByText(/no charge is made/i), 'no charge copy').toBeVisible();
     await expect(page.getByText(/Simulated checkout/i), 'simulated checkout copy').toBeVisible();
 
     await methods.getByRole('radio', { name: /Mobile money/i }).check();
-    await expect(page.getByText(/never contacts a payment provider/i)).toBeVisible();
+    await expect(page.getByText(/never leave this device/i)).toBeVisible();
     expect(externalPaymentCalls, 'mock-only checkout must not call a real payment provider').toEqual([]);
   } finally {
     await captureBoth(page, 'payment-providers');
@@ -403,7 +403,6 @@ test('Orders and history — buying', async ({ page }) => {
 
     await page.goto(`${BASE}/orders`);
     await expect(page.getByRole('heading', { name: 'Your orders' })).toBeVisible();
-    await expect(page.getByText('Sample order').first(), 'sample orders should be listed').toBeVisible();
     await expect(page.getByText(`Order # ${orderId}`), 'the new order should be listed').toBeVisible();
 
     const orderedFilter = page.getByRole('button', { name: 'Ordered', exact: true });
@@ -423,7 +422,7 @@ test('Orders and history — buying', async ({ page }) => {
 
     test.info().annotations.push({
       type: 'persistence',
-      description: `Reloaded /orders; order ${orderId} must persist in soko_orders_v1 (sample orders are code-defined).`,
+      description: `Reloaded /orders; order ${orderId} must persist in soko_orders_v1; no sample orders are seeded.`,
     });
     await page.goto(`${BASE}/orders`);
     await page.reload();
@@ -521,7 +520,7 @@ test('Idempotent order creation — buying', async ({ page }) => {
     await fillAddressAndContinue(page);
     await page.getByRole('button', { name: 'Continue' }).click();
     await expect(page.getByRole('heading', { name: 'Payment method' })).toBeVisible();
-    await page.getByLabel('Card number (demo)').fill('4242 4242 4242 4242');
+    await page.getByLabel('Card number').fill('4242 4242 4242 4242');
     await page.getByLabel('Name on card').fill('Aline Mukamana');
     await page.getByLabel('Expiry (MM/YY)').fill('12/28');
     await page.getByLabel('CVV').fill('123');
@@ -537,7 +536,7 @@ test('Idempotent order creation — buying', async ({ page }) => {
     const beforeIds = await storedIds();
 
     // Two synchronous clicks: one user intent, no idempotency key attached.
-    await page.getByRole('button', { name: /Place demo order/ }).evaluate((button) => {
+    await page.getByRole('button', { name: /Place order/ }).evaluate((button) => {
       const element = button as HTMLButtonElement;
       element.click();
       element.click();
@@ -556,11 +555,11 @@ test('Idempotent order creation — buying', async ({ page }) => {
 
     // Even if the UI happened to swallow the second click, no idempotency mechanism is exposed.
     await page.goto(`${BASE}/checkout`);
-    const idempotencyControls = page.getByLabel(/idempotency|request id|order key/i);
-    expect(
-      await idempotencyControls.count(),
-      'no idempotency key/guard: there is no idempotency key field or guard anywhere in checkout'
-    ).toBeGreaterThan(0);
+    const idempotencyControls = page.locator('input[aria-label="Order key"]');
+    await expect(
+      idempotencyControls,
+      'checkout should expose an idempotency order key'
+    ).toHaveCount(1);
   } finally {
     await captureBoth(page, 'idempotent-orders');
   }

@@ -162,8 +162,8 @@ test('Seller area — platform', async ({ page }) => {
   try {
     await page.goto(`${BASE}/sell`);
     await expect(page.getByRole('heading', { name: 'Grow your business with us.' })).toBeVisible();
-    await expect(page.getByText(/This demo does not include a seller backend/)).toBeVisible();
-    await expect(page.getByText(/Demo only — this form does not submit or store anything/)).toBeVisible();
+    await expect(page.getByText(/does not include a seller backend/)).toBeVisible();
+    await expect(page.getByText(/This form does not submit or store anything/)).toBeVisible();
     const submit = page.getByRole('button', { name: 'Seller onboarding needs a backend' });
     await expect(submit).toBeVisible();
     await expect(submit).toBeDisabled();
@@ -281,13 +281,18 @@ test('EN / Kinyarwanda / French — platform', async ({ page }) => {
 
 test('SEO — platform', async ({ page }) => {
   const routes = [
-    { path: '/', titleFragment: 'Everyday finds', descriptionFragment: 'demo marketplace', canonicalFragment: 'soko.example.com/' },
+    { path: '/', titleFragment: 'Everyday finds', descriptionFragment: 'Rwandan marketplace', canonicalFragment: 'soko.example.com/' },
     { path: CATEGORY_PATH, titleFragment: 'Tech & Gaming', descriptionFragment: 'Audio', canonicalFragment: CATEGORY_PATH },
     { path: PRODUCT_PATH, titleFragment: PRODUCT_TITLE, descriptionFragment: 'out of 5', canonicalFragment: PRODUCT_PATH },
   ];
   try {
     for (const route of routes) {
       await page.goto(`${BASE}${route.path}`);
+      await expect
+        .poll(async () => (await page.locator('head title').first().textContent()) ?? '', {
+          message: `${route.path} title should be updated by the route`,
+        })
+        .toContain(route.titleFragment);
       expect(await page.locator('head title').count(), `${route.path} has duplicate <title> tags`).toBe(1);
       expect(await page.locator('head title').first().textContent(), `${route.path} <title>`).toContain('Soko');
       const seo = await seoSnapshot(page);
@@ -309,10 +314,16 @@ test('Product JSON-LD — platform', async ({ page }) => {
   try {
     await page.goto(`${BASE}${PRODUCT_PATH}`);
     await expect(page.getByRole('heading', { name: PRODUCT_TITLE })).toBeVisible();
-    await expect(page.locator('script[type="application/ld+json"]')).toHaveCount(0);
-    throw new Error('no Product/BreadcrumbList JSON-LD script found');
+    const scripts = page.locator('script[type="application/ld+json"]');
+    await expect(scripts, 'Product/BreadcrumbList JSON-LD should be present').toHaveCount(1);
+    const raw = await scripts.first().textContent();
+    expect(raw, 'JSON-LD should contain structured data').toBeTruthy();
+    const data = JSON.parse(raw ?? '{}') as { '@graph'?: Array<{ '@type': string }> };
+    const types = (data['@graph'] ?? []).map((entry) => entry['@type']);
+    expect(types, 'Product and BreadcrumbList schema types').toContain('Product');
+    expect(types, 'Product and BreadcrumbList schema types').toContain('BreadcrumbList');
   } finally {
-    await captureBoth(page, 'json-ld-missing');
+    await captureBoth(page, 'json-ld');
   }
 });
 
@@ -478,8 +489,11 @@ test('GitHub Actions lint/validate/build/test — platform', () => {
   const workflowFiles = existsSync(workflowsDir)
     ? readdirSync(workflowsDir).filter((file) => file.endsWith('.yml') || file.endsWith('.yaml'))
     : [];
-  expect(workflowFiles, `workflow files: ${workflowFiles.join(', ')}`).toEqual([]);
-  throw new Error('no GitHub Actions workflow found');
+  expect(workflowFiles.length, 'a GitHub Actions workflow should exist').toBeGreaterThan(0);
+  const workflow = readFileSync(resolve(workflowsDir, workflowFiles[0]), 'utf8');
+  for (const script of ['npm run lint', 'npm run validate', 'npm run build', 'npm test']) {
+    expect(workflow, `workflow should run ${script}`).toContain(script);
+  }
 });
 
 test('Lighthouse >85 on home/category/product — platform', async ({ page }) => {
