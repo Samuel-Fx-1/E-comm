@@ -2,6 +2,8 @@ import type { CategorySlug, Product, ProductVariant } from '../types';
 import { discountPercent } from '../lib/format';
 
 export interface ProductSeed {
+  /** Catalog slug wins over a title-derived slug when both are available. */
+  slug?: string;
   title: string;
   brand: string;
   category: CategorySlug;
@@ -76,7 +78,7 @@ function hash(text: string): number {
 const BASE_DATE = new Date('2026-10-30T00:00:00Z').getTime();
 
 export function makeProduct(seed: ProductSeed): Product {
-  const slug = slugify(seed.title);
+  const slug = seed.slug ?? slugify(seed.title);
   const seedHash = hash(slug);
   const price = requireWholeRwf(seed.price, 'price');
   const listPrice = seed.listPrice === undefined

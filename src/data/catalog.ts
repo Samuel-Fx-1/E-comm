@@ -70,6 +70,7 @@ export const catalogEntries: CatalogProduct[] = files.flatMap((file) => file.pro
 /** Hydrated products used by the client and the database seeder. */
 export const catalogProducts: Product[] = catalogEntries.map((entry) =>
   makeProduct({
+    slug: entry.slug,
     title: entry.name,
     brand: entry.brand,
     category: entry.category,
