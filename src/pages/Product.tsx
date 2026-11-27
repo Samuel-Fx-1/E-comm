@@ -221,6 +221,52 @@ export default function ProductPage() {
         image={images[0]?.src}
       />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'Product',
+                '@id': `${site.url}/product/${product.slug}#product`,
+                name: product.name,
+                description: product.shortDescription,
+                image: images.map((entry) => entry.src),
+                brand: { '@type': 'Brand', name: product.brand },
+                sku: product.id,
+                offers: {
+                  '@type': 'Offer',
+                  url: `${site.url}/product/${product.slug}`,
+                  priceCurrency: 'RWF',
+                  price: product.price,
+                  availability: product.stock > 0 ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+                },
+                aggregateRating: {
+                  '@type': 'AggregateRating',
+                  ratingValue: product.rating,
+                  reviewCount: product.reviewCount,
+                },
+              },
+              {
+                '@type': 'BreadcrumbList',
+                '@id': `${site.url}/product/${product.slug}#breadcrumb`,
+                itemListElement: [
+                  { '@type': 'ListItem', position: 1, name: 'Home', item: `${site.url}/` },
+                  {
+                    '@type': 'ListItem',
+                    position: 2,
+                    name: category?.name ?? 'Products',
+                    item: `${site.url}/category/${product.category}`,
+                  },
+                  { '@type': 'ListItem', position: 3, name: product.name },
+                ],
+              },
+            ],
+          }).replace(/</g, '\\u003c'),
+        }}
+      />
+
       <Breadcrumbs
         items={[
           { label: t('home'), to: '/' },
