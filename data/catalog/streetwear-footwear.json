@@ -504,6 +504,1702 @@
           "height": 6720
         }
       ]
+    },
+    {
+      "slug": "heavyweight-fleece-hoodie",
+      "name": "Rift Heavyweight Hoodie",
+      "brand": "RiftWear",
+      "category": "streetwear-footwear",
+      "subcategory": "Tops",
+      "price": 56800,
+      "listPrice": 66000,
+      "rating": 4.7,
+      "reviewCount": 243,
+      "stock": 16,
+      "shortDescription": "A dense fleece hoodie holds its shape through repeat wear and layers cleanly over a tee on cool evenings.",
+      "bullets": [
+        "Double-stitched seams resist stretching at the shoulders.",
+        "Fleece stays soft after washing.",
+        "Ribbed cuffs keep the fit tidy."
+      ],
+      "specs": {
+        "Fabric": "cotton fleece 420 gsm",
+        "Fit": "relaxed",
+        "Care": "machine wash cold",
+        "Details": "kangaroo pocket"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Ink, Fog"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "S, M, L, XL"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": true,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "heavyweight hoodie",
+        "fleece hoodie product photo",
+        "oversized hoodie street style",
+        "plain pullover on hanger"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "10877545",
+          "url": "https://images.pexels.com/photos/10877545/pexels-photo-10877545.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman Wearing a Light Pink Hoodie",
+          "photographer": "Елена Вотинцева",
+          "photographerUrl": "https://www.pexels.com/@85999871/",
+          "photoUrl": "https://www.pexels.com/photo/woman-wearing-a-light-pink-hoodie-10877545/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2992,
+          "height": 3989
+        },
+        {
+          "source": "pexels",
+          "photoId": "19461586",
+          "url": "https://images.pexels.com/photos/19461586/pexels-photo-19461586.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Models in Printed Hoodies",
+          "photographer": "addy  bronzzz",
+          "photographerUrl": "https://www.pexels.com/@addy-bronzzz-264850064/",
+          "photoUrl": "https://www.pexels.com/photo/models-in-printed-hoodies-19461586/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2784,
+          "height": 3480
+        },
+        {
+          "source": "pexels",
+          "photoId": "1601162",
+          "url": "https://images.pexels.com/photos/1601162/pexels-photo-1601162.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman Standing Near Orange Building",
+          "photographer": "Daniel Adesina",
+          "photographerUrl": "https://www.pexels.com/@daniel-adesina-279287/",
+          "photoUrl": "https://www.pexels.com/photo/woman-standing-near-orange-building-1601162/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1999,
+          "height": 2999
+        },
+        {
+          "source": "pexels",
+          "photoId": "3353621",
+          "url": "https://images.pexels.com/photos/3353621/pexels-photo-3353621.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Assorted Clothes Hanging On A Rack Outside Store",
+          "photographer": "Lisa Fotios",
+          "photographerUrl": "https://www.pexels.com/@fotios-photos/",
+          "photoUrl": "https://www.pexels.com/photo/assorted-clothes-hanging-on-a-rack-outside-store-3353621/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        }
+      ]
+    },
+    {
+      "slug": "wide-leg-twill-trousers",
+      "name": "NorthLoop Wide Twill Pants",
+      "brand": "NorthLoop",
+      "category": "streetwear-footwear",
+      "subcategory": "Bottoms",
+      "price": 59400,
+      "listPrice": 69000,
+      "rating": 4.6,
+      "reviewCount": 131,
+      "stock": 14,
+      "shortDescription": "Wide twill trousers fall straight from the hip and pair easily with chunky trainers or a tucked tee.",
+      "bullets": [
+        "Fabric has a soft structured hand.",
+        "Front pleats add gentle shape.",
+        "Hem can be shortened by a tailor."
+      ],
+      "specs": {
+        "Fabric": "cotton twill",
+        "Fit": "wide leg",
+        "Rise": "mid",
+        "Care": "machine wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Stone, Black"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "28, 30, 32"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": true,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "wide leg trousers",
+        "twill pants product photo",
+        "streetwear wide pants lifestyle",
+        "neutral pleated trousers"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "31400265",
+          "url": "https://images.pexels.com/photos/31400265/pexels-photo-31400265.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Fashionable Woman Posing in Stylish Beige Outfit",
+          "photographer": "sara kazemi",
+          "photographerUrl": "https://www.pexels.com/@sara-kazemi-2148049458/",
+          "photoUrl": "https://www.pexels.com/photo/fashionable-woman-posing-in-stylish-beige-outfit-31400265/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3482,
+          "height": 5222
+        },
+        {
+          "source": "pexels",
+          "photoId": "36320425",
+          "url": "https://images.pexels.com/photos/36320425/pexels-photo-36320425.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close-up Macro of Blue and White Woven Fabric",
+          "photographer": "Steve  Noleto",
+          "photographerUrl": "https://www.pexels.com/@steve-noleto-2149050760/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-macro-of-blue-and-white-woven-fabric-36320425/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2030,
+          "height": 3342
+        },
+        {
+          "source": "pexels",
+          "photoId": "40942749",
+          "url": "https://images.pexels.com/photos/40942749/pexels-photo-40942749.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Casual Outdoor Fashion with Trendy Denim Style",
+          "photographer": "Juliia Abramova",
+          "photographerUrl": "https://www.pexels.com/@juliiaabramova/",
+          "photoUrl": "https://www.pexels.com/photo/casual-outdoor-fashion-with-trendy-denim-style-40942749/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3328,
+          "height": 4160
+        },
+        {
+          "source": "pexels",
+          "photoId": "15444318",
+          "url": "https://images.pexels.com/photos/15444318/pexels-photo-15444318.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman Standing and Posing",
+          "photographer": "Lê Đức",
+          "photographerUrl": "https://www.pexels.com/@lngdik23/",
+          "photoUrl": "https://www.pexels.com/photo/woman-standing-and-posing-15444318/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3376,
+          "height": 6000
+        }
+      ]
+    },
+    {
+      "slug": "cropped-puffer-jacket",
+      "name": "Softpunk Cropped Puffer",
+      "brand": "Softpunk",
+      "category": "streetwear-footwear",
+      "subcategory": "Outerwear",
+      "price": 92500,
+      "listPrice": 108000,
+      "rating": 4.8,
+      "reviewCount": 97,
+      "stock": 8,
+      "shortDescription": "A cropped puffer brings warmth without bulk and sits neatly above high-waisted trousers on cool Kigali evenings.",
+      "bullets": [
+        "Baffles hold loft after packing.",
+        "Zip runs smoothly with one hand.",
+        "Shell wipes clean after light rain."
+      ],
+      "specs": {
+        "Fill": "recycled polyester",
+        "Length": "cropped",
+        "Closure": "zip",
+        "Care": "spot clean"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Charcoal, Rose"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "S, M, L"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": true,
+        "isGenZPick": false,
+        "isViral": true
+      },
+      "imageQueries": [
+        "cropped puffer jacket",
+        "puffer jacket product photo",
+        "streetwear winter outfit",
+        "short padded jacket"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7969804",
+          "url": "https://images.pexels.com/photos/7969804/pexels-photo-7969804.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman with Curly Hair Wearing White Jacket",
+          "photographer": "cottonbro studio",
+          "photographerUrl": "https://www.pexels.com/@cottonbro/",
+          "photoUrl": "https://www.pexels.com/photo/woman-with-curly-hair-wearing-white-jacket-7969804/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4236,
+          "height": 6354
+        },
+        {
+          "source": "pexels",
+          "photoId": "35027778",
+          "url": "https://images.pexels.com/photos/35027778/pexels-photo-35027778.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Fashionable Woman in Red Winter Jacket",
+          "photographer": "Thang Nguyen",
+          "photographerUrl": "https://www.pexels.com/@chipi1189/",
+          "photoUrl": "https://www.pexels.com/photo/fashionable-woman-in-red-winter-jacket-35027778/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2832,
+          "height": 4256
+        },
+        {
+          "source": "pexels",
+          "photoId": "14953764",
+          "url": "https://images.pexels.com/photos/14953764/pexels-photo-14953764.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman in a Winter Coat and Sunglasses Walking Down the Sidewalk",
+          "photographer": "SEPEHR GHADRDAN",
+          "photographerUrl": "https://www.pexels.com/@sepehr-ghadrdan-409202650/",
+          "photoUrl": "https://www.pexels.com/photo/woman-in-a-winter-coat-and-sunglasses-walking-down-the-sidewalk-14953764/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 5304,
+          "height": 7952
+        },
+        {
+          "source": "pexels",
+          "photoId": "7147431",
+          "url": "https://images.pexels.com/photos/7147431/pexels-photo-7147431.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Trendy ethnic student strolling on footpath in town",
+          "photographer": "Michael Burrows",
+          "photographerUrl": "https://www.pexels.com/@michael-burrows/",
+          "photoUrl": "https://www.pexels.com/photo/trendy-ethnic-student-strolling-on-footpath-in-town-7147431/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        }
+      ]
+    },
+    {
+      "slug": "six-panel-canvas-cap",
+      "name": "RiftWear Six Panel Cap",
+      "brand": "RiftWear",
+      "category": "streetwear-footwear",
+      "subcategory": "Accessories",
+      "price": 16800,
+      "listPrice": 19900,
+      "rating": 4.5,
+      "reviewCount": 208,
+      "stock": 28,
+      "shortDescription": "A six-panel canvas cap shades the face and finishes a streetwear outfit without adding a loud mark.",
+      "bullets": [
+        "Adjuster slides to fit most head sizes.",
+        "Crown keeps its shape in a day bag.",
+        "Fabric brushes clean."
+      ],
+      "specs": {
+        "Material": "cotton canvas",
+        "Panels": "6",
+        "Closure": "slide adjuster",
+        "Care": "hand wipe"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Black, Sand"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "One size"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "canvas cap product photo",
+        "six panel cap street style",
+        "plain baseball hat",
+        "cap on white background"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "13431696",
+          "url": "https://images.pexels.com/photos/13431696/pexels-photo-13431696.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman with Bag",
+          "photographer": "Mizuno K",
+          "photographerUrl": "https://www.pexels.com/@mizunokozuki/",
+          "photoUrl": "https://www.pexels.com/photo/woman-with-bag-13431696/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "8441623",
+          "url": "https://images.pexels.com/photos/8441623/pexels-photo-8441623.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "House Number Carved in Wood",
+          "photographer": "Melike  B",
+          "photographerUrl": "https://www.pexels.com/@mlkbnl/",
+          "photoUrl": "https://www.pexels.com/photo/house-number-carved-in-wood-8441623/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3376,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "9558777",
+          "url": "https://images.pexels.com/photos/9558777/pexels-photo-9558777.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman in White Crew Neck T-shirt and Blue Denim Jeans Wearing White Cap",
+          "photographer": "MART  PRODUCTION",
+          "photographerUrl": "https://www.pexels.com/@mart-production/",
+          "photoUrl": "https://www.pexels.com/photo/woman-in-white-crew-neck-t-shirt-and-blue-denim-jeans-wearing-white-cap-9558777/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3885,
+          "height": 5827
+        },
+        {
+          "source": "pexels",
+          "photoId": "11705191",
+          "url": "https://images.pexels.com/photos/11705191/pexels-photo-11705191.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Grayscale Photo of a Man in Black Shirt Wearing Sunglasses and a Cap",
+          "photographer": "Bolarinwa   Olasunkanmi",
+          "photographerUrl": "https://www.pexels.com/@bolarinwa-olasunkanmi-114406689/",
+          "photoUrl": "https://www.pexels.com/photo/a-grayscale-photo-of-a-man-in-black-shirt-wearing-sunglasses-and-a-cap-11705191/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4480,
+          "height": 6720
+        }
+      ]
+    },
+    {
+      "slug": "oversized-varsity-jacket",
+      "name": "UrbanThread Varsity Jacket",
+      "brand": "UrbanThread",
+      "category": "streetwear-footwear",
+      "subcategory": "Outerwear",
+      "price": 118900,
+      "listPrice": 139000,
+      "rating": 4.7,
+      "reviewCount": 64,
+      "stock": 6,
+      "shortDescription": "An oversized varsity jacket layers over hoodies with room to move and a clean, slightly boxy outline.",
+      "bullets": [
+        "Body is lined for easy on and off.",
+        "Ribbed hem sits at the hip.",
+        "Snap buttons feel solid."
+      ],
+      "specs": {
+        "Shell": "wool blend",
+        "Sleeve": "faux leather",
+        "Fit": "oversized",
+        "Closure": "snap"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Ink, Cream"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "M, L, XL"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "varsity jacket product photo",
+        "oversized bomber streetwear",
+        "college jacket flat lay",
+        "layered jacket outfit"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "37124603",
+          "url": "https://images.pexels.com/photos/37124603/pexels-photo-37124603.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Stylish Young Man in Varsity Jacket Portrait",
+          "photographer": "Bhelt Morgan",
+          "photographerUrl": "https://www.pexels.com/@bheltmorgan/",
+          "photoUrl": "https://www.pexels.com/photo/stylish-young-man-in-varsity-jacket-portrait-37124603/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "5592271",
+          "url": "https://images.pexels.com/photos/5592271/pexels-photo-5592271.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Stylish Man Sitting on a Window Sill",
+          "photographer": "Tony Schnagl",
+          "photographerUrl": "https://www.pexels.com/@tony-schnagl/",
+          "photoUrl": "https://www.pexels.com/photo/a-stylish-man-sitting-on-a-window-sill-5592271/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3333,
+          "height": 5000
+        },
+        {
+          "source": "pexels",
+          "photoId": "4992652",
+          "url": "https://images.pexels.com/photos/4992652/pexels-photo-4992652.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Set of various items for exploration with camera on desk",
+          "photographer": "Rachel Claire",
+          "photographerUrl": "https://www.pexels.com/@rachel-claire/",
+          "photoUrl": "https://www.pexels.com/photo/set-of-various-items-for-exploration-with-camera-on-desk-4992652/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3556,
+          "height": 5334
+        },
+        {
+          "source": "pexels",
+          "photoId": "35114798",
+          "url": "https://images.pexels.com/photos/35114798/pexels-photo-35114798.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Fashionable Woman Wearing Gray Jacket and Red Scarf",
+          "photographer": "Thang Nguyen",
+          "photographerUrl": "https://www.pexels.com/@chipi1189/",
+          "photoUrl": "https://www.pexels.com/photo/fashionable-woman-wearing-gray-jacket-and-red-scarf-35114798/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2832,
+          "height": 4256
+        }
+      ]
+    },
+    {
+      "slug": "ribbed-organic-tank",
+      "name": "Softpunk Ribbed Tank",
+      "brand": "Softpunk",
+      "category": "streetwear-footwear",
+      "subcategory": "Tops",
+      "price": 14900,
+      "listPrice": 18000,
+      "rating": 4.4,
+      "reviewCount": 176,
+      "stock": 25,
+      "shortDescription": "A ribbed tank works alone in warm weather or under an open shirt with a close but easy fit.",
+      "bullets": [
+        "Cotton blend breathes well.",
+        "Neckline holds its shape.",
+        "Machine washes without twisting."
+      ],
+      "specs": {
+        "Fabric": "organic cotton rib",
+        "Fit": "slim",
+        "Neck": "crew",
+        "Care": "machine wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "White, Black"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "XS, S, M, L"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "ribbed tank top product photo",
+        "cotton vest streetwear",
+        "plain singlet flat lay",
+        "summer outfit close up"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "8433469",
+          "url": "https://images.pexels.com/photos/8433469/pexels-photo-8433469.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman in Black Tank Top",
+          "photographer": "MART  PRODUCTION",
+          "photographerUrl": "https://www.pexels.com/@mart-production/",
+          "photoUrl": "https://www.pexels.com/photo/woman-in-black-tank-top-8433469/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "14437345",
+          "url": "https://images.pexels.com/photos/14437345/pexels-photo-14437345.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Man Wearing Black Vest Standing on the Road",
+          "photographer": "El gringo photo",
+          "photographerUrl": "https://www.pexels.com/@el-gringo-photo-116752370/",
+          "photoUrl": "https://www.pexels.com/photo/a-man-wearing-black-vest-standing-on-the-road-14437345/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3773,
+          "height": 5659
+        },
+        {
+          "source": "pexels",
+          "photoId": "18265937",
+          "url": "https://images.pexels.com/photos/18265937/pexels-photo-18265937.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Choice of Tshirts",
+          "photographer": "yaroslav -",
+          "photographerUrl": "https://www.pexels.com/@marsianin/",
+          "photoUrl": "https://www.pexels.com/photo/choice-of-tshirts-18265937/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2760,
+          "height": 4912
+        },
+        {
+          "source": "pexels",
+          "photoId": "8989506",
+          "url": "https://images.pexels.com/photos/8989506/pexels-photo-8989506.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman in Green Crop Top with Hands on Chest",
+          "photographer": "Alena Darmel",
+          "photographerUrl": "https://www.pexels.com/@a-darmel/",
+          "photoUrl": "https://www.pexels.com/photo/woman-in-green-crop-top-with-hands-on-chest-8989506/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3124,
+          "height": 4686
+        }
+      ]
+    },
+    {
+      "slug": "utility-cargo-shorts",
+      "name": "NorthLoop Utility Shorts",
+      "brand": "NorthLoop",
+      "category": "streetwear-footwear",
+      "subcategory": "Bottoms",
+      "price": 35400,
+      "listPrice": 41000,
+      "rating": 4.5,
+      "reviewCount": 152,
+      "stock": 19,
+      "shortDescription": "Utility shorts add pockets without weight, with a loose leg that moves easily through a busy day.",
+      "bullets": [
+        "Side pockets hold a phone and keys.",
+        "Drawstring adjusts the waist.",
+        "Fabric dries quickly after a wash."
+      ],
+      "specs": {
+        "Material": "cotton nylon blend",
+        "Length": "24 cm",
+        "Waist": "drawstring",
+        "Care": "machine wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Olive, Sand"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "30, 32, 34"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "cargo shorts product photo",
+        "utility shorts street style",
+        "summer cargo pants shorts",
+        "men shorts flat lay"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "19461513",
+          "url": "https://images.pexels.com/photos/19461513/pexels-photo-19461513.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Model Wearing a White Short Sleeved Shirt with a Print and Black Jeans",
+          "photographer": "addy  bronzzz",
+          "photographerUrl": "https://www.pexels.com/@addy-bronzzz-264850064/",
+          "photoUrl": "https://www.pexels.com/photo/model-wearing-a-white-short-sleeved-shirt-with-a-print-and-black-jeans-19461513/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3450,
+          "height": 4600
+        },
+        {
+          "source": "pexels",
+          "photoId": "10594814",
+          "url": "https://images.pexels.com/photos/10594814/pexels-photo-10594814.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Casually Dressed Man in City",
+          "photographer": "Shazard R.",
+          "photographerUrl": "https://www.pexels.com/@shazardr/",
+          "photoUrl": "https://www.pexels.com/photo/casually-dressed-man-in-city-10594814/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3456,
+          "height": 5184
+        },
+        {
+          "source": "pexels",
+          "photoId": "38482312",
+          "url": "https://images.pexels.com/photos/38482312/pexels-photo-38482312.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Casual Outdoor Portrait of Young Man in Summer",
+          "photographer": "Sephina Cornwall",
+          "photographerUrl": "https://www.pexels.com/@sephina-cornwall-759251776/",
+          "photoUrl": "https://www.pexels.com/photo/casual-outdoor-portrait-of-young-man-in-summer-38482312/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3456,
+          "height": 5184
+        },
+        {
+          "source": "pexels",
+          "photoId": "36910113",
+          "url": "https://images.pexels.com/photos/36910113/pexels-photo-36910113.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Classic Men's Outfit with Loafers and Tie",
+          "photographer": "Luk Sauvage",
+          "photographerUrl": "https://www.pexels.com/@tempssauvage/",
+          "photoUrl": "https://www.pexels.com/photo/classic-men-s-outfit-with-loafers-and-tie-36910113/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 6048,
+          "height": 8064
+        }
+      ]
+    },
+    {
+      "slug": "washed-denim-overshirt",
+      "name": "RiftWear Denim Overshirt",
+      "brand": "RiftWear",
+      "category": "streetwear-footwear",
+      "subcategory": "Outerwear",
+      "price": 76900,
+      "listPrice": 89000,
+      "rating": 4.6,
+      "reviewCount": 88,
+      "stock": 11,
+      "shortDescription": "A washed denim overshirt works as a light jacket or a shirt with a soft, lived-in feel that improves with wear.",
+      "bullets": [
+        "Two chest pockets add utility.",
+        "Buttons are reinforced at the base.",
+        "Fabric softens with wear."
+      ],
+      "specs": {
+        "Fabric": "washed cotton denim",
+        "Fit": "regular",
+        "Closure": "button",
+        "Pockets": "2 chest"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Mid Blue, Black"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "S, M, L, XL"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "denim overshirt product photo",
+        "washed denim jacket streetwear",
+        "denim shirt flat lay",
+        "layered denim outfit"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "15876244",
+          "url": "https://images.pexels.com/photos/15876244/pexels-photo-15876244.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Man in Denim Overshirt",
+          "photographer": "Wallace  Castro",
+          "photographerUrl": "https://www.pexels.com/@oficialwallace/",
+          "photoUrl": "https://www.pexels.com/photo/man-in-denim-overshirt-15876244/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2016,
+          "height": 3024
+        },
+        {
+          "source": "pexels",
+          "photoId": "35568705",
+          "url": "https://images.pexels.com/photos/35568705/pexels-photo-35568705.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Stylish Distressed Denim Jacket with Cutout Design",
+          "photographer": "Pietro Henricky",
+          "photographerUrl": "https://www.pexels.com/@pietro-henricky-1289770821/",
+          "photoUrl": "https://www.pexels.com/photo/stylish-distressed-denim-jacket-with-cutout-design-35568705/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3456,
+          "height": 5184
+        },
+        {
+          "source": "pexels",
+          "photoId": "8408556",
+          "url": "https://images.pexels.com/photos/8408556/pexels-photo-8408556.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Clothes and a Boot on White Surface",
+          "photographer": "Sarah Dorweiler",
+          "photographerUrl": "https://www.pexels.com/@sarahdorweiler/",
+          "photoUrl": "https://www.pexels.com/photo/clothes-and-a-boot-on-white-surface-8408556/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2134,
+          "height": 3200
+        },
+        {
+          "source": "pexels",
+          "photoId": "12126454",
+          "url": "https://images.pexels.com/photos/12126454/pexels-photo-12126454.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Woman Standing",
+          "photographer": "Vladimir  Gladkov",
+          "photographerUrl": "https://www.pexels.com/@vovkapanda/",
+          "photoUrl": "https://www.pexels.com/photo/a-woman-standing-12126454/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3840,
+          "height": 5760
+        }
+      ]
+    },
+    {
+      "slug": "chunky-crossbody-bag",
+      "name": "KickMuse Crossbody Bag",
+      "brand": "KickMuse",
+      "category": "streetwear-footwear",
+      "subcategory": "Bags",
+      "price": 48900,
+      "listPrice": 57000,
+      "rating": 4.7,
+      "reviewCount": 167,
+      "stock": 13,
+      "shortDescription": "A compact crossbody bag keeps cards, phone and keys close with a wide strap that sits comfortably over a jacket.",
+      "bullets": [
+        "Zipper opens from both ends.",
+        "Inner pocket separates small items.",
+        "Shell resists light splashes."
+      ],
+      "specs": {
+        "Material": "nylon canvas",
+        "Capacity": "2 litres",
+        "Strap": "adjustable",
+        "Closure": "dual zip"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Black, Moss"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "One size"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": true,
+        "isViral": false
+      },
+      "imageQueries": [
+        "crossbody bag product photo",
+        "chunky messenger bag streetwear",
+        "black sling bag outfit",
+        "small nylon bag flat lay"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "27204287",
+          "url": "https://images.pexels.com/photos/27204287/pexels-photo-27204287.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black Leather Bag",
+          "photographer": "José Martin Segura Benites",
+          "photographerUrl": "https://www.pexels.com/@jose-martin-segura-benites-1422456152/",
+          "photoUrl": "https://www.pexels.com/photo/a-brown-leather-cross-body-bag-with-a-strap-27204287/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2000,
+          "height": 2000
+        },
+        {
+          "source": "pexels",
+          "photoId": "14837856",
+          "url": "https://images.pexels.com/photos/14837856/pexels-photo-14837856.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black Trendy Shoulder Bag",
+          "photographer": "Lutfi Elyas",
+          "photographerUrl": "https://www.pexels.com/@lutfi-elyas-274851637/",
+          "photoUrl": "https://www.pexels.com/photo/black-trendy-shoulder-bag-14837856/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 1760,
+          "height": 3120
+        },
+        {
+          "source": "pexels",
+          "photoId": "6960299",
+          "url": "https://images.pexels.com/photos/6960299/pexels-photo-6960299.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Woman Wearing a Hijab and a Pait of Eyeglasses",
+          "photographer": "Teguh Sugi",
+          "photographerUrl": "https://www.pexels.com/@teguhsugi/",
+          "photoUrl": "https://www.pexels.com/photo/a-woman-wearing-a-hijab-and-a-pait-of-eyeglasses-6960299/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3450,
+          "height": 4313
+        },
+        {
+          "source": "pexels",
+          "photoId": "36393787",
+          "url": "https://images.pexels.com/photos/36393787/pexels-photo-36393787.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Stylish Coffee Break with Black Accessories",
+          "photographer": "elena_ sher",
+          "photographerUrl": "https://www.pexels.com/@elena_-sher-944248089/",
+          "photoUrl": "https://www.pexels.com/photo/stylish-coffee-break-with-black-accessories-36393787/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3076,
+          "height": 4096
+        }
+      ]
+    },
+    {
+      "slug": "platform-lace-up-boots",
+      "name": "KickMuse Platform Boots",
+      "brand": "KickMuse",
+      "category": "streetwear-footwear",
+      "subcategory": "Footwear",
+      "price": 134900,
+      "listPrice": 158000,
+      "rating": 4.8,
+      "reviewCount": 73,
+      "stock": 7,
+      "shortDescription": "Platform boots add height and a firm tread while staying easy to walk in across city streets.",
+      "bullets": [
+        "Cushioned insole supports long days.",
+        "Laces lock firmly at the ankle.",
+        "Outsole grips wet pavement."
+      ],
+      "specs": {
+        "Upper": "faux leather",
+        "Sole": "rubber platform",
+        "Heel": "5 cm",
+        "Closure": "lace up"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Black"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "38, 40, 42"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "platform boots product photo",
+        "lace up boots street style",
+        "chunky black boots studio",
+        "boots on concrete"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "27204272",
+          "url": "https://images.pexels.com/photos/27204272/pexels-photo-27204272.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black Heeled Chelsea Boots",
+          "photographer": "José Martin Segura Benites",
+          "photographerUrl": "https://www.pexels.com/@jose-martin-segura-benites-1422456152/",
+          "photoUrl": "https://www.pexels.com/photo/botin-negro-27204272/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2000,
+          "height": 2000
+        },
+        {
+          "source": "pexels",
+          "photoId": "6979022",
+          "url": "https://images.pexels.com/photos/6979022/pexels-photo-6979022.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close-up Shot of a Person Wearing Black Leather Boots",
+          "photographer": "Sachith Ravishka Kodikara",
+          "photographerUrl": "https://www.pexels.com/@srkportraits/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-shot-of-a-person-wearing-black-leather-boots-6979022/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3744,
+          "height": 5616
+        },
+        {
+          "source": "pexels",
+          "photoId": "27174564",
+          "url": "https://images.pexels.com/photos/27174564/pexels-photo-27174564.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black, Leather Boots",
+          "photographer": "José Martin Segura Benites",
+          "photographerUrl": "https://www.pexels.com/@jose-martin-segura-benites-1422456152/",
+          "photoUrl": "https://www.pexels.com/photo/black-leather-boots-27174564/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2000,
+          "height": 2000
+        },
+        {
+          "source": "pexels",
+          "photoId": "11111089",
+          "url": "https://images.pexels.com/photos/11111089/pexels-photo-11111089.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Overhead Shot of Dirty Boots",
+          "photographer": "Lan Yao",
+          "photographerUrl": "https://www.pexels.com/@lan-yao-324969/",
+          "photoUrl": "https://www.pexels.com/photo/overhead-shot-of-dirty-boots-11111089/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2304,
+          "height": 3456
+        }
+      ]
+    },
+    {
+      "slug": "soft-cotton-bucket-hat",
+      "name": "Softpunk Bucket Hat",
+      "brand": "Softpunk",
+      "category": "streetwear-footwear",
+      "subcategory": "Accessories",
+      "price": 19900,
+      "listPrice": 24000,
+      "rating": 4.4,
+      "reviewCount": 143,
+      "stock": 21,
+      "shortDescription": "A soft cotton bucket hat folds into a pocket and reappears when the sun is low on a weekend walk.",
+      "bullets": [
+        "Brim shades the face without blocking view.",
+        "Crown has a relaxed shape.",
+        "Hand wash keeps the form."
+      ],
+      "specs": {
+        "Material": "cotton twill",
+        "Brim": "7 cm",
+        "Packable": "yes",
+        "Care": "hand wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Sand, Black"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "One size"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "bucket hat product photo",
+        "cotton bucket hat streetwear",
+        "summer hat lifestyle",
+        "foldable sun hat"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7600571",
+          "url": "https://images.pexels.com/photos/7600571/pexels-photo-7600571.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman in Bucket Hat Wearing Crop Top while Posing at the Camera",
+          "photographer": "Joseline Pineda",
+          "photographerUrl": "https://www.pexels.com/@joseline-pineda-45762524/",
+          "photoUrl": "https://www.pexels.com/photo/woman-in-bucket-hat-wearing-crop-top-while-posing-at-the-camera-7600571/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3600,
+          "height": 5400
+        },
+        {
+          "source": "pexels",
+          "photoId": "9775439",
+          "url": "https://images.pexels.com/photos/9775439/pexels-photo-9775439.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Group of People Wearing White Shirt and Bucket Hats",
+          "photographer": "SHVETS production",
+          "photographerUrl": "https://www.pexels.com/@shvets-production/",
+          "photoUrl": "https://www.pexels.com/photo/a-group-of-people-wearing-white-shirt-and-bucket-hats-9775439/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2928,
+          "height": 3758
+        },
+        {
+          "source": "pexels",
+          "photoId": "12083001",
+          "url": "https://images.pexels.com/photos/12083001/pexels-photo-12083001.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Woman in Blue Denim Jacket Wearing a Sun Hat",
+          "photographer": "Rivelino",
+          "photographerUrl": "https://www.pexels.com/@rivelino-98490548/",
+          "photoUrl": "https://www.pexels.com/photo/a-woman-in-blue-denim-jacket-wearing-a-sun-hat-12083001/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "30363420",
+          "url": "https://images.pexels.com/photos/30363420/pexels-photo-30363420.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Young Woman Overlooking Rocky Beach Landscape",
+          "photographer": "Du Tử Mộng",
+          "photographerUrl": "https://www.pexels.com/@dutumong/",
+          "photoUrl": "https://www.pexels.com/photo/young-woman-overlooking-rocky-beach-landscape-30363420/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        }
+      ]
+    },
+    {
+      "slug": "relaxed-straight-jeans",
+      "name": "NorthLoop Relaxed Jeans",
+      "brand": "NorthLoop",
+      "category": "streetwear-footwear",
+      "subcategory": "Bottoms",
+      "price": 64900,
+      "listPrice": 75000,
+      "rating": 4.5,
+      "reviewCount": 118,
+      "stock": 12,
+      "shortDescription": "Relaxed straight jeans give the leg room without pooling at the ankle and wash well with heavy rotation.",
+      "bullets": [
+        "Fabric has mild stretch.",
+        "Waistband keeps its fit.",
+        "Hem suits trainers or boots."
+      ],
+      "specs": {
+        "Fabric": "cotton denim",
+        "Fit": "relaxed straight",
+        "Stretch": "1 percent",
+        "Care": "machine wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Washed Blue"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "30, 32, 34"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "relaxed jeans product photo",
+        "straight denim streetwear",
+        "washed jeans flat lay",
+        "denim outfit studio"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "18533669",
+          "url": "https://images.pexels.com/photos/18533669/pexels-photo-18533669.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Camera, Cotton and Jeans",
+          "photographer": "Tien Nguyen",
+          "photographerUrl": "https://www.pexels.com/@tien-nguyen-1378177/",
+          "photoUrl": "https://www.pexels.com/photo/camera-cotton-and-jeans-18533669/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4336,
+          "height": 4336
+        },
+        {
+          "source": "pexels",
+          "photoId": "9775649",
+          "url": "https://images.pexels.com/photos/9775649/pexels-photo-9775649.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Men in White Shirts and Denim Pants Leaning on Each Other",
+          "photographer": "SHVETS production",
+          "photographerUrl": "https://www.pexels.com/@shvets-production/",
+          "photoUrl": "https://www.pexels.com/photo/men-in-white-shirts-and-denim-pants-leaning-on-each-other-9775649/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3868,
+          "height": 5802
+        },
+        {
+          "source": "pexels",
+          "photoId": "16929212",
+          "url": "https://images.pexels.com/photos/16929212/pexels-photo-16929212.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "T-Shirt and Jeans",
+          "photographer": "Dayanna  Martinez",
+          "photographerUrl": "https://www.pexels.com/@dayanna-martinez-137934606/",
+          "photoUrl": "https://www.pexels.com/photo/t-shirt-and-jeans-16929212/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2121,
+          "height": 3770
+        },
+        {
+          "source": "pexels",
+          "photoId": "34977359",
+          "url": "https://images.pexels.com/photos/34977359/pexels-photo-34977359.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Casual Denim Style Portrait of Young Woman",
+          "photographer": "Alexander Mass",
+          "photographerUrl": "https://www.pexels.com/@rebornfilmes/",
+          "photoUrl": "https://www.pexels.com/photo/casual-denim-style-portrait-of-young-woman-34977359/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3913,
+          "height": 5842
+        }
+      ]
+    },
+    {
+      "slug": "lightweight-track-pants",
+      "name": "UrbanThread Track Pants",
+      "brand": "UrbanThread",
+      "category": "streetwear-footwear",
+      "subcategory": "Bottoms",
+      "price": 42900,
+      "listPrice": 50000,
+      "rating": 4.6,
+      "reviewCount": 205,
+      "stock": 17,
+      "shortDescription": "Lightweight track pants move from gym to errands with an easy taper and zip pockets that keep small items put.",
+      "bullets": [
+        "Fabric wicks light sweat.",
+        "Ankle zips make shoes easy to change.",
+        "Elastic waistband sits flat."
+      ],
+      "specs": {
+        "Material": "polyester knit",
+        "Fit": "tapered",
+        "Pockets": "2 zip",
+        "Care": "machine wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Black, Grey"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "S, M, L, XL"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "track pants product photo",
+        "athleisure trousers streetwear",
+        "running pants flat lay",
+        "minimal sportswear outfit"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "13958659",
+          "url": "https://images.pexels.com/photos/13958659/pexels-photo-13958659.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Person Wearing White Sneaker",
+          "photographer": "LEPTA STUDIO",
+          "photographerUrl": "https://www.pexels.com/@lepta-studio-333887315/",
+          "photoUrl": "https://www.pexels.com/photo/person-wearing-white-sneaker-13958659/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3001,
+          "height": 5333
+        },
+        {
+          "source": "pexels",
+          "photoId": "16217479",
+          "url": "https://images.pexels.com/photos/16217479/pexels-photo-16217479.png?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Portrait of a Woman Standing on a Street",
+          "photographer": "Lucas Brown",
+          "photographerUrl": "https://www.pexels.com/@lucas-brown-368306455/",
+          "photoUrl": "https://www.pexels.com/photo/portrait-of-a-woman-standing-on-a-street-16217479/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "6283634",
+          "url": "https://images.pexels.com/photos/6283634/pexels-photo-6283634.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Woman in Red Tank Top and Black Pants Lying on Floor",
+          "photographer": "Anna Shvets",
+          "photographerUrl": "https://www.pexels.com/@shvetsa/",
+          "photoUrl": "https://www.pexels.com/photo/a-woman-in-red-tank-top-and-black-pants-lying-on-floor-6283634/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4087,
+          "height": 6130
+        },
+        {
+          "source": "pexels",
+          "photoId": "6283591",
+          "url": "https://images.pexels.com/photos/6283591/pexels-photo-6283591.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Person Lying on White Surface",
+          "photographer": "Anna Shvets",
+          "photographerUrl": "https://www.pexels.com/@shvetsa/",
+          "photoUrl": "https://www.pexels.com/photo/a-person-lying-on-white-surface-6283591/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
+        }
+      ]
+    },
+    {
+      "slug": "graphic-crew-socks-set",
+      "name": "Softpunk Crew Socks Set",
+      "brand": "Softpunk",
+      "category": "streetwear-footwear",
+      "subcategory": "Accessories",
+      "price": 13900,
+      "listPrice": 16500,
+      "rating": 4.7,
+      "reviewCount": 264,
+      "stock": 31,
+      "shortDescription": "A set of three crew socks adds small pattern to trainers and everyday outfits without feeling thick.",
+      "bullets": [
+        "Cushioned footbed stays comfortable.",
+        "Ribbed cuff holds position.",
+        "Colors wash evenly."
+      ],
+      "specs": {
+        "Set count": "3",
+        "Length": "crew",
+        "Material": "cotton blend",
+        "Care": "machine wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Mixed Set"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "38-42"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "graphic socks product photo",
+        "crew socks flat lay",
+        "streetwear socks outfit",
+        "colourful socks set"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "4300565",
+          "url": "https://images.pexels.com/photos/4300565/pexels-photo-4300565.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Modern bright socks and bare feet",
+          "photographer": "Marta Ruf",
+          "photographerUrl": "https://www.pexels.com/@marta-ruf-2759243/",
+          "photoUrl": "https://www.pexels.com/photo/modern-bright-socks-and-bare-feet-4300565/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2664,
+          "height": 4000
+        },
+        {
+          "source": "pexels",
+          "photoId": "5746098",
+          "url": "https://images.pexels.com/photos/5746098/pexels-photo-5746098.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Pair of socks on male t shirt",
+          "photographer": "Ryutaro Tsukata",
+          "photographerUrl": "https://www.pexels.com/@ryutaro/",
+          "photoUrl": "https://www.pexels.com/photo/pair-of-socks-on-male-t-shirt-5746098/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3648,
+          "height": 5472
+        },
+        {
+          "source": "pexels",
+          "photoId": "30658997",
+          "url": "https://images.pexels.com/photos/30658997/pexels-photo-30658997.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Stylish Streetwear Sneakers with Striped Socks",
+          "photographer": "Sir Maslin",
+          "photographerUrl": "https://www.pexels.com/@maslin/",
+          "photoUrl": "https://www.pexels.com/photo/stylish-streetwear-sneakers-with-striped-socks-30658997/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 5200
+        },
+        {
+          "source": "pexels",
+          "photoId": "8187629",
+          "url": "https://images.pexels.com/photos/8187629/pexels-photo-8187629.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Knitted Socks with White Background",
+          "photographer": "Daria Liudnaya",
+          "photographerUrl": "https://www.pexels.com/@daria-liudnaya/",
+          "photoUrl": "https://www.pexels.com/photo/knitted-socks-with-white-background-8187629/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2333,
+          "height": 3500
+        }
+      ]
+    },
+    {
+      "slug": "quilted-vest-layer",
+      "name": "RiftWear Quilted Vest",
+      "brand": "RiftWear",
+      "category": "streetwear-footwear",
+      "subcategory": "Outerwear",
+      "price": 63900,
+      "listPrice": 74000,
+      "rating": 4.5,
+      "reviewCount": 81,
+      "stock": 10,
+      "shortDescription": "A quilted vest adds a warm layer over a hoodie while leaving the arms free for daily movement.",
+      "bullets": [
+        "Light fill packs down small.",
+        "Zipper has a storm flap.",
+        "Side pockets hold a phone."
+      ],
+      "specs": {
+        "Fill": "recycled polyester",
+        "Fit": "regular",
+        "Closure": "zip",
+        "Care": "machine wash"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Olive, Ink"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "M, L, XL"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "quilted vest product photo",
+        "puffer vest streetwear",
+        "sleeveless jacket flat lay",
+        "layered vest outfit"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "17597081",
+          "url": "https://images.pexels.com/photos/17597081/pexels-photo-17597081.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman in a Quilted Vest",
+          "photographer": "David Kouakou",
+          "photographerUrl": "https://www.pexels.com/@david-kouakou-536418893/",
+          "photoUrl": "https://www.pexels.com/photo/woman-in-a-quilted-vest-17597081/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3365,
+          "height": 5982
+        },
+        {
+          "source": "pexels",
+          "photoId": "5531402",
+          "url": "https://images.pexels.com/photos/5531402/pexels-photo-5531402.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Clothes and a Camera on the Floor",
+          "photographer": "Rachel Claire",
+          "photographerUrl": "https://www.pexels.com/@rachel-claire/",
+          "photoUrl": "https://www.pexels.com/photo/clothes-and-a-camera-on-the-floor-5531402/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3648,
+          "height": 5472
+        },
+        {
+          "source": "pexels",
+          "photoId": "31900654",
+          "url": "https://images.pexels.com/photos/31900654/pexels-photo-31900654.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Fashionable Woman Posing on Metal Staircase",
+          "photographer": "Helin Gezer",
+          "photographerUrl": "https://www.pexels.com/@helin-gezer-903013644/",
+          "photoUrl": "https://www.pexels.com/photo/fashionable-woman-posing-on-metal-staircase-31900654/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2848,
+          "height": 4272
+        },
+        {
+          "source": "pexels",
+          "photoId": "17430351",
+          "url": "https://images.pexels.com/photos/17430351/pexels-photo-17430351.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Model in Lace Bra and Quilted Vest",
+          "photographer": "Murat Esibatir",
+          "photographerUrl": "https://www.pexels.com/@murat-esibatir-360647/",
+          "photoUrl": "https://www.pexels.com/photo/model-in-lace-bra-and-quilted-vest-17430351/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2250,
+          "height": 3000
+        }
+      ]
+    },
+    {
+      "slug": "canvas-skate-shoes",
+      "name": "KickMuse Canvas Skates",
+      "brand": "KickMuse",
+      "category": "streetwear-footwear",
+      "subcategory": "Footwear",
+      "price": 57900,
+      "listPrice": 67000,
+      "rating": 4.6,
+      "reviewCount": 189,
+      "stock": 15,
+      "shortDescription": "Canvas skate shoes pair a flat sole with a soft upper for board sessions and long walks around town.",
+      "bullets": [
+        "Vulcanised sole grips well.",
+        "Insole cushions repeated steps.",
+        "Laces hold firmly."
+      ],
+      "specs": {
+        "Upper": "cotton canvas",
+        "Sole": "vulcanised rubber",
+        "Fit": "true to size",
+        "Care": "spot clean"
+      },
+      "variants": [
+        {
+          "type": "color",
+          "name": "Color",
+          "value": "Black, Cream"
+        },
+        {
+          "type": "size",
+          "name": "Size",
+          "value": "38, 40, 42"
+        }
+      ],
+      "seller": "Soko Marketplace",
+      "deliveryDays": 3,
+      "addedAt": "2026-11-27",
+      "flags": {
+        "isBestSeller": false,
+        "isDeal": false,
+        "isTrending": false,
+        "isGenZPick": false,
+        "isViral": false
+      },
+      "imageQueries": [
+        "canvas skate shoes product photo",
+        "low top sneakers street style",
+        "skate shoes flat lay",
+        "white casual shoes studio"
+      ],
+      "images": [
+        {
+          "source": "pexels",
+          "photoId": "7916058",
+          "url": "https://images.pexels.com/photos/7916058/pexels-photo-7916058.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Pair of Shoes Leaning on a Wall",
+          "photographer": "Animesh Srivastava",
+          "photographerUrl": "https://www.pexels.com/@animesh-srivastava-3019173/",
+          "photoUrl": "https://www.pexels.com/photo/pair-of-shoes-leaning-on-a-wall-7916058/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 5640,
+          "height": 7050
+        },
+        {
+          "source": "pexels",
+          "photoId": "30547537",
+          "url": "https://images.pexels.com/photos/30547537/pexels-photo-30547537.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Collection of Stylish Sneakers on Display",
+          "photographer": "Amir Abbaspoor",
+          "photographerUrl": "https://www.pexels.com/@amir-abbaspoor-748889438/",
+          "photoUrl": "https://www.pexels.com/photo/collection-of-stylish-sneakers-on-display-30547537/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
+        },
+        {
+          "source": "pexels",
+          "photoId": "12740492",
+          "url": "https://images.pexels.com/photos/12740492/pexels-photo-12740492.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Top View Shot of Yellow Sneakers",
+          "photographer": "Sneep Crew",
+          "photographerUrl": "https://www.pexels.com/@sneepcrew/",
+          "photoUrl": "https://www.pexels.com/photo/top-view-shot-of-yellow-sneakers-12740492/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2742,
+          "height": 3656
+        },
+        {
+          "source": "pexels",
+          "photoId": "27008322",
+          "url": "https://images.pexels.com/photos/27008322/pexels-photo-27008322.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Studio Shot of a Woman Wearing White Sneakers",
+          "photographer": "José Martin Segura Benites",
+          "photographerUrl": "https://www.pexels.com/@jose-martin-segura-benites-1422456152/",
+          "photoUrl": "https://www.pexels.com/photo/studio-shot-of-a-woman-wearing-white-sneakers-27008322/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2000,
+          "height": 2000
+        }
+      ]
     }
   ]
 }
