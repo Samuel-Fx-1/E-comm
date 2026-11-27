@@ -1,6 +1,6 @@
-# Soko — full-stack marketplace demo
+# Isoko — full-stack marketplace 
 
-Soko is a marketplace demonstration: a familiar Isoko-style shopping flow with an original brand, built on React 19, Vite 8, TypeScript and Tailwind CSS 4. Phase 4 added a small Express + SQLite catalogue API; Phase 8 expands the Phase 7 shelf to 100 RWF-priced products across five categories. Cart, account, orders, reviews and preferences still live in `localStorage`.
+Isoko is a marketplace demonstration: a familiar Isoko-style shopping flow with an original brand, built on React 19, Vite 8, TypeScript and Tailwind CSS 4. Phase 4 added a small Express + SQLite catalogue API; Phase 8 expands the Phase 7 shelf to 100 RWF-priced products across five categories. Cart, account, orders, reviews and preferences still live in `localStorage`.
 
 > **Demo only.** All products, sellers, brands, reviews, prices, exchange rates, addresses and payment methods are fictional. No payment is taken, no email is sent, and no data leaves the browser.
 
@@ -70,46 +70,7 @@ npm run dev:full    # Vite 3000 + API 3001 together, cross-platform
 - **Storage swap** — SQL lives only in `server/db.mjs` behind a repository (`findBySlug`, `findById`, `query`, `meta`, `collections`, `related`, `suggest`). Replacing that layer with MongoDB does not require route changes. Migrations are versioned in `server/migrations/`; FTS5 search falls back to indexed `LIKE` where FTS5 is unavailable.
 - **Security skeleton** — `/api` is rate-limited per IP (300 requests/minute), `GET /api/csrf` issues an httpOnly/SameSite=Lax cookie and token for `X-CSRF-Token` on future writes. No authentication or payment processing is implemented.
 
-## Project map
 
-| Path | Purpose |
-| --- | --- |
-| `src/config/site.ts` | Brand name, logo text, palette, countries, FX demo rates, shipping and tax constants |
-| `src/types/index.ts` | All domain types, including the five category slugs and four merchandising flags |
-| `data/catalog/*.json` | Validated 100-product catalog: RWF prices, copy, flags, queries and four Pexels photos each |
-| `src/data/products/` | Compatibility re-export and client lookup helpers |
-| `src/data/productFactory.ts` | Shared product fields: catalog slug, RWF prices, variants and subcategory |
-| `src/data/imageMap.ts` | Single image resolver (manual override → catalog photos); never pads with SVG |
-| `data/product-images.json` | Mirrored Pexels hotlink cache: source, URL, alt text and credits |
-| `data/pexels-public-cache.json` | Captured public Pexels search metadata used by the cache-driven selector |
-| `data/image-overrides.json` | Your own local photos, highest priority |
-| `src/data/{reviews,sampleOrders,promos,categories}.ts` | Supporting demo data |
-| `src/lib/` | Formatting, currency, search/filter, storage, hashing, i18n and hooks |
-| `src/context/` | Toast, Site, Auth, Orders and Store providers |
-| `src/components/layout/` | Header, navigation, drawers, modals, footer and mobile tabs |
-| `src/components/ui/` | Reusable UI primitives |
-| `src/components/product/` | Product cards, gallery, reviews and bundles |
-| `src/pages/` | Route-level screens |
-| `server/index.mjs` | Express API, static SPA host, validation, rate limiting and CSRF skeleton |
-| `server/db.mjs` | Swappable repository layer, migrations runner and FTS/LIKE search |
-| `server/migrations/` | Versioned SQLite schema migrations |
-| `scripts/validate-catalog.mjs` | Required schema, content, flag, image URL and reject validator |
-| `scripts/import-pexels-metadata.mjs` | Imports captured Pexels records into catalog galleries by query |
-| `scripts/seed-database.mjs` | Idempotent full-catalog seeder with assertions |
-| `scripts/dev-full.mjs` | Cross-platform Vite + API dev runner |
-| `src/pages/DevImageReview.tsx` | Development-only four-slot gallery audit page |
-
-## Routes
-
-`/`, `/search`, `/category/:slug`, `/product/:slug`, `/cart`, `/checkout`, `/order-confirmation/:id`, `/orders`, `/orders/:id`, `/account`, `/signin`, `/register`, `/wishlist`, `/compare`, `/deals`, `/best-sellers`, `/new-arrivals`, `/trending`, `/gen-z-picks`, `/viral`, `/customer-service`, `/sell`, `/credits`, `*` (404).
-
-## Branding and markets
-
-Change `site.name`, `logoText`, `logoAccent`, `colors`, `defaultCountry`, `rwfPerUsd`, `freeDeliveryThresholdRwf` and `countries` in `src/config/site.ts`. CSS custom properties in `src/index.css` mirror the palette for Tailwind utilities. Every product stores whole RWF amounts in `price`/`listPrice` and the equivalent `priceRwf`/`oldPriceRwf` aliases; the demo currency switcher converts from RWF using the single configured rate.
-
-## Product images
-
-The catalog contains 400 distinct Pexels photo IDs — four square/portrait photos for each of the 100 products. Every record stores the photo ID, CDN URL, alt text, photographer, photographer URL, Pexels photo page and licence. `data/product-images.json` mirrors those galleries for the client; `npm run validate` checks all 400 unique URLs. No SVG placeholder, `placehold.co` URL, Unsplash/Pixabay result or raw/original download is used in the catalog.
 
 ```bash
 npm run images:check          # verify four catalog photos per product
@@ -118,30 +79,12 @@ npm run images:repick:dry     # preview rejected-slot replacement without API ca
 npm run images:public:dry     # preview the key-free cache-driven fallback
 ```
 
-`PEXELS_API_KEY` is read only from gitignored `.env.local` by the primary, server-side official API pipeline (`npm run images:pexels`). It requests `https://api.pexels.com/v1/search?query=…&per_page=15&orientation=portrait`, caches results in `data/pexels-api-cache.json`, rate-limits new queries and supports `--category` / `--limit` batches. When the key was absent, the catalog was populated from the public Pexels fallback: an in-browser `fetch()` requested `https://www.pexels.com/search/<encoded query>/`, parsed the page's `__NEXT_DATA__` payload, checked candidate CDN URLs and stored compact records in `data/pexels-public-cache.json`. That path did **not** use the official API. `npm run images:compare` checks catalog photo ids, photographers, URLs and alt text against the official cache after a keyed run.
-
-`data/image-rejects.json` holds manually rejected photo IDs; `/dev/image-review` filters all four slots per product by category or search and appends rejects through a development-only Vite endpoint (absent from production builds). `npm run images:repick` replaces only rejected slots through the official API and then re-runs the catalog validator. `data/image-overrides.json` is reserved for your own local photos. `/credits` renders every credited photo from the catalog, and product pages show credits in the gallery. **API keys must never be committed.**
 
 Run `npm run sitemap` after changing routes or products to refresh `public/sitemap.xml`.
 
-##  data and stored state
-
-| Key (prefix) | Stored in localStorage |
-| --- | --- |
-| `soko_*` | Cart, saved-for-later, wishlist, compare, recently viewed, reviews, questions, orders |
-| `soko_users` / session | Demo accounts, salted SHA-256 password hashes and current session |
-| `soko_address_book_v1`, `soko_payment_book_v1` | Saved addresses and payment labels |
-| Country, city, currency, language, banner | Market preferences |
 
 Clearing site data resets everything. Sample orders are seeded so the orders page is never empty; they reference only products in the curated catalogue. Existing browser carts, wishlists and orders keep their stored snapshots even if they mention a product that was removed from the catalogue.
 
-## Known limitations
-
-- The API is read-only catalogue data: there is still no real authentication, payment processor, email, shipping carrier or seller onboarding.
-- FX rates, delivery dates, stock levels and reviews are illustrative.
-- EN/FR covers the site shell and key controls; long-form marketing copy remains in English.
-- Seller/admin tools are intentionally informational; the CSRF endpoint is only a skeleton for future writes.
-- No checkout or account records were deleted by the catalogue reset; localStorage snapshots for older demo products may still render in previously stored orders until site data is cleared.
 
 ## Deployment
 
