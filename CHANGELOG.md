@@ -2,6 +2,49 @@
 
 All notable changes to this project are documented here. Each phase is verified with lint, build and available tests before the phase is reported.
 
+## Phase 8 — 100-product RWF catalog with Pexels photos (2026-11-27)
+
+### Added
+
+- Expanded the catalog to exactly 100 products, 20 per category: Tech & Gaming, Streetwear & Footwear, Viral Skincare & Haircare, Lifestyle & Aesthetic Essentials and Gen Alpha & Kids Corner. The 20 Phase 7 products, five category slugs and existing merchandising flags were preserved; 80 new products use hand-written copy, specific bullets/specs, relevant variants, fictional brands and realistic whole-RWF prices.
+- `data/catalog/*.json` is now the single source of truth, schema-validated by `scripts/validate-catalog.mjs` and wired to both `npm test` and `npm run validate`. The validator checks duplicate slugs/names, image reuse/count/URLs/credits, copy length, bullets/specs, repeated sentences, RWF bounds, flag balance, medical/safety claims, brand blocklist and rejected photo IDs.
+- Four distinct matching Pexels photos for every product: 400 unique photo IDs and 400 verified CDN URLs. Records include photographer, photographer URL, photo URL, alt text, licence, dimensions and square/portrait filtering. `data/pexels-public-cache.json` stores the captured public Pexels metadata; `data/product-images.json` mirrors the final galleries.
+- `scripts/import-pexels-metadata.mjs`, `scripts/fetch-pexels-public.mjs`, `scripts/fetch-pexels-images.mjs`, `data/image-overrides.json`, `data/image-rejects.json` and `/dev/image-review` support resumable, cached, Pexels-only image work. No SVG placeholder, Unsplash, Pixabay or raw/original download enters a gallery.
+- `scripts/catalog-additions/` and `scripts/expand-catalog.mjs` hold the reviewed hand-written additions used to build the catalog files.
+
+### Changed
+
+- All catalog prices are whole RWF amounts; `src/config/site.ts` holds the single `1 USD = 1300 RWF` demo rate and the `45,500 RWF` free-delivery threshold. USD fields were removed from the catalog path.
+- `makeProduct()` now honours the catalog slug instead of deriving a branded-display-title slug, so product IDs, URLs and image lookups stay aligned. `src/data/products/curated.ts` is a compatibility re-export only.
+- The seeder derives its expected count from the catalog instead of hard-coding 20; it is idempotent over all 100 rows and rebuilds FTS once.
+- `scripts/generate-sitemap.mjs`, `scripts/fetch-product-images.mjs` and `scripts/generate-placeholders.mjs` now read `data/catalog/*.json`; no source regex scraping remains. The placeholder generator is now a no-art preflight (`npm run images:check`), and the legacy fetch wrapper delegates only to the Pexels pipeline.
+
+### Fixed
+
+- Four lifestyle products were initially skipped while four streetwear query groups were processed twice during public Pexels capture. The missing lifestyle groups were captured specifically and re-imported by query; final capture has 84 groups / 336 candidates, of which 320 unique photos were used.
+- Photo `27503500` and photo `15893283` were manually rejected and are blocked by the validator. `data/image-overrides.json` remains empty; no manual replacement was needed.
+- Product cards no longer crash on newly added products because hydrated product slugs now match catalog slugs exactly.
+
+### Verification
+
+- `npm run validate` — `Checked 400 unique image URL(s). Validated 100 product(s) across 5 catalog file(s). Catalog validation passed.`
+- `npm test` — same validator, passed with the identical output.
+- `npm run lint` (`tsc --noEmit`) — passed.
+- `npm run build` — passed; Vite emitted the production bundle.
+- `npm run db:seed` — `[seed] done: 100 curated products across 5 categories`; repeated run remained idempotent.
+- `npx playwright test` — 4 passed (home, category/RWF, product gallery, add-to-cart).
+- `npm run sitemap` — wrote 116 URLs from 100 catalog products.
+- `npm run images:check` — checked 100 products; all have four catalog photos; no SVG placeholder generated.
+- `npm run images:public:dry` — no catalog files written; 0 products added, 33 existing compact cache records enriched.
+- Image sources — 400/400 from `images.pexels.com`; 320 new photos captured from public Pexels search metadata plus the original 20-product set; 0 rejected IDs and 0 duplicate URLs used.
+- Manual replacements — 2 rejected Pexels IDs (`27503500`, `15893283`), 0 local overrides, 0 synthetic placeholders.
+
+### Notes
+
+- The earlier 85-product catalog remains at `ddd8da1^:src/data/products/*.ts` and `origin/feature/amazon-style-store`; it was not restored. Its removal commits were verified earlier on this branch.
+- `PEXELS_API_KEY` is absent from `.env.local`, so the official key-based command was not run successfully. The key-based pipeline remains committed for future runs; this expansion used the committed public Pexels metadata fallback from inside a logged-in browser session.
+- No force-push was performed and no secret was committed.
+
 ## Phase 7 — Gen Z / Gen Alpha catalogue replacement (2026-11-26)
 
 ### Changed
