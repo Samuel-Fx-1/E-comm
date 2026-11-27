@@ -31,7 +31,7 @@ export function LanguageCurrencyMenu() {
         onClick={() => setOpen((value) => !value)}
         aria-expanded={open}
         aria-haspopup="menu"
-        aria-label={t('languageCurrency')}
+        aria-label={`${t('languageCurrency')}: ${language.toUpperCase()} | ${currency}`}
         className="flex items-center gap-1.5 rounded border border-transparent px-2 py-2 text-sm font-semibold text-white hover:border-white/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-yellow)]"
       >
         <Globe2 className="h-4 w-4" aria-hidden="true" />
