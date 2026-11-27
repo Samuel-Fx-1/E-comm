@@ -109,6 +109,9 @@ export interface Address {
   phone: string;
   country: string;
   city: string;
+  province?: string;
+  district?: string;
+  sector?: string;
   line1: string;
   line2?: string;
   postalCode?: string;
@@ -165,7 +168,6 @@ export interface Order {
   status: OrderStatus;
   estimatedDelivery: string;
   email?: string;
-  sample?: boolean;
 }
 
 export interface ProductFilters {

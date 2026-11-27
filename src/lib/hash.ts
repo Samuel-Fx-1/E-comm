@@ -13,13 +13,13 @@ export function randomSalt(length = 16): string {
 }
 
 export async function hashPassword(password: string, salt: string): Promise<string> {
-  const value = `${salt}::${password}::soko-demo`;
+  const value = `${salt}::${password}::soko-local`;
   if (typeof crypto !== 'undefined' && crypto.subtle) {
     const data = new TextEncoder().encode(value);
     const digest = await crypto.subtle.digest('SHA-256', data);
     return Array.from(new Uint8Array(digest), (b) => b.toString(16).padStart(2, '0')).join('');
   }
-  // Fallback for non-secure contexts (demo only).
+  // Fallback for non-secure contexts.
   let hash = 0;
   for (let i = 0; i < value.length; i += 1) {
     hash = (hash << 5) - hash + value.charCodeAt(i);
