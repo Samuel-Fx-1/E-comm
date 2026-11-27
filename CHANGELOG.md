@@ -2,6 +2,18 @@
 
 All notable changes to this project are documented here. Each phase is verified with lint, build and available tests before the phase is reported.
 
+## Step 0 — image compliance and review workflow (2026-11-27)
+
+### Added
+
+- `/dev/image-review` now filters 400 slots by category or product text, rejects individual slots through a development-only Vite endpoint and exports rejected ids. The endpoint is not registered in production builds.
+- `npm run images:repick` replaces only rejected slots through the official Pexels API, supports cached batches and re-runs the catalog validator. `npm run images:compare` compares stored photo ids, photographers, URLs and alt text with official API metadata.
+- Playwright coverage for the image-review filter/reject/export flow, including 1440px and 390px screenshots.
+
+### Changed
+
+- The official key-based `https://api.pexels.com/v1/search` pipeline is the primary image path. The key-free path is documented plainly as an in-browser public Pexels search-page capture that parsed `__NEXT_DATA__`; it did not use the official API.
+
 ## Phase 8 — 100-product RWF catalog with Pexels photos (2026-11-27)
 
 ### Added
