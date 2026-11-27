@@ -16,7 +16,6 @@ import { resolveImages } from '../src/data/imageMap.ts';
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 dotenv.config({ path: join(ROOT, '.env.local'), quiet: true });
 
-const TARGET = 20;
 // Slugs from the superseded catalog that are not reused by the new catalog.
 // `wireless-charging-desk-mat` and `collagen-hydrogel-under-eye-patches` are
 // intentionally shared with new products, so they are not legacy-only.
@@ -92,16 +91,15 @@ function setConfig(db, key, value) {
 }
 
 function main() {
-  if (catalogProducts.length !== TARGET) {
-    throw new Error(`Expected ${TARGET} catalog products, found ${catalogProducts.length}`);
-  }
+  const expectedCount = catalogProducts.length;
+  if (expectedCount === 0) throw new Error('Catalog is empty; refusing to seed');
 
   const started = Date.now();
   const db = openDatabase({ dbPath: resolveDbPath() });
 
   try {
     const before = countRows(db);
-    console.log(`[seed] ${before.toLocaleString()} row(s) present; replacing with ${TARGET} curated products`);
+    console.log(`[seed] ${before.toLocaleString()} row(s) present; replacing with ${catalogProducts.length} curated products`);
 
     db.exec('PRAGMA synchronous = NORMAL; PRAGMA cache_size = -262144;');
     const ftsAvailable = Boolean(
@@ -124,8 +122,8 @@ function main() {
     }
 
     const finalCount = countRows(db);
-    if (finalCount !== TARGET) {
-      throw new Error(`Expected ${TARGET} rows after seeding, found ${finalCount}`);
+    if (finalCount !== expectedCount) {
+      throw new Error(`Expected ${expectedCount} rows after seeding, found ${finalCount}`);
     }
 
     const duplicateSlugs = db
