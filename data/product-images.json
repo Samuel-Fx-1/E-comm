@@ -12,7 +12,7 @@
     "interactive-stem-robotics-building-kit": {
       "title": "Interactive STEM Robotics Building Kit",
       "category": "gen-alpha-kids-corner",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "STEM robotics building kit",
@@ -40,13 +40,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "35673110",
+          "paths": [
+            "https://images.pexels.com/photos/35673110/pexels-photo-35673110.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/35673110/pexels-photo-35673110.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/35673110/pexels-photo-35673110.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Robotic Kit Components on Yellow Background",
+          "width": 3456,
+          "height": 5184,
+          "credit": {
+            "photographer": "Tanha Tamanna  Syed",
+            "photographerUrl": "https://www.pexels.com/@tanhatamannasyed/",
+            "photoUrl": "https://www.pexels.com/photo/robotic-kit-components-on-yellow-background-35673110/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "35673084",
+          "paths": [
+            "https://images.pexels.com/photos/35673084/pexels-photo-35673084.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/35673084/pexels-photo-35673084.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/35673084/pexels-photo-35673084.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Yellow Robotics Kit Components on Yellow Background",
+          "width": 3456,
+          "height": 5184,
+          "credit": {
+            "photographer": "Tanha Tamanna  Syed",
+            "photographerUrl": "https://www.pexels.com/@tanhatamannasyed/",
+            "photoUrl": "https://www.pexels.com/photo/yellow-robotics-kit-components-on-yellow-background-35673084/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "3939174",
+          "paths": [
+            "https://images.pexels.com/photos/3939174/pexels-photo-3939174.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/3939174/pexels-photo-3939174.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/3939174/pexels-photo-3939174.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Boy Playing With Toys",
+          "width": 3421,
+          "height": 5131,
+          "credit": {
+            "photographer": "Vika Glitter",
+            "photographerUrl": "https://www.pexels.com/@vika-glitter-392079/",
+            "photoUrl": "https://www.pexels.com/photo/boy-playing-with-toys-3939174/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "ergonomic-aesthetic-school-backpack-with-pins": {
       "title": "Ergonomic Aesthetic School Backpack with Pins",
       "category": "gen-alpha-kids-corner",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "ergonomic school backpack",
@@ -74,13 +131,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "8617698",
+          "paths": [
+            "https://images.pexels.com/photos/8617698/pexels-photo-8617698.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/8617698/pexels-photo-8617698.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/8617698/pexels-photo-8617698.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Girl in Blue Long Sleeve Shirt and Blue Vest Carrying Pink Backpack",
+          "width": 4000,
+          "height": 6000,
+          "credit": {
+            "photographer": "Yan Krukau",
+            "photographerUrl": "https://www.pexels.com/@yankrukov/",
+            "photoUrl": "https://www.pexels.com/photo/girl-in-blue-long-sleeve-shirt-and-blue-vest-carrying-pink-backpack-8617698/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "9654119",
+          "paths": [
+            "https://images.pexels.com/photos/9654119/pexels-photo-9654119.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/9654119/pexels-photo-9654119.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/9654119/pexels-photo-9654119.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "A Young Girl Getting a Doll on the Concrete Wall",
+          "width": 3382,
+          "height": 5472,
+          "credit": {
+            "photographer": "Tahir Osman",
+            "photographerUrl": "https://www.pexels.com/@tahir-osman-109306362/",
+            "photoUrl": "https://www.pexels.com/photo/a-young-girl-getting-a-doll-on-the-concrete-wall-9654119/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "21693935",
+          "paths": [
+            "https://images.pexels.com/photos/21693935/pexels-photo-21693935.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/21693935/pexels-photo-21693935.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/21693935/pexels-photo-21693935.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Pink Backpack in a Forest",
+          "width": 3072,
+          "height": 4608,
+          "credit": {
+            "photographer": "Laura Chouette",
+            "photographerUrl": "https://www.pexels.com/@laurachouette/",
+            "photoUrl": "https://www.pexels.com/photo/pink-backpack-in-a-forest-21693935/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "kids-digital-instant-print-camera": {
       "title": "Kids Digital Instant Print Camera",
       "category": "gen-alpha-kids-corner",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "kids instant print camera",
@@ -108,13 +222,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "5560504",
+          "paths": [
+            "https://images.pexels.com/photos/5560504/pexels-photo-5560504.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/5560504/pexels-photo-5560504.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/5560504/pexels-photo-5560504.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Cute Asian boy and black girl with photo camera",
+          "width": 3576,
+          "height": 5043,
+          "credit": {
+            "photographer": "Amina Filkins",
+            "photographerUrl": "https://www.pexels.com/@amina-filkins/",
+            "photoUrl": "https://www.pexels.com/photo/cute-asian-boy-and-black-girl-with-photo-camera-5560504/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "15128200",
+          "paths": [
+            "https://images.pexels.com/photos/15128200/pexels-photo-15128200.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/15128200/pexels-photo-15128200.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/15128200/pexels-photo-15128200.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Close-up of Person Holding a Small Digital Camera on Hand",
+          "width": 3744,
+          "height": 5616,
+          "credit": {
+            "photographer": "medinegurbet",
+            "photographerUrl": "https://www.pexels.com/@medinegurbet-21435626/",
+            "photoUrl": "https://www.pexels.com/photo/close-up-of-person-holding-a-small-digital-camera-on-hand-15128200/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "11986518",
+          "paths": [
+            "https://images.pexels.com/photos/11986518/pexels-photo-11986518.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/11986518/pexels-photo-11986518.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/11986518/pexels-photo-11986518.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Instax Camera and Polaroid Prints",
+          "width": 2592,
+          "height": 3872,
+          "credit": {
+            "photographer": "Dagmara Dombrovska",
+            "photographerUrl": "https://www.pexels.com/@dagmara-dombrovska-22732579/",
+            "photoUrl": "https://www.pexels.com/photo/instax-camera-and-polaroid-prints-11986518/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "insulated-stainless-steel-flip-straw-water-bottle-32oz": {
       "title": "Insulated Stainless Steel Flip-Straw Water Bottle (32oz)",
       "category": "lifestyle-aesthetic-essentials",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "insulated stainless steel water bottle",
@@ -142,13 +313,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "10035322",
+          "paths": [
+            "https://images.pexels.com/photos/10035322/pexels-photo-10035322.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/10035322/pexels-photo-10035322.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/10035322/pexels-photo-10035322.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Red and Blue Bottle on Snow",
+          "width": 3648,
+          "height": 5472,
+          "credit": {
+            "photographer": "Natalia García Prieto",
+            "photographerUrl": "https://www.pexels.com/@natalia-garcia-prieto-62947227/",
+            "photoUrl": "https://www.pexels.com/photo/red-and-blue-bottle-on-snow-10035322/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "7262742",
+          "paths": [
+            "https://images.pexels.com/photos/7262742/pexels-photo-7262742.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7262742/pexels-photo-7262742.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7262742/pexels-photo-7262742.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "A Person Holding a Tumbler and a Biodegradable Straw",
+          "width": 3360,
+          "height": 5040,
+          "credit": {
+            "photographer": "Sarah  Chai",
+            "photographerUrl": "https://www.pexels.com/@sarah-chai/",
+            "photoUrl": "https://www.pexels.com/photo/a-person-holding-a-tumbler-and-a-biodegradable-straw-7262742/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "9263528",
+          "paths": [
+            "https://images.pexels.com/photos/9263528/pexels-photo-9263528.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/9263528/pexels-photo-9263528.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/9263528/pexels-photo-9263528.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Photo of a Person's Hand Holding a Glass Bottle with Water",
+          "width": 5583,
+          "height": 8364,
+          "credit": {
+            "photographer": "REFARGOTOHP",
+            "photographerUrl": "https://www.pexels.com/@refargotohp-83494488/",
+            "photoUrl": "https://www.pexels.com/photo/photo-of-a-person-s-hand-holding-a-glass-bottle-with-water-9263528/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "quilted-puffer-makeup-tech-organizer-bag": {
       "title": "Quilted Puffer Makeup & Tech Organizer Bag",
       "category": "lifestyle-aesthetic-essentials",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "quilted puffer organizer bag",
@@ -176,13 +404,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "9511322",
+          "paths": [
+            "https://images.pexels.com/photos/9511322/pexels-photo-9511322.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/9511322/pexels-photo-9511322.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/9511322/pexels-photo-9511322.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Cute Girl in White Puffer Jacket and Gray Knit Cap",
+          "width": 4000,
+          "height": 6000,
+          "credit": {
+            "photographer": "Ron Lach",
+            "photographerUrl": "https://www.pexels.com/@ron-lach/",
+            "photoUrl": "https://www.pexels.com/photo/cute-girl-in-white-puffer-jacket-and-gray-knit-cap-9511322/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "28959840",
+          "paths": [
+            "https://images.pexels.com/photos/28959840/pexels-photo-28959840.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/28959840/pexels-photo-28959840.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/28959840/pexels-photo-28959840.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Elegant Makeup Essentials with Cosmetic Bag",
+          "width": 3024,
+          "height": 4032,
+          "credit": {
+            "photographer": "Nana  Petrova",
+            "photographerUrl": "https://www.pexels.com/@nana-petrova-1460873293/",
+            "photoUrl": "https://www.pexels.com/photo/elegant-makeup-essentials-with-cosmetic-bag-28959840/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "10104605",
+          "paths": [
+            "https://images.pexels.com/photos/10104605/pexels-photo-10104605.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/10104605/pexels-photo-10104605.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/10104605/pexels-photo-10104605.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Gadget on Top of Pouch",
+          "width": 4452,
+          "height": 5565,
+          "credit": {
+            "photographer": "I'm Zion",
+            "photographerUrl": "https://www.pexels.com/@zion/",
+            "photoUrl": "https://www.pexels.com/photo/gadget-on-top-of-pouch-10104605/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "portable-usb-c-mini-smoothie-blender": {
       "title": "Portable USB-C Mini Smoothie Blender",
       "category": "lifestyle-aesthetic-essentials",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "portable mini blender",
@@ -210,13 +495,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "30238394",
+          "paths": [
+            "https://images.pexels.com/photos/30238394/pexels-photo-30238394.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/30238394/pexels-photo-30238394.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/30238394/pexels-photo-30238394.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Stainless Steel Food Processor on Wooden Surface",
+          "width": 3648,
+          "height": 5472,
+          "credit": {
+            "photographer": "Mohammad abasi",
+            "photographerUrl": "https://www.pexels.com/@mohammadabbasi/",
+            "photoUrl": "https://www.pexels.com/photo/stainless-steel-food-processor-on-wooden-surface-30238394/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "27861734",
+          "paths": [
+            "https://images.pexels.com/photos/27861734/pexels-photo-27861734.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/27861734/pexels-photo-27861734.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/27861734/pexels-photo-27861734.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "A blender with a cucumber and other food in it",
+          "width": 3071,
+          "height": 4095,
+          "credit": {
+            "photographer": "Nastia Ligrain",
+            "photographerUrl": "https://www.pexels.com/@nastia-ligrain-369190782/",
+            "photoUrl": "https://www.pexels.com/photo/a-blender-with-a-cucumber-and-other-food-in-it-27861734/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "37283263",
+          "paths": [
+            "https://images.pexels.com/photos/37283263/pexels-photo-37283263.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/37283263/pexels-photo-37283263.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/37283263/pexels-photo-37283263.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Healthy Green Smoothie Ingredients in Blender",
+          "width": 3830,
+          "height": 5745,
+          "credit": {
+            "photographer": "Natalie Bond",
+            "photographerUrl": "https://www.pexels.com/@natalie-bond-320378/",
+            "photoUrl": "https://www.pexels.com/photo/healthy-green-smoothie-ingredients-in-blender-37283263/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "heavyweight-oversized-graphic-t-shirt": {
       "title": "Heavyweight Oversized Graphic T-Shirt",
       "category": "streetwear-footwear",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "oversized graphic t shirt",
@@ -244,13 +586,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "36942018",
+          "paths": [
+            "https://images.pexels.com/photos/36942018/pexels-photo-36942018.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/36942018/pexels-photo-36942018.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/36942018/pexels-photo-36942018.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Man Wearing Oversized Printed T-Shirt with Text",
+          "width": 3441,
+          "height": 5162,
+          "credit": {
+            "photographer": "BANDAR BAANT",
+            "photographerUrl": "https://www.pexels.com/@bandar-baant-2160637741/",
+            "photoUrl": "https://www.pexels.com/photo/man-wearing-oversized-printed-t-shirt-with-text-36942018/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "34233605",
+          "paths": [
+            "https://images.pexels.com/photos/34233605/pexels-photo-34233605.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/34233605/pexels-photo-34233605.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/34233605/pexels-photo-34233605.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Casual Outfit with T-Shirt and Accessories",
+          "width": 6027,
+          "height": 5937,
+          "credit": {
+            "photographer": "Waldor Vervecken",
+            "photographerUrl": "https://www.pexels.com/@waldorv/",
+            "photoUrl": "https://www.pexels.com/photo/casual-outfit-with-t-shirt-and-accessories-34233605/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "8148576",
+          "paths": [
+            "https://images.pexels.com/photos/8148576/pexels-photo-8148576.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/8148576/pexels-photo-8148576.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/8148576/pexels-photo-8148576.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "White Shirt on a Black Hanger",
+          "width": 3928,
+          "height": 5952,
+          "credit": {
+            "photographer": "Vie Studio",
+            "photographerUrl": "https://www.pexels.com/@vie-studio/",
+            "photoUrl": "https://www.pexels.com/photo/white-shirt-on-a-black-hanger-8148576/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "baggy-barrel-fit-cargo-jeans": {
       "title": "Baggy Barrel-Fit Cargo Jeans",
       "category": "streetwear-footwear",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "baggy cargo jeans",
@@ -278,13 +677,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "35568704",
+          "paths": [
+            "https://images.pexels.com/photos/35568704/pexels-photo-35568704.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/35568704/pexels-photo-35568704.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/35568704/pexels-photo-35568704.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Trendy Denim Fashion with Baggy Jeans",
+          "width": 3456,
+          "height": 5184,
+          "credit": {
+            "photographer": "Pietro Henricky",
+            "photographerUrl": "https://www.pexels.com/@pietro-henricky-1289770821/",
+            "photoUrl": "https://www.pexels.com/photo/trendy-denim-fashion-with-baggy-jeans-35568704/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "31146864",
+          "paths": [
+            "https://images.pexels.com/photos/31146864/pexels-photo-31146864.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/31146864/pexels-photo-31146864.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/31146864/pexels-photo-31146864.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Casual Denim Fashion with Long Sleeves",
+          "width": 3962,
+          "height": 5943,
+          "credit": {
+            "photographer": "Dmitriy Steinke",
+            "photographerUrl": "https://www.pexels.com/@dmitriy-steinke-559643503/",
+            "photoUrl": "https://www.pexels.com/photo/casual-denim-fashion-with-long-sleeves-31146864/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "16455696",
+          "paths": [
+            "https://images.pexels.com/photos/16455696/pexels-photo-16455696.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/16455696/pexels-photo-16455696.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/16455696/pexels-photo-16455696.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Young Man in Shirt and Cargo Pants Posing in Doorway",
+          "width": 4160,
+          "height": 6240,
+          "credit": {
+            "photographer": "Ebenezer Idowu",
+            "photographerUrl": "https://www.pexels.com/@eben/",
+            "photoUrl": "https://www.pexels.com/photo/young-man-in-shirt-and-cargo-pants-posing-in-doorway-16455696/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "high-waisted-fold-over-athleisure-leggings": {
       "title": "High-Waisted Fold-Over Athleisure Leggings",
       "category": "streetwear-footwear",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "high waisted leggings",
@@ -312,13 +768,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "28758039",
+          "paths": [
+            "https://images.pexels.com/photos/28758039/pexels-photo-28758039.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/28758039/pexels-photo-28758039.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/28758039/pexels-photo-28758039.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Confident Model in Sporty Grey Top and Black Leggings",
+          "width": 5841,
+          "height": 6092,
+          "credit": {
+            "photographer": "INFECTED Market",
+            "photographerUrl": "https://www.pexels.com/@infectedmarket/",
+            "photoUrl": "https://www.pexels.com/photo/confident-model-in-sporty-grey-top-and-black-leggings-28758039/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "7746232",
+          "paths": [
+            "https://images.pexels.com/photos/7746232/pexels-photo-7746232.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7746232/pexels-photo-7746232.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7746232/pexels-photo-7746232.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Woman Leaning on Red Metal Fence",
+          "width": 2000,
+          "height": 3000,
+          "credit": {
+            "photographer": "Polina Tankilevitch",
+            "photographerUrl": "https://www.pexels.com/@polina-tankilevitch/",
+            "photoUrl": "https://www.pexels.com/photo/woman-leaning-on-red-metal-fence-7746232/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "10222715",
+          "paths": [
+            "https://images.pexels.com/photos/10222715/pexels-photo-10222715.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/10222715/pexels-photo-10222715.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/10222715/pexels-photo-10222715.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Woman Stretching on Carpet",
+          "width": 3648,
+          "height": 5472,
+          "credit": {
+            "photographer": "Ron Lach",
+            "photographerUrl": "https://www.pexels.com/@ron-lach/",
+            "photoUrl": "https://www.pexels.com/photo/woman-stretching-on-carpet-10222715/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "retro-low-top-chunky-sneakers": {
       "title": "Retro Low-Top Chunky Sneakers",
       "category": "streetwear-footwear",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "retro chunky sneakers",
@@ -346,13 +859,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "15291933",
+          "paths": [
+            "https://images.pexels.com/photos/15291933/pexels-photo-15291933.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/15291933/pexels-photo-15291933.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/15291933/pexels-photo-15291933.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Indian college girl half portrait of her legs",
+          "width": 3050,
+          "height": 3812,
+          "credit": {
+            "photographer": "Sanket  Mishra",
+            "photographerUrl": "https://www.pexels.com/@sanketgraphy/",
+            "photoUrl": "https://www.pexels.com/photo/indian-college-girl-half-portrait-of-her-legs-15291933/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "40231617",
+          "paths": [
+            "https://images.pexels.com/photos/40231617/pexels-photo-40231617.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/40231617/pexels-photo-40231617.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/40231617/pexels-photo-40231617.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Vibrant Orange Sole Sneaker on Textured Surface",
+          "width": 4000,
+          "height": 6000,
+          "credit": {
+            "photographer": "Tường Chopper",
+            "photographerUrl": "https://www.pexels.com/@tuongchopper/",
+            "photoUrl": "https://www.pexels.com/photo/vibrant-orange-sole-sneaker-on-textured-surface-40231617/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "12941766",
+          "paths": [
+            "https://images.pexels.com/photos/12941766/pexels-photo-12941766.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/12941766/pexels-photo-12941766.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/12941766/pexels-photo-12941766.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "A Person Wearing White Prada Boots",
+          "width": 4480,
+          "height": 6720,
+          "credit": {
+            "photographer": "Leoohigh",
+            "photographerUrl": "https://www.pexels.com/@leoohigh-2326920/",
+            "photoUrl": "https://www.pexels.com/photo/a-person-wearing-white-prada-boots-12941766/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "wireless-noise-canceling-over-ear-headphones": {
       "title": "Wireless Noise-Canceling Over-Ear Headphones",
       "category": "tech-gaming",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "noise cancelling over ear headphones",
@@ -380,13 +950,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "33305814",
+          "paths": [
+            "https://images.pexels.com/photos/33305814/pexels-photo-33305814.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/33305814/pexels-photo-33305814.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/33305814/pexels-photo-33305814.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Sleek Beige Wireless Headphones on Dark Surface",
+          "width": 3000,
+          "height": 4000,
+          "credit": {
+            "photographer": "cookiemonster",
+            "photographerUrl": "https://www.pexels.com/@cookiemonster-221712119/",
+            "photoUrl": "https://www.pexels.com/photo/sleek-beige-wireless-headphones-on-dark-surface-33305814/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "7772548",
+          "paths": [
+            "https://images.pexels.com/photos/7772548/pexels-photo-7772548.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7772548/pexels-photo-7772548.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7772548/pexels-photo-7772548.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Black headphones on white surface",
+          "width": 3544,
+          "height": 5316,
+          "credit": {
+            "photographer": "Caleb Oquendo",
+            "photographerUrl": "https://www.pexels.com/@caleboquendo/",
+            "photoUrl": "https://www.pexels.com/photo/black-headphones-on-white-surface-7772548/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "15487609",
+          "paths": [
+            "https://images.pexels.com/photos/15487609/pexels-photo-15487609.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/15487609/pexels-photo-15487609.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/15487609/pexels-photo-15487609.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Black Headphones Lying",
+          "width": 3000,
+          "height": 4000,
+          "credit": {
+            "photographer": "Sunil Satapathy",
+            "photographerUrl": "https://www.pexels.com/@sunil-satapathy-61455468/",
+            "photoUrl": "https://www.pexels.com/photo/black-headphones-lying-15487609/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "low-latency-gaming-wireless-earbuds": {
       "title": "Low-Latency Gaming Wireless Earbuds",
       "category": "tech-gaming",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "wireless gaming earbuds",
@@ -414,13 +1041,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "33319872",
+          "paths": [
+            "https://images.pexels.com/photos/33319872/pexels-photo-33319872.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/33319872/pexels-photo-33319872.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/33319872/pexels-photo-33319872.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Stylish Wireless Earbuds on Mossy Surface",
+          "width": 2600,
+          "height": 4624,
+          "credit": {
+            "photographer": "Amal A S",
+            "photographerUrl": "https://www.pexels.com/@amal-a-s-2150318757/",
+            "photoUrl": "https://www.pexels.com/photo/stylish-wireless-earbuds-on-mossy-surface-33319872/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "8858287",
+          "paths": [
+            "https://images.pexels.com/photos/8858287/pexels-photo-8858287.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/8858287/pexels-photo-8858287.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/8858287/pexels-photo-8858287.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Black Earbuds in Black Casing",
+          "width": 4603,
+          "height": 4461,
+          "credit": {
+            "photographer": "SpotwizardLee",
+            "photographerUrl": "https://www.pexels.com/@spotwizardlee-35777904/",
+            "photoUrl": "https://www.pexels.com/photo/black-earbuds-in-black-casing-8858287/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "11599423",
+          "paths": [
+            "https://images.pexels.com/photos/11599423/pexels-photo-11599423.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/11599423/pexels-photo-11599423.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/11599423/pexels-photo-11599423.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "White Ear Buds",
+          "width": 2070,
+          "height": 3105,
+          "credit": {
+            "photographer": "Hemil Dhanani",
+            "photographerUrl": "https://www.pexels.com/@hemildhanani/",
+            "photoUrl": "https://www.pexels.com/photo/white-ear-buds-11599423/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "compact-mechanical-hall-effect-keyboard": {
       "title": "Compact Mechanical Hall-Effect Keyboard",
       "category": "tech-gaming",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "compact mechanical keyboard",
@@ -448,13 +1132,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "17895080",
+          "paths": [
+            "https://images.pexels.com/photos/17895080/pexels-photo-17895080.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/17895080/pexels-photo-17895080.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/17895080/pexels-photo-17895080.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Illuminated Computer Keyboard",
+          "width": 4016,
+          "height": 6016,
+          "credit": {
+            "photographer": "Isabella Mendes",
+            "photographerUrl": "https://www.pexels.com/@isabella-mendes-107313/",
+            "photoUrl": "https://www.pexels.com/photo/illuminated-computer-keyboard-17895080/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "34688826",
+          "paths": [
+            "https://images.pexels.com/photos/34688826/pexels-photo-34688826.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/34688826/pexels-photo-34688826.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/34688826/pexels-photo-34688826.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Cozy Home Workspace with Clock and Decor",
+          "width": 3067,
+          "height": 4600,
+          "credit": {
+            "photographer": "Suhas Hanjar",
+            "photographerUrl": "https://www.pexels.com/@suhashanjar/",
+            "photoUrl": "https://www.pexels.com/photo/cozy-home-workspace-with-clock-and-decor-34688826/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "4145372",
+          "paths": [
+            "https://images.pexels.com/photos/4145372/pexels-photo-4145372.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/4145372/pexels-photo-4145372.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/4145372/pexels-photo-4145372.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Keyboard of typewriter with red button",
+          "width": 7380,
+          "height": 11072,
+          "credit": {
+            "photographer": "Mochammad  Algi",
+            "photographerUrl": "https://www.pexels.com/@cripsdog/",
+            "photoUrl": "https://www.pexels.com/photo/keyboard-of-typewriter-with-red-button-4145372/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "rgb-smart-led-room-strip-lights": {
       "title": "RGB Smart LED Room Strip Lights",
       "category": "tech-gaming",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "RGB LED strip lights",
@@ -482,13 +1223,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "17784701",
+          "paths": [
+            "https://images.pexels.com/photos/17784701/pexels-photo-17784701.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/17784701/pexels-photo-17784701.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/17784701/pexels-photo-17784701.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Gaming Computer, Laptop and Keyboard on Desk",
+          "width": 3648,
+          "height": 4816,
+          "credit": {
+            "photographer": "Pramod  Tiwari",
+            "photographerUrl": "https://www.pexels.com/@pramodtiwari/",
+            "photoUrl": "https://www.pexels.com/photo/gaming-computer-laptop-and-keyboard-on-desk-17784701/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "28786771",
+          "paths": [
+            "https://images.pexels.com/photos/28786771/pexels-photo-28786771.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/28786771/pexels-photo-28786771.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/28786771/pexels-photo-28786771.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Modern Gaming Setup with RGB Lighting",
+          "width": 4160,
+          "height": 6240,
+          "credit": {
+            "photographer": "UMUT   🆁🅰🆆",
+            "photographerUrl": "https://www.pexels.com/@umudicreative/",
+            "photoUrl": "https://www.pexels.com/photo/modern-gaming-setup-with-rgb-lighting-28786771/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "5489398",
+          "paths": [
+            "https://images.pexels.com/photos/5489398/pexels-photo-5489398.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/5489398/pexels-photo-5489398.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/5489398/pexels-photo-5489398.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "A Gamer Sitting on a Bed",
+          "width": 4683,
+          "height": 7021,
+          "credit": {
+            "photographer": "Florenz Mendoza",
+            "photographerUrl": "https://www.pexels.com/@florenz-mendoza-3667096/",
+            "photoUrl": "https://www.pexels.com/photo/a-gamer-sitting-on-a-bed-5489398/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "wireless-charging-desk-mat": {
       "title": "Wireless Charging Desk Mat",
       "category": "tech-gaming",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "wireless charging desk mat",
@@ -516,13 +1314,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "21391577",
+          "paths": [
+            "https://images.pexels.com/photos/21391577/pexels-photo-21391577.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/21391577/pexels-photo-21391577.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/21391577/pexels-photo-21391577.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Desk with Laptop and Monitor on Stand",
+          "width": 4000,
+          "height": 6000,
+          "credit": {
+            "photographer": "Oladimeji Ajegbile",
+            "photographerUrl": "https://www.pexels.com/@diimejii/",
+            "photoUrl": "https://www.pexels.com/photo/desk-with-laptop-and-monitor-on-stand-21391577/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "27559487",
+          "paths": [
+            "https://images.pexels.com/photos/27559487/pexels-photo-27559487.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/27559487/pexels-photo-27559487.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/27559487/pexels-photo-27559487.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "A mouse pad with a keyboard and mouse on it",
+          "width": 3089,
+          "height": 4633,
+          "credit": {
+            "photographer": "minhphuc .workspace",
+            "photographerUrl": "https://www.pexels.com/@mintworkspace/",
+            "photoUrl": "https://www.pexels.com/photo/a-mouse-pad-with-a-keyboard-and-mouse-on-it-27559487/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "14151561",
+          "paths": [
+            "https://images.pexels.com/photos/14151561/pexels-photo-14151561.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/14151561/pexels-photo-14151561.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/14151561/pexels-photo-14151561.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "A Man in Pink Shirt Using Laptop",
+          "width": 4000,
+          "height": 6000,
+          "credit": {
+            "photographer": "Vince Andrada",
+            "photographerUrl": "https://www.pexels.com/@vince-andrada-309492119/",
+            "photoUrl": "https://www.pexels.com/photo/a-man-in-pink-shirt-using-laptop-14151561/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "hydrocolloid-star-pimple-patches-36-count": {
       "title": "Hydrocolloid Star Pimple Patches (36 Count)",
       "category": "viral-skincare-haircare",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "hydrocolloid pimple patches",
@@ -550,13 +1405,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "4812653",
+          "paths": [
+            "https://images.pexels.com/photos/4812653/pexels-photo-4812653.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/4812653/pexels-photo-4812653.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/4812653/pexels-photo-4812653.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Man With Orange Powder on His Face",
+          "width": 4075,
+          "height": 5702,
+          "credit": {
+            "photographer": "cottonbro studio",
+            "photographerUrl": "https://www.pexels.com/@cottonbro/",
+            "photoUrl": "https://www.pexels.com/photo/man-with-orange-powder-on-his-face-4812653/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "4812640",
+          "paths": [
+            "https://images.pexels.com/photos/4812640/pexels-photo-4812640.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/4812640/pexels-photo-4812640.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/4812640/pexels-photo-4812640.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Man in White Crew Neck Shirt",
+          "width": 4160,
+          "height": 6240,
+          "credit": {
+            "photographer": "cottonbro studio",
+            "photographerUrl": "https://www.pexels.com/@cottonbro/",
+            "photoUrl": "https://www.pexels.com/photo/man-in-white-crew-neck-shirt-4812640/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "4491162",
+          "paths": [
+            "https://images.pexels.com/photos/4491162/pexels-photo-4491162.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/4491162/pexels-photo-4491162.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/4491162/pexels-photo-4491162.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Hands of a Person Holding Skin Care Under Eye Patches",
+          "width": 4160,
+          "height": 6240,
+          "credit": {
+            "photographer": "Ivan S",
+            "photographerUrl": "https://www.pexels.com/@ivan-s/",
+            "photoUrl": "https://www.pexels.com/photo/hands-of-a-person-holding-skin-care-under-eye-patches-4491162/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "niacinamide-brightening-hydrating-body-lotion": {
       "title": "Niacinamide Brightening & Hydrating Body Lotion",
       "category": "viral-skincare-haircare",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "niacinamide body lotion",
@@ -584,13 +1496,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "10897817",
+          "paths": [
+            "https://images.pexels.com/photos/10897817/pexels-photo-10897817.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/10897817/pexels-photo-10897817.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/10897817/pexels-photo-10897817.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Close up of Emulsion",
+          "width": 2563,
+          "height": 3844,
+          "credit": {
+            "photographer": "Mathilde Langevin",
+            "photographerUrl": "https://www.pexels.com/@mathilde/",
+            "photoUrl": "https://www.pexels.com/photo/close-up-of-emulsion-10897817/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "39780587",
+          "paths": [
+            "https://images.pexels.com/photos/39780587/pexels-photo-39780587.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/39780587/pexels-photo-39780587.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/39780587/pexels-photo-39780587.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Colorful Display of Skincare Lotion with Leaf Pattern",
+          "width": 4000,
+          "height": 6000,
+          "credit": {
+            "photographer": "Vikram Aditya",
+            "photographerUrl": "https://www.pexels.com/@vikram-aditya-213772137/",
+            "photoUrl": "https://www.pexels.com/photo/colorful-display-of-skincare-lotion-with-leaf-pattern-39780587/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "33756874",
+          "paths": [
+            "https://images.pexels.com/photos/33756874/pexels-photo-33756874.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/33756874/pexels-photo-33756874.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/33756874/pexels-photo-33756874.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Applying Moisturizer from Tube onto Hand",
+          "width": 3333,
+          "height": 5000,
+          "credit": {
+            "photographer": "Jessica Keli Alves",
+            "photographerUrl": "https://www.pexels.com/@jessica-keli-alves-2148649709/",
+            "photoUrl": "https://www.pexels.com/photo/applying-moisturizer-from-tube-onto-hand-33756874/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "collagen-hydrogel-under-eye-patches": {
       "title": "Collagen Hydrogel Under-Eye Patches",
       "category": "viral-skincare-haircare",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "under eye hydrogel patches",
@@ -618,13 +1587,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "13020891",
+          "paths": [
+            "https://images.pexels.com/photos/13020891/pexels-photo-13020891.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/13020891/pexels-photo-13020891.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/13020891/pexels-photo-13020891.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Woman with Under Eye Patches on Her Face",
+          "width": 2000,
+          "height": 2500,
+          "credit": {
+            "photographer": "Milad Farhani",
+            "photographerUrl": "https://www.pexels.com/@milad-farhani-52379203/",
+            "photoUrl": "https://www.pexels.com/photo/woman-with-under-eye-patches-on-her-face-13020891/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "7161657",
+          "paths": [
+            "https://images.pexels.com/photos/7161657/pexels-photo-7161657.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7161657/pexels-photo-7161657.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7161657/pexels-photo-7161657.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Red Eye Patch",
+          "width": 4480,
+          "height": 6720,
+          "credit": {
+            "photographer": "Ivan S",
+            "photographerUrl": "https://www.pexels.com/@ivan-s/",
+            "photoUrl": "https://www.pexels.com/photo/red-eye-patch-7161657/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "5313589",
+          "paths": [
+            "https://images.pexels.com/photos/5313589/pexels-photo-5313589.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/5313589/pexels-photo-5313589.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/5313589/pexels-photo-5313589.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "A Woman with Under Eye Masks Applying Moisturizer on Her Face",
+          "width": 4315,
+          "height": 6473,
+          "credit": {
+            "photographer": "Thirdman",
+            "photographerUrl": "https://www.pexels.com/@thirdman/",
+            "photoUrl": "https://www.pexels.com/photo/a-woman-with-under-eye-masks-applying-moisturizer-on-her-face-5313589/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "silicone-scalp-massager-hair-growth-brush": {
       "title": "Silicone Scalp Massager & Hair Growth Brush",
       "category": "viral-skincare-haircare",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "silicone scalp massager",
@@ -652,13 +1678,70 @@
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }
+        },
+        {
+          "source": "pexels",
+          "photoId": "5241036",
+          "paths": [
+            "https://images.pexels.com/photos/5241036/pexels-photo-5241036.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/5241036/pexels-photo-5241036.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/5241036/pexels-photo-5241036.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Woman Washing Her Hair",
+          "width": 4480,
+          "height": 6720,
+          "credit": {
+            "photographer": "kaboompics",
+            "photographerUrl": "https://www.pexels.com/@karola-g/",
+            "photoUrl": "https://www.pexels.com/photo/woman-washing-her-hair-5241036/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "7320790",
+          "paths": [
+            "https://images.pexels.com/photos/7320790/pexels-photo-7320790.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7320790/pexels-photo-7320790.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7320790/pexels-photo-7320790.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Face of a Woman Brushing her Hair",
+          "width": 4480,
+          "height": 6720,
+          "credit": {
+            "photographer": "kaboompics",
+            "photographerUrl": "https://www.pexels.com/@karola-g/",
+            "photoUrl": "https://www.pexels.com/photo/face-of-a-woman-brushing-her-hair-7320790/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "23349900",
+          "paths": [
+            "https://images.pexels.com/photos/23349900/pexels-photo-23349900.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/23349900/pexels-photo-23349900.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/23349900/pexels-photo-23349900.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Washing Woman Hair at Hairdresser",
+          "width": 4249,
+          "height": 6003,
+          "credit": {
+            "photographer": "Oleskandra Biliak",
+            "photographerUrl": "https://www.pexels.com/@oleksandra/",
+            "photoUrl": "https://www.pexels.com/photo/washing-woman-hair-at-hairdresser-23349900/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
         }
       ]
     },
     "satin-sleep-bonnet-scrunchie-set": {
       "title": "Satin Sleep Bonnet & Scrunchie Set",
       "category": "viral-skincare-haircare",
-      "status": "partial",
+      "status": "resolved",
       "source": "pexels",
       "queries": [
         "satin sleep bonnet",
@@ -683,6 +1766,63 @@
             "photographer": "Irene Gaitho",
             "photographerUrl": "https://www.pexels.com/",
             "photoUrl": "https://www.pexels.com/photo/7897135/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "8090976",
+          "paths": [
+            "https://images.pexels.com/photos/8090976/pexels-photo-8090976.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/8090976/pexels-photo-8090976.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/8090976/pexels-photo-8090976.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Woman Sleeping on Bed",
+          "width": 4024,
+          "height": 6048,
+          "credit": {
+            "photographer": "PNW Production",
+            "photographerUrl": "https://www.pexels.com/@pnw-prod/",
+            "photoUrl": "https://www.pexels.com/photo/woman-sleeping-on-bed-8090976/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "7897136",
+          "paths": [
+            "https://images.pexels.com/photos/7897136/pexels-photo-7897136.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/7897136/pexels-photo-7897136.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/7897136/pexels-photo-7897136.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Black and Orange Hair Accessories",
+          "width": 3024,
+          "height": 4032,
+          "credit": {
+            "photographer": "Irene  Gaitho",
+            "photographerUrl": "https://www.pexels.com/@irene-gaitho-32882194/",
+            "photoUrl": "https://www.pexels.com/photo/black-and-orange-hair-accessories-7897136/",
+            "license": "Pexels License",
+            "licenseUrl": "https://www.pexels.com/license/"
+          }
+        },
+        {
+          "source": "pexels",
+          "photoId": "6983530",
+          "paths": [
+            "https://images.pexels.com/photos/6983530/pexels-photo-6983530.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&fit=crop",
+            "https://images.pexels.com/photos/6983530/pexels-photo-6983530.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop",
+            "https://images.pexels.com/photos/6983530/pexels-photo-6983530.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop"
+          ],
+          "alt": "Close-Up Shot of Scrunchies",
+          "width": 2160,
+          "height": 2416,
+          "credit": {
+            "photographer": "The Pineapple  Experience",
+            "photographerUrl": "https://www.pexels.com/@the-pineapple-experience-31617188/",
+            "photoUrl": "https://www.pexels.com/photo/close-up-shot-of-scrunchies-6983530/",
             "license": "Pexels License",
             "licenseUrl": "https://www.pexels.com/license/"
           }

@@ -56,6 +56,45 @@
           "width": 1200,
           "height": 1200,
           "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "4812653",
+          "url": "https://images.pexels.com/photos/4812653/pexels-photo-4812653.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Man With Orange Powder on His Face",
+          "photographer": "cottonbro studio",
+          "photographerUrl": "https://www.pexels.com/@cottonbro/",
+          "photoUrl": "https://www.pexels.com/photo/man-with-orange-powder-on-his-face-4812653/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4075,
+          "height": 5702
+        },
+        {
+          "source": "pexels",
+          "photoId": "4812640",
+          "url": "https://images.pexels.com/photos/4812640/pexels-photo-4812640.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Man in White Crew Neck Shirt",
+          "photographer": "cottonbro studio",
+          "photographerUrl": "https://www.pexels.com/@cottonbro/",
+          "photoUrl": "https://www.pexels.com/photo/man-in-white-crew-neck-shirt-4812640/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
+        },
+        {
+          "source": "pexels",
+          "photoId": "4491162",
+          "url": "https://images.pexels.com/photos/4491162/pexels-photo-4491162.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Hands of a Person Holding Skin Care Under Eye Patches",
+          "photographer": "Ivan S",
+          "photographerUrl": "https://www.pexels.com/@ivan-s/",
+          "photoUrl": "https://www.pexels.com/photo/hands-of-a-person-holding-skin-care-under-eye-patches-4491162/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
         }
       ]
     },
@@ -113,6 +152,45 @@
           "width": 1200,
           "height": 1200,
           "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "10897817",
+          "url": "https://images.pexels.com/photos/10897817/pexels-photo-10897817.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close up of Emulsion",
+          "photographer": "Mathilde Langevin",
+          "photographerUrl": "https://www.pexels.com/@mathilde/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-of-emulsion-10897817/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2563,
+          "height": 3844
+        },
+        {
+          "source": "pexels",
+          "photoId": "39780587",
+          "url": "https://images.pexels.com/photos/39780587/pexels-photo-39780587.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Colorful Display of Skincare Lotion with Leaf Pattern",
+          "photographer": "Vikram Aditya",
+          "photographerUrl": "https://www.pexels.com/@vikram-aditya-213772137/",
+          "photoUrl": "https://www.pexels.com/photo/colorful-display-of-skincare-lotion-with-leaf-pattern-39780587/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "33756874",
+          "url": "https://images.pexels.com/photos/33756874/pexels-photo-33756874.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Applying Moisturizer from Tube onto Hand",
+          "photographer": "Jessica Keli Alves",
+          "photographerUrl": "https://www.pexels.com/@jessica-keli-alves-2148649709/",
+          "photoUrl": "https://www.pexels.com/photo/applying-moisturizer-from-tube-onto-hand-33756874/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3333,
+          "height": 5000
         }
       ]
     },
@@ -170,6 +248,45 @@
           "width": 1200,
           "height": 1200,
           "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "13020891",
+          "url": "https://images.pexels.com/photos/13020891/pexels-photo-13020891.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman with Under Eye Patches on Her Face",
+          "photographer": "Milad Farhani",
+          "photographerUrl": "https://www.pexels.com/@milad-farhani-52379203/",
+          "photoUrl": "https://www.pexels.com/photo/woman-with-under-eye-patches-on-her-face-13020891/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2000,
+          "height": 2500
+        },
+        {
+          "source": "pexels",
+          "photoId": "7161657",
+          "url": "https://images.pexels.com/photos/7161657/pexels-photo-7161657.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Red Eye Patch",
+          "photographer": "Ivan S",
+          "photographerUrl": "https://www.pexels.com/@ivan-s/",
+          "photoUrl": "https://www.pexels.com/photo/red-eye-patch-7161657/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4480,
+          "height": 6720
+        },
+        {
+          "source": "pexels",
+          "photoId": "5313589",
+          "url": "https://images.pexels.com/photos/5313589/pexels-photo-5313589.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Woman with Under Eye Masks Applying Moisturizer on Her Face",
+          "photographer": "Thirdman",
+          "photographerUrl": "https://www.pexels.com/@thirdman/",
+          "photoUrl": "https://www.pexels.com/photo/a-woman-with-under-eye-masks-applying-moisturizer-on-her-face-5313589/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4315,
+          "height": 6473
         }
       ]
     },
@@ -227,6 +344,45 @@
           "width": 1200,
           "height": 1200,
           "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "5241036",
+          "url": "https://images.pexels.com/photos/5241036/pexels-photo-5241036.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman Washing Her Hair",
+          "photographer": "kaboompics",
+          "photographerUrl": "https://www.pexels.com/@karola-g/",
+          "photoUrl": "https://www.pexels.com/photo/woman-washing-her-hair-5241036/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4480,
+          "height": 6720
+        },
+        {
+          "source": "pexels",
+          "photoId": "7320790",
+          "url": "https://images.pexels.com/photos/7320790/pexels-photo-7320790.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Face of a Woman Brushing her Hair",
+          "photographer": "kaboompics",
+          "photographerUrl": "https://www.pexels.com/@karola-g/",
+          "photoUrl": "https://www.pexels.com/photo/face-of-a-woman-brushing-her-hair-7320790/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4480,
+          "height": 6720
+        },
+        {
+          "source": "pexels",
+          "photoId": "23349900",
+          "url": "https://images.pexels.com/photos/23349900/pexels-photo-23349900.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Washing Woman Hair at Hairdresser",
+          "photographer": "Oleskandra Biliak",
+          "photographerUrl": "https://www.pexels.com/@oleksandra/",
+          "photoUrl": "https://www.pexels.com/photo/washing-woman-hair-at-hairdresser-23349900/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4249,
+          "height": 6003
         }
       ]
     },
@@ -295,6 +451,45 @@
           "width": 1200,
           "height": 1200,
           "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "8090976",
+          "url": "https://images.pexels.com/photos/8090976/pexels-photo-8090976.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Woman Sleeping on Bed",
+          "photographer": "PNW Production",
+          "photographerUrl": "https://www.pexels.com/@pnw-prod/",
+          "photoUrl": "https://www.pexels.com/photo/woman-sleeping-on-bed-8090976/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4024,
+          "height": 6048
+        },
+        {
+          "source": "pexels",
+          "photoId": "7897136",
+          "url": "https://images.pexels.com/photos/7897136/pexels-photo-7897136.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black and Orange Hair Accessories",
+          "photographer": "Irene  Gaitho",
+          "photographerUrl": "https://www.pexels.com/@irene-gaitho-32882194/",
+          "photoUrl": "https://www.pexels.com/photo/black-and-orange-hair-accessories-7897136/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "source": "pexels",
+          "photoId": "6983530",
+          "url": "https://images.pexels.com/photos/6983530/pexels-photo-6983530.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Close-Up Shot of Scrunchies",
+          "photographer": "The Pineapple  Experience",
+          "photographerUrl": "https://www.pexels.com/@the-pineapple-experience-31617188/",
+          "photoUrl": "https://www.pexels.com/photo/close-up-shot-of-scrunchies-6983530/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2160,
+          "height": 2416
         }
       ]
     }

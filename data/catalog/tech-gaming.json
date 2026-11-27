@@ -67,6 +67,45 @@
           "width": 1200,
           "height": 1200,
           "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "33305814",
+          "url": "https://images.pexels.com/photos/33305814/pexels-photo-33305814.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Sleek Beige Wireless Headphones on Dark Surface",
+          "photographer": "cookiemonster",
+          "photographerUrl": "https://www.pexels.com/@cookiemonster-221712119/",
+          "photoUrl": "https://www.pexels.com/photo/sleek-beige-wireless-headphones-on-dark-surface-33305814/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3000,
+          "height": 4000
+        },
+        {
+          "source": "pexels",
+          "photoId": "7772548",
+          "url": "https://images.pexels.com/photos/7772548/pexels-photo-7772548.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black headphones on white surface",
+          "photographer": "Caleb Oquendo",
+          "photographerUrl": "https://www.pexels.com/@caleboquendo/",
+          "photoUrl": "https://www.pexels.com/photo/black-headphones-on-white-surface-7772548/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3544,
+          "height": 5316
+        },
+        {
+          "source": "pexels",
+          "photoId": "15487609",
+          "url": "https://images.pexels.com/photos/15487609/pexels-photo-15487609.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black Headphones Lying",
+          "photographer": "Sunil Satapathy",
+          "photographerUrl": "https://www.pexels.com/@sunil-satapathy-61455468/",
+          "photoUrl": "https://www.pexels.com/photo/black-headphones-lying-15487609/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3000,
+          "height": 4000
         }
       ]
     },
@@ -135,6 +174,45 @@
           "width": 1200,
           "height": 1200,
           "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "33319872",
+          "url": "https://images.pexels.com/photos/33319872/pexels-photo-33319872.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Stylish Wireless Earbuds on Mossy Surface",
+          "photographer": "Amal A S",
+          "photographerUrl": "https://www.pexels.com/@amal-a-s-2150318757/",
+          "photoUrl": "https://www.pexels.com/photo/stylish-wireless-earbuds-on-mossy-surface-33319872/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2600,
+          "height": 4624
+        },
+        {
+          "source": "pexels",
+          "photoId": "8858287",
+          "url": "https://images.pexels.com/photos/8858287/pexels-photo-8858287.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Black Earbuds in Black Casing",
+          "photographer": "SpotwizardLee",
+          "photographerUrl": "https://www.pexels.com/@spotwizardlee-35777904/",
+          "photoUrl": "https://www.pexels.com/photo/black-earbuds-in-black-casing-8858287/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4603,
+          "height": 4461
+        },
+        {
+          "source": "pexels",
+          "photoId": "11599423",
+          "url": "https://images.pexels.com/photos/11599423/pexels-photo-11599423.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "White Ear Buds",
+          "photographer": "Hemil Dhanani",
+          "photographerUrl": "https://www.pexels.com/@hemildhanani/",
+          "photoUrl": "https://www.pexels.com/photo/white-ear-buds-11599423/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 2070,
+          "height": 3105
         }
       ]
     },
@@ -203,6 +281,45 @@
           "width": 1200,
           "height": 1200,
           "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "17895080",
+          "url": "https://images.pexels.com/photos/17895080/pexels-photo-17895080.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Illuminated Computer Keyboard",
+          "photographer": "Isabella Mendes",
+          "photographerUrl": "https://www.pexels.com/@isabella-mendes-107313/",
+          "photoUrl": "https://www.pexels.com/photo/illuminated-computer-keyboard-17895080/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4016,
+          "height": 6016
+        },
+        {
+          "source": "pexels",
+          "photoId": "34688826",
+          "url": "https://images.pexels.com/photos/34688826/pexels-photo-34688826.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Cozy Home Workspace with Clock and Decor",
+          "photographer": "Suhas Hanjar",
+          "photographerUrl": "https://www.pexels.com/@suhashanjar/",
+          "photoUrl": "https://www.pexels.com/photo/cozy-home-workspace-with-clock-and-decor-34688826/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3067,
+          "height": 4600
+        },
+        {
+          "source": "pexels",
+          "photoId": "4145372",
+          "url": "https://images.pexels.com/photos/4145372/pexels-photo-4145372.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Keyboard of typewriter with red button",
+          "photographer": "Mochammad  Algi",
+          "photographerUrl": "https://www.pexels.com/@cripsdog/",
+          "photoUrl": "https://www.pexels.com/photo/keyboard-of-typewriter-with-red-button-4145372/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 7380,
+          "height": 11072
         }
       ]
     },
@@ -271,6 +388,45 @@
           "width": 1200,
           "height": 1200,
           "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "17784701",
+          "url": "https://images.pexels.com/photos/17784701/pexels-photo-17784701.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Gaming Computer, Laptop and Keyboard on Desk",
+          "photographer": "Pramod  Tiwari",
+          "photographerUrl": "https://www.pexels.com/@pramodtiwari/",
+          "photoUrl": "https://www.pexels.com/photo/gaming-computer-laptop-and-keyboard-on-desk-17784701/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3648,
+          "height": 4816
+        },
+        {
+          "source": "pexels",
+          "photoId": "28786771",
+          "url": "https://images.pexels.com/photos/28786771/pexels-photo-28786771.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Modern Gaming Setup with RGB Lighting",
+          "photographer": "UMUT   🆁🅰🆆",
+          "photographerUrl": "https://www.pexels.com/@umudicreative/",
+          "photoUrl": "https://www.pexels.com/photo/modern-gaming-setup-with-rgb-lighting-28786771/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4160,
+          "height": 6240
+        },
+        {
+          "source": "pexels",
+          "photoId": "5489398",
+          "url": "https://images.pexels.com/photos/5489398/pexels-photo-5489398.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Gamer Sitting on a Bed",
+          "photographer": "Florenz Mendoza",
+          "photographerUrl": "https://www.pexels.com/@florenz-mendoza-3667096/",
+          "photoUrl": "https://www.pexels.com/photo/a-gamer-sitting-on-a-bed-5489398/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4683,
+          "height": 7021
         }
       ]
     },
@@ -339,6 +495,45 @@
           "width": 1200,
           "height": 1200,
           "color": "#0C1E36"
+        },
+        {
+          "source": "pexels",
+          "photoId": "21391577",
+          "url": "https://images.pexels.com/photos/21391577/pexels-photo-21391577.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "Desk with Laptop and Monitor on Stand",
+          "photographer": "Oladimeji Ajegbile",
+          "photographerUrl": "https://www.pexels.com/@diimejii/",
+          "photoUrl": "https://www.pexels.com/photo/desk-with-laptop-and-monitor-on-stand-21391577/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
+        },
+        {
+          "source": "pexels",
+          "photoId": "27559487",
+          "url": "https://images.pexels.com/photos/27559487/pexels-photo-27559487.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A mouse pad with a keyboard and mouse on it",
+          "photographer": "minhphuc .workspace",
+          "photographerUrl": "https://www.pexels.com/@mintworkspace/",
+          "photoUrl": "https://www.pexels.com/photo/a-mouse-pad-with-a-keyboard-and-mouse-on-it-27559487/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 3089,
+          "height": 4633
+        },
+        {
+          "source": "pexels",
+          "photoId": "14151561",
+          "url": "https://images.pexels.com/photos/14151561/pexels-photo-14151561.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&fit=crop",
+          "alt": "A Man in Pink Shirt Using Laptop",
+          "photographer": "Vince Andrada",
+          "photographerUrl": "https://www.pexels.com/@vince-andrada-309492119/",
+          "photoUrl": "https://www.pexels.com/photo/a-man-in-pink-shirt-using-laptop-14151561/",
+          "license": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "width": 4000,
+          "height": 6000
         }
       ]
     }
