@@ -4,8 +4,9 @@
 **Baseline commit:** `18340bc823b2bcd8d340de24bbab92b1eeaffb11`
 **Report date:** 2026-11-27
 **Stack under test:** Vite `http://127.0.0.1:3000`, Express/production build `http://127.0.0.1:3001`
-**Suite command:** `npx playwright test tests/verify --workers=1 --reporter=list`
-**Definitive run output:** `test-results/verification/playwright-final-run.txt`
+**Baseline suite command:** `npx playwright test tests/verify --workers=1 --reporter=list`
+**Baseline run output:** `test-results/verification/playwright-final-run.txt`
+**Definitive run output:** `test-results/verification/playwright-phase-a-final.txt`
 
 Labels in this report are exact: `verified by running`, `FAILED`, or `not testable automatically`.
 `verified by running` means the named Playwright check executed and passed; where a check documents a
@@ -13,7 +14,8 @@ partial or missing capability, that observation is recorded in the Evidence colu
 named check executed and failed. `not testable automatically` means no automated assertion can prove the
 item, so manual instructions are supplied.
 
-Automated result: **45 `verified by running`, 9 `FAILED`, 0 `unverified`** across 54 checks.
+Baseline automated result: **45 `verified by running`, 9 `FAILED`, 0 `unverified`** across 54 checks.
+Final Phase A result: **53 `verified by running`, 1 `FAILED`, 0 `unverified`** across the same 54 checks.
 Screenshots and run artifacts are in the gitignored `test-results/verification/` directory. Every check
 captured 1440px and 390px screenshots; “Bug: clipped “Change address”” also captured 1024px and 768px.
 
@@ -122,6 +124,61 @@ Both required payloads were exercised through the review form and product text p
 
 ## Working-tree note
 
-This verification pass changed only the verification harness/report and its dependency:
+The baseline verification pass changed only the verification harness/report and its dependency:
 `playwright.config.ts`, `tests/verify/*`, `package.json`, `package-lock.json`, and this report.
-All temporary feature breaks were reverted before writing this report.
+All temporary feature breaks were reverted before writing that report.
+
+Phase A additionally changed storefront source files; those changes are itemised below.
+
+## Phase A — storefront polish and re-verification
+
+The nine baseline `FAILED` rows were addressed in the storefront source, then the full 54-check suite was
+rerun against the same live Vite (`3000`) + Express (`3001`) stack.
+
+- Definitive run: `test-results/verification/playwright-phase-a-final.txt`
+- Quality gate: `test-results/verification/phase-a-quality-gate.txt`
+- Command: `npx playwright test tests/verify --workers=3 --reporter=line`
+
+**Result: 53 `verified by running`, 1 `FAILED`, 0 `unverified` across 54 checks.** Screenshots were
+recaptured at 1440px and 390px for all checks; the address checks also captured 1024px and 768px.
+
+| # | Matrix row / check (baseline `FAILED`) | Phase A label | Evidence |
+|---:|---|---|---|
+| 5 | Rwandan addresses — buying | verified by running | `Address` now has `province`/`district`/`sector`; `Checkout` renders and validates three selects. Non-empty counts asserted by the check. |
+| 11 | Idempotent order creation — buying | verified by running | `Checkout` exposes a hidden `Order key` input; `OrdersContext` keys orders by `idempotencyKey` in `soko_order_keys_v1`. Double-submit adds exactly one order. |
+| 21 | Currency — required check | verified by running | `src/data/promos.ts` now uses `RWF 10,400` / `RWF 26,000`; `Cart.tsx` uses `45,500 RWF`. No `$` leaks found. |
+| 22 | Free-delivery progress bar boundary RWF 45,500 — required check | verified by running | `site.countries.RW.rounding = 1`; subtotal `45,499` renders exactly as `45,499`. |
+| 29 | SEO — platform | verified by running | `Seo.tsx` is a direct head manager with one title/canonical/social set; `main.tsx` no longer sets `document.title`. Route-specific titles/canonicals asserted. |
+| 30 | Product JSON-LD — platform | verified by running | `Product.tsx` emits `@graph` with `Product` and `BreadcrumbList` nodes. |
+| 31 | Accessibility — platform | verified by running | Brand tokens darkened for contrast, skeleton grids use `role="status"`, and accessible names contain their visible text. No serious/critical axe violations on checked routes. |
+| 38 | GitHub Actions lint/validate/build/test — platform | verified by running | `.github/workflows/ci.yml` runs `npm ci`, `lint`, `validate`, `test`, and `build`. |
+| 39 | Lighthouse >85 on home/category/product — platform | FAILED | `mobile-home.performance = 59`; see the Phase A Lighthouse table below. |
+
+Additional Phase A cleanup that does not change a label: sample orders were removed (`src/data/sampleOrders.ts`
+deleted, `Order.sample` removed, demo/sample wording scrubbed from UI copy), the client-demo backend remains.
+The `Orders and history — buying`, `axe accessibility checks — platform`, `Header — discovery`, and
+`Zoom — product` checks were updated to match the corrected copy/accessible names and all pass.
+
+### Phase A Lighthouse measurements
+
+Measured with `node test-results/verification/run-lighthouse.mjs` after the production build.
+
+| Run | Performance | Accessibility | Best practices | SEO |
+|---|---:|---:|---:|---:|
+| mobile/home | 59 | 100 | 77 | 100 |
+| mobile/category | 72 | 100 | 77 | 100 |
+| mobile/product | 69 | 97 | 77 | 100 |
+| desktop/home | 80 | 100 | 77 | 100 |
+| desktop/category | 93 | 100 | 77 | 100 |
+| desktop/product | 88 | 97 | 77 | 100 |
+
+`Lighthouse >85 on home/category/product — platform` remains `FAILED`: the check requires every metric on all
+six runs to exceed 85. Mobile performance is still limited by LCP (~6.9 s) and total blocking time (~650 ms)
+on a client-rendered SPA with a ~583 kB main chunk. Best practices remains 77 because the Pexels CDN sets a
+third-party `_cfuvid` cookie; removing it would require proxying images, which conflicts with the direct
+Pexels-only provenance requirement. Accessibility improved to 97–100 and SEO stays at 100.
+
+Unchanged `verified by running` rows still document partial capabilities in the baseline matrix: admin CRUD
+and the `/admin` route are absent, `/sell` is informational, reviews/questions are local-only, i18n is EN/FR
+only (`REVIEW-RW`), and no real payment provider or deployment domain is configured. The four manual-only
+items above remain `not testable automatically`.
